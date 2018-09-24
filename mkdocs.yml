@@ -1,0 +1,19 @@
+site_name: 'Materials Project Documentation'
+
+# Repository
+repo_name: 'materialsproject/docs'
+repo_url: 'https://github.com/materialsproject/docs'
+
+nav:
+    - Home: index.md
+
+theme:
+  name: 'material'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
