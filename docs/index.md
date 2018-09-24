@@ -11,13 +11,12 @@
 This is a place for all documentation relating to the
 [Materials Project](https://materialsproject.org) (MP), encompassing:
 
-* Foundations: concepts in materials and computer science that structure and
-aid interpretation of our data sets
-* Case Studies: Examples of materials analysis and design using our
-data and tools
-* Productivity: Using our website, application programming interface (API),
-and codebases.
-* Reproducibility: How we generate and validate our computed data sets
+* Foundation: concepts in materials and computer science we use to structure
+and interpret our data sets
+* Methodology: how we generate and validate our computed data sets
+* User Guide: materials analysis and design using our data and tools
+* User Reference: Detailed help for using our website,
+application programming interface (API), and codebases.
 * Contribution: Developer guides and design specifications
 
 If you notice an error or omission, please post an [issue](

@@ -5,7 +5,24 @@ repo_name: 'materialsproject/docs'
 repo_url: 'https://github.com/materialsproject/docs'
 
 nav:
-    - Home: index.md
+    - Home: 'index.md'
+    - Foundation: 'foundation.md'
+    - Methodology:
+        - 'Total energies': 'methodology/total-energies.md'
+        - 'Electronic structure': 'methodology/electronic-structure.md'
+        - 'Pseudopotentials': 'methodology/pseudopotentials.md'
+        - 'GGA+U': 'methodology/gga-plus-u.md'
+        - 'Elasticity': 'methodology/elasticity.md'
+        - 'Elasticity prediction': 'methodology/elasticity-prediction.md'
+        - 'Piezoelectricity': 'methodology/piezoelectricity.md'
+        - 'Dielectricity': 'methodology/dielelectricity.md'
+        - 'Equations of State': 'methodology/equations-of-state.md'
+        - 'Phonons': 'methodology/phonons.md'
+    - User Reference - Website:
+        - 'Materials Explorer': 'user-guide/materials-explorer.md'
+        - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
+    - Contribution:
+        - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
 theme:
   name: 'material'
