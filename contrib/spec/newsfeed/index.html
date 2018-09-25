@@ -90,6 +90,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="../../../#newsfeed" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -471,10 +475,55 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Newsfeed
+      </label>
     
     <a href="./" title="Newsfeed" class="md-nav__link md-nav__link--active">
       Newsfeed
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-entry" title="Data entry" class="md-nav__link">
+    Data entry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-display" title="Data display" class="md-nav__link">
+    Data display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-management" title="Data management" class="md-nav__link">
+    Data management
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -491,6 +540,51 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-entry" title="Data entry" class="md-nav__link">
+    Data entry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-display" title="Data display" class="md-nav__link">
+    Data display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-management" title="Data management" class="md-nav__link">
+    Data management
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -499,9 +593,81 @@
                   <a href="https://github.com/materialsproject/docs/edit/master/docs/contrib/spec/newsfeed.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Newsfeed</h1>
-                
-                
+                <h1 id="newsfeed">Newsfeed<a class="headerlink" href="#newsfeed" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This page is a <em>design specification</em> for a feature to be implemented and
+tested before release. </p>
+</div>
+<p>The <a href="//materialsproject.org">MP website</a> exposes a lot of data and tools.
+Sometimes, people are surprised to learn about data and tools that have been
+available on the site for months, especially if they have logged in and used the
+site recently. One way to keep returning users informed, seen on many websites,
+is a news feed. Such a feed consists of short entries, each with a date and
+summary of the news.</p>
+<p>Often, there is a subtle and unobtrusive visual cue for
+returning users to review recent news before continuing to use the site. In
+other cases, the recent news is presented in focus for the user to review and
+dismiss. Apart from viewing a feed while visiting its website, the feed may
+also be formatted as per e.g. the
+<a href="https://validator.w3.org/feed/docs/rss2.html">RSS</a> or
+<a href="https://validator.w3.org/feed/docs/atom.html">Atom</a> specifications to allow
+users to aggregate such news feeds from many websites of interest.</p>
+<h2 id="data-entry">Data entry<a class="headerlink" href="#data-entry" title="Permanent link">&para;</a></h2>
+<p>To enter news feed items, one creates a Markdown file in the <code>newsfeed/data</code>
+directory with a name of the format <code>YYYY-MM-DD-entry-title.md</code>, where
+<code>YYYY-MM-DD</code> is a <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>-formatted
+date. The file itself will look something like</p>
+<div class="codehilite"><pre><span></span>---
+title: My feed item title
+---
+
+This is a great piece of news.
+More info [here](https://materialsproject.org/newstuff).
+</pre></div>
+
+
+<p>This format is based on that used by the <a href="https://jekyllrb.com/">Jekyll</a> static
+site framework -- a simple organization of news items into separate files. The
+first section of the file (delimited by <code>---</code> lines) is meta-data, aka "front
+matter", and will be pre-processed for relevant key-value pairs. The remainder
+of the file will be converted to HTML. This may be implemented in one pass, for
+example using the Python <code>markdown</code> package with it's built-in <code>"meta-data"</code>
+extension.</p>
+<p>The <code>title</code> is the only required piece of metadata. If the feed entry requires a
+significant change, then an <code>updated</code> metadata field and value (in <code>YYYY-MM-DD</code>
+format) should be added -- do not change the filename. If a change to the entry
+is insignificant, like fixing a typo, then you don't need to create or update an
+<code>updated</code> field.</p>
+<h2 id="data-display">Data display<a class="headerlink" href="#data-display" title="Permanent link">&para;</a></h2>
+<p>The news feed is displayed in two places: on the static (not-signed-in) home
+page, and on the signed-in default app view. Both views are in centered,
+responsive two-column layouts near the top of their respective pages. For a
+signed-in user, there is up to three months of unseen news. For the static home
+page, the news fills the two columns -- this depends on the summary-lengths of
+the news items, but does not exceed ten items (five per column). Finally, the
+signed-in user view is dismissable with a click.</p>
+<p>Each feed item on display shows a date, a title, and a summary. The date is
+gathered from the item's filename or from its <code>updated</code> metdata field if
+given. The summary is the rendered HTML of the item file's Markdown body. Feed
+items are presented in reverse chronological order.</p>
+<h2 id="data-management">Data management<a class="headerlink" href="#data-management" title="Permanent link">&para;</a></h2>
+<p>The last time a user has seen the newsfeed is stored in the <code>app_db</code>'s
+<code>newsfeed_views</code> collection, one document per user. The query</p>
+<div class="codehilite"><pre><span></span><span class="n">return_document</span> <span class="o">=</span> <span class="n">app_db</span><span class="o">.</span><span class="n">newsfeed_views</span><span class="o">.</span><span class="n">find_one_and_update</span><span class="p">(</span>
+    <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;$set&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;last_seen&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()},</span>
+    <span class="n">upsert</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<p>will update a user's document (inserting a document if one doesn't exist) with
+the current time as the last-seen time, and return the old user document (or
+<code>None</code> if no document existed). The application can then determine which
+feed items to render to the user based on the last <code>"last_seen"</code> value. This
+example uses the Django <code>request</code> object to get a user's immutable <code>username</code>.
+The expression <code>request.user.is_authenticated</code> may be evaluated first in this
+case to determine which view is to be rendered.</p>
                 
                   
                 
