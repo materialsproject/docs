@@ -53,11 +53,11 @@ The battery diffusion data shown in the Materials Project differs from other dat
 ## Bond valence difffusion pathway information
 The bond valence site energy pathways are based on isosurfaces of constant bond valence site energy E(Li) calculated for a grid covering the entire crystal structure. Note that this energy scaled approach builds on, but is slightly different from the conventional bond valence approach yielding information in on a “valence units” scale.
 
-The title line indicates the name of the (delithiated) compound for with the Li migration pathways have been modeled using the empirical bond valence potentials. The subtitle contains information about the plausibility of the underlying structure model in terms of the Global Instability Index GII and translates the GII value into qualitative statement on the reliability of the structure model high (GII < 0.15), average (GII<0.30), low (GII > 0.30).
+The title line indicates the name of the (delithiated) compound for with the Li migration pathways have been modeled using the empirical bond valence potentials. The subtitle contains information about the plausibility of the underlying structure model in terms of the Global Instability Index GII and translates the GII value into qualitative statement on the reliability of the structure model high (GII < 0.15), average (GII < 0.30), low (GII > 0.30).
 
-The two pathway graphs show two different projections of one symmetry-adapted unit cell (which is often a supercell of the primitive P1 cell used for the ab initio calculations) with the Li pathways visualized as three superimposed isosurfaces of constant E(Li). The innermost, darkest isosurface typically represents the regions of lowest bond valence site energy (e.g. equilibrium sites for Li), while the lightest isosurface visualizes a long-rage transport path, if such a path exists for activation energies up to 2.4 eV.
+The two *pathway graphs* show two different projections of one symmetry-adapted unit cell (which is often a supercell of the primitive P1 cell used for the ab initio calculations) with the Li pathways visualized as three superimposed isosurfaces of constant E(Li). The innermost, darkest isosurface typically represents the regions of lowest bond valence site energy (e.g. equilibrium sites for Li), while the lightest isosurface visualizes a long-rage transport path, if such a path exists for activation energies up to 2.4 eV.
 
-The main table then lists the observed continuous pathways and classifies them according to the dimensionality of the path and the minimum activation energy that mobile Li have to overcome along this path.
+The *main table* then lists the observed *continuous pathways* and classifies them according to the dimensionality of the path and the minimum activation energy that mobile Li have to overcome along this path.
 
 The sites table lists all identified local minima of E(Li) in the structure and qualifies them according to their site energy values into equilibrium sites Li# (or lowest energy sites for compounds not containing Li) and interstitials i#. Symmetry-equivalent sites are listed only once. For some compounds with complex pathways this table also includes information on saddle-points s# along the path to help distinguish otherwise ambiguous connections between Li sites in the structure.
 
@@ -104,13 +104,15 @@ $GII=\sqrt{\frac{\sum_{i=1}^{N}[(V(i)-V_{id}(i))^2]}{N}}$
 
 The "global instability index" GII as defined by Salinas-Sanchez et al. is commonly used to quantify the plausibility of structure models. Essentially it represents a root mean square average deviation of the observed bond valence sums V(i) for all unique atoms i from the expectation values Vid(i) (i.e. the absolute value of the oxidation state) in a crystal structure:
 ## References
-[^1] S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
-[^2] S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
-[^3] S. Adams, Solid State Ionics 177, 1625 (2006).  
-[^4] S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).  
-[^5] S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).  
-[^6] S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
+[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
+[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
+[^3]: S. Adams, Solid State Ionics 177, 1625 (2006).  
+[^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).  
+[^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).  
+[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
 ## Authors
 1. Shyue Ping Ong
 2. Anubhav Jain
 3. Stefan Adams (diffusion data)
+4. Eric Sivonxay
+5. Jimmy Shen
