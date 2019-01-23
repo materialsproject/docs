@@ -19,6 +19,7 @@ nav:
         - 'Equations of State': 'methodology/equations-of-state.md'
         - 'Phonons': 'methodology/phonons.md'
     - User Reference - Website:
+        - 'Crystal Toolkit': 'user-guide/crystal-toolkit.md'
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
     - Contribution:
