@@ -18,8 +18,24 @@ The Li-ion battery explorer is highly customized to make it easy for battery sci
 6. Min. Vol. Capacity - Use this slider to set the minimum volumetric capacity for the search.
 
 ### Advanced options
+1. Excluded elements - Use this field to exclude certain elements from the search. For example, if you want to exclude certain expensive or toxic elements.
+2. Materials Id - Use this field to search for a battery material containing a material with a particular Materials Id within the delithiation range.
+3. Battery Id - Use this field to search for a battery material with the corresponding battery id.
+4. Max. Volt. Step - Use this slider to limit the search to battery materials having a voltage step less than the specified number.
+5. Max. Vol. Change - Use this slider to limit the search to battery materials having a volume change upon lithiation/delithiation smaller than the specified percentage.
+6. Max. energy above hull - Use this slider to limit how unstable the lithiated or delithiated battery material can be.
+
 ## The Search Result Table
+The search result table presents the results from your search. You can add or hide fields from the result table by clicking the Show/Hide Button.
+
+We have provided additional tools to aid you in analyzing the results. For example, you can select a few battery compounds by clicking the checkbox on the rightmost column of the table, and then click the "voltage profile" button to show all the voltage profiles in one easy plot for comparison. You can also compare any two materials for structural similarity. Finally, you can click on the BattId of any material to go to the Battery Material page, which provides detailed information about a battery material, including an assessment of oxidative stability, a Jmol view of the molecule, etc. 
+
 ## Viewing Details of a battery compound
+
+You can click the blue links in any of the search results to see a detailed summary of that battery compound. Each details page is dedicated to one structural framework, e.g. Mn2O4 spinel, and provides information on *all* lithiation levels into this structural framework.
+
+The details view has many components: 
+
 ### Voltage curve
 ### O<sub>2</sub> evolution curve
 ### Overall materials properties
