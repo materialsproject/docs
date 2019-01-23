@@ -88,4 +88,4 @@ with MPRester() as mpr:
 [^3]: H. Pan, J. Dagdelen, N. E. R. Zimmermann, A. Jain, in preparation (2018)
 
 ## Authors
-Nils Zimmermann, Donny Winston
+Nils Zimmermann, Donny Winston, Handong Ling, Oxana Andriuc
