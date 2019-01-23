@@ -29,3 +29,6 @@
 <b>Energy above hull:</b> The energy of decomposition of this material into the set of most stable materials at this chemical composition, in eV/atom. Stability is tested against all potential chemical combinations that result in the material's composition. For example, a Co<sub>2</sub>O<sub>3</sub> structure would be tested for decomposition against other Co<sub>2</sub>O<sub>3</sub> structures, against Co and O<sub>2</sub> mixtures, and against CoO and O<sub>2</sub> mixtures.
 
 A positive E above hull indicates that this material is unstable with respect to decomposition. A zero E above hull indicates that this is the most stable material at its composition.
+
+## Authors
+Handong Ling, Oxana Andriuc
