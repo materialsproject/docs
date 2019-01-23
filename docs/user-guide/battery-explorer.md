@@ -32,7 +32,7 @@ We have provided additional tools to aid you in analyzing the results. For examp
 
 ## Viewing Details of a battery compound
 
-You can click the blue links in any of the search results to see a detailed summary of that battery compound. Each details page is dedicated to one structural framework, e.g. Mn2O4 spinel, and provides information on *all* lithiation levels into this structural framework.
+You can click the blue links in any of the search results to see a detailed summary of that battery compound. Each details page is dedicated to one structural framework, e.g. $\ce{Mn2O4}$ spinel, and provides information on *all* lithiation levels into this structural framework.
 
 The details view has many components:
 
@@ -42,7 +42,7 @@ The voltage curve graph displays the calculated equilibrium voltage versus state
 
 ### O<sub>2</sub> evolution curve
 
-One concern for cathode design is resistance to O2 release, as O2 release from the cathode can lead to thermal runaway. The O2 evolution diagram determines the equilibrium chemical potentials at which O2 release can be expected, and the amount of O2 released[^1][^2]. One way to read this chart is to look at the chemical potential at which O2 release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to O2 release. Note that the O2 release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The muO2 needed for release can be referenced against common binary systems to get an idea of stability to O2 release:
+One concern for cathode design is resistance to O2 release, as $\ce{O2}$ release from the cathode can lead to thermal runaway. The O2 evolution diagram determines the equilibrium chemical potentials at which $\ce{O2}$ release can be expected, and the amount of O2 released[^1][^2]. One way to read this chart is to look at the chemical potential at which $\ce{O2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which $\ce{O2}$ release begins at more negative muO2 are more stable with respect to $\ce{O2}$ release. Note that the $\ce{O2}$ release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The muO2 needed for release can be referenced against common binary systems to get an idea of stability to $\ce{O2}$ release:
 
 ![](https://github.com/sivonxay/mp_wiki_docs/blob/battery/docs/user-guide/img/battery/battery_Muoscale.gif)
 
