@@ -110,3 +110,8 @@ for full-cell analysis of single electrode materials. (V vs. Li/Li+)
 Energy Environ. Sci., 7, 3459-3477 (2014). [DOI:10.1039/C4EE02158D](https://doi.org/10.1039/C4EE02158D)
 
 [^2] R. Dmello, J. D. Milshtein, F. R. Brushett, and K. C. Smith, In Review (2016). <https://doi.org/10.1016/j.jpowsour.2016.08.129>
+
+## Authors
+
+* MP Team
+* Kyle Bystrom
