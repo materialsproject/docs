@@ -110,12 +110,12 @@ $GII=\sqrt{\frac{\sum_{i=1}^{N}[(V(i)-V_{id}(i))^2]}{N}}$
 
 The "global instability index" GII as defined by Salinas-Sanchez et al. is commonly used to quantify the plausibility of structure models. Essentially it represents a root mean square average deviation of the observed bond valence sums V(i) for all unique atoms i from the expectation values Vid(i) (i.e. the absolute value of the oxidation state) in a crystal structure:
 ## References
-[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
-[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
+[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [doi:10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
+[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [doi:10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
 [^3]: S. Adams, Solid State Ionics 177, 1625 (2006).  
 [^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).  
 [^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).  
-[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
+[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [doi:10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
 ## Authors
 1. Shyue Ping Ong
 2. Anubhav Jain
