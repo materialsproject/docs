@@ -46,7 +46,11 @@ One concern for cathode design is resistance to O2 release, as O2 release from t
 
 ### Overall materials properties
 
+The overall materials properties display aggregate or average properties over all lithiation levels of a given structural framework. Note that some lithiation levels presented in this section may be outside the desired range of voltage, stability, or safety. More details are given in the 'Voltage pair properties' section.
+
 ### Voltage pair properties
+
+This table displays calculated data for each voltage step along the voltage profile. 
 
 ## Diffusion data
 The battery diffusion data shown in the Materials Project differs from other data in that it is computed with classical approaches rather than first-principles approaches. In particular, the accuracy of these methods are lower than Density Functional Theory calculations, and in general they are used to make qualitative rather than quantitative predictions. We review the important concepts for understanding the diffusion data in this section.
