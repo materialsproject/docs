@@ -43,9 +43,9 @@ This feature will be supported in a future release of the reaction calculator.
 #### Reading the output
 The reaction calculator balances the reaction and displays the balanced reaction as the first line in the output. The next line gives the computed reaction energy.
 
-When a computational energy is available, the computed $\del H$ of reaction indicates the overall reaction energy of the reaction as written in the first line of the output. The $\del H_f$ for each compound in the reaction lists formation energies from the elements. Clicking the compound displays its crystal structure.
+When a computational energy is available, the computed $\del H_{calculated}$ of reaction indicates the overall reaction enthalpy of the reaction as written in the first line of the output. The $\del H_f$ for each compound in the reaction lists formation energies from the elements. Clicking the compound displays its crystal structure.
 
-When an experimental energy is available, the computed $\del H$ of reaction indicates the overall reaction enthalpy of the reaction as written in the first line of the output. The $\del H_f$ for each compound in the reaction lists formation enthalpies from the elements. Sub-headings indicate the source(s) of experimental information.
+When an experimental energy is available, the computed $\del H_{experimental}$ of reaction indicates the overall reaction enthalpy of the reaction. The $\del H_f$ for each compound in the reaction lists formation enthalpies from the elements. The blue book graphic links to the source(s) of experimental information.
 
 When both computational and experimental data are available, a graphical chart displays the error for each compound in the calculation.
 
