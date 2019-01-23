@@ -9,7 +9,7 @@
 The primary goal of the molecular explorer is to report the atomic structure of molecules, found using quantum chemistry computational methods. Further quantities of interest, including the electron affinity (EA) and ionization energies (IE), are also reported.
 
 ## Manual
-* Molecular Glossary of Terms
+* [Molecular Glossary of Terms](/materialsproject/docs/user-guide/molecular_terms)
 
 ## Calculations
 The methodology used to compute the atomic structure is a standard quantum chemical approach. This involves solving Schrodinger’s equation using both a linear combination of atomic orbitals (LCAO) with a relevant functional to address the question of the potential. The LCAO were implemented with the use of the 6-31+* Pople basis [1] and the hybrid-functional B3LYP was used [2].
