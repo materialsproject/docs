@@ -168,8 +168,128 @@ A property may be specified to request a specific subset of information. If no p
 
 Example responses:
 
-1. `https://www.materialsproject.org/rest/v1/materials/24972/vasp`: File:24972.txt
-2. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/vasp`: File:Fe2O3.txt
-3. `https://www.materialsproject.org/rest/v1/materials/Li-Fe-O/vasp`: File:Li-Fe-O.txt
-4. `https://www.materialsproject.org/rest/v1/materials/TiO2/vasp/energy`: File:TiO2 energy.txt
-5. `https://www.materialsproject.org/rest/v1/materials/C/vasp/structure`: File:C structure.txt
+1. `https://www.materialsproject.org/rest/v1/materials/24972/vasp`: [File:24972.txt](/static/mapi/24972.txt)
+2. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/vasp`: [File:Fe2O3.txt](/static/mapi/Fe2O3.txt)
+3. `https://www.materialsproject.org/rest/v1/materials/Li-Fe-O/vasp`: [File:Li-Fe-O.txt](/static/mapi/Li-Fe-O.txt)
+4. `https://www.materialsproject.org/rest/v1/materials/TiO2/vasp/energy`: [File:TiO2_energy.txt](/static/mapi/TiO2_energy.txt)
+5. `https://www.materialsproject.org/rest/v1/materials/C/vasp/structure`: [File:C_structure.txt](/static/mapi/C_structure.txt)
+
+#### materials (experimental data)
+
+`GET https://www.materialsproject.org/rest/v2/materials/{formula}/exp`
+
+Obtain experimental thermochemical information based on an formula. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The associative arrays are pymatgen ThermoData objects in json representation.
+
+Example response: 
+1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3 exp.txt](/static/mapi/Fe2O3_exp.txt "File:Fe2O3 exp.txt")
+
+#### tasks (detailed calculation data)
+
+`GET https://www.materialsproject.org/rest/v2/tasks/{task id}/{property}`
+
+Obtain information about a particular calculation based on a task id. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...].
+
+A property may be specified to request a specific subset of information. If no property is specified, a set of typically useful properties is returned. The materials id is always returned as part of the response. Currently supported properties and their definitions are as follows:
+
+##### Basic properties
+<dl>
+	<dt>pretty_formula</dt>
+	<dd>A nice formula where the element amounts are normalized</dd>
+	<dt>unit_cell_formula</dt>
+	<dd>The full explicit formula for the unit cell</dd>
+	<dt>icsd_id</dt>
+	<dd>The Inorganic Crystal Structure Database id for the initial structure, if any.</dd>
+	<dt>energy</dt>
+	<dd>Calculated vasp energy for structure</dd>
+	<dt>energy_per_atom</dt>
+	<dd>Calculated vasp energy normalized to per atom in the unit cell</dd>
+	<dt>volume</dt>
+	<dd>Final relaxed volume of the material</dd>
+	<dt>density</dt>
+	<dd>Final relaxed density of the material</dd>
+	<dt>nsites</dt>
+	<dd>Number of sites in the unit cell</dd>
+	<dt>elements</dt>
+	<dd>A array of the elements in the material</dd>
+	<dt>nelements</dt>
+	<dd>The number of elements in the material</dd>
+	<dt>initial_structure</dt>
+	<dd>The initial input structure for the calculation in the pymatgen json representation (see later section).</dd>
+	<dt>final_structure</dt>
+	<dd>The final relaxed structure in the pymatgen json representation (see later section).</dd>
+	<dt>structure</dt>
+	<dd>An alias for final_structure.</dd>
+</dl>
+
+#### Thermodynamic properties
+<dl>
+	<dt>formation_energy_per_atom</dt>
+	<dd>Calculated formation energy from the elements normalized to per atom in the unit cell</dd>
+	<dt>e_above_hull</dt>
+	<dd>Calculated energy above convex hull for structure. Please see Phase Diagram Manual for the interpretation of this quantity.</dd>
+</dl>
+
+#### Calculation parameters
+<dl>
+	<dt>is_hubbard</dt>
+	<dd>A boolean indicating whether the structure was calculated using the Hubbard U extension to DFT</dd>
+	<dt>hubbards</dt>
+	<dd>An array of Hubbard U values, where applicable.</dd>
+	<dt>is_compatible</dt>
+	<dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
+</dl>
+
+#### Electronic structure
+
+<dl>
+	<dt>band_gap</dt>
+	<dd>The calculated band gap</dd>
+	<dt>dos</dt>
+	<dd>The calculated density of states in the pymatgen json representation</dd>
+	<dt>incar</dt>
+	<dd>The INCAR parameters used for the run.</dd>
+	<dt>kpoints</dt>
+	<dd>The KPOINTS grid used for the run.</dd>
+	<dt>potcar</dt>
+	<dd>The pseudopotentials used for the run.</dd>
+</dl>
+
+The responses are similar to the materials responses.
+
+#### materials ids
+
+`GET https://www.materialsproject.org/rest/v2/materials/{formula or chemical system}/mids`
+
+Obtain the material ids relating to a formula or chemical system. The response is always a list of integers. This is one of the few types of queries that do not require an API key to be supplied.
+
+Example responses: 
+1. https://www.materialsproject.org/rest/v2/materials/Fe2O3/mids
+2. https://www.materialsproject.org/rest/v2/materials/Fe-O/mids
+
+#### mpquery
+
+`POST https://www.materialsproject.org/rest/v2/query`
+
+Advanced query using Mongo-like language for flexible queries on the Materials Project database. This provides the possibility of queries which would otherwise not be possible using the other simpler REST forms.
+
+For example, a POST to mpquery with
+
+`{"criteria": "{'elements':{'$in':['Li', 'Na', 'K'], '$all': ['O']}, 'nelements':2}", "properties": "['formula', 'formation_energy_per_atom']"}`
+
+will return the formula and formation energy per atom of all Li, Na and K oxides. Supported keywords include the following: elements, nelements, nsites, formula, normalized_formula, energy, energy_per_atom, density, e_above_hull, formation_energy_per_atom, material_id. For a comprehensive listing of all criteria available, see [this repository](https://github.com/materialsproject/mapidoc).
+
+### Operations
+
+#### api_check
+
+`GET or POST https://www.materialsproject.org/rest/v1/api_check`
+
+Checks if supplied API key (via GET, POST or x-api-key header) is a valid API key.
+
+Example response:
+
+<pre>{
+    valid_response: true,
+    api_key_valid: true
+}
+</pre>
