@@ -36,7 +36,7 @@
     
     
       
-        <title>Materials Explorer - Materials Project Documentation</title>
+        <title>RFB Dashboard - Materials Project Documentation</title>
       
     
     
@@ -113,6 +113,10 @@ MathJax.Hub.Config({
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#rfb-dashboard" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -135,7 +139,7 @@ MathJax.Hub.Config({
                 Materials Project Documentation
               </span>
               <span class="md-header-nav__topic">
-                Materials Explorer
+                RFB Dashboard
               </span>
             
           
@@ -418,12 +422,10 @@ MathJax.Hub.Config({
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       User Reference - Website
@@ -451,18 +453,11 @@ MathJax.Hub.Config({
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Materials Explorer" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../materials-explorer/" title="Materials Explorer" class="md-nav__link">
       Materials Explorer
     </a>
-    
   </li>
 
         
@@ -526,17 +521,201 @@ MathJax.Hub.Config({
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redox-active-material-design-space" title="Redox Active Material Design Space" class="md-nav__link">
+    Redox Active Material Design Space
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-rfb-dashboard" title="Using the RFB Dashboard" class="md-nav__link">
+    Using the RFB Dashboard
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-data-for-analysis" title="Importing Data for Analysis" class="md-nav__link">
+    Importing Data for Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-molecule-explorer" title="Via Molecule Explorer" class="md-nav__link">
+    Via Molecule Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-csv" title="Via CSV" class="md-nav__link">
+    Via CSV
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-input-parameters" title="Description of Input Parameters" class="md-nav__link">
+    Description of Input Parameters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#target-battery-price" title="Target Battery Price" class="md-nav__link">
+    Target Battery Price
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-molality" title="Target Molality" class="md-nav__link">
+    Target Molality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-parameters" title="Cost Parameters" class="md-nav__link">
+    Cost Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-conditions" title="Operating Conditions" class="md-nav__link">
+    Operating Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-parameters" title="Electrochemical Parameters" class="md-nav__link">
+    Electrochemical Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/materials-explorer.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/rfb_dashboard.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Materials Explorer</h1>
-                
-                
+                <h1 id="rfb-dashboard">RFB Dashboard<a class="headerlink" href="#rfb-dashboard" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Redox flow batteries (RFBs) provide a promising pathway towards low-cost grid-scale energy storage devices. The economic viability of non-aqueous and aqueous redox flow batteries (NAqRFBs and AqRFBs respectively) is highly dependent on electroactive materials, salt, and solvent choices.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>(#references) The interactive RFB Dashboard can be used to select redox active materials for use in nonaqueous and aqueous RFBs by displaying individual materials along with regions of economic viability defined by the target battery price and minimum redox active species concentration.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>(#references) In addition, the tool provides concentration targets for redox active materials achieving the target battery price. This tool can be used to analyze both experimentally demonstrated materials and simulated families of materials. Reference 2 describes the techno-economic model implemented in the present tool. The default values of all input parameters are assumed to be the median values presented in Ref. 1.</p>
+<h2 id="redox-active-material-design-space">Redox Active Material Design Space<a class="headerlink" href="#redox-active-material-design-space" title="Permanent link">&para;</a></h2>
+<p>Redox active materials are defined using three electrochemical properties: molecular weight (g/mol e-), redox potential (V vs. Li/Li+), and active material concentration (mol actives/kg solvent). The molecular weight is defined as the molecular weight of redox active material normalized by the number of electrons transferred. The redox potential is defined as the average potential of electron transfer events that the material undergoes.</p>
+<p>The molecular weight and redox potential of a redox active molecule can be measured or simulated in less time and with more accuracy than active material solubility. Thus, the RFB Dashboard shows redox active materials on a two-dimensional materials-selection map, with axes of molecular weight and redox potential, while drawing concentration contours that achieves the target battery price. In the model each material is assumed to pair with a hypothetical counter-electrode material having a different potential than the material of interest, but common concentration and molecular weight.</p>
+<h2 id="using-the-rfb-dashboard">Using the RFB Dashboard<a class="headerlink" href="#using-the-rfb-dashboard" title="Permanent link">&para;</a></h2>
+<h3 id="importing-data-for-analysis">Importing Data for Analysis<a class="headerlink" href="#importing-data-for-analysis" title="Permanent link">&para;</a></h3>
+<h4 id="via-molecule-explorer">Via Molecule Explorer<a class="headerlink" href="#via-molecule-explorer" title="Permanent link">&para;</a></h4>
+<p>Data can be imported into the tool via Molecule Explorer. By clicking on the "via Molecule Explorer" button on top of the RFB Dashboard, the Molecule Explorer would appear and materials with desired structures can be selected. Once a set of molecules is selected, click on the "Explore Solubility" button to import them into the RFB Dashboard for further analysis. For a visual tutorial on how to import data via Molecule Explorer, a <a href="https://www.youtube.com/watch?v=w5NHcwujX30">short video</a> is available to demonstrate how the Molecule Explorer is used.</p>
+<h4 id="via-csv">Via CSV<a class="headerlink" href="#via-csv" title="Permanent link">&para;</a></h4>
+<p>Data can be imported into the tool via a Comma Separated Values (CSV) file. The CSV file should be formatted in such a way that there is a header for the first row of the data sheet and the order of the data columns does not matter. However, the header names for each column has to have 'formula' for molecular formula, 'mw' for molecular weight, 'redpot' for reduction potential and 'oxpot' for oxidation potential. Once your CSV file is ready, it can be uploaded into the tool by clicking on the "via CSV" button on top of the tool to upload the file, and the data will then be displayed on the tool.</p>
+<h2 id="description-of-input-parameters">Description of Input Parameters<a class="headerlink" href="#description-of-input-parameters" title="Permanent link">&para;</a></h2>
+<h3 id="target-battery-price">Target Battery Price<a class="headerlink" href="#target-battery-price" title="Permanent link">&para;</a></h3>
+<p>The Target Battery Price is the maximum battery price for RFBs built using the redox active materials enclosed by the concentration contours. The battery price is a combination of reactor cost, electrolyte cost, balance-of-plant and addition-to-price costs. Battery price neglects the cost of power-conditioning equipment that is included in system price defined in Ref. 1. As a result, when calculating battery price balance-of-plant costs are reduced by $100/kW compared to that in Ref. 1 used to calculate system price. ($/kWh)</p>
+<h3 id="target-molality">Target Molality<a class="headerlink" href="#target-molality" title="Permanent link">&para;</a></h3>
+<p>The Target Molality is the minimum concentration achieving the target battery price for redox active materials enclosed by the concentration contours. The molality is defined as a ratio of moles of redox active species to kilograms of solvent in mol/kg.</p>
+<h3 id="cost-parameters">Cost Parameters<a class="headerlink" href="#cost-parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Reactor Cost Per Unit Area ($/m2)</li>
+<li>Salt Cost: cost per unit mass of supporting salt ($/kg)</li>
+<li>Solvent Cost: cost per unit mass of solvent ($/kg)</li>
+<li>Active Material Cost: cost per unit mass of active material ($/kg)</li>
+<li>Additional Contribution to Price: accounts for depreciation, labor, overhead, and margin ($/kW)</li>
+<li>Balance of Plant Cost: accounts for ancillary equipment costs ($/kW)</li>
+</ul>
+<h3 id="operating-conditions">Operating Conditions<a class="headerlink" href="#operating-conditions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>System Discharge Time: battery discharge time (hours)</li>
+<li>Depth of Discharge: allowable range of state-of-charge (-)</li>
+<li>Discharge Voltage Efficiency: ratio of cell potential during cycling to the thermodynamically reversible open-circuit cell potential (-)</li>
+<li>Round-trip Coulombic Efficiency: ratio of the charge released during the discharging step of a complete cycle relative to the charge stored during the charging step of a complete cycle. (-)</li>
+<li>Discharge System Efficiency: accounts for losses in energy during discharge due to auxiliary equipment. (-)</li>
+</ul>
+<h3 id="electrochemical-parameters">Electrochemical Parameters<a class="headerlink" href="#electrochemical-parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Area-Specific Resistance: accounts for ohmic, kinetic, and mass-transfer resistance in the separator, electrodes, and electrolyte (Ω-cm2)</li>
+<li>Stability Limits (Nonaqueous only): solvent window of stability beyond which breakdown occurs (V vs. Li/Li+)</li>
+<li>Hypothetical Counter-Electrode Potential (Nonaqueous only): assumed hypothetical counter-electrode for full-cell analysis of single electrode materials. (V vs. Li/Li+)</li>
+<li>pH (Aqueous only): sets the pH of the aqueous solution. Aqueous stability limits are determined by the oxygen and hydrogen evolution potentials, which depend on the pH of the solution. The hypothetical counter-electrode potentials are selected in order to be within the stability limits within a margin of the "Voltage Offset" parameter. (-)</li>
+<li>Voltage Offset (Aqueous only): Hypothetical counter-electrodes, with which each molecule of interest is paired, are specified by an increment in voltage, called the Voltage Offset. For positive-electrode molecules of interest the potential of the counter-electrode exceeds the hydrogen evolution potential by the magnitude of the Voltage Offset, and for negative-electrode molecules of interest the potential of the counter-electrode is set below the oxygen evolution potential by the magnitude of the Voltage Offset. (V)</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>10.1039/c4ee02158d&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>10.1016/j.jpowsour.2016.08.129&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
@@ -553,41 +732,6 @@ MathJax.Hub.Config({
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../crystal-toolkit/" title="Crystal Toolkit" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Crystal Toolkit
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Newsfeed
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
