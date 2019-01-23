@@ -23,7 +23,7 @@ to hear comments on how we could better tag high-pressure materials
 
 ### Version 2.0.0, Release Date: 04/13/2016
 * Equivalent to old version "2014.04.18"
-* Use major.minor.patch versioning, inspired by semantic versioning, but for data. Arbitrarily choose "2" as the initial major version.
+* Use major.minor.patch versioning, inspired by [semantic versioning](https://semver.org/), but for data. Arbitrarily choose "2" as the initial major version.
 * When new data is added (typically nightly), db version remains the same
 * When new kinds of data are added, bump the patch (x.y.Z) version
 * When data organization (schema) changes, bump the minor (x.Y.z) version
