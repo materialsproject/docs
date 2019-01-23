@@ -44,6 +44,8 @@ The voltage curve graph displays the calculated equilibrium voltage versus state
 
 One concern for cathode design is resistance to O2 release, as O2 release from the cathode can lead to thermal runaway. The O2 evolution diagram determines the equilibrium chemical potentials at which O2 release can be expected, and the amount of O2 released[1][2]. One way to read this chart is to look at the chemical potential at which O2 release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to O2 release. Note that the O2 release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The muO2 needed for release can be referenced against common binary systems to get an idea of stability to O2 release:
 
+![](https://github.com/sivonxay/mp_wiki_docs/blob/battery/docs/user-guide/img/battery/battery_Muoscale.gif)
+
 ### Overall materials properties
 
 The overall materials properties display aggregate or average properties over all lithiation levels of a given structural framework. Note that some lithiation levels presented in this section may be outside the desired range of voltage, stability, or safety. More details are given in the 'Voltage pair properties' section.
@@ -108,12 +110,12 @@ $GII=\sqrt{\frac{\sum_{i=1}^{N}[(V(i)-V_{id}(i))^2]}{N}}$
 
 The "global instability index" GII as defined by Salinas-Sanchez et al. is commonly used to quantify the plausibility of structure models. Essentially it represents a root mean square average deviation of the observed bond valence sums V(i) for all unique atoms i from the expectation values Vid(i) (i.e. the absolute value of the oxidation state) in a crystal structure:
 ## References
-[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
-[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
+[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [doi:10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
+[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [doi:10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
 [^3]: S. Adams, Solid State Ionics 177, 1625 (2006).  
 [^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).  
 [^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).  
-[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
+[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [doi:10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
 ## Authors
 1. Shyue Ping Ong
 2. Anubhav Jain
