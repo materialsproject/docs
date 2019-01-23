@@ -19,10 +19,10 @@ Computation-Ready, Experimental MOF database was constructed by a collaboration 
 
 #### Key Assumptions in Creating the CoRE MOF Database
 1. Stoichiometry information provided by the CSD is correct. Crystal structures were categorized and processed based on the stoichiometry text information provided by the CSD.
-  1. If the stoichiometry string for a given structure did not contain commas, we assumed that the structure does not contain additional species (solvents or ions) apart from the MOF framework.
-  2. If the stoichiometry string did not contain "+" or "-" signs, we assumed that the structure does not contain ionic species.
+    1. If the stoichiometry string for a given structure did not contain commas, we assumed that the structure does not contain additional species (solvents or ions) apart from the MOF framework.
+    2. If the stoichiometry string did not contain "+" or "-" signs, we assumed that the structure does not contain ionic species.
 2. The disorder information provided by the CSD gives complete information about the presence of disorder in the crystal structure.
-  We assume that the structures without such text do not contain any disorder and represent the pristine crystal structure as reported in the literature.
+    We assume that the structures without such text do not contain any disorder and represent the pristine crystal structure as reported in the literature.
 
 #### Database Construction Procedure
 Four steps were taken to extract the crystal structures from the CSD and make them computation-ready:
