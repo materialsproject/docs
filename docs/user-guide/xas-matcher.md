@@ -23,9 +23,9 @@ Coming soon...
 
 ## References
 
-[^1] https://doi.org/10.1038/sdata.2018.151
+[^1]: https://doi.org/10.1038/sdata.2018.151
 
-[^2] http://dx.doi.org/10.1038/s41524-018-0067-x
+[^2]: http://dx.doi.org/10.1038/s41524-018-0067-x
 
 ## Authors
 
