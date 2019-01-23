@@ -1,6 +1,6 @@
 # XAS Matcher
 ## Overview
-We have computed X-Ray Absorption (XAS) spectra for over half of the materials in our database, and this number is growing. In particular, we have computed XANES K-edge spectra using the FEFF code. Read more about our methodology for computing spectra here (link to X-Ray Absorption Spectra page) and at the first reference below. We are also in the process of computing other kinds of spectra. This page focuses on use of our app for comparing computed x-ray absorption spectra and automatically matching our spectra against user-uploaded experimental spectra.
+We have computed X-Ray Absorption (XAS) spectra for over half of the materials in our database, and this number is growing. In particular, we have computed XANES K-edge spectra using the FEFF code. Read more about our methodology for computing spectra [here](xray-absorption-spectra) and at the first reference below. We are also in the process of computing other kinds of spectra. This page focuses on use of our app for comparing computed x-ray absorption spectra and automatically matching our spectra against user-uploaded experimental spectra.
 
 Reference for database and validation: [^1]
 
