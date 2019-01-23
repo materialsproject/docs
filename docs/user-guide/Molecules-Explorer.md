@@ -1,14 +1,15 @@
 # Molecules Explorer
 
 ## Release Notes
-Recent changes
-Version 0.1 - July 16, 2016
-Initial release of Molecules Explorer.
+### Recent changes
+#### Version 0.1 - July 16, 2016
+* Initial release of Molecules Explorer.
 
 ## Introduction
 The primary goal of the molecular explorer is to report the atomic structure of molecules, found using quantum chemistry computational methods. Further quantities of interest, including the electron affinity (EA) and ionization energies (IE), are also reported.
 
 ## Manual
+* Molecular Glossary of Terms
 
 ## Calculations
 The methodology used to compute the atomic structure is a standard quantum chemical approach. This involves solving Schrodinger’s equation using both a linear combination of atomic orbitals (LCAO) with a relevant functional to address the question of the potential. The LCAO were implemented with the use of the 6-31+* Pople basis [1] and the hybrid-functional B3LYP was used [2].
