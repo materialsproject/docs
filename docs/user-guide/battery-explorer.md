@@ -37,7 +37,13 @@ You can click the blue links in any of the search results to see a detailed summ
 The details view has many components: 
 
 ### Voltage curve
+
+The voltage curve graph displays the calculated equilibrium voltage versus state of charge. If voltage criteria were specified in the query, the line might be segmented into different colors. The green portion of the curve matches the query, whereas the the blue portion of the curve does not. 
+
 ### O<sub>2</sub> evolution curve
+
+One concern for cathode design is resistance to O2 release, as O2 release from the cathode can lead to thermal runaway. The O2 evolution diagram determines the equilibrium chemical potentials at which O2 release can be expected, and the amount of O2 released[1][2]. One way to read this chart is to look at the chemical potential at which O2 release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to O2 release. Note that the O2 release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The muO2 needed for release can be referenced against common binary systems to get an idea of stability to O2 release: 
+
 ### Overall materials properties
 ### Voltage pair properties
 ## Diffusion data
