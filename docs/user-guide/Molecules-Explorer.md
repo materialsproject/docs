@@ -18,7 +18,7 @@ The methodology used to compute the atomic structure is a standard quantum chemi
 In order to search the database for the molecule in question, four methods can be employed. 
 1) Elements : returns any entry that includes the queried elements 
 2) Formula : returns any entry that satisfies a permutation of the queried atoms (e.g. H2O1, H2O, HOH, OHH all return water) 
-3) InChi (The IUPAC International Chemical Identifier): uses “bond connectivity, tautomeric information, isotope information, stereochemistry, and electronic charge information.” (See InChI Wikipedia) This may be the most precise way of searching for a molecule but perhaps the most complicated. 
+3) InChi (The IUPAC International Chemical Identifier): uses “bond connectivity, tautomeric information, isotope information, stereochemistry, and electronic charge information.” (See [InChI Wikipedia](https://en.wikipedia.org/wiki/International_Chemical_Identifier)) This may be the most precise way of searching for a molecule but perhaps the most complicated. 
 4) Chem Doodle: allows drawing of the chemical structure to query for the database entry (currently not supported on Firefox) 
 
 ## References
