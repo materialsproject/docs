@@ -27,6 +27,7 @@ nav:
 
 theme:
   name: 'material'
+  custom_dir: docs/custom_dir
 
 # Extensions
 markdown_extensions:
@@ -35,3 +36,4 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - footnotes
