@@ -5,7 +5,7 @@
 ## The Search Result Table
 ## Viewing Details of a battery compound
 ### Voltage curve
-### O2 evolution curve
+### O<sub>2</sub> evolution curve
 ### Overall materials properties
 ### Voltage pair properties
 ## Diffusion data
