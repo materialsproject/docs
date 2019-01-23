@@ -181,7 +181,7 @@ Example responses:
 Obtain experimental thermochemical information based on an formula. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The associative arrays are pymatgen ThermoData objects in json representation.
 
 Example response: 
-1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3 exp.txt](/static/mapi/Fe2O3_exp.txt "File:Fe2O3 exp.txt")
+1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3_exp.txt](/static/mapi/Fe2O3_exp.txt "File:Fe2O3_exp.txt")
 
 #### tasks (detailed calculation data)
 
