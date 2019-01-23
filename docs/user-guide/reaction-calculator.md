@@ -15,7 +15,7 @@ Version 0.1 - Mar 6, 2011
   
 ## Manual
 ### Overview
-The reaction calculator allows users to estimate tens of thousands solid-state reaction enthalpies from a database of density functional theory calculations. In addition, the reaction calculator reports known experimental enthalpies (at 298K and 1atm) where available.
+The reaction calculator allows users to estimate tens of thousands solid-state reaction enthalpies from a database of density functional theory calculations. In addition, the reaction calculator reports known experimental enthalpies (at 298 K and 1 atm) where available.
 
 The reaction calculator's energies are generally a good estimate of room temperature formation enthalpies, although all calculations are performed at 0 K and 0 atm. More information regarding methods to perform the calculations and their accuracy can be found in the Calculations Manual.
 
@@ -30,9 +30,9 @@ For each chemical formula, our database automatically selects the lowest energy 
 There are several ways of specifying the chemical formula (examples follow). In all cases, element names should have only the first letter capitalized.
 
   * **Reactants** - enter in this field a '+'-separated list of chemical formulas for the desired reactants.
-    1. Usage example: $\ce{Li + O + P + Fe}$
-    2. Usage example: $\ce{Li2O + Fe2O3 + P2O5 + O}$
-    3. Usage example: $\ce{LiFePO4}$
+    1. Usage example: Li + O + P + Fe
+    2. Usage example: Li2O + Fe2O3 + P2O5 + O
+    3. Usage example: LiFePO4
   * **Products** - enter in this field a '+'-separated list of chemical formulas for the desired products (same format as 'Reactants')
   
 The reaction energy will always be normalized for the reaction shown in the output.
