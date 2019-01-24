@@ -16,18 +16,17 @@ With an uploaded spectrum and after matching, the <em>P</em><sub>softmax</sub> c
 
 ### Uploading Spectra
 
-Spectra files should have two values per line, separated by a standard delimiter like a comma or tab character. Comment lines (beginning with a '#' are allowed and will be ignored by the parser. The first value on each line should be the energy in units of eV. The second value, the absorption coefficient of arbitrary units, will be max-value normalized for plotting and matching.
+Spectra files should have two values per line, separated by a standard delimiter like a comma or tab character. Comment lines (beginning with a '#') are allowed and will be ignored by the parser. The first value on each line should be the energy in units of eV. The second value, the absorption coefficient of arbitrary units, will be max-value normalized for plotting and matching.
 
 ## How Matching Works
 Coming soon...
-
-## References
-
-[^1]: https://doi.org/10.1038/sdata.2018.151
-
-[^2]: http://dx.doi.org/10.1038/s41524-018-0067-x
 
 ## Authors
 
 * Donny Winston
 * Chen Zheng
+
+## References
+[^1]: https://doi.org/10.1038/sdata.2018.151
+[^2]: http://dx.doi.org/10.1038/s41524-018-0067-x
+

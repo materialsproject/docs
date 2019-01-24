@@ -1,9 +1,9 @@
 # X-Ray Absorption Spectra
 ## Methodology
 
-All the spectra(only K-edge XANES currently) were computed using the [FEFF](http://leonardo.phys.washington.edu/index-feffproject.html) code. For each structure, spectra were computed with each symmetrically unique site 
+All the spectra (only K-edge XANES currently) were computed using the [FEFF](http://leonardo.phys.washington.edu/index-feffproject.html) code. For each structure, spectra were computed with each symmetrically unique site 
 in the structure as the absorbing site. The workflow used for the calculations can be found in the open source comprehensive materials science 
-workflow package, [Atomate](https://github.com/hackingmaterials/atomate) in the <code>atomate.feff</code> namespace. The package leverages [Pymatgen](https://github.com/materialsproject/pymatgen) and 
+workflow package, [Atomate](https://github.com/hackingmaterials/atomate) [^1] in the <code>atomate.feff</code> namespace. The package leverages [Pymatgen](https://github.com/materialsproject/pymatgen) and 
 [Fireworks](https://github.com/materialsproject/fireworks) packages for the generation of the input/output files for the calculations and for the workflow 
 execution management respectively.
 

@@ -23,6 +23,7 @@ nav:
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
         - 'Structure Predictor': 'user-guide/structure-predictor.md'
+        - 'XAS Matcher': 'user-guide/xas-matcher.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
