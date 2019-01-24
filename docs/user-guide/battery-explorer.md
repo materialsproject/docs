@@ -77,15 +77,18 @@ The determination of the empirical bond valence parameters R0 and b is based on 
 ## Bond valence site energy calculation
 A natural way to combine the bond valence approach with penalty functions for repulsions between the mobile and immobile cation types is to use Coulomb repulsion, but then the bond valence mismatch term also has to be expressed in energy units. In reference[^4] we discuss in detail an effective way to translate the squared bond valence (sum) mismatches into approximate a Morse-type bond valence site energy for the mobile ion[^5]. The approach automatically includes bond asymmetry penalties (for details and a table of the employed parameters see reference Adams & Rao[^6]). In brief, the bond valence site energy E(Li) for a cation Li at a given position is calculated from the position of its N anion neighbours Xj (j = 1,…,N) and P immobile cations is calculated as:
 
-$E(Li)=\sum_{j=1}^{N}\{{\frac{D_{Li-X_j}}{s^2_{min,Li-X_j}}(exp[\frac{R_{o,Li-X_j}-R_{Li-X_j}}{b_{Li-X_j}}]-s_{min,Li-X_j})^2-D_{Li-X_j}}\}+E_{Coulomb}$
+$$
+E(Li)=
+\sum_{j=1}^{N}\{{\frac{D_{Li-X_j}}{s^2_{min,Li-X_j}}(\exp[\frac{R_{o,Li-X_j}-R_{Li-X_j}}{b_{Li-X_j}}]-s_{min,Li-X_j})^2-D_{Li-X_j}}\}+E_{Coulomb}
+$$
 
 where
-* $R_{Li-X_j} is the distance between the central Li+ cation and the neighbouring anion $X_j$
-* $R_{0,Li-X_j} and $b_{Li-X_j} are the tabulated bond valence parameters for the interaction between a Li cation and anions of type $X_j$
-*$s_{min,Li-X_j}$ is the bond valence for the equilibrium bond distance $R_{min,Li-X_j}$ which itself is estimated from the bond valence parameters, the tabulated preferred coordination number NC and the absolute softnesses σ of the respective ions using the empirical formula:
-$R_{min,Li-X_j}=R_{0,Li-X_j}*[0.9185+0.2285*|\sigma{}_{Li}-\sigma{}_{X}|]-b_{0,Li-X_j}$
+* \(R_{Li-X_j\) is the distance between the central Li+ cation and the neighbouring anion $X_j$
+* \(R_{0,Li-X_j}\) and \(b_{Li-X_j}\) are the tabulated bond valence parameters for the interaction between a Li cation and anions of type \(X_j\)
+*$s_{min,Li-X_j}$ is the bond valence for the equilibrium bond distance \(R_{min,Li-X_j}\) which itself is estimated from the bond valence parameters, the tabulated preferred coordination number NC and the absolute softnesses σ of the respective ions using the empirical formula:
+\(R_{min,Li-X_j}=R_{0,Li-X_j}*[0.9185+0.2285*|\sigma{}_{Li}-\sigma{}_{X}|]-b_{0,Li-X_j}\)
 * The bond dissociation energy $D_{Li-X_j}$ is estimated from
-$D_{Li-X_j}=14.4\frac{eV}{\AA}*\frac{1*V_{id}(X_j)}{R_{min,Li-X_j}\sqrt{n_{Li}n_{X_j}}}*\frac{b^2_{Li-X_j}}{2}$
+\(D_{Li-X_j}=14.4\frac{eV}{\AA}*\frac{1*V_{id}(X_j)}{R_{min,Li-X_j}\sqrt{n_{Li}n_{X_j}}}*\frac{b^2_{Li-X_j}}{2}\)
 
 with $nLi$, $nXj$ representing the principal quantum numbers of $Li^+$ and the anion $X_j$; $V_{id}(X_j)$ the absolute value off the nominal charge of anion $X_j$ ($V_{id}(X_j)=1$). Note that a slightly different formula for calculation the dissociation energy applies to transition metal cations.  
 *the screened Coulomb repulsion between Li and an the P surrounding immobile cations Mi (i=1,…,P) is
