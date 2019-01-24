@@ -52,7 +52,7 @@ The overall materials properties display aggregate or average properties over al
 
 ### Voltage pair properties
 
-This table displays calculated data for each voltage step along the voltage profile. 
+This table displays calculated data for each voltage step along the voltage profile.
 
 ## Diffusion data
 The battery diffusion data shown in the Materials Project differs from other data in that it is computed with classical approaches rather than first-principles approaches. In particular, the accuracy of these methods are lower than Density Functional Theory calculations, and in general they are used to make qualitative rather than quantitative predictions. We review the important concepts for understanding the diffusion data in this section.
