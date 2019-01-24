@@ -23,6 +23,7 @@ nav:
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
         - 'Structure Predictor': 'user-guide/structure-predictor.md'
+        - 'Phase Diagram': 'user-guide/phase-diagram.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
