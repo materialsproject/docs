@@ -13,9 +13,11 @@ For a comprehensive listing of all criteria available for advanced queries via t
 ## Resources
 In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction). Currently supported information types (v2 of the REST API) include the following:
 
-Materials - Standard calculated or experimental information about a material.
-Battery - Battery application specific information
-Reaction - Information about a reaction.
+Materials - Standard calculated or experimental information about a material.  
+
+Battery - Battery application specific information. 
+
+Reaction - Information about a reaction.  
 
 
 ## Authentication
