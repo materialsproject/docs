@@ -33,6 +33,7 @@ To access the Materials API, you will need your API key, except for certain free
 Note that the API key effectively allows access to Materials Project data via your account. You should therefore make all efforts to keep it secret and under no circumstances should you share your API key with anyone. You will be held responsible for any violations conducted using your API key. Should anyone else require access to the MAPI, they should register for an account on the Materials Project and generate their own API keys.
 
 All MP https requests must supply API key as:
+
 * A x-api-key header, e.g., {‘X-API-KEY’: ‘YOUR_API_KEY’} (recommended method) or
 * As a GET (e.g., ?API_KEY=YOUR_API_KEY) or POST variable, e.g., {‘API_KEY’: ‘YOUR_API_KEY’}
 
