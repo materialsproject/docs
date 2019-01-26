@@ -13,11 +13,11 @@ For a comprehensive listing of all criteria available for advanced queries via t
 ## Resources
 In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction). Currently supported information types (v2 of the REST API) include the following:
 
-Materials - Standard calculated or experimental information about a material.  
+**Materials** - Standard calculated or experimental information about a material.  
 
-Battery - Battery application specific information. 
+**Battery** - Battery application specific information. 
 
-Reaction - Information about a reaction.  
+**Reaction** - Information about a reaction.  
 
 
 ## Authentication
@@ -171,11 +171,11 @@ A property may be specified to request a specific subset of information. If no p
 
 Example responses:
 
-1. `https://www.materialsproject.org/rest/v1/materials/24972/vasp`: [File:24972.txt](/static/mapi/24972)
-2. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/vasp`: [File:Fe2O3.txt](/static/mapi/Fe2O3)
-3. `https://www.materialsproject.org/rest/v1/materials/Li-Fe-O/vasp`: [File:Li-Fe-O.txt](/static/mapi/Li-Fe-O)
-4. `https://www.materialsproject.org/rest/v1/materials/TiO2/vasp/energy`: [File:TiO2_energy.txt](/static/mapi/TiO2_energy)
-5. `https://www.materialsproject.org/rest/v1/materials/C/vasp/structure`: [File:C_structure.txt](/static/mapi/C_structure)
+1. `https://www.materialsproject.org/rest/v1/materials/24972/vasp`: [File:24972.txt](/static/mapi/24972.txt)
+2. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/vasp`: [File:Fe2O3.txt](/static/mapi/Fe2O3.txt)
+3. `https://www.materialsproject.org/rest/v1/materials/Li-Fe-O/vasp`: [File:Li-Fe-O.txt](/static/mapi/Li-Fe-O.txt)
+4. `https://www.materialsproject.org/rest/v1/materials/TiO2/vasp/energy`: [File:TiO2_energy.txt](/static/mapi/TiO2_energy.txt)
+5. `https://www.materialsproject.org/rest/v1/materials/C/vasp/structure`: [File:C_structure.txt](/static/mapi/C_structure.txt)
 
 #### materials (experimental data)
 
@@ -184,7 +184,7 @@ Example responses:
 Obtain experimental thermochemical information based on an formula. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The associative arrays are pymatgen ThermoData objects in json representation.
 
 Example response: 
-1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3_exp.txt](/static/mapi/Fe2O3_exp)
+1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3_exp.txt](/static/mapi/Fe2O3_exp.txt)
 
 #### tasks (detailed calculation data)
 

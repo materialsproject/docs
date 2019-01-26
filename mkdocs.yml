@@ -21,6 +21,8 @@ nav:
     - User Reference - Website:
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
+    - User Reference - APIs:
+        - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
