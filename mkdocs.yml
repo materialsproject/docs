@@ -19,8 +19,13 @@ nav:
         - 'Equations of State': 'methodology/equations-of-state.md'
         - 'Phonons': 'methodology/phonons.md'
     - User Reference - Website:
+        - 'Crystal Toolkit': 'user-guide/crystal-toolkit.md'
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
+        - 'Structure Predictor': 'user-guide/structure-predictor.md'
+        - 'XAS Matcher': 'user-guide/xas-matcher.md'
+        - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
+        - 'Glossary': 'user-guide/glossary-of-terms.md'
     - User Reference - APIs:
         - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
     - Contribution:
@@ -28,6 +33,7 @@ nav:
 
 theme:
   name: 'material'
+  custom_dir: docs/custom_dir
 
 # Extensions
 markdown_extensions:
@@ -36,3 +42,4 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - footnotes
