@@ -42,9 +42,9 @@ The voltage curve graph displays the calculated equilibrium voltage versus state
 
 ### O<sub>2</sub> evolution curve
 
-One concern for cathode design is resistance to $\ce{O2}$ release, as $\ce{O2}$ release from the cathode can lead to thermal runaway. The $\ce{O2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O2}$ release can be expected, and the amount of $\ce{O2}$ released[^1][^2]. One way to read this chart is to look at the chemical potential at which $\ce{O2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which $\ce{O2}$ release begins at more negative $\mu_{\ce{O2}}$ are more stable with respect to $\ce{O2}$ release. Note that the $\ce{O2}$ release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The muO2 needed for release can be referenced against common binary systems to get an idea of stability to $\ce{O2}$ release:
+One concern for cathode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from the cathode can lead to thermal runaway. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released[^1][^2]. One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. Note that the $\ce{O_2}$ release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The $\mu_\ce{O_2}$ needed for release can be referenced against common binary systems to get an idea of stability to $\ce{O_2}$ release:
 
-![](./img/battery/battery_Muoscale.gif)
+![](/user-guide/img/battery/battery_Muoscale.gif)
 
 ### Overall materials properties
 
@@ -52,7 +52,7 @@ The overall materials properties display aggregate or average properties over al
 
 ### Voltage pair properties
 
-This table displays calculated data for each voltage step along the voltage profile. 
+This table displays calculated data for each voltage step along the voltage profile.
 
 ## Diffusion data
 The battery diffusion data shown in the Materials Project differs from other data in that it is computed with classical approaches rather than first-principles approaches. In particular, the accuracy of these methods are lower than Density Functional Theory calculations, and in general they are used to make qualitative rather than quantitative predictions. We review the important concepts for understanding the diffusion data in this section.
@@ -69,30 +69,38 @@ The sites table lists all identified local minima of E(Li) in the structure and 
 
 The paths table lists the connections between site pairs, their activation energy. It also includes information regarding the contribution to the long range pathways listed above.
 ## Classical bond valence method
-Empirical relationships between bond length RA-X and the so-called bond valence sA-X= exp[(R0-RA-X)/b] are widely used in crystal chemistry to identify plausible equilibrium sites for an atom in a structure as sites, where the bond valence sum V(A) of A from interactions with all its surrounding counterions X matches its oxidation state.[^3]
+Empirical relationships between bond length $R_{\rm A-X}$ and the so-called bond valence $s_{\rm A-X}= \exp[(R_0-R_{\rm A-X})/b]$ are widely used in crystal chemistry to identify plausible equilibrium sites for an atom in a structure as sites, where the bond valence sum V(A) of A from interactions with all its surrounding counterions X matches its oxidation state.[^3]
 
-A few years ago, we introduced a systematic adjustment of the bond valence parameter b to bond softness.[^4] Together with the inclusion of the weak interactions beyond the first coordination shell, this makes it possible to extend the application range of the bond valence method to assess also non-equilibrium sites more adequately and therefrom to predict pathways for mobile ions in models of local structures as regions in a structure model where the bond valence sum V(A) deviates only marginally from the ideal valence Vid(A) (i.e., its oxidation state). To enhance chemical plausibility of such bond valence mismatch landscapes |ΔV(A)| penalty functions have been introduced that (i) discriminate against sites, where a matching V(A) is achieved by strongly asymmetric coordinations and (ii) exclude sites close to other immobile cation types.
+A few years ago, we introduced a systematic adjustment of the bond valence parameter b to bond softness.[^4] Together with the inclusion of the weak interactions beyond the first coordination shell, this makes it possible to extend the application range of the bond valence method to assess also non-equilibrium sites more adequately and therefrom to predict pathways for mobile ions in models of local structures as regions in a structure model where the bond valence sum V(A) deviates only marginally from the ideal valence V<sub>id</sub>(A) (i.e., its oxidation state). To enhance chemical plausibility of such bond valence mismatch landscapes $\|\Delta V(A)\|$ penalty functions have been introduced that (i) discriminate against sites, where a matching V(A) is achieved by strongly asymmetric coordinations and (ii) exclude sites close to other immobile cation types.
 
 The determination of the empirical bond valence parameters R0 and b is based on fits to large sets of experimental reference structures. Thus it may be expected that their application to ab initio structure models (with typically slightly larger unit cell volumes) causes a somewhat reduced accuracy of the approach.
+
 ## Bond valence site energy calculation
 A natural way to combine the bond valence approach with penalty functions for repulsions between the mobile and immobile cation types is to use Coulomb repulsion, but then the bond valence mismatch term also has to be expressed in energy units. In reference[^4] we discuss in detail an effective way to translate the squared bond valence (sum) mismatches into approximate a Morse-type bond valence site energy for the mobile ion[^5]. The approach automatically includes bond asymmetry penalties (for details and a table of the employed parameters see reference Adams & Rao[^6]). In brief, the bond valence site energy E(Li) for a cation Li at a given position is calculated from the position of its N anion neighbours Xj (j = 1,…,N) and P immobile cations is calculated as:
 
 $$
-E(Li)=
-\sum_{j=1}^{N}\{{\frac{D_{Li-X_j}}{s^2_{min,Li-X_j}}(\exp[\frac{R_{o,Li-X_j}-R_{Li-X_j}}{b_{Li-X_j}}]-s_{min,Li-X_j})^2-D_{Li-X_j}}\}+E_{Coulomb}
+E(Li)=\sum_{j=1}^{N}\{{\frac{D_{Li-X_j}}{s^2_{min,Li-X_j}}(exp[\frac{R_{o,Li-X_j}-R_{Li-X_j}}{b_{Li-X_j}}]-s_{min,Li-X_j})^2-D_{Li-X_j}}\}+E_{Coulomb}
 $$
 
 where
-* \(R_{Li-X_j\) is the distance between the central Li+ cation and the neighbouring anion $X_j$
-* \(R_{0,Li-X_j}\) and \(b_{Li-X_j}\) are the tabulated bond valence parameters for the interaction between a Li cation and anions of type \(X_j\)
-*$s_{min,Li-X_j}$ is the bond valence for the equilibrium bond distance \(R_{min,Li-X_j}\) which itself is estimated from the bond valence parameters, the tabulated preferred coordination number NC and the absolute softnesses σ of the respective ions using the empirical formula:
-\(R_{min,Li-X_j}=R_{0,Li-X_j}*[0.9185+0.2285*|\sigma{}_{Li}-\sigma{}_{X}|]-b_{0,Li-X_j}\)
+
+* $R_{\ce{Li}-X_j}$ is the distance between the central $\ce{Li^+}$ cation and the neighbouring anion $X_j$
+
+* $R_{0,\ce{Li}-X_j}$ and $b_{\ce{Li}-X_j}$ are the tabulated bond valence parameters for the interaction between a Li cation and anions of type $X_j$
+
+* $s_{min,Li-X_j}$ is the bond valence for the equilibrium bond distance $R_{min,Li-X_j}$ which itself is estimated from the bond valence parameters, the tabulated preferred coordination number NC and the absolute softnesses σ of the respective ions using the empirical formula:
+$$
+R_{min,Li-X_j}=R_{0,Li-X_j}[0.9185+0.2285\times|\sigma_{Li}-\sigma_{X}|]-b_{0,Li-X_j}
+$$
+
+
 * The bond dissociation energy $D_{Li-X_j}$ is estimated from
-\(D_{Li-X_j}=14.4\frac{eV}{\AA}*\frac{1*V_{id}(X_j)}{R_{min,Li-X_j}\sqrt{n_{Li}n_{X_j}}}*\frac{b^2_{Li-X_j}}{2}\)
+$D_{Li-X_j}=14.4\frac{eV}{Å}\frac{V_{id}(X_j)}{R_{min,Li-X_j}\sqrt{n_{Li}n_{X_j}}}\frac{b^2_{Li-X_j}}{2}$
 
 with $nLi$, $nXj$ representing the principal quantum numbers of $Li^+$ and the anion $X_j$; $V_{id}(X_j)$ the absolute value off the nominal charge of anion $X_j$ ($V_{id}(X_j)=1$). Note that a slightly different formula for calculation the dissociation energy applies to transition metal cations.  
-*the screened Coulomb repulsion between Li and an the P surrounding immobile cations Mi (i=1,…,P) is
-$E_{Coulomb}=\frac{1}{4\pi\epsilon{}_0}\sum_{i=1}^{P}[\frac{q_{Li}q_{M_i}}{R_{Li-M_i}}erfc(\frac{R_{Li-M_i}}{\rho{}_{Li-M_i}}]$
+
+* the screened Coulomb repulsion between Li and an the P surrounding immobile cations Mi (i=1,…,P) is
+$E_{Coulomb}=\frac{1}{4\pi\epsilon_0}\sum_{i=1}^{P}[\frac{q_{Li}q_{M_i}}{R_{Li-M_i}}erfc(\frac{R_{Li-M_i}}{\rho_{Li-M_i}})]$
 using fractional charges, where the systematic assignment of context sensitive fractional charges again involves the inverse square root of the principal quantum number as a scaling factor (for details see[^4]). The screening factor ρLi-Mi is assumed to equal the sum of the covalent radii of the two ions involved times a scaling factor f that depends on the average absolute cation electronegativity and the average cation charge in the compound. Typical values of f in ternary and quaternary lithium oxides fall into the range 0.74±0.04 and thereby ρ is of the order of 2 Å.
 
 These calculations are repeated for a dense grid of points covering the unit cell (grid size ca. 0.1 Å) and pathways of low activation are identified as regions in the structure for which E(Li) assumes low values. It should be noted that the inclusion of weak interactions to counter-ions beyond the first coordination shell is indispensable for such a modeling ion transport to avoid artifacts when an ion moves across the border of its coordination shell. To limit computation-nal effort the well-converging E(Li) calculation can be cut off at a distance of 5 – 8 Å depending on the atom size and bond softness.
