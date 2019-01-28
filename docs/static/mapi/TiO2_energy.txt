@@ -1,0 +1,60 @@
+{
+    "created_at": "2012-08-30T03:09:51.273521", 
+    "version": {
+        "pymatgen": "2.2.1dev", 
+        "db": "2012.07.09", 
+        "rest": "1.0"
+    }, 
+    "valid_response": true, 
+    "copyright": "Copyright 2012, The Materials Project", 
+    "response": [
+        {
+            "energy": -105.53538843, 
+            "material_id": 25434
+        }, 
+        {
+            "energy": -26.4601124, 
+            "material_id": 25433
+        }, 
+        {
+            "energy": -105.53596712, 
+            "material_id": 25263
+        }, 
+        {
+            "energy": -105.53608265, 
+            "material_id": 25262
+        }, 
+        {
+            "energy": -105.53571656, 
+            "material_id": 25334
+        }, 
+        {
+            "energy": -106.89659362, 
+            "material_id": 430
+        }, 
+        {
+            "energy": -106.96996255, 
+            "material_id": 9173
+        }, 
+        {
+            "energy": -214.88106624, 
+            "material_id": 1840
+        }, 
+        {
+            "energy": -107.30373862, 
+            "material_id": 1439
+        }, 
+        {
+            "energy": -53.61979397, 
+            "material_id": 2657
+        }, 
+        {
+            "energy": -53.80383122, 
+            "material_id": 390
+        }, 
+        {
+            "energy": -53.75637567, 
+            "material_id": 34688
+        }
+    ]
+}
