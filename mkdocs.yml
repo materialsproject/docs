@@ -30,6 +30,7 @@ nav:
         - 'Battery Explorer': 'user-guide/batteries-explorer.md'
         - 'Glossary': 'user-guide/glossary-of-terms.md'
         - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
+        - 'Nanoporous Explorer': 'user-guide/nanoporous-explorer.md'
     - Database Updates: 'database-updates.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
