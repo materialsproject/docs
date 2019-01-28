@@ -26,6 +26,7 @@ Computation-Ready, Experimental MOF database was constructed by a collaboration 
 
 #### Database Construction Procedure
 Four steps were taken to extract the crystal structures from the CSD and make them computation-ready:
+
 1. Removal of free solvents and coordinated solvents.
 2. Judicious retention of charge-balancing ions in the framework atoms to make the crystal charge neutral.
 3. Text Mining to recover structures with no framework disorder.
@@ -41,7 +42,7 @@ All bonded components in the molecular graph of each structure other than the MO
 Many MOF structures with associated charge-balancing ions also contain undesirable neutral solvent molecules. To discriminate between ionic species and neutral solvent molecules, the elemental compositions of the bonded components in a molecular graph of each structure were compared to the chemical formulas reported by the CSD using an in-house python script. The bonded components are the independent “molecules” within each structure; these include the MOF framework, the ionic species, and any neutral solvent molecules. The bonded components with elemental compositions matching the composition of the ions reported by the CSD were exempted from deletion in the solvent removal step.
 
 ### Hypothetical MOFs
-Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2} separation[^3], Xe/Kr separation[^4], and hydrogen storage applications[^5].
+Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation[^3], Xe/Kr separation[^4], and hydrogen storage applications[^5].
 
 #### Building Blocks
 A novel, bottom-up algorithm was developed to speed up structure enumeration. One hundred and two building blocks with varying degree of geometry and number of acids sites (e.g., COOH- sites) were used. The building blocks are divided into three main groups: metal nodes, organic linkers, and functional groups. Table 1 and Figure 1 summarizes the building blocks used in structure generation algorithm for Ref. [^1].
@@ -71,7 +72,7 @@ The obtained Henry’s constant can be used to calculate the free energy of adso
 $$A_{ads}=-RT\text{ln}(RT{\rho}_sK_H)$$ Eq.2
 
 #### Application to Large-scale screening
-Recently, the ratio of Henry’s constant has been used to rapidly assess the materials selectivity of one molecule over another (e.g., $\ce{CO2}$ over $\ce{H2}$). Examples of such studies in literature include work by Haldoupis, et. al ($\ce{CO2}$/$\ce{H2}$)[^13] and Watanabe, et. al. ($\ce{CO2}/$\ce{N2}$)[^14].
+Recently, the ratio of Henry’s constant has been used to rapidly assess the materials selectivity of one molecule over another (e.g., $\ce{CO2}$ over $\ce{H2}$). Examples of such studies in literature include work by Haldoupis, et. al ($\ce{CO2}$/$\ce{H2}$)[^13] and Watanabe, et. al. ($\ce{CO2}$/$\ce{N2}$)[^14].
 
 ### Absorption Isotherms
 In porous materials, such as zeolites, metal-organic frameworks (MOFs), and porous polymer networks (PPNs), adsorption is the physical adsorption of molecules from a gas or liquid phase onto the solid surface, such as pore wall. An adsorption isotherm is the loading of adsorbate as a function of pressure and/or composition at a given temperature in thermodynamic equilibrium. Adsorption isotherms are sometimes normalized by the mass or volume of the adsorbent to allow comparison of the adsorption capacity of different materials.  Adsorption isotherms are fundamental in characterizing the suitability of nanoporous materials for gas storage and separation applications. Experimentally measured nitrogen and argon isotherms are used to determine the surface area and pore size distribution of nanoporous materials [^15].
@@ -109,15 +110,28 @@ A series of pore descriptors have been proposed in the literature as way of quan
 * Pore Limiting Diameter (PLD): Is defined as the smallest opening along the pore that a molecule needs to cross in order to diffuse through this material. This quantity is also know as the largest free sphere. Reported in units of Å. 
 * Largest Cavity Diameter (LCD): Is defined as the largest opening along the pore. This quantity is also known as the largest included sphere. Reported in units of Å.
 * Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å.
-* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4} molecule using a sphere of radius 1.645 Å. Reported in units of $m^2/\text{cm}^3$
+* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $m^2/\text{cm}^3$
 
-All the pore descriptors have been calculated using the open source software Zeo++ (http://www.maciejharanczyk.info/Zeopp/about.html)
+All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html)
 
 ### P-XRD Patterns
 Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^23].
 PXRD pattern of a solid material is commonly recorded using a diffractometer. The results can be used to determine phase composition, unit cell lattice parameters, crystal structure, Texture/Orientation and crystalline size.
 
+## Authors
+* Jeffrey Camp
+* Greg Chung
+* Emmanuel Haldoupis
+* Dalar Nazarian
+* Tess Smidt
+
+##TODO
+* Add table
+* Add figures
+* Add reference doi's
+
 ## References
+
 [^1]: 
 [^2]:
 [^3]:
@@ -141,15 +155,3 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^21]:
 [^22]:
 [^23]:
-
-## Authors
-* Jeffrey Camp
-* Greg Chung
-* Emmanuel Haldoupis
-* Dalar Nazarian
-* Tess Smidt
-
-##TODO
-* Add table
-* Add figures
-* Add reference doi's
