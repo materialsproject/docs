@@ -4,15 +4,15 @@ Welcome to the Reaction Calculator wiki!
 You will find in here all relevant information regarding the Reaction Calculator, including release notes, the manual, etc.
 ## Release Notes
 
-Version 0.3 - May 13, 2011
+### Version 0.3 - May 13, 2011
   * Ability to select a particular crystal structure for the reaction via structureid
 
-Version 0.2 - Mar 31, 2011 
+### Version 0.2 - Mar 31, 2011 
   * Ability to select between three different energy adjustment strategies via a slider
 
-Version 0.1 - Mar 6, 2011 
+### Version 0.1 - Mar 6, 2011 
   * Initial release
-  
+
 ## Manual
 ### Overview
 The reaction calculator allows users to estimate tens of thousands solid-state reaction enthalpies from a database of density functional theory calculations. In addition, the reaction calculator reports known experimental enthalpies (at 298 K and 1 atm) where available.
@@ -43,9 +43,9 @@ This feature will be supported in a future release of the reaction calculator.
 #### Reading the output
 The reaction calculator balances the reaction and displays the balanced reaction as the first line in the output. The next line gives the computed reaction energy.
 
-When a computational energy is available, the computed ΔH of reaction indicates the overall reaction energy of the reaction as written in the first line of the output. The ΔHf for each compound in the reaction lists formation energies from the elements. Clicking the compound displays its crystal structure.
+When a computational energy is available, the computed $\delta H_{calculated}$ of reaction indicates the overall reaction enthalpy of the reaction as written in the first line of the output. The $\delta H_f$ for each compound in the reaction lists formation energies from the elements. Clicking the compound displays its crystal structure.
 
-When an experimental energy is available, the computed ΔH of reaction indicates the overall reaction enthalpy of the reaction as written in the first line of the output. The ΔHf for each compound in the reaction lists formation enthalpies from the elements. Sub-headings indicate the source(s) of experimental information.
+When an experimental energy is available, the computed $\delta H_{experimental}$ of reaction indicates the overall reaction enthalpy of the reaction. The $\delta H_f$ for each compound in the reaction lists formation enthalpies from the elements. The blue book graphic links to the source(s) of experimental information.
 
 When both computational and experimental data are available, a graphical chart displays the error for each compound in the calculation.
 
@@ -55,10 +55,10 @@ The Calculations Manual provides details on our calculation methodology and prov
 ### Citation
 To cite the reaction calculator, please reference the following works:
 
-  * A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T. Mueller, K.A. Persson, G. Ceder., A High-Throughput Infrastructure for Density Functional Theory Calculations, accepted for publication, Computational Materials Science. (2011).
-  * A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A. Persson, G. Ceder, Accurate Formation Enthalpies by Mixing GGA and GGA+U calculations, (to be submitted).
+  * Jain, A., Hautier, G., Moore, C. J., Ong, S. P., Fischer, C. C., Mueller, T., ... & Ceder, G. (2011). A high-throughput infrastructure for density functional theory calculations. Computational Materials Science, 50(8), 2295-2310.
+  * Jain, A., Hautier, G., Ong, S. P., Moore, C. J., Fischer, C. C., Persson, K. A., & Ceder, G. (2011). Formation enthalpies by mixing GGA and GGA+ U calculations. Physical Review B, 84(4), 045115.
 
 ### Authors
-  1. Anubhav Jain
-  2. Shyue Ping Ong
-  3. Charles Moore
+  * Anubhav Jain
+  * Shyue Ping Ong
+  * Charles Moore
