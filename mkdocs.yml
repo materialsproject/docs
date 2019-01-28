@@ -26,7 +26,7 @@ nav:
         - 'Structure Predictor': 'user-guide/structure-predictor.md'
         - 'XAS Matcher': 'user-guide/xas-matcher.md'
         - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
-        - 'Battery Explorer': 'user-guide/battery-explorer.md'
+        - 'Battery Explorer': 'user-guide/batteries-explorer.md'
         - 'Glossary': 'user-guide/glossary-of-terms.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
