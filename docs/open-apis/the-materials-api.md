@@ -13,9 +13,11 @@ For a comprehensive listing of all criteria available for advanced queries via t
 ## Resources
 In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction). Currently supported information types (v2 of the REST API) include the following:
 
-Materials - Standard calculated or experimental information about a material.
-Battery - Battery application specific information
-Reaction - Information about a reaction.
+**Materials** - Standard calculated or experimental information about a material.  
+
+**Battery** - Battery application specific information. 
+
+**Reaction** - Information about a reaction.  
 
 
 ## Authentication
@@ -31,6 +33,7 @@ To access the Materials API, you will need your API key, except for certain free
 Note that the API key effectively allows access to Materials Project data via your account. You should therefore make all efforts to keep it secret and under no circumstances should you share your API key with anyone. You will be held responsible for any violations conducted using your API key. Should anyone else require access to the MAPI, they should register for an account on the Materials Project and generate their own API keys.
 
 All MP https requests must supply API key as:
+
 * A x-api-key header, e.g., {‘X-API-KEY’: ‘YOUR_API_KEY’} (recommended method) or
 * As a GET (e.g., ?API_KEY=YOUR_API_KEY) or POST variable, e.g., {‘API_KEY’: ‘YOUR_API_KEY’}
 
@@ -181,7 +184,7 @@ Example responses:
 Obtain experimental thermochemical information based on an formula. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The associative arrays are pymatgen ThermoData objects in json representation.
 
 Example response: 
-1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3_exp.txt](/static/mapi/Fe2O3_exp.txt "File:Fe2O3_exp.txt")
+1. `https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp`: [File:Fe2O3_exp.txt](/static/mapi/Fe2O3_exp.txt)
 
 #### tasks (detailed calculation data)
 

@@ -26,8 +26,7 @@ nav:
         - 'XAS Matcher': 'user-guide/xas-matcher.md'
         - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
         - 'Glossary': 'user-guide/glossary-of-terms.md'
-    - Open APIs:
-        - 'Materials API': 'open-apis/the-materials-api.md'
+        - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
