@@ -162,7 +162,7 @@ mol atom.*
 
 To provide a quantitative indicator of the error we may expect from the
 reaction calculator, we have computed the reaction energies of ![413
-binaries](/methodology/KtablesBinaries.txt) in the Kubaschewski
+binaries](/methodology/static/KtablesBinaries.txt) in the Kubaschewski
 Tables formed with Group V, VI and VII anions. Figure 1 shows the errors
 in the calculated formation energies (compared to the experimental
 values) for these compounds. The mean absolute error (MAE) is around 14
