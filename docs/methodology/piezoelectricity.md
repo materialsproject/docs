@@ -1,7 +1,6 @@
 # Piezoelectricity Calculations
 
-Introduction
-============
+## Introduction
 
 Piezoelectricity is a reversible physical process that occurs in some
 materials whereby an electric moment is generated upon the application
@@ -15,7 +14,7 @@ when subjected to an electric field or a mechanical load.
 
 The piezoelectric constants from the Materials Project (MP) are
 calculated from first principles Density Functional Perturbation Theory
-(DFPT) \[1\] and are approximated as the superimposed effect of an
+(DFPT) [^1] and are approximated as the superimposed effect of an
 electronic and ionic contribution. From the full piezoelectric tensor,
 several properties are derived such as the maximum longitudinal
 piezoelectric modulus and the corresponding crystallographic direction.
@@ -23,19 +22,19 @@ Just as with the elastic constants, multiple consistency checks are
 performed on all the calculated piezoelectric data to ensure its
 reliability and accuracy.
 
-[thumb|right|500px|Figure 1: longitudinal piezoelectric modulus-surface
+![Cubic_pic1](/methodology/img/Cubic_pic1.png)
+*Figure 1: longitudinal piezoelectric modulus-surface
 for a cubic compound, showing the maximum response in the &lt;111&gt;
-family of directions.](image:cubic_pic1.png "wikilink")
+family of directions.*
 
-Formalism
-=========
+## Formalism
 
 In this work, we calculate the piezoelectric stress coefficients,
-\\(\textstyle e_{ijk}^{T}\\) from DFPT, with units of
+\\(\textstyle e\_{ijk}^{T}\\) from DFPT, with units of
 \\(\textstyle C/m^{2}\\). These can be defined in terms of thermodynamic
-derivatives as shown below \[2\].
+derivatives as shown below [^2].
 
-\\[e_{ijk}^{T}= \left(\frac{\partial D_{i}}{\partial \varepsilon_{jk}}\right)_{E, T} = -\left(\frac{\partial \sigma_{jk}}{\partial E_{i}}\right)_{\varepsilon, T} \!\\],
+\\[e\_{ijk}^{T}= \left(\frac{\partial D\_{i}}{\partial \varepsilon\_{jk}}\right)\_{E, T} = -\left(\frac{\partial \sigma\_{jk}}{\partial E\_{i}}\right)\_{\varepsilon, T} \\!\\],
 where \\(\textstyle D\\), \\(\textstyle E\\),
 \\(\textstyle \varepsilon\\), \\(\textstyle \sigma\\) and
 \\(\textstyle T\\) represent the electric displacement field, the
@@ -44,19 +43,19 @@ temperature, respectively.
 
 The above relations can be written in Voigt-notation as shown below.
 
-\\[e_{ij}^{T}= \left(\frac{\partial D_{i}}{\partial \varepsilon_{j}}\right)_{E, T} = -\left(\frac{\partial \sigma_{j}}{\partial E_{i}}\right)_{\varepsilon, T} \!\\]
+\\[e\_{ij}^{T}= \left(\frac{\partial D\_{i}}{\partial \varepsilon\_{j}}\right)\_{E, T} = -\left(\frac{\partial \sigma\_{j}}{\partial E\_{i}}\right)\_{\varepsilon, T} \\!\\]
 
 We note that the most commonly used piezoelectric constants appearing in
 the (experimental) literature are the piezoelectric strain constants,
-usually denoted by \\(\textstyle d_{ijk}\\). These can be readily
-related to the constants \\(\textstyle e_{ijk}\\) if the elastic
-compliances \\(\textstyle s_{lmjk}^{T}\\) (at constant electric field
+usually denoted by \\(\textstyle d\_{ijk}\\). These can be readily
+related to the constants \\(\textstyle e\_{ijk}\\) if the elastic
+compliances \\(\textstyle s\_{lmjk}^{T}\\) (at constant electric field
 and temperature) of the materials are known:
-\\(\textstyle d_{ijk}^{T} = e_{ilm} s_{lmjk}^{ET}\\). In particular, the
+\\(\textstyle d\_{ijk}^{T} = e\_{ilm} s\_{lmjk}^{ET}\\). In particular, the
 piezoelectric strain constants can be expressed thermodynamically as
 shown below
 
-\\[d_{kij}^{T} = \left(\frac{\partial \varepsilon_{ij}}{\partial E_{k}}\right)_{\sigma, T} = \left(\frac{\partial D_{k}}{\partial \sigma_{ij}}\right)_{E, T} \!\\]
+\\[d\_{kij}^{T} = \left(\frac{\partial \varepsilon\_{ij}}{\partial E\_{k}}\right)\_{\sigma, T} = \left(\frac{\partial D\_{k}}{\partial \sigma\_{ij}}\right)\_{E, T} \\!\\]
 
 It is well-known that the piezoelectric behavior can only occur in
 crystals that lack inversion symmetry. This is the direct consequence of
@@ -75,8 +74,7 @@ the material &gt; 0.1 eV. Compounds in the Materials Project database
 that satisfy these criteria are selected for a full-DFT calculation of
 the piezoelectric tensor and derived properties (see below).
 
-Derived piezoelectric properties
-================================
+## Derived piezoelectric properties
 
 For elastic properties, which are based on a tensor of order 4,
 isotropic Voigt and Reuss averages can be derived on the bulk and shear
@@ -100,13 +98,13 @@ maximum response occurs. Finally, note that for some compounds, a
 piezoelectric response is only induced by shear deformation rather than
 tensile or compressive deformation. For these cases, the response cannot
 be depicted such as in Figs. 1 and 2. The representations such as in
-Figs. 1 and 2 and created using the open-source MTEX package \[3,4,5\].
+Figs. 1 and 2 and created using the open-source MTEX package [^3][^4][^5].
 
-[thumb|right|500px|Figure 2: longitudinal piezoelectric modulus-surface
-for an orthorhombic compound.](image:ortho_1.png "wikilink")
+![ortho_1](/methodology/img/Ortho_1.png)
+*Figure 2: longitudinal piezoelectric modulus-surface
+for an orthorhombic compound.*
 
-DFT parameters
-==============
+## DFT parameters
 
 The first-principles results presented in this work are performed using
 the projector augmented wave (PAW) method as implemented in the Vienna
@@ -125,18 +123,18 @@ oxides, the GGA+U method is employed, with U representing the
 Hubbard-parameter. The values of U are chosen consistent with those
 employed in MP.
 
-[thumb|center|700px|Figure 3: A graphical representation of the
+![piezomain](/methodology/img/piezomain.png)
+*Figure 3: A graphical representation of the
 piezoelectric dataset, currently containing over 900 materials. A series
 of concentric circles indicate constant values of the maximum
 longitudinal piezoelectric modulus, |eij|max. The compounds are broken
 up according to the crystal system and the different point group
-symmetry-classes considered in this work. See the paper *[A database to
+symmetry-classes considered in this work. See the paper [*A database to
 enable discovery and design of piezoelectric
-materials](http://www.nature.com/articles/sdata201553)* for
-details.](image:Piezomain.png "wikilink")
+materials*](http://www.nature.com/articles/sdata201553) for
+details.*
 
-Crystal symmetry
-================
+## Crystal symmetry
 
 The crystal symmetry and in particular the point group dictates the
 symmetry of the piezoelectric tensor, relates components of the tensor
@@ -149,17 +147,17 @@ representations are shown. The point group that only yields
 piezoelectric behavior upon the application of shear is not included in
 the representation in Fig. 4.
 
-[thumb|center|1300px|Figure 4: Piezoelectric tensors and symmetry
+![piezo_wiki](/methodology/img/Piezo_wiki_fig.png)
+*Figure 4: Piezoelectric tensors and symmetry
 classes considered in this work. Typical representations of the
 longitudinal piezoelectric modulus in 3D are also shown for each crystal
 point group. Note that depending on the components of the piezoelectric
 tensor, the surface representation can differ from those shown here. See
-the paper *[A database to enable discovery and design of piezoelectric
-materials](http://www.nature.com/articles/sdata201553)* for
-details.](image:piezo_wiki_fig.png "wikilink")
+the paper [*A database to enable discovery and design of piezoelectric
+materials*](http://www.nature.com/articles/sdata201553) for
+details.*
 
-Citation
-========
+## Citation
 
 To cite the piezoelectric properties within the Materials Project,
 please reference the following work:
@@ -178,30 +176,28 @@ DFT-parameters, the workflow and comparison to experiments are described
 in detail. Also, the filters in the workflow used for detecting
 anomalies in the calculations are described in the paper.
 
-References
-==========
+## Author
 
-\[1\] Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
+1.  Maarten de Jong
+
+## References
+
+[^1]: Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
 (1987)
 
-\[2\] Nye, J. F. Physical properties of crystals (Clarendon press,
+[^2]: Nye, J. F. Physical properties of crystals (Clarendon press,
 1985).
 
-\[3\] Bachmann, F., Hielscher, R. & Schaeben, H. Texture analysis with
+[^3]: Bachmann, F., Hielscher, R. & Schaeben, H. Texture analysis with
 MTEX-free and open source software toolbox. Solid State Phenomena 160,
 63–68 (2010).
 
-\[4\] Hielscher, R. & Schaeben, H. A novel pole figure inversion method:
+[^4]: Hielscher, R. & Schaeben, H. A novel pole figure inversion method:
 specification of the MTEX algorithm. Journal of Applied Crystallography
 41, 1024–1037 (2008).
 
-\[5\] Mainprice, D., Hielscher, R. & Schaeben, H. Calculating
+[^5]: Mainprice, D., Hielscher, R. & Schaeben, H. Calculating
 anisotropic physical properties from texture data using the MTEX
 open-source package. Geological Society, London, Special Publications
 360, 175–192 (2011).
-
-Author
-======
-
-1.  Maarten de Jong
 
