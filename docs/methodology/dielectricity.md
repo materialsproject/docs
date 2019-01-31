@@ -105,7 +105,7 @@ dependence formula is, unfortunately, not known [^28][^29][^30].
 Additionally, the validity of GGA depends on the charge density varying
 slowly—an assumption that may be broken when an external electric field
 is applied [^31].
-![](/methodology/img/Dielectric_benchmarking.png)
+![](/methodology/img/dielectricity/Dielectric_benchmarking.png)
 
 ## Citation
 

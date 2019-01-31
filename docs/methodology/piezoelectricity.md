@@ -22,7 +22,7 @@ Just as with the elastic constants, multiple consistency checks are
 performed on all the calculated piezoelectric data to ensure its
 reliability and accuracy.
 
-![Cubic_pic1](/methodology/img/Cubic_pic1.png)
+![Cubic_pic1](/methodology/img/piezoelectricity/Cubic_pic1.png)
 *Figure 1: longitudinal piezoelectric modulus-surface
 for a cubic compound, showing the maximum response in the &lt;111&gt;
 family of directions.*
@@ -100,7 +100,7 @@ tensile or compressive deformation. For these cases, the response cannot
 be depicted such as in Figs. 1 and 2. The representations such as in
 Figs. 1 and 2 and created using the open-source MTEX package [^3][^4][^5].
 
-![ortho_1](/methodology/img/Ortho_1.png)
+![ortho_1](/methodology/img/piezoelectricity/Ortho_1.png)
 *Figure 2: longitudinal piezoelectric modulus-surface
 for an orthorhombic compound.*
 
@@ -123,7 +123,7 @@ oxides, the GGA+U method is employed, with U representing the
 Hubbard-parameter. The values of U are chosen consistent with those
 employed in MP.
 
-![piezomain](/methodology/img/piezomain.png)
+![piezomain](/methodology/img/piezoelectricity/Piezomain.png)
 *Figure 3: A graphical representation of the
 piezoelectric dataset, currently containing over 900 materials. A series
 of concentric circles indicate constant values of the maximum
@@ -147,7 +147,7 @@ representations are shown. The point group that only yields
 piezoelectric behavior upon the application of shear is not included in
 the representation in Fig. 4.
 
-![piezo_wiki](/methodology/img/Piezo_wiki_fig.png)
+![piezo_wiki](/methodology/img/piezoelectricity/Piezo_wiki_fig.png)
 *Figure 4: Piezoelectric tensors and symmetry
 classes considered in this work. Typical representations of the
 longitudinal piezoelectric modulus in 3D are also shown for each crystal

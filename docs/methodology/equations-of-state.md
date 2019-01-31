@@ -33,7 +33,7 @@ available MP data.
 
 ## Fitted Equation Forms
 
-![](/methodology/img/EOS_eqtable.png)
+![](/methodology/img/equations-of-state/EOS_eqtable.png)
 
 ## Authors
 

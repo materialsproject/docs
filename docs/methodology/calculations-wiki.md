@@ -1,6 +1,6 @@
 # Calculations Wiki
 
-* [Calculations Manual]
+* [Calculations Manual](/methodology/calculations-manual)
 * [Pseudopotentials Choice](/methodology/pseudopotentials)
 * [GGA+U calculations](/methodology/gga-plus-u)
 * [Elasticity calculations](/methodology/elasticity)
