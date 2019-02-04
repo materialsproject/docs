@@ -226,13 +226,13 @@ Symmetrization
 --------------
 
 Tensor symmetrization and IEEE conversion procedures are implemented in
-[pymatgen](https://github.com/materialsproject/pymatgen/blob/master/pymatgen/analysis/elasticity/tensors.py).
+[pymatgen](http://pymatgen.org/_modules/pymatgen/core/tensors.html).
 Symmetrization occurs by finding all of the symmetry operations that
 correspond to a particular crystal symmetry, and taking the average over
 all transformed tensors with respect to these operations. If there are
 \\(y\\) symmetry operations are denoted \\(Q\_{ij}^{(x)}\\) then:
 
-\\(C\_{mnop}^{(sym)} = \sum\_{x=1}^n  Q\_{im}^{(x)} Q\_{jn}^{(x)} Q\_{ko}^{(x)} Q\_{lp}^{(x)} C\_{ijkl}\\)
+\\(C\_{mnop}^{(sym)} = \sum\_{x=1}^y  Q\_{im}^{(x)} Q\_{jn}^{(x)} Q\_{ko}^{(x)} Q\_{lp}^{(x)} C\_{ijkl}\\)
 
 Citation
 --------

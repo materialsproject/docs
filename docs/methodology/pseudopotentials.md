@@ -9,32 +9,31 @@ only reduces the electron number but also the energy cutoff necessary
 the materials project have been performed using a specific type of very
 efficient pseudopotentials: the projector augmented wave (PAW)
 pseudopotentials.[^1] We used the library of PAW pseudopotentials
-provided by VASP but for a given element there is often several
-possibility in the VASP library. This wiki presents how the choice
-between the different pseudopotential option was operated detailing what
-pseudopotential we chose and for what reason.
+provided by VASP but for a given element there are often several
+possibilities in the VASP library. This wiki presents how the choices
+between the different pseudopotential options were made.
 
 The strategy
 ------------
 
 As a test set, we ran all elements and binary oxides present in the ICSD
-with the several PAW pseudopotentials available. As it is difficult to
+with the available PAW pseudopotentials. As it is difficult to
 test for all properties (structural, electronic, etc...), we chose to be
-inclusive and to select the pseudopotential with the largest number of
-electrons EXCEPT if convergence issues were seen on our test set, or
+inclusive and to select the pseudopotential (psp) with the largest number of
+electrons (high e) EXCEPT if convergence issues were seen on our test set, or if
 previous experience excluded a specific pseudopotential. We also
-excluded pseudopotentials with a too large energy cutoff.
+excluded pseudopotentials with too large an energy cutoff.
 
 We also compared to recommendations from the VASP manual present in
 [1](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html).
 
 Finally, as we had energies for elements and binary oxides, we compared
-binary oxides formation energies with the several pseudopotentials
-available. The oxygen molecule energy was obtained from Wang et al.
+binary oxide formation energies with the available pseudopotentials.
+The oxygen molecule energy was obtained from Wang et al.
 Please note that this data is pure GGA and some chemistries (e.g.,
 transition metals) will give extremely bad formation energy results in
-GGA. This is not an issue per se with the pseudopotential but with the
-functional and we did not focus on this in this wiki.
+GGA. This is not an issue with the pseudopotential but with the
+functional, so we do not focus on that issue in this wiki.
 
 Pseudopotential comments and choice
 -----------------------------------
@@ -43,16 +42,15 @@ Pseudopotential comments and choice
 
 B, C, N, O, F
 
-Usually they have three psp a soft \_s, a hard \_h and a standard...
-
+Usually they have three pseudopotentials: a soft \_s, a hard \_h, and a standard.
 The standard is recommended by VASP and will be used for all. The hard
 have extremely high cut-offs (700 eV)
 
 ### alkali and alkali-earth
 
 The table below indicates our choices. Basically, we chose all high e-
-psp except for Na where we excluded Na\_sv due to its very high cutoff
-(700 eV)
+pseudopotentials except for Na where we excluded Na\_sv due to its very high cutoff
+(700 eV).
 
 | element | options            | VASP   | Low elec: oxide form\_enth (exp-comp) eV per fu | High elec: oxide form\_enth (exp-comp) eV per fu | High e- conv. Stats | our choice | rem                                                                                                 |
 |---------|--------------------|--------|-------------------------------------------------|--------------------------------------------------|---------------------|------------|-----------------------------------------------------------------------------------------------------|
@@ -62,7 +60,7 @@ psp except for Na where we excluded Na\_sv due to its very high cutoff
 | Cs      | Cs\_sv             | Cs\_sv |                                                 |                                                  |                     | Cs\_sv     |                                                                                                     |
 | Rb      | Rb\_pv, Rb\_sv     | Rb\_sv | 0.05                                            | 0.03                                             | all converged       | Rb\_sv     | highest e- psp chosen                                                                               |
 | Be      | Be, Be\_sv         | Be     | 0.04                                            | 0.04                                             | all converged       | Be\_sv     | highest e- psp chosen                                                                               |
-| Mg      | Mg, Mg\_pv         | Mg\_pv | 0.02                                            | 0.05                                             | all converged       | Mg\_pv     | VASP and thermo suggest Mg as they are not much different we decided to stick with the high e- psp. |
+| Mg      | Mg, Mg\_pv         | Mg\_pv | 0.02                                            | 0.05                                             | all converged       | Mg\_pv     | VASP and thermo suggest Mg as they are not much different; we decided to stick with the high e- psp. |
 | Ca      | Ca\_sv, Ca\_pv     | Ca\_pv | 0.06                                            | 0.03                                             | all converged       | Ca\_sv     | highest e- psp chosen                                                                               |
 | Sr      | Sr\_sv             | Sr\_sv |                                                 |                                                  |                     | Sr\_sv     |                                                                                                     |
 | Ba      | Ba\_sv             | Ba\_sv |                                                 |                                                  |                     | Ba\_sv     |                                                                                                     |
@@ -113,23 +111,23 @@ Si, P, Cl, S will be used in their standard form (not hard) as suggested
 by VASP manual.
 
 The Al\_h psp was found to be definitely wrong in terms of band
-structure. There was "ghost" states found in the DOS.
+structure. There were "ghost" states found in the DOS.
 
 Pb is interesting as the high e- psp shows significantly higher error in
-formation energies. We kept the high e- psp (Pb\_d) but it might be
+formation energies. We kept the high e- psp (Pb\_d), but it might be
 interesting to study this a little more. One hypothesis relies on a
 recent result showing that lead oxide formation energies need the use of
-spin-orbit coupling to be accurate.[^2] Our computations are without any
+spin-orbit coupling to be accurate.[^2] Our computations do not include any
 relativistic corrections for valence electrons. However, spin-orbit
 coupling is taken into account during the psp construction. This would
 explain why a psp with more core electrons (treated undirectly with SO
 coupling) would give more accurate results than a psp with fewer
 electrons.
 
-Bi\_d shows convergence problem and the decision on Bi has been
+Bi\_d shows a convergence problem, so the decision on Bi has been
 postponed to further analysis.
 
-Finally, Po and At while referred to in the VASP manual are not present
+Finally, Po and At, while referred to in the VASP manual, are not present
 in the VASP PAW library.
 
 | element | options          | VASP  | Low elec: oxide form\_enth (exp-comp) eV per fu | High elec: oxide form\_enth (exp-comp) eV per fu | High e- conv. Stats | our choice | rem                                                                           |
@@ -171,17 +169,16 @@ valence states are available, but these potentials are not expected to
 work reliable when the electrons are localized."
 
 In summary, the pseudopotentials can either include or not include f
-electrons; how accurate you would be by including
-them or not will depend on the nature of the bonding
+electrons; how accurate including them or not is depends on the nature of the bonding
 for each particular system (localized or not).
 
 What we found is that convergence issues are often seen for high
 electron psp (e.g., Pr, Nd, Sm). Also, some pseudopotentials (e.g.,
-Er\_2, Eu\_2) freeze somehow too many electron and have issues with
+Er\_2, Eu\_2) freeze too many electrons and therefore have issues with
 oxidation states that make one of the frozen electron participate in
 bonding (e.g., Eu2O3, Er2O3). Finally, there is a major problem with Tb.
 Only Tb\_3 exists but Tb is known to also form Tb4+ compounds (e.g.,
-TbO2). For those Tb4+ this psp is likely to be extremely wrong. There is
+TbO2). For those Tb4+ compounds, this psp is likely to be extremely wrong. There is
 not much fix to this for now except waiting for someone to develop a PAW
 Tb\_4 psp.
 
@@ -215,10 +212,12 @@ Citation
 
 To cite the Materials Project, please reference the following work:
 
--   ﻿A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T.
-    Mueller, K. A. Persson, and G. Ceder, A high-throughput
-    infrastructure for density functional theory calculations,
-    Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
+A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T.
+Mueller, K. A. Persson, and G. Ceder, A high-throughput
+infrastructure for density functional theory calculations,
+Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
+[DOI:10.1016/j.commatsci.2011.02.023](https://dx.doi.org/10.1016/j.commatsci.2011.02.023)
+
 
 Authors
 -------

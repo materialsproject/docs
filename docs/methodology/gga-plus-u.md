@@ -41,11 +41,11 @@ U values
 --------
 
 The full list of U values used is described in the table below. For
-oxide containing any of the elements, both GGA and GGA+U calculations
+oxides containing any of the elements, both GGA and GGA+U calculations
 were performed.
 
 | Element | System | Fitting Reaction                  | Redox Couple         | Calibrated U (eV) | Comments                                                                       |
-|:--------|--------|-----------------------------------|----------------------|-------------------|--------------------------------------------------------------------------------|
+|:--------|--------|-----------------------------------|----------------------|-------------------|--------------------------------------------------------------------------------------------------------------------|
 | Co      | Oxides | $\ce{6 CoO + O2 -> 2 Co3O4}$      | $\ce{Co^{2+} -> Co^{2.67+}}$ | 3.32          |                                                                                |
 | Cr      | Oxides | $\ce{2/3 Cr2O3 + O2 -> 4/3 CrO3}$ | $\ce{Cr^{3+} -> Cr^{6+}}$      | 3.7               |                                                                                |
 | Fe      | Oxides | $\ce{6 FeO + O2 -> 2 Fe3O4}$ <br> $\ce{4 Fe3O4 + O2 -> 6 Fe2O3}$   | $\ce{Fe^{2+} -> Fe^{2.67+}}$ <br> $\ce{Fe^{2.67+} -> Fe^{3+}}$    | 5.3               |                                                                                |

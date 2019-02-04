@@ -73,11 +73,11 @@ Augmented Wave pseudopotentials[^11][^12]. The U values are energy
 corrections that address the spurious self-interaction energy introduced
 by GGA. Here, we used U values for d orbitals only that were fitted to
 experimental binary formation enthalpies using Wang et al.[^13] method.
-The full list of U values used, can be found in ref.[^14]. The k-point
+The full list of U values used, can be found in ref.[^10]. The k-point
 density was set at 3,000 per reciprocal atom and the plane wave energy
 cut-off at 600 eV (ref. 4). For detailed information on the calculation
 of the dielectric tensor within the DFPT framework we refer to Baroni et
-al.[^15][^16] and Gonze & Lee[^17].
+al.[^14][^15] and Gonze & Lee[^16].
 
 [Piezoelectricity calculations](/methodology/piezoelectricity) use the same
 DFPT methodology with a tighter parameter set to achieve convergence. As
@@ -93,18 +93,18 @@ experimental values at room temperature. Including local field effects
 gives the smallest mean absolute relative deviation ( MARD= 16.2 % for
 GGA). Furthermore, we note a tendency to overestimate rather than
 underestimate the dielectric constant relative to experiments, which is
-a well-known effect of DFPT [^18][^19][^20] for the electronic
+a well-known effect of DFPT [^17][^18][^19] for the electronic
 contribution. Although it has often been related to the band gap
 underestimation problem of DFT, DFPT is a ground state theory and hence,
 the dielectric constant should, in principle, be described exactly
-[^21]. In fact, as described by various authors, the problem is likely
+[^20]. In fact, as described by various authors, the problem is likely
 linked to the exchange-correlation functional
-[^22][^23][^24][^25][^26][^27]. Specifically, the exchange correlation
+[^21][^22][^23][^24][^25][^26]. Specifically, the exchange correlation
 functional has been found to depend on polarization but the actual
-dependence formula is, unfortunately, not known [^28][^29][^30].
+dependence formula is, unfortunately, not known [^27][^28][^29].
 Additionally, the validity of GGA depends on the charge density varying
 slowly—an assumption that may be broken when an external electric field
-is applied [^31].
+is applied [^30].
 ![](/methodology/img/dielectricity/Dielectric_benchmarking.png)
 
 ## Citation
@@ -116,13 +116,13 @@ reference the following work:
 high-throughput screening of materials for dielectric constant and
 refractive index. Ioannis Petousis, Wei Chen, Geoffroy Hautier, Tanja
 Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz. Phys.
-Rev. B 93(11). "
+Rev. B 93(11)." [DOI:10.1103/PhysRevB.93.115151](https://doi.org/10.1103/PhysRevB.93.115151)
 
 "High-throughput screening of inorganic compounds for the discovery of
 novel dielectric and optical materials. Ioannis Petousis, David
 Mrdjenovich, Eric Ballouz, Miao Liu, Donald Winston, Wei Chen, Tanja
 Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz.
-Scientific Data 4. "
+Scientific Data 4." [DOI:10.1038/sdata.2016.134](https://doi.org/10.1038/sdata.2016.134)
 
 These papers present the results of our dielectric constant-calculations
 for the first batch of 1,056 compounds. Our DFT-parameters, the
@@ -184,55 +184,53 @@ calculations and comparison to experiments are described in detail.
     metal oxides within the GGA+ U framework. Phys. Rev. B 73, 195107
     (2006).
 
-[^14]: 
-
-[^15]: Baroni S., Giannozzi P. & Testa A. Elastic constants of crystals
+[^14]: Baroni S., Giannozzi P. & Testa A. Elastic constants of crystals
     from linear-response theory. Phys. Rev. Lett. 59, 2662 (1987).
 
-[^16]: Baroni S., de Gironcoli S., Dal Corso A. & Giannozzi P. Phonons
+[^15]: Baroni S., de Gironcoli S., Dal Corso A. & Giannozzi P. Phonons
     and related crystal properties from density-functional perturbation
     theory. Rev. Mod. Phys. 73, 515 (2001).
 
-[^17]: Gonze X. & Lee C. Dynamical matrices, born effective charges,
+[^16]: Gonze X. & Lee C. Dynamical matrices, born effective charges,
     dielectric permittivity tensors, and interatomic force constants
     from density-functional perturbation theory. Phys. Rev. B 55, 10355
     (1997).
 
-[^18]: N. Marzari and D. J. Singh, Phys. Rev. B 62, 12724 (2000).
+[^17]: N. Marzari and D. J. Singh, Phys. Rev. B 62, 12724 (2000).
 
-[^19]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+[^18]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
     (1994).
 
-[^20]: F. Kootstra, P. L. de Boeij, and J. G. Snijders, Phys. Rev. B 62,
+[^19]: F. Kootstra, P. L. de Boeij, and J. G. Snijders, Phys. Rev. B 62,
     7071 (2000).
+
+[^20]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+    (1994).
 
 [^21]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
     (1994).
 
-[^22]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
-    (1994).
-
-[^23]: V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
+[^22]: V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
     60, 14224 (1999).
 
-[^24]: W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
+[^23]: W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
     8540 (1996).
 
-[^25]: Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
+[^24]: Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
     (1997).
 
-[^26]: R. Resta, Phys. Rev. Lett. 77, 2265 (1996).
+[^25]: R. Resta, Phys. Rev. Lett. 77, 2265 (1996).
 
-[^27]: R. Resta, Phys. Rev. Lett. 78, 2030 (1997).
+[^26]: R. Resta, Phys. Rev. Lett. 78, 2030 (1997).
 
-[^28]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+[^27]: A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
     (1994).
 
-[^29]: W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
+[^28]: W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
     8540 (1996).
 
-[^30]: Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
+[^29]: Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
     (1997).
 
-[^31]: V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
+[^30]: V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
     60, 14224 (1999).

@@ -79,11 +79,11 @@ compound, according to the values suggested in the Pseudo-dojo table.
 The Brillouin zone has been sampled using equivalent **k**-point and
 **q**-point grids that respect the symmetries of the crystal with a
 density of approximately 1500 points per reciprocal atom and the
-*q*-point grid is always Γ-centered [^9].
+**q**-point grid is always $\Gamma$-centered [^9].
 
 All the structures are relaxed with strict convergence criteria, i.e.
-until all the forces on the atoms are below 10^-6^ Ha/Bohr and the
-stresses are below 10^-4^ Ha/Bohr^3^.
+until all the forces on the atoms are below $10^{-6}$ Ha/Bohr and the
+stresses are below $10^{-4}$ Ha/Bohr$^3$.
 
 The primitive cells and the band structures are defined according to the
 conventions of Setyawan and Curtarolo [^10].
@@ -94,8 +94,8 @@ Guido Petretto, Shyam Dwaraknath, Henrique P. C. Miranda, Donald
 Winston, Matteo Giantomassi, Michiel J. van Setten, Xavier Gonze,
 Kristin A. Persson, Geoffroy Hautier, Gian-Marco Rignanese,
 *High-throughput density functional perturbation theory phonons for
-inorganic materials*, **Scientific Data**, 5, 180065 (2018)
-[<doi:10.1038/sdata.2018.65>](https://doi.org/10.1038/sdata.2018.65).
+inorganic materials*, **Scientific Data**, 5, 180065 (2018).
+[doi:10.1038/sdata.2018.65](https://doi.org/10.1038/sdata.2018.65)
 
 ## References
 

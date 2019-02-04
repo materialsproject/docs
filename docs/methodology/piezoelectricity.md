@@ -127,7 +127,7 @@ employed in MP.
 *Figure 3: A graphical representation of the
 piezoelectric dataset, currently containing over 900 materials. A series
 of concentric circles indicate constant values of the maximum
-longitudinal piezoelectric modulus, |eij|max. The compounds are broken
+longitudinal piezoelectric modulus, $e_{ij,max}$. The compounds are broken
 up according to the crystal system and the different point group
 symmetry-classes considered in this work. See the paper [*A database to
 enable discovery and design of piezoelectric
@@ -164,7 +164,7 @@ please reference the following work:
 
 "de Jong, Maarten and Chen, Wei and Geerlings, Henry and Asta, Mark and
 Persson, Kristin Aslaug. *A database to enable discovery and design of
-piezoelectric materials*, Scientific Data **2** (2015). "
+piezoelectric materials*, Scientific Data **2** (2015)."
 
 The paper can be accessed here: *[A database to enable discovery and
 design of piezoelectric

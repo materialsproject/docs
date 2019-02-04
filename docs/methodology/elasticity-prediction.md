@@ -4,9 +4,8 @@
 
 The Materials Project (MP) provides a growing collection of elastic
 constants calculated from first principles Density Functional Theory
-(DFT). Please see [Elasticity
-calculations](Elasticity_calculations "wikilink") for details regarding
-the MP elasticity workflow [^1].
+(DFT). Please see [Elasticity calculations](/methodology/elasticity)
+for details regarding the MP elasticity workflow [^1].
 
 For compounds that have not yet been processed with the elasticity
 workflow, the MP offers statistical learning (SL) predictions of the
@@ -52,13 +51,13 @@ please reference the following works:
     and Gamst A (2016) A Statistical Learning Framework for Materials
     Science: Application to Elastic Moduli of k-nary Inorganic
     Polycrystalline Compounds, Scientific Reports 6: 34256."
-    [<doi:10.1038/srep34256>](http://dx.doi.org/10.1038/srep34256)
+    [doi:10.1038/srep34256](http://dx.doi.org/10.1038/srep34256)
 2.  "de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter
     M, Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder
     G, Persson KA, Asta M (2015) Charting the complete elastic
     properties of inorganic crystalline compounds. Scientific Data 2:
     150009."
-    [<doi:10.1038/sdata.2015.9>](http://dx.doi.org/10.1038/sdata.2015.9)
+    [doi:10.1038/sdata.2015.9](http://dx.doi.org/10.1038/sdata.2015.9)
 
 ## Authors
 
