@@ -140,12 +140,12 @@ have errors larger than 20 kJ mol$^{-1}$.
 It should be noted that while an MAE of 14 kJ mol$^{-1}$ is significantly
 higher than the desired chemical accuracy of 4 kJ mol$^{-1}$, it compares
 fairly well with the performance of most quantum chemistry
-calculations[^8]. Other than the most computationally expensive model
+calculations[^7]. Other than the most computationally expensive model
 chemistries such as G1-G3 and CBS, the reaction energy errors of most
 computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.
 
 For oxidation of the elements into binary compounds, an average error of
-\~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^9] For conventional ternary oxide
+\~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^8] For conventional ternary oxide
 formation from the elements, we have found a mean relative absolute
 error of about 2%.[^6]
 
@@ -156,7 +156,7 @@ GGA to fully describe electronic exchange and correlation effects. In
 addition, there is some error associated with neglecting zero-point
 effects and with comparing 0K, 0atm computations with room-temperature
 enthalpy experiments. The latter effect was estimated to contribute less
-than 0.03 eV/atom by Lany.[^10] The stability of antiferromagnetic
+than 0.03 eV/atom by Lany.[^9] The stability of antiferromagnetic
 compounds may be underestimated, as the majority of our calculations are
 performed ferromagnetically only. The effect of magnetism may be small
 (under 10 meV/atom) or large (100 meV/atom or greater), depending on the
@@ -166,7 +166,7 @@ lead to greater-than-expected errors.
 ### GGA errors on reaction energies between chemically similar compounds
 
 We recently conducted a more in-depth study comparing GGA (+U) reaction
-energies of ternary oxides from binary oxides on 135 compounds. [^11]
+energies of ternary oxides from binary oxides on 135 compounds. [^10]
 
 The main conclusions are:
 
@@ -210,10 +210,10 @@ works:
 Authors
 -------
 
--   Anubhav Jain
--   Shyue Ping Ong
--   Geoffroy Hautier
--   Charles Moore
+1. Anubhav Jain
+2. Shyue Ping Ong
+3. Geoffroy Hautier
+4. Charles Moore
 
 References
 ----------
@@ -242,43 +242,18 @@ References
     Persson, G. Ceder, Formation Enthalpies by Mixing GGA and GGA+U
     calculations, Physical Review B, vol. 84 (2011), 045115.
 
-[^7]: Setyawan, W.; Curtarolo, S. Computational Materials Science 2010,
-    49, 299-312.
-
-[^8]: J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
+[^7]: J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
     Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).
 
-[^9]: A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
+[^8]: A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
     Ceder, W.H. Green, Ab initio screening of metal sorbents for
     elemental mercury capture in syngas streams, Chemical Engineering
     Science. 65 (2010) 3025-3033.
 
-[^10]: S. Lany, Semiconductor thermochemistry in density functional
+[^9]: S. Lany, Semiconductor thermochemistry in density functional
     calculations, Physical Review B. 78 (2008) 1-8.
 
-[^11]: G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
+[^10]: G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
     density functional theory in predicting formation energies of
     ternary oxides from binary oxides and its implication on phase
     stability, Physical Review B, 85 (2012), 155208
-
-[^12]: E.N. Brothers, A.F. Izmaylov, J.O. Normand, V. Barone, G.E.
-    Scuseria, Accurate solid-state band gaps via screened hybrid
-    electronic structure calculations., The Journal of Chemical Physics.
-    129 (2008)
-
-[^13]: R. Godby, M. Schluter, L.J. Sham, Self-energy operators and
-    exchange-correlation potentials in semiconductors, Physical Review
-    B. 37 (1988).
-
-[^14]: M. Chan, G. Ceder, Efficient Band Gap Predictions for Solids,
-    Physical Review Letters 19 (2010)
-
-[^15]: J. Heyd, J.E. Peralta, G.E. Scuseria, R.L. Martin, Energy band
-    gaps and lattice parameters evaluated with the
-    Heyd-Scuseria-Ernzerhof screened hybrid functional, Journal of
-    Chemical Physics 123 (2005)
-
-[^16]: W. Setyawan, R.M. Gaume, S. Lam, R. Feigelson, S. Curtarolo,
-    High-throughput combinatorial database of electronic band structures
-    for inorganic scintillator materials., ACS Combinatorial Science.
-    (2011).

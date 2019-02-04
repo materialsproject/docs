@@ -129,7 +129,7 @@ for the first batch of 1,056 compounds. Our DFT-parameters, the
 workflow, the workflow filters used for detecting anomalies in the
 calculations and comparison to experiments are described in detail.
 
-## Author
+## Authors
 
 1.  Shyam Dwaraknath
 2.  Ioannis Petousis

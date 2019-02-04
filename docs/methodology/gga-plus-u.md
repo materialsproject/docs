@@ -68,7 +68,6 @@ Authors
 -------
 
 1.  Shyue Ping Ong
-2.  Kyle Bystrom
 
 References
 ----------

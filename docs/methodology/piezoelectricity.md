@@ -176,7 +176,7 @@ DFT-parameters, the workflow and comparison to experiments are described
 in detail. Also, the filters in the workflow used for detecting
 anomalies in the calculations are described in the paper.
 
-## Author
+## Authors
 
 1.  Maarten de Jong
 
