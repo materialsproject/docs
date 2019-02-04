@@ -51,7 +51,7 @@ were performed.
 | Fe      | Oxides | $\ce{6 FeO + O2 -> 2 Fe3O4}$ <br> $\ce{4 Fe3O4 + O2 -> 6 Fe2O3}$   | $\ce{Fe^{2+} -> Fe^{2.67+}}$ <br> $\ce{Fe^{2.67+} -> Fe^{3+}}$    | 5.3               |                                                                                |
 | Mn      | Oxides | $\ce{6 MnO + O2 -> 2 Mn3O4}$  <br>  $\ce{Mn3O4 + O2 -> 3 MnO2}$  | $\ce{Mn^{2+} -> Mn^{2.67+}}$ <br> $\ce{Mn^{2.67+} -> Mn^{4+}}$    | 3.9               | $\ce{Mn2O3}$ was explicitly excluded from calibration set due to the large number of atoms in its unit cell.                              |
 | Mo      | Oxides | $\ce{2 MoO2 + O2 -> 2 MoO3}$    | $\ce{Mo^{4+} -> Mo^{6+}}$ | 4.38              |                                                                                |
-| Ni      | Oxides | $\ce{Li2O + NiO + O2 -> LiNiO2}$    | $\ce{Ni^{2+} -> Ni^{3+}}$ | 6.2               | Binary formation energies are not readily available for Ni. The Ni U calibration was performed using a ternary oxide formation energy.[^5]  |
+| Ni      | Oxides | $\ce{Li2O + 2NiO + 1/2 O2 -> 2LiNiO2}$    | $\ce{Ni^{2+} -> Ni^{3+}}$ | 6.2               | Binary formation energies are not readily available for Ni. The Ni U calibration was performed using a ternary oxide formation energy.[^5]  |
 | V       | Oxides | $\ce{2 V2O3 + O2 -> 4 VO2}$ <br> $\ce{4 VO2 + O2 -> 2 V2O5}$ | $\ce{V^{3+} -> V^{4+}}$ <br> $\ce{V^{4+} -> V^{5+}}$  | 3.25              | $\ce{VO}$ was explicitly excluded from calibration due to its known metallic nature.                                               |
 | W       | Oxides | $\ce{2 WO2 + O2 -> 2 WO3}$  | $\ce{W^{4+} -> W^{6+}}$        | 6.2               |                                                                                |
 
