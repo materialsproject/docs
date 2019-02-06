@@ -48,6 +48,15 @@ available MP data.
 
 \\(^{**}\\) \\(E_o = E(\nu = 1)\\)
 
+## Citation
+
+To cite the EOS data in the Materials Project, please reference the following work:
+
+Latimer, K., Dwaraknath, S., Mathew, K., Winston, D., Persson, K. A.
+Evaluation of thermodynamic equations of state across chemistry and structure in the materials project.
+*NPJ Computational Materials.* **4,** 1, 2057-3960 (2018).
+[DOI:10.1038/s41524-018-0091-x](https://doi.org/10.1038/s41524-018-0091-x)
+
 ## Authors
 
 1.  Katherine Latimer
