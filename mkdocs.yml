@@ -15,7 +15,7 @@ nav:
         - 'Elasticity': 'methodology/elasticity.md'
         - 'Elasticity prediction': 'methodology/elasticity-prediction.md'
         - 'Piezoelectricity': 'methodology/piezoelectricity.md'
-        - 'Dielectricity': 'methodology/dielelectricity.md'
+        - 'Dielectricity': 'methodology/dielectricity.md'
         - 'Equations of State': 'methodology/equations-of-state.md'
         - 'Phonons': 'methodology/phonons.md'
     - User Reference:
