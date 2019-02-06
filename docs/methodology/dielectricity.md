@@ -112,17 +112,17 @@ is applied [^30].
 To cite the dielectric properties within the Materials Project, please
 reference the following work:
 
-"Benchmarking density functional perturbation theory to enable
+- Benchmarking density functional perturbation theory to enable
 high-throughput screening of materials for dielectric constant and
 refractive index. Ioannis Petousis, Wei Chen, Geoffroy Hautier, Tanja
 Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz. Phys.
-Rev. B 93(11)." [DOI:10.1103/PhysRevB.93.115151](https://doi.org/10.1103/PhysRevB.93.115151)
+Rev. B 93(11). [DOI:10.1103/PhysRevB.93.115151](https://doi.org/10.1103/PhysRevB.93.115151)
 
-"High-throughput screening of inorganic compounds for the discovery of
+- High-throughput screening of inorganic compounds for the discovery of
 novel dielectric and optical materials. Ioannis Petousis, David
 Mrdjenovich, Eric Ballouz, Miao Liu, Donald Winston, Wei Chen, Tanja
 Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz.
-Scientific Data 4." [DOI:10.1038/sdata.2016.134](https://doi.org/10.1038/sdata.2016.134)
+Scientific Data 4. [DOI:10.1038/sdata.2016.134](https://doi.org/10.1038/sdata.2016.134)
 
 These papers present the results of our dielectric constant-calculations
 for the first batch of 1,056 compounds. Our DFT-parameters, the

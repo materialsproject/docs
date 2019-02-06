@@ -145,7 +145,7 @@ chemistries such as G1-G3 and CBS, the reaction energy errors of most
 computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.
 
 For oxidation of the elements into binary compounds, an average error of
-\~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^8] For conventional ternary oxide
+~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^8] For conventional ternary oxide
 formation from the elements, we have found a mean relative absolute
 error of about 2%.[^6]
 

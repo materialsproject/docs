@@ -34,7 +34,7 @@ deformation are applied:
 structures, for which the stress tensor, \\(\mathbf{S}\\), is
 calculated, allowing for relaxation of the ionic degrees of freedom.
 Note that in this work, conventional unit cells, obtained using
-pymatgen.symmetry.SpacegroupAnalyzer.get\_conventional\_standard\_structure
+`pymatgen.symmetry.SpacegroupAnalyzer.get_conventional_standard_structure`
 are employed for all elastic constant calculations. In our experience,
 these cells typically yield more accurate and better converged elastic
 constants than primitive cells, at the cost of more computational time.
@@ -240,14 +240,10 @@ Citation
 To cite the elastic constants within the Materials Project, please
 reference the following work:
 
-"de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M,
+- de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M,
 Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G,
 Persson KA, Asta M (2015) Charting the complete elastic properties of
-inorganic crystalline compounds. Scientific Data 2: 150009."
-
-The paper can be accessed here: *[Charting the complete elastic
-properties of inorganic crystalline
-compounds](http://www.nature.com/articles/sdata20159)*
+inorganic crystalline compounds. [Scientific Data 2: 150009](http://www.nature.com/articles/sdata20159)
 
 The paper presents the results of our elastic constant-calculations for
 the first batch of 1,181 metals and compounds. Our DFT-parameters, the

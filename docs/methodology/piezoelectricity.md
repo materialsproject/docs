@@ -162,13 +162,9 @@ details.*
 To cite the piezoelectric properties within the Materials Project,
 please reference the following work:
 
-"de Jong, Maarten and Chen, Wei and Geerlings, Henry and Asta, Mark and
+- de Jong, Maarten and Chen, Wei and Geerlings, Henry and Asta, Mark and
 Persson, Kristin Aslaug. *A database to enable discovery and design of
-piezoelectric materials*, Scientific Data **2** (2015)."
-
-The paper can be accessed here: *[A database to enable discovery and
-design of piezoelectric
-materials](http://www.nature.com/articles/sdata201553)*
+piezoelectric materials*, [Scientific Data 2 (2015)](http://www.nature.com/articles/sdata201553)
 
 The paper presents the results of our piezoelectric
 constant-calculations for the first batch of 941 compounds. Our
