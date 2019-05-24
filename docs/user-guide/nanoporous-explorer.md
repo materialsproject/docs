@@ -128,7 +128,6 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 ## TODO
 * Add table
 * Add figures
-* Add reference doi's
 
 ## References
 
@@ -137,19 +136,20 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^3]: C. E. Wilmer, O. K. Farha, Y.-S. Bae, J. T. Hupp, R. Q. Snurr, Energy Environ. Sci. 2012, 5, 9849.[doi:10.1039/c2ee23201d](https://doi.org/10.1039/c2ee23201d)
 [^4]: B. J. Sikora, C. E. Wilmer, M. L. Greenfield, R. Q. Snurr, Chem. Sci. 2012, 3, 2217. [doi:10.1039/C2SC01097F](https://doi.org/10.1039/C2SC01097F)
 [^5]: D. Banerjee, C. M. Simon, A. M. Plonka, R. K. Motkuri, J. Liu, X. Chen, B. Smit, J. B. Parise, M. Haranczyk, P. K. Thallapally, Nat. Commun. 2016, 7, 11831. [doi:10.1038/ncomms11831](https://doi.org/10.1038/ncomms11831)
-[^6]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010.
+[^6]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010. [doi:10.1039/C4CP01848F](https://doi.org/10.1039/C4CP01848F)
 [^7]: D. J. Earl, M. W. Deem, Ind. Eng. Chem. Res. 2006, 45, 5449–5454. [doi:10.1021/ie0510728](https://doi.org/10.1021/ie0510728)
 [^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
 [^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
 [^10]: B. Widom, J. Chem. Phys. 1963, 39, 2808–2812. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
-[^11]  “Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates,” R.Q. Snurr, A.T. Bell, D.N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992
+
+[^11] "Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates" R. Q. Snurr, A. T. Bell, D. N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992.
 [^12] E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2010, 132, 7528–7539. [doi:10.1021/ja1023699](https://doi.org/10.1021/ja1023699)
 [^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
-[^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836.
+[^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836. [doi:10.1021/jp201075u](https://doi.org/10.1021/jp201075u)
 [^15]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
 [^16]: Smith, J. M., Van Ness, H. C. & Abbott, M. M. Introduction to Chemical Engineering Thermodynamics. (McGraw-Hill, 2005)
-[^17]: A. L. Myers, AIChE J. 2002, 48, 145–160.
-[^18]: B. Smit, J. I. Siepmann, J. Phys. Chem. 1994, 98, 8442–8452.
+[^17]: A. L. Myers, AIChE J. 2002, 48, 145–160.[doi:10.1002/aic.690480115](https://doi.org/10.1002/aic.690480115)
+[^18]: B. Smit, J. I. Siepmann, J. Phys. Chem. 1994, 98, 8442–8452.[doi:10.1021/j100085a027](https://doi.org/10.1021/j100085a027)
 [^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B) [Program Computing DDEC Atomic Charges](http://ddec.sourceforge.net/)
 [^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
 [^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
