@@ -6,6 +6,21 @@
     on our discussion forum.
 
 ## Current Database versions
+
+### V2019.05
+- Introduced a new `deprecated` field to materials. By default the website and API only search for materials that are not deprecated: {"deprecated": false}.
+- Deprecated 15,000 and added 3,600 new materials. We will be recomputing the deprecated materials to fill these spaces back up. Some of these new relaxations may end up matching current materials, so the total number of materials is not guaranteed to be the same as in V2019.02.
+- Fixed an issue with sandboxes not properly building the whole hull. Previously, only the sandboxed chemical systems were being recalculated for energy_above_hull searches
+
+### V2019.02
+- Added over 47,000 new materials from orderings of disordered ICSD as well as compounds from the Pauling File
+- Finalized enforcing symmetry on piezo tensors
+- Moved third order elastic data to elasticity_third_order so that people are not swamped by the mountain of information associated with it.
+
+### V2018.12
+- Adjusted the mp-id naming scheme to fix “mvc” ids taking over old mp-ids.
+- Fixed piezoeletric max_direction to be a miller index rather than a unit vector.
+
 ### Version 2018.11, Release Date: 2018-11-01
 We've released a new revision of the Materials Project database as part of major overhaul of our software infrastructure 
 to enable us to continue to build new properties and deliver them to you, the material science community, at an accelerating 
