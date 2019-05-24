@@ -6,19 +6,45 @@
 * Initial release of Molecules Explorer.
 
 ## Introduction
-The primary goal of the molecular explorer is to report the atomic structure of molecules,
-found using quantum chemistry computational methods. Further quantities of interest,
-including the electron affinity (EA) and ionization energies (IE), are also reported.
+The primary goal of the molecular explorer is to report the atomic structure of molecules, found using quantum chemistry computational methods. Further quantities of interest, including the electron affinity (EA) and ionization energies (IE), are also reported.
 
 ## Manual
 * [Molecular Glossary of Terms](/user-guide/molecular_terms)
 
 ## Calculations
-The methodology used to compute the atomic structure is a standard quantum chemical
-approach. This involves solving Schrodinger’s equation using both a linear combination of
-atomic orbitals (LCAO) with a relevant functional to address the question of the
-potential. The LCAO were implemented with the use of the 6-31+* Pople basis [^1] and the
-hybrid-functional B3LYP was used [^2].
+Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G\* Pople bases[^1] and the hybrid-functional B3LYP[^2]. For molecules with more than 50 atoms, a hybrid procedure[^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G\* level as a single point calculation.
+ 
+### Geometry Optimization
+An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained[^3]. 
+
+
+
+### Properties
+The electron affinity (EA) and ionization potential (IP) are given by
+$$EA = -\frac{\Delta G_{red}(sol)}{nF}$$
+$$IP = -\frac{\Delta G_{ox}(sol)}{nF}$$
+
+where F is the Faraday constant, and $\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ are the Gibbs free energy change of oxidation and reduction in the solution phase, respectively.
+
+![Free energy cycle](img/molecules-explorer/free_energy_cycle.png)
+*Figure 2: Free energy cycle for computing the oxidation/reduction potential. R denotes the molecule of interest.*
+
+According to the thermodynamic cycle in Fig. 1, $\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ can be calculated from the Gibbs free energy change of gas phase:
+
+$$\Delta G_{ox}(sol)=\Delta G_{ox}(gas)+\Delta G_{solv}(R^+)-\Delta G_{solv}(R)$$
+$$\Delta G_{red}(sol)=\Delta G_{red}(gas)+\Delta G_{solv}(R^-)-\Delta G_{solv}(R)$$
+
+The reported IP/EA are the adiabatic IP/EA[^4], which optimizes the geometry at different charge states (cation, anion, neutral) to emphasize high-fidelity results.
+
+
+## Database
+The database was generated from three sources:
+
+1. Molecules computed via systematic substitution of the functional groups in a base molecule
+2. Molecules from public databases such as SciFinder and Reaxys
+3. Molecules submitted by collaborators
+
+As of May, 2019 about 22,000 molecules have been added to the database.
 
 ## Using the Computational Molecular Explorer
 In order to search the database for the molecule in question, four methods can be employed.
@@ -37,3 +63,5 @@ In order to search the database for the molecule in question, four methods can b
 ## References
 [^1]: Ditchfield, R., Hehre, W.J. & Pople, J.A. J. Chem. Phys. 54, 724 (1971)
 [^2]: Becke, A.D. Phys. Rev. A. 38, 3098 (1988)
+[^3]: https://doi.org/10.1016/j.commatsci.2015.02.050
+[^4]: S. P. Ong , G. Ceder , Electrochim. Acta , 55 , 3804 (2010)
