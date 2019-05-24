@@ -112,7 +112,7 @@ A series of pore descriptors have been proposed in the literature as way of quan
 * Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å.
 * Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $\text{m}^2/\text{cm}^3$
 
-All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html). Recently, this software was used to generate fingerprints to evaluate similarity of porous structures.[^23]
+All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html). Recently, this software was used to generate fingerprints to evaluate similarity of porous structures [^23].
 
 ### P-XRD Patterns
 Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^24].
@@ -125,9 +125,6 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 * Dalar Nazarian
 * Tess Smidt
 
-## TODO
-* Add table
-* Add figures
 
 ## References
 
@@ -141,16 +138,16 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
 [^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
 [^10]: B. Widom, J. Chem. Phys. 1963, 39, 2808–2812. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
-
-[^11] "Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates" R. Q. Snurr, A. T. Bell, D. N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992.
-[^12] E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2010, 132, 7528–7539. [doi:10.1021/ja1023699](https://doi.org/10.1021/ja1023699)
+[^11]: Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates R. Q. Snurr, A. T. Bell, D. N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992.
+[^12]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2010, 132, 7528–7539. [doi:10.1021/ja1023699](https://doi.org/10.1021/ja1023699)
 [^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
 [^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836. [doi:10.1021/jp201075u](https://doi.org/10.1021/jp201075u)
 [^15]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
 [^16]: Smith, J. M., Van Ness, H. C. & Abbott, M. M. Introduction to Chemical Engineering Thermodynamics. (McGraw-Hill, 2005)
 [^17]: A. L. Myers, AIChE J. 2002, 48, 145–160.[doi:10.1002/aic.690480115](https://doi.org/10.1002/aic.690480115)
 [^18]: B. Smit, J. I. Siepmann, J. Phys. Chem. 1994, 98, 8442–8452.[doi:10.1021/j100085a027](https://doi.org/10.1021/j100085a027)
-[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B) [Program Computing DDEC Atomic Charges](http://ddec.sourceforge.net/)
+[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B) 
+[^20]: Program Computing [DDEC Atomic Charges](http://ddec.sourceforge.net/)
 [^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
 [^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
 [^23]: Y. Lee, S. D. Barthel, P. Dłotko, S. M. Moosavi, K. Hess, B. Smit, Nat. Commun. 2017, 8, 15396. [doi:10.1038/ncomms15396](https://doi.org/10.1038/ncomms15396)
