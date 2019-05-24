@@ -63,7 +63,7 @@ In addition to MOFs and Zeolites currently a set of 10,000 computational predict
 ## Properties
 
 ### Henry's Constants
-The Henry's constant ($K_H$), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell [^11],[^12] by,
+The Henry's constant ($K_H$), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell by,
 
 $$K_H={M\over8{\pi}V{\rho}RT}{\int}e^{-{\beta}U}dr={1\over{RT}}{\sum_{i=1}^{N_{points}}{\exp(-{\beta}U_{i}^{ads})}\over{N_{points}}}$$ Eq. 1
 
@@ -134,7 +134,7 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 
 [^1]: Y. G. Chung, J. Camp, M. Haranczyk, B. J. Sikora, W. Bury, V. Krungleviciute, T. Yildirim, O. K. Farha, D. S. Sholl, R. Q. Snurr, Chem. Mater. 2014, 26, 6185–6192. [doi:10.1021/cm502594j](https://doi.org/10.1021/cm502594j)
 [^2]: C. E. Wilmer, M. Leaf, C. Y. Lee, O. K. Farha, B. G. Hauser, J. T. Hupp, R. Q. Snurr, Nat. Chem. 2012, 4, 83–89. [doi:10.1038/nchem.1192](https://doi.org/10.1038/nchem.1192)
-[^3]:
+[^3]: C. E. Wilmer, O. K. Farha, Y.-S. Bae, J. T. Hupp, R. Q. Snurr, Energy Environ. Sci. 2012, 5, 9849.[doi:10.1039/c2ee23201d](https://doi.org/10.1039/c2ee23201d)
 [^4]: B. J. Sikora, C. E. Wilmer, M. L. Greenfield, R. Q. Snurr, Chem. Sci. 2012, 3, 2217. [doi:10.1039/C2SC01097F](https://doi.org/10.1039/C2SC01097F)
 [^5]: D. Banerjee, C. M. Simon, A. M. Plonka, R. K. Motkuri, J. Liu, X. Chen, B. Smit, J. B. Parise, M. Haranczyk, P. K. Thallapally, Nat. Commun. 2016, 7, 11831. [doi:10.1038/ncomms11831](https://doi.org/10.1038/ncomms11831)
 [^6]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010.
@@ -142,16 +142,15 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
 [^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
 [^10]: B. Widom, J. Chem. Phys. 1963, 39, 2808–2812. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
-[^11]:
-[^12]:
+[^11]  “Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates,” R.Q. Snurr, A.T. Bell, D.N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992
+[^12] E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2010, 132, 7528–7539. [doi:10.1021/ja1023699](https://doi.org/10.1021/ja1023699)
 [^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
 [^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836.
 [^15]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
-[^16]:
-[^17]:
-[^18]:
-[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B)
-[^20]:
+[^16]: Smith, J. M., Van Ness, H. C. & Abbott, M. M. Introduction to Chemical Engineering Thermodynamics. (McGraw-Hill, 2005)
+[^17]: A. L. Myers, AIChE J. 2002, 48, 145–160.
+[^18]: B. Smit, J. I. Siepmann, J. Phys. Chem. 1994, 98, 8442–8452.
+[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B) [Program Computing DDEC Atomic Charges](http://ddec.sourceforge.net/)
 [^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
 [^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
 [^23]: Y. Lee, S. D. Barthel, P. Dłotko, S. M. Moosavi, K. Hess, B. Smit, Nat. Commun. 2017, 8, 15396. [doi:10.1038/ncomms15396](https://doi.org/10.1038/ncomms15396)
