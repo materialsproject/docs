@@ -467,8 +467,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -493,6 +493,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -529,18 +541,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -625,6 +625,27 @@ MathJax.Hub.Config({
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v201905" title="V2019.05" class="md-nav__link">
+    V2019.05
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v201902" title="V2019.02" class="md-nav__link">
+    V2019.02
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v201812" title="V2018.12" class="md-nav__link">
+    V2018.12
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#version-201811-release-date-2018-11-01" title="Version 2018.11, Release Date: 2018-11-01" class="md-nav__link">
@@ -762,6 +783,27 @@ MathJax.Hub.Config({
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v201905" title="V2019.05" class="md-nav__link">
+    V2019.05
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v201902" title="V2019.02" class="md-nav__link">
+    V2019.02
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v201812" title="V2018.12" class="md-nav__link">
+    V2018.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#version-201811-release-date-2018-11-01" title="Version 2018.11, Release Date: 2018-11-01" class="md-nav__link">
     Version 2018.11, Release Date: 2018-11-01
   </a>
@@ -841,7 +883,30 @@ MathJax.Hub.Config({
                 
                 
                 <h1 id="database-updates">Database updates<a class="headerlink" href="#database-updates" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Up-to-date release notes are now posted to
+<a href="https://discuss.materialsproject.org/t/materials-project-database-release-log/1609">this thread</a>
+on our discussion forum.</p>
+</div>
 <h2 id="current-database-versions">Current Database versions<a class="headerlink" href="#current-database-versions" title="Permanent link">&para;</a></h2>
+<h3 id="v201905">V2019.05<a class="headerlink" href="#v201905" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Introduced a new <code>deprecated</code> field to materials. By default the website and API only search for materials that are not deprecated: {"deprecated": false}.</li>
+<li>Deprecated 15,000 and added 3,600 new materials. We will be recomputing the deprecated materials to fill these spaces back up. Some of these new relaxations may end up matching current materials, so the total number of materials is not guaranteed to be the same as in V2019.02.</li>
+<li>Fixed an issue with sandboxes not properly building the whole hull. Previously, only the sandboxed chemical systems were being recalculated for energy_above_hull searches</li>
+</ul>
+<h3 id="v201902">V2019.02<a class="headerlink" href="#v201902" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added over 47,000 new materials from orderings of disordered ICSD as well as compounds from the Pauling File</li>
+<li>Finalized enforcing symmetry on piezo tensors</li>
+<li>Moved third order elastic data to elasticity_third_order so that people are not swamped by the mountain of information associated with it.</li>
+</ul>
+<h3 id="v201812">V2018.12<a class="headerlink" href="#v201812" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Adjusted the mp-id naming scheme to fix “mvc” ids taking over old mp-ids.</li>
+<li>Fixed piezoeletric max_direction to be a miller index rather than a unit vector.</li>
+</ul>
 <h3 id="version-201811-release-date-2018-11-01">Version 2018.11, Release Date: 2018-11-01<a class="headerlink" href="#version-201811-release-date-2018-11-01" title="Permanent link">&para;</a></h3>
 <p>We've released a new revision of the Materials Project database as part of major overhaul of our software infrastructure 
 to enable us to continue to build new properties and deliver them to you, the material science community, at an accelerating 

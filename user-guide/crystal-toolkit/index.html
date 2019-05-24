@@ -453,45 +453,9 @@ MathJax.Hub.Config({
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Crystal Toolkit
-      </label>
-    
     <a href="./" title="Crystal Toolkit" class="md-nav__link md-nav__link--active">
       Crystal Toolkit
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mp-complete-submitting-structures" title="MP-Complete (submitting structures)" class="md-nav__link">
-    MP-Complete (submitting structures)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-the-status-of-your-submissions" title="Monitoring the Status of Your Submissions" class="md-nav__link">
-    Monitoring the Status of Your Submissions
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -514,8 +478,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -540,6 +504,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -576,18 +552,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -698,29 +662,6 @@ MathJax.Hub.Config({
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mp-complete-submitting-structures" title="MP-Complete (submitting structures)" class="md-nav__link">
-    MP-Complete (submitting structures)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-the-status-of-your-submissions" title="Monitoring the Status of Your Submissions" class="md-nav__link">
-    Monitoring the Status of Your Submissions
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -735,34 +676,8 @@ MathJax.Hub.Config({
                 
                 
                 <h1 id="crystal-toolkit">Crystal Toolkit<a class="headerlink" href="#crystal-toolkit" title="Permanent link">&para;</a></h1>
-<p>The Crystal Toolkit app allows one to load structures, either via MP material ids or via uploading CIF or POSCAR files, and generate new crystals by substituting or removing species. One can also specify a scaling matrix to change a loaded structure's supercell dimensions.</p>
-<p>Once edits are made to a loaded structure, one can download the transformed structure as a CIF, POSCAR, etc. One can also submit a transformed structure to MP. If our automated algorithms determine that your structure is unique, we will compute the properties of your submitted compound and the results will appear on the website.</p>
-<h2 id="mp-complete-submitting-structures">MP-Complete (submitting structures)<a class="headerlink" href="#mp-complete-submitting-structures" title="Permanent link">&para;</a></h2>
-<p>We are continually adding new compounds and expanding the range of computed properties available. We have also received many valuable suggestions from users on new structures to include in our database. We believe that such user feedback is critical to ensuring that the Materials Project remains up-to-date and relevant, and MP-Complete is our initiative to facilitate the process.</p>
-<p>You may recommend new crystals for calculation via the Crystal Toolkit:</p>
-<ul>
-<li>Load a structure, either by MP-ID or through file upload.</li>
-<li>(Optional) Modify an existing structure to create a novel compound.</li>
-<li>Click the “Submit Structure” button under the structure view.</li>
-<li>Check your <a href="https://materialsproject.org/dashboard">Dashboard</a> for updates.</li>
-</ul>
-<p>A one-minute video walkthrough of the process is available <a href="https://www.youtube.com/watch?v=4c8MZdD0L3c">here</a>.</p>
-<h2 id="monitoring-the-status-of-your-submissions">Monitoring the Status of Your Submissions<a class="headerlink" href="#monitoring-the-status-of-your-submissions" title="Permanent link">&para;</a></h2>
-<p>On your <a href="https://materialsproject.org/dashboard">Dashboard</a>, under Submitted Structures, each structure entry has a status label that corresponds to the 'state' of a corresponding FireWorks workflow (<a href="https://materialsproject.github.io/fireworks/reference.html/">reference of FireWorks states</a>). Common states include:
- READY : calculations are ready to be performed for the submission, i.e. it has passed initial inspection, but the job has not started running.</p>
-<dl>
-  <dt>REJECTED</dt>
-  <dd>Calculations were not performed for a reason that is displayed.</dd>
-
-  <dt>RESERVED</dt>
-  <dd>At least one calculation has been submitted to the queue to run. The queue is finite in size, so READY jobs do not necessarily become immediately RESERVED.</dd>
-
-  <dt>RUNNING</dt>
-  <dd>Calculations are running. Depending on your structure, this stage could take a while.</dd>
-
-  <dt>COMPLETED</dt>
-  <dd>The submission has been fully processed, perhaps resulting in a new material on our website. We run our website database builders nightly, so completed calculations may not be immediately available.</dd>
-</dl>
+<p><strong>New for 2019!</strong> Crystal Toolkit is receiving an update, stay tuned...</p>
+<p>Crystal Toolkit is an app that allows one to load, analyze, transformation crystal structures, and optionally submit them to our database using <a href="mpcomplete.html">MPComplete</a>.</p>
                 
                   
                 

@@ -535,8 +535,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -561,6 +561,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -597,18 +609,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -784,18 +784,30 @@ transition metal compounds. This error arises from the self-interaction
 error in LDA and GGA, which is not canceled out in redox reactions where
 an electron is transferred between significantly different environments,
 such as between a metal and a transition metal or between a transition
-metal and oxygen. Extensive discussion of this issue can be found in the
-following works.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+metal and oxygen or fluorine. Extensive discussion of this issue can be found in the
+following works.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
 <p>In the Materials Project, we have calibrated U values for many
 transition metals of interest using the approach outlined in Wang et
-al.'s work<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. At the present moment, U values have been calibrated for
-transition metal oxide systems only. The choice of systems to which we
+al.'s work<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>. At the present moment, U values have only been calibrated for
+transition metal oxide systems. U values were calibrated for the following 
+elements: Co, Cr, Fe, Mn, Mo, Ni, V and W. The choice of systems to which we
 apply U was largely determined by our experience and by systematic
 benchmarking. It is very likely that we will expand calibration of U
 values to more chemical systems in the future.</p>
+<p>In the Materials Project, for an oxide or fluoride material with a transition
+element listed previously, the following INCAR tags were used to calculate 
+the GGA+U energies:</p>
+<ul>
+<li>LDAU = true</li>
+<li>LDAUJ = 0</li>
+<li>LDAUL = 0</li>
+<li>LDAUTYPE = 2 - Note that U values only get applied to the d-orbitals.</li>
+<li>Finally LDAUU gets sets to the value listed in the table below depending on the element used.</li>
+</ul>
+<p>Note that for fluorides, the U value gets set to the one calibrated from the oxide system. </p>
 <h2 id="calibration-of-u-values">Calibration of U values<a class="headerlink" href="#calibration-of-u-values" title="Permanent link">&para;</a></h2>
 <p>The U values were obtained by fitting to experimental binary formation
-enthalpies as described in Wang et al.'s work, which is simple and
+enthalpies as described in Wang et al.'s work. This method is simple yet
 accurately reproduces phase stabilities. A least squares method of
 obtaining the correct U value was used, as follows:</p>
 <ol>
@@ -814,8 +826,10 @@ obtaining the correct U value was used, as follows:</p>
 </ol>
 <h2 id="u-values">U values<a class="headerlink" href="#u-values" title="Permanent link">&para;</a></h2>
 <p>The full list of U values used is described in the table below. For
-oxides containing any of the elements, both GGA and GGA+U calculations
-were performed.</p>
+oxides and fluorides containing any of the elements, only GGA+U calculations
+are performed.</p>
+<!-- Why do fluorides and oxides have the same values? -->
+
 <table>
 <thead>
 <tr>
@@ -874,7 +888,7 @@ were performed.</p>
 <td>$\ce{Li2O + 2NiO + 1/2 O2 -&gt; 2LiNiO2}$</td>
 <td>$\ce{Ni^{2+} -&gt; Ni^{3+}}$</td>
 <td>6.2</td>
-<td>Binary formation energies are not readily available for Ni. The Ni U calibration was performed using a ternary oxide formation energy.<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5">5</a></sup></td>
+<td>Binary formation energies are not readily available for Ni. The Ni U calibration was performed using a ternary oxide formation energy.<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup></td>
 </tr>
 <tr>
 <td align="left">V</td>
@@ -897,8 +911,10 @@ were performed.</p>
 <h2 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h2>
 <p>The U values are calibrated for phase stability analyses, and should be
 used with care if applied to obtain other properties such as band
-structures. Also, the U values depend on the pseudopotential used. A
-discussion of the pseudopotentials used in the Materials Project can be
+structures. Also, the U values depend on the pseudopotential used. Further,
+typically, U values should be site specific, however in our approach, U values were
+applied to all sites with an element listed above, and only to the d-orbitals. A discussion of the 
+pseudopotentials used in the Materials Project can be
 found <a href="/methodology/pseudopotentials">here</a>.</p>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
 <ol>
@@ -912,29 +928,29 @@ found <a href="/methodology/pseudopotentials">here</a>.</p>
 <p>F. Zhou, M. Cococcioni, C. A. Marianetti, D. Morgan and G. Ceder.
 First-principles prediction of redox potentials in transition-metal
 compounds with LDA+U. Physical Review B, 2004, 70, 235121.
-<doi:10.1103/PhysRevB.70.235121>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<doi:10.1103/PhysRevB.70.235121>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <p>M. Cococcioni, S. de Gironcoli, Linear response approach to the
 calculation of the effective interaction parameters in the LDA+U
 method. Physical Review B, 2005, 71, 035105.
-<doi:10.1103/PhysRevB.71.035105>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<doi:10.1103/PhysRevB.71.035105>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>L. Wang, T. Maxisch, &amp; G. Ceder. Oxidation energies of transition
 metal oxides within the GGA+U framework. Physical Review B. 2006,
-73, 195107, <doi:10.1103/PhysRevB.73.195107>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+73, 195107, <doi:10.1103/PhysRevB.73.195107>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
 <p>A. Jain, G. Hautier, S. P. Ong, C. Moore, C. Fischer, K. A.
 Persson, &amp; G. Ceder. Formation enthalpies by mixing GGA and GGA + U
 calculations. Physical Review B, 2011, 84(4), 045115.
-<doi:10.1103/PhysRevB.84.045115>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<doi:10.1103/PhysRevB.84.045115>&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
 <p>M. Wang, A. Navrotsky Enthalpy of formation of LiNiO2, LiCoO2 and
 their solid solution, LiNi1-xCoxO2, Solid State Ionics, vol. 166,
-no. 1-2, pp. 167-173, Jan. 2004.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+no. 1-2, pp. 167-173, Jan. 2004.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

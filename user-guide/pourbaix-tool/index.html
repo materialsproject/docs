@@ -1,0 +1,1146 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Pourbaix Diagram - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#pourbaix-app" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Pourbaix Diagram
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pourbaix Diagram
+      </label>
+    
+    <a href="./" title="Pourbaix Diagram" class="md-nav__link md-nav__link--active">
+      Pourbaix Diagram
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermodynamic-formalism-of-pourbaix-diagrams" title="Thermodynamic Formalism of Pourbaix Diagrams" class="md-nav__link">
+    Thermodynamic Formalism of Pourbaix Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencing-energies-of-aqueous-ions" title="Referencing Energies of Aqueous Ions" class="md-nav__link">
+    Referencing Energies of Aqueous Ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-water" title="Correction for Water" class="md-nav__link">
+    Correction for Water
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-elemental-gaseous-and-liquid-states-except-ceh2" title="Correction for Elemental Gaseous, and Liquid States, except $\ce{H2}$" class="md-nav__link">
+    Correction for Elemental Gaseous, and Liquid States, except $\ce{H2}$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-ceh_2" title="Correction for $\ce{H_2}$" class="md-nav__link">
+    Correction for $\ce{H_2}$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-stability-of-metastable-materials" title="Electrochemical Stability of Metastable Materials" class="md-nav__link">
+    Electrochemical Stability of Metastable Materials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-computational-pourbaix-app" title="Using the Computational Pourbaix App" class="md-nav__link">
+    Using the Computational Pourbaix App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfacing-with-the-data" title="Interfacing With the Data" class="md-nav__link">
+    Interfacing With the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demonstration-of-the-pourbaix-app" title="Demonstration of the Pourbaix App" class="md-nav__link">
+    Demonstration of the Pourbaix App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elemental-pourbaix-diagram" title="Elemental Pourbaix Diagram" class="md-nav__link">
+    Elemental Pourbaix Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-elemental-pourbaix-diagram" title="Multi-elemental Pourbaix diagram" class="md-nav__link">
+    Multi-elemental Pourbaix diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-stability-map" title="Electrochemical Stability Map" class="md-nav__link">
+    Electrochemical Stability Map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#literature-references-for-ions" title="Literature References for Ions" class="md-nav__link">
+    Literature References for Ions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermodynamic-formalism-of-pourbaix-diagrams" title="Thermodynamic Formalism of Pourbaix Diagrams" class="md-nav__link">
+    Thermodynamic Formalism of Pourbaix Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencing-energies-of-aqueous-ions" title="Referencing Energies of Aqueous Ions" class="md-nav__link">
+    Referencing Energies of Aqueous Ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-water" title="Correction for Water" class="md-nav__link">
+    Correction for Water
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-elemental-gaseous-and-liquid-states-except-ceh2" title="Correction for Elemental Gaseous, and Liquid States, except $\ce{H2}$" class="md-nav__link">
+    Correction for Elemental Gaseous, and Liquid States, except $\ce{H2}$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correction-for-ceh_2" title="Correction for $\ce{H_2}$" class="md-nav__link">
+    Correction for $\ce{H_2}$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-stability-of-metastable-materials" title="Electrochemical Stability of Metastable Materials" class="md-nav__link">
+    Electrochemical Stability of Metastable Materials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-computational-pourbaix-app" title="Using the Computational Pourbaix App" class="md-nav__link">
+    Using the Computational Pourbaix App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfacing-with-the-data" title="Interfacing With the Data" class="md-nav__link">
+    Interfacing With the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demonstration-of-the-pourbaix-app" title="Demonstration of the Pourbaix App" class="md-nav__link">
+    Demonstration of the Pourbaix App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elemental-pourbaix-diagram" title="Elemental Pourbaix Diagram" class="md-nav__link">
+    Elemental Pourbaix Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-elemental-pourbaix-diagram" title="Multi-elemental Pourbaix diagram" class="md-nav__link">
+    Multi-elemental Pourbaix diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-stability-map" title="Electrochemical Stability Map" class="md-nav__link">
+    Electrochemical Stability Map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#literature-references-for-ions" title="Literature References for Ions" class="md-nav__link">
+    Literature References for Ions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/pourbaix-tool.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="pourbaix-app">Pourbaix App<a class="headerlink" href="#pourbaix-app" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>A Pourbaix diagram, also frequently called a potenial-pH diagram, or E-pH diagram, is a representation of aqueous phase electrochemical equilibria. It is a two-dimensional representation of a three-dimensional free energy-pH-potential diagram. In other words, it shows water-stable phases as a function of pH and potential, where, potential is defined with respect to the standard hydrogen electrode.</p>
+<p>Experimentally determining Pourbaix Diagrams is painstaking work, as we need not only the free energy of aqueous ions, but also that of all solid phases that a system can exist in. The Materials Project offers a very convenient and powerful database of materials properties which has been used to generate Pourbaix diagrams in a high-throughput manner.</p>
+<p>This manual outlines the usage of the Pourbaix App to calculate Pourbaix diagrams, and the thermodynamic formalism underlying the app.</p>
+<h2 id="thermodynamic-formalism-of-pourbaix-diagrams">Thermodynamic Formalism of Pourbaix Diagrams<a class="headerlink" href="#thermodynamic-formalism-of-pourbaix-diagrams" title="Permanent link">&para;</a></h2>
+<p>To calculate a Pourbaix diagram, free energies of the solid phases, and of the aqueous ions is required. Calculating free energies of ions is tricky, and time-consuming. To overcome this problem, a methodology utilizing experimentally measured free energies of aqueous ions and the calculated DFT energies for solid phases available in the Materials Project was developed. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> Note that the correction scheme described below is applied over and above any compatibilities/corrections which are applied to the species.</p>
+<h3 id="referencing-energies-of-aqueous-ions">Referencing Energies of Aqueous Ions<a class="headerlink" href="#referencing-energies-of-aqueous-ions" title="Permanent link">&para;</a></h3>
+<p>Briefly, for each ion, a reference solid is chosen, and the correction term is calculated for the ion as the energy difference between the experimental and the DFT calculated energies of the reference solid. The basic idea behind this scheme is that, if we have a reference energy for an aqueous ion which reproduces the correct dissolution for one solid, then accurate DFT solid-solid energy differences ensure that all other solids dissolve accurately with respect to that ion. The better the solid is represented by DFT, the more transferable the reference aqueous energy becomes. We therefore prefer to choose simple chemical systems (primarily binaries with an uncomplicated electronic structure) as representative solids.</p>
+<p>For an aqueous ion i at standard state conditions (e.g., room temperature, atmospheric pressure, and $10^{-6}$ M concentration) using a representative solid s, we define the chemical potential as:</p>
+<p><img alt="pourbaix_reference_energeis" src="../img/pourbaix-app/Ion_ref_energy.png" />
+<em>Figure 1: Schematic to reference experimental aqueous ion energies to DFT data</em></p>
+<p>$$\begin{align} \mu_{i(aq)}^0 &amp;= \mu_{i(aq)}^{0,{\rm exp}} + \left[\Delta g_s^{0,{\rm DFT}} - \Delta g_s^{0,{\rm exp}}\right] \
+&amp; = \mu_{i(aq)}^{0,{\rm exp}} + \Delta\mu_s^{0, {\rm DFT - exp}}
+\end{align}$$</p>
+<p>Figure 1 shows this schematically.</p>
+<h3 id="correction-for-water">Correction for Water<a class="headerlink" href="#correction-for-water" title="Permanent link">&para;</a></h3>
+<p>In an aqueous environment, many chemical and electrochemical reactions are enabled by the breakdown, formation, or incorporation of water molecules. It is therefore important that the free energy of formation of water is captured accurately. This is known accurately from experiments as $-2.46~eV$. So, at standard state, the free energy of formation of water is set as follows:</p>
+<p>$$\begin{align}
+\mu^0_{{\rm H_2O}} &amp;= \Delta g^{0, {\rm exp}}_{\rm H_2O} \
+ &amp; = -2.46 eV
+\end{align}$$</p>
+<h3 id="correction-for-elemental-gaseous-and-liquid-states-except-ceh2">Correction for Elemental Gaseous, and Liquid States, except $\ce{H2}$<a class="headerlink" href="#correction-for-elemental-gaseous-and-liquid-states-except-ceh2" title="Permanent link">&para;</a></h3>
+<p>For all gaseous elements, the experimentally determined entropic contribution at 298 K is added to the DFT/corrected energy of the element as follows:</p>
+<p>$$\mu_i^{\rm ref} = E_i^{0, {\rm DFT}} + \Delta E_i^{\rm correction} - Ts_i^{\rm exp}$$</p>
+<p>This is implemented for the following elements: $\ce{O_2, F_2, Cl_2, Br_2, Hg}$</p>
+<h3 id="correction-for-ceh_2">Correction for $\ce{H_2}$<a class="headerlink" href="#correction-for-ceh_2" title="Permanent link">&para;</a></h3>
+<p>In an aqueous environment, $\ce{O_2}$ and $\ce{H_2}$ in their gaseous states are in equilibrium with water through the reaction</p>
+<p>$\ce{H2(g) + 1/2O2(g) &lt;-&gt; H2O(l)}$</p>
+<p>Hence, the hydrogen energy is corrected such that the experimental free energy of formation of $\ce{H_2O}$ is reproduced.</p>
+<p>$$\begin{align}
+\mu_{\rm H}^{\rm ref} &amp; = \frac{1}{2}\left[g_{\rm H_2O}^0 - \mu_O^0 - \Delta g_{\rm H_2O}^{0, {\rm exp}} \right] \
+&amp; \approx \frac{1}{2}\left[ E_{\rm H_2O}^{0, {\rm DFT}} -Ts_{\rm H_2O}^0 - \mu_O^0 - \mu_{\rm H_2O}^{0, {\rm exp}} \right]
+\end{align}$$</p>
+<h3 id="electrochemical-stability-of-metastable-materials">Electrochemical Stability of Metastable Materials<a class="headerlink" href="#electrochemical-stability-of-metastable-materials" title="Permanent link">&para;</a></h3>
+<p>In principle, Pourbaix diagrams account for materials only at thermodynamic equilibrium, providing no insight into the electrochemical stability of metastable materials which find practical applications in many commercial applications. However, one can compute the Gibbs free energy difference for an arbitrary material with respect to the Pourbaix stable domains as a function of pH and E, providing an electrochemical (in)stability map for this material. For detailed information on the formalism and its applications see reference 2.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></p>
+<h2 id="using-the-computational-pourbaix-app">Using the Computational Pourbaix App<a class="headerlink" href="#using-the-computational-pourbaix-app" title="Permanent link">&para;</a></h2>
+<p>The Pourbaix app is capable of plotting elemental, and multi-element Pourbaix diagrams. To construct an Elemental Pourbaix diagram, enter the element of choice, and click on the Generate button.</p>
+<p>To generate a multi-elemental Pourbaix diagram, choose the desired multiple elements from the periodic table, and click the Generate button. Note that oxygen and hydrogen are included by default, since these elements are always "open" in a Pourbaix diagram.</p>
+<p>For multi-elemental diagrams, sliders are provided to specify a composition of the elements. Note that for each composition, a new Pourbaix diagram is generated from scratch.</p>
+<p>To generate electrochemical stability maps of a specific material go to the material's details page and click on the "Aqueous Stability (Pourbaix)" tab which can be found in the "Generate Phase Diagram" tab. A new tab will open which will show the electrochemical stability map superimposed on a Pourbaix diagram. The ratio of elements used to generate the Pourbaix diagram are same as that of the material in consideration. Electrochemical stability maps are available for materials with up to three non H and O elements. For materials with more than three elements, one can use pymatgen to generate the maps programmatically.</p>
+<h3 id="interfacing-with-the-data">Interfacing With the Data<a class="headerlink" href="#interfacing-with-the-data" title="Permanent link">&para;</a></h3>
+<p>To ensure a clutter-free diagram, the domains on the Pourbaix diagram are not labeled by default. To view labels on the plot, select the "Domain Labels" check box.
+Each domain has a mouse-over point located at the center of the domain. Mousing over these points displays the entries corresponding to the domain.
+Domains which contain a solid in solution are shaded. This helps identify passivation regions, especially in multi-elemental systems, were identifying passivation regions is tricky.
+Zooming into domains is quite simple! Just drag a selection window using your mouse. To reset zoom, click on the reset zoom button which appears on the upper right corner.
+Data tables are shown to the right of the Pourbaix diagram. Mousing over rows in the "Stable" column of the table highlights the corresponding entries in the Pourbaix diagram. Some stable entries may not get highlighted. This is because the domains corresponding to these entries lies outside the standard limits of the Pourbaix diagram.
+The "Unstable" column in the table lists the unstable entries, and their corresponding energies above hull.
+Links in the data tables lead to more information about the corresponding entries. Unlinked entries are ions. Mousing over the book icon next to the ions shows the reference for the free energy of formation of the aqueous ion.</p>
+<h2 id="demonstration-of-the-pourbaix-app">Demonstration of the Pourbaix App<a class="headerlink" href="#demonstration-of-the-pourbaix-app" title="Permanent link">&para;</a></h2>
+<p>This section briefly demonstrates an elemental Pourbaix diagram, a multi-elemental Pourbaix diagram, and an electrochemical stability map.</p>
+<h3 id="elemental-pourbaix-diagram">Elemental Pourbaix Diagram<a class="headerlink" href="#elemental-pourbaix-diagram" title="Permanent link">&para;</a></h3>
+<p>Figure 2 shows the elemental Pourbaix diagram for Fe. The default concentration of ions is $10^{-8}$ M, but can be varied using the "Concentration" slider above the diagram.</p>
+<p><img alt="fe_pourbaix_diagram" src="../img/pourbaix-app/Fe_pourbaix.png" />
+<em>Figure 2: Pourbaix diagram for elemental Fe.</em></p>
+<p>The two orange lines are the hydrogen reduction line, and the line denoting water oxidation to $\ce{O_2}$. These are clearly labeled in Figure 3. These lines show the stability region of H2O. For example, water is unstable below the $\ce{H_2}$ line, and so, hydrogen gas evolves at the cathode at conditions below this line. Similarly, above the $\ce{O_2}$ line, oxygen gas is evolved at the anode.</p>
+<p><img alt="fe_pourbaix_diagram_ox_red_marked" src="../img/pourbaix-app/Fe_Lines_marked.png" />
+<em>Figure 3: Orange lines are the water oxidation and reduction lines in the Pourbaix diagram.</em></p>
+<h3 id="multi-elemental-pourbaix-diagram">Multi-elemental Pourbaix diagram<a class="headerlink" href="#multi-elemental-pourbaix-diagram" title="Permanent link">&para;</a></h3>
+<p>The stability of multiple-elements in aqueous environments is predicted using multi-elemental Pourbaix diagrams like the one shown in Figure 4. The composition slider bar can be seen above the plot. Here, the small white bar separating the two colors can be clicked on and dragged to change the ratio of Fe to Cr. This may, or may not have any effect on the Pourbaix diagram. More information about how multi-elemental Pourbaix diagrams vary as a function of composition can be found elsewhere.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup></p>
+<p><img alt="fe_cr_pourbaix_diagram" src="../img/pourbaix-app/FeCr_pourbaix.png" />
+<em>Figure 4: Multi-elemental Fe-Cr Pourbaix diagram at a composition of 18% Cr, 82% Fe.</em></p>
+<p>For an n-element diagram, there are n coexisting phases. Note that these can be any mixture of solid, and aqueous phases. So, for the two-element diagram shown in Figure 4, there are two coexisting phases in each domain. As mentioned above, domains shaded blue indicate purely solid domains. For multi-elemental diagrams, shaded domains indicate those in which purely solid phases coexist.</p>
+<h3 id="electrochemical-stability-map">Electrochemical Stability Map<a class="headerlink" href="#electrochemical-stability-map" title="Permanent link">&para;</a></h3>
+<p>Figure 5 shows the Gibbs free energy of $\ce{Fe_2O_3}$, as a scatter plot, superimposed over the Pourbaix diagram of Fe. For a material with more than one non H and O elements, the ratio of these elements is fixed to the ratio of elements of the material but the concentration of ions can be varied similar to the single- and multi-element Pourbaix diagrams.</p>
+<p><img alt="fe_cr_pourbaix_diagram" src="../img/pourbaix-app/Fe2O3_stability_map.png" />
+<em>Figure 5: Electrochemical stability map of Fe2O3 (mp-24972).</em></p>
+<p>A colorbar is shown above the electrochemical stability maps. Note that Gibbs free energies larger than 1 eV/atom are not marked in the map. Stable and unstable phase energies can be found in the table to the right of the electrochemical stability map.</p>
+<h2 id="literature-references-for-ions">Literature References for Ions<a class="headerlink" href="#literature-references-for-ions" title="Permanent link">&para;</a></h2>
+<p>The free energies of ions in the aqueous phase have been taken from standard references/recent publications. The acronyms which show up on the tool-tips associated with the aqueous ions, and their corresponding references are as follows.</p>
+<p>NBS Tables: NBS Thermodynamic tables.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>
+M. Pourbaix (1974): Atlas of Electrochemical Equilibria in Aqueous Solutions. <sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>
+Barin Knacke Kubaschewski: Thermochemical Properties of Inorganic Substances <sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>
+Barner and Scheuerman (1978): Handbook of thermochemical data for compounds and aqueous species <sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>
+Beverskog and Puigdomenech (1997): Beverskog and Puigdomenech, Corr. Sci. (1997) <sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup></p>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sai Jayaraman</li>
+<li>Arunima K. Singh</li>
+<li>Rebecca Stern</li>
+<li>Eric Sivonxay</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>K. A. Persson, B. Waldwick, P. Lazic, and G. Ceder, Phys. Rev. B, 85, 235438 (2012)&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>A. K. Singh, L. Zhou, A. Shinde, S. K. Suram, J. H. Montoya, D. Winston, J. M. Gregoire, K. A. Persson, Chem. Mater. 29, 10159 (2017)&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Pourbaix Diagrams for Multielement Systems, Thompson, W. T., Kaye, M. H., Bale, C. W. and Pelton, A. D. (2011), in Uhlig's Corrosion Handbook, Third Edition (ed R. W. Revie), John Wiley &amp; Sons, Inc., Hoboken, NJ, USA.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>NBS Technical Note 270-1 to 270-8. D. D. Wagman et. al, U. S. Department of Commerce (1973)&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Atlas of Electrochemical Equilibria in Aqueous Solutions, M. Pourbaix,, NACE (1974)&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Thermochemical Properties of Inorganic Substances, I. Barin, O. Knacke, and O. Kubaschewski, Springer-Verlag, Berlin (1977)&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Handbook of thermochemical data for compounds and aqueous species, H. E. Barner, and R. V. Scheuerman, Wiley, New York, 1978&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Revised Pourbaix diagrams for Ni at 25-300^oC, B. Beverskog and I. Puigdomenech, Corr. Sci., 39, 969-980 (1997)&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../structure-predictor/" title="Structure Predictor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Structure Predictor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../phase-diagram/" title="Phase Diagram" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Phase Diagram
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

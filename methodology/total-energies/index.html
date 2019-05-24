@@ -636,8 +636,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -662,6 +662,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -698,18 +710,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -981,7 +981,7 @@ MathJax.Hub.Config({
                 <h1 id="total-energy-calculations">Total Energy Calculations<a class="headerlink" href="#total-energy-calculations" title="Permanent link">&para;</a></h1>
 <h2 id="calculation-details">Calculation Details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
 <p>We use density functional theory as implemented in the Vienna Ab Initio
-Simulation Package (VASP) software<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> to evaluate the total energy of
+Simulation Package (VASP) software<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> to evaluate the total energy of
 compounds. For the exchange-correlational functional, we employ a mix of
 Generalized Gradient Approximation (GGA) and GGA+<em>U</em>, as
 described <a href="#ggau_tag">later in this manual</a>.
@@ -999,15 +999,15 @@ the k-point choices (but \(\Gamma\)-centered for hexagonal cells) and
 the tetrahedron method to perform the k-point integration. Pymatgen
 could change those default parameters if they are not adequate for the
 computation (e.g., switch to another k-point integration scheme). Some
-details of our calculation method can be found in ref <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>; however, the
+details of our calculation method can be found in ref <sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>; however, the
 Materials Project has updated many parameters as documented throughout
 the Methodology sections.</p>
 <h3 id="crystal-structures">Crystal structures<a class="headerlink" href="#crystal-structures" title="Permanent link">&para;</a></h3>
 <p>We use input structures from the Inorganic Crystal Structure Database
-(ICSD),<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and relax all cell and atomic positions in our calculation
+(ICSD),<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> and relax all cell and atomic positions in our calculation
 two times in consecutive runs. When multiple crystal structures are
 present for a single chemical composition, we attempt to evaluate all
-unique structures as determined by an affine mapping technique.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+unique structures as determined by an affine mapping technique.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup></p>
 <h3 id="total-energy-convergence">Total energy convergence<a class="headerlink" href="#total-energy-convergence" title="Permanent link">&para;</a></h3>
 <p>We currently employ a k-point mesh of 1000 per reciprocal atom (pra). We performed
 a convergence test of total energy with respect to k-point
@@ -1018,11 +1018,11 @@ convergence for most compounds tested was within 5 meV/atom, and 96% of
 compounds tested were converged to within 15 meV/atom. Results for the
 new parameter set will be better due to the denser k-point mesh
 employed. Convergence will depend on chemical system; for example,
-oxides were generally converged to less than 1 meV/atom.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+oxides were generally converged to less than 1 meV/atom.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup></p>
 <h3 id="structure-convergence">Structure convergence<a class="headerlink" href="#structure-convergence" title="Permanent link">&para;</a></h3>
 <p>The energy difference for ionic convergence is set to 0.0005 * natoms
 in the cell. Data on expected accuracy on cell volumes can be found in a
-previous paper.<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> We have found these parameters to yield
+previous paper.<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> We have found these parameters to yield
 well-converged structures in most instances; however, if the structures
 are to be used for further calculations that require strictly converged
 atomic positions and cell parameters (e.g. elastic constants, phonon
@@ -1040,7 +1040,7 @@ do not represent the same phase as standard experimental data. In
 addition, there may be GGA errors associated with reducing gas phases in
 gas-to-solid reactions. Rather than calculating the liquid/gas energies
 directly, we adjust the energies of several elements that are liquid or
-gaseous at room temperature using Wang's method.<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5">5</a></sup> The best-tested fit
+gaseous at room temperature using Wang's method.<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup> The best-tested fit
 is for oxygen gas reacting to form to oxides. We have adjusted energies
 of the following compounds:</p>
 <ul>
@@ -1064,7 +1064,7 @@ calculations. The idea behind this approach is to split reactions into
 sub-reactions that are well-modeled by GGA, well-modeled by
 GGA+<em>U</em>, or a binary formation reaction that can be estimated
 from known experimental data. More details on this method can be found
-in ref <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+in ref <sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>.</p>
 <h2 id="accuracy-of-total-energies">Accuracy of Total Energies<a class="headerlink" href="#accuracy-of-total-energies" title="Permanent link">&para;</a></h2>
 <p>To estimate the accuracy of our total energy calculations, we compute
 reaction data and compare against experimental data. Note that this data
@@ -1095,20 +1095,20 @@ have errors larger than 20 kJ mol$^{-1}$.</p>
 <p>It should be noted that while an MAE of 14 kJ mol$^{-1}$ is significantly
 higher than the desired chemical accuracy of 4 kJ mol$^{-1}$, it compares
 fairly well with the performance of most quantum chemistry
-calculations<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>. Other than the most computationally expensive model
+calculations<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>. Other than the most computationally expensive model
 chemistries such as G1-G3 and CBS, the reaction energy errors of most
 computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.</p>
 <p>For oxidation of the elements into binary compounds, an average error of
-~4% or 33 kJ/mol-$\ce{O2}$ is typical.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> For conventional ternary oxide
+~4% or 33 kJ/mol-$\ce{O2}$ is typical.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup> For conventional ternary oxide
 formation from the elements, we have found a mean relative absolute
-error of about 2%.<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+error of about 2%.<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup></p>
 <h3 id="sources-of-error">Sources of error<a class="headerlink" href="#sources-of-error" title="Permanent link">&para;</a></h3>
 <p>The largest contribution to the error comes from the inability of the
 GGA to fully describe electronic exchange and correlation effects. In
 addition, there is some error associated with neglecting zero-point
 effects and with comparing 0K, 0atm computations with room-temperature
 enthalpy experiments. The latter effect was estimated to contribute less
-than 0.03 eV/atom by Lany.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> The stability of antiferromagnetic
+than 0.03 eV/atom by Lany.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup> The stability of antiferromagnetic
 compounds may be underestimated, as the majority of our calculations are
 performed ferromagnetically only. The effect of magnetism may be small
 (under 10 meV/atom) or large (100 meV/atom or greater), depending on the
@@ -1116,7 +1116,7 @@ compound. For compounds with heavy elements, relativistic effects may
 lead to greater-than-expected errors.</p>
 <h3 id="gga-errors-on-reaction-energies-between-chemically-similar-compounds">GGA errors on reaction energies between chemically similar compounds<a class="headerlink" href="#gga-errors-on-reaction-energies-between-chemically-similar-compounds" title="Permanent link">&para;</a></h3>
 <p>We recently conducted a more in-depth study comparing GGA (+U) reaction
-energies of ternary oxides from binary oxides on 135 compounds. <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup></p>
+energies of ternary oxides from binary oxides on 135 compounds. <sup id="fnref:10"><a class="footnote-ref" href="#fn:10" rel="footnote">10</a></sup></p>
 <p>The main conclusions are:</p>
 <ul>
 <li>The error in reaction energies for the binary oxide to ternary
@@ -1165,52 +1165,52 @@ works:</p>
 <li id="fn:1">
 <p>Kresse, G. &amp; Furthmuller, J., 1996. Efficient iterative schemes
 for ab initio total-energy calculations using a plane-wave basis
-set. Physical Review B, 54, pp.11169-11186.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+set. Physical Review B, 54, pp.11169-11186.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <p>A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T. Mueller,
 K.A. Persson, G. Ceder., A High-Throughput Infrastructure for
 Density Functional Theory Calculations, Computational Materials
-Science. vol. 50 (2011) 2295-2310.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+Science. vol. 50 (2011) 2295-2310.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>G. Bergerhoff, The inorganic crystal-structure data-base, Journal
-Of Chemical Information and Computer Sciences. 23 (1983) 66-69.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+Of Chemical Information and Computer Sciences. 23 (1983) 66-69.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
 <p>R. Hundt, J.C. Schön, M. Jansen, CMPZ - an algorithm for the
 efficient comparison of periodic structures, Journal Of Applied
-Crystallography. 39 (2006) 6-16.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+Crystallography. 39 (2006) 6-16.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
 <p>L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
 metal oxides within the GGA+U framework, Physical Review B. 73
-(2006) 1-6.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+(2006) 1-6.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
 <p>A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
 Persson, G. Ceder, Formation Enthalpies by Mixing GGA and GGA+U
-calculations, Physical Review B, vol. 84 (2011), 045115.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+calculations, Physical Review B, vol. 84 (2011), 045115.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
 <p>J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
-Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
 <p>A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
 Ceder, W.H. Green, Ab initio screening of metal sorbents for
 elemental mercury capture in syngas streams, Chemical Engineering
-Science. 65 (2010) 3025-3033.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+Science. 65 (2010) 3025-3033.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
 <p>S. Lany, Semiconductor thermochemistry in density functional
-calculations, Physical Review B. 78 (2008) 1-8.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+calculations, Physical Review B. 78 (2008) 1-8.&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 <li id="fn:10">
 <p>G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
 density functional theory in predicting formation energies of
 ternary oxides from binary oxides and its implication on phase
-stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref" href="#fnref:10" rev="footnote" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

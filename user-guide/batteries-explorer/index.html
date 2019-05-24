@@ -467,78 +467,6 @@ MathJax.Hub.Config({
           
           
 
-
-  <li class="md-nav__item">
-    <a href="./" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
-      Molecules Explorer
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
-      Structure Predictor
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
-      Phase Diagram
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
-      XAS Matcher
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
-      Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -706,6 +634,78 @@ MathJax.Hub.Config({
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
   </li>
 
         
@@ -1000,7 +1000,7 @@ MathJax.Hub.Config({
 <h3 id="voltage-curve">Voltage curve<a class="headerlink" href="#voltage-curve" title="Permanent link">&para;</a></h3>
 <p>The voltage curve graph displays the calculated equilibrium voltage versus state of charge. If voltage criteria were specified in the query, the line might be segmented into different colors. The green portion of the curve matches the query, whereas the the blue portion of the curve does not.</p>
 <h3 id="o2-evolution-curve">O<sub>2</sub> evolution curve<a class="headerlink" href="#o2-evolution-curve" title="Permanent link">&para;</a></h3>
-<p>One concern for cathode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from the cathode can lead to thermal runaway. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. Note that the $\ce{O_2}$ release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The $\mu_\ce{O_2}$ needed for release can be referenced against common binary systems to get an idea of stability to $\ce{O_2}$ release:</p>
+<p>One concern for cathode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from the cathode can lead to thermal runaway. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>. One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. Note that the $\ce{O_2}$ release chart is specific to one lithiation level of the set of compounds forming the cathode system. There is a drop-down that allows you to choose the lithiation level (e.g. fully delithiated, fully lithiated). The $\mu_\ce{O_2}$ needed for release can be referenced against common binary systems to get an idea of stability to $\ce{O_2}$ release:</p>
 <p><img alt="" src="/user-guide/img/battery/battery_Muoscale.gif" /></p>
 <h3 id="overall-materials-properties">Overall materials properties<a class="headerlink" href="#overall-materials-properties" title="Permanent link">&para;</a></h3>
 <p>The overall materials properties display aggregate or average properties over all lithiation levels of a given structural framework. Note that some lithiation levels presented in this section may be outside the desired range of voltage, stability, or safety. More details are given in the 'Voltage pair properties' section.</p>
@@ -1016,11 +1016,11 @@ MathJax.Hub.Config({
 <p>The sites table lists all identified local minima of E(Li) in the structure and qualifies them according to their site energy values into equilibrium sites Li# (or lowest energy sites for compounds not containing Li) and interstitials i#. Symmetry-equivalent sites are listed only once. For some compounds with complex pathways this table also includes information on saddle-points s# along the path to help distinguish otherwise ambiguous connections between Li sites in the structure.</p>
 <p>The paths table lists the connections between site pairs, their activation energy. It also includes information regarding the contribution to the long range pathways listed above.</p>
 <h2 id="classical-bond-valence-method">Classical bond valence method<a class="headerlink" href="#classical-bond-valence-method" title="Permanent link">&para;</a></h2>
-<p>Empirical relationships between bond length $R_{\rm A-X}$ and the so-called bond valence $s_{\rm A-X}= \exp[(R_0-R_{\rm A-X})/b]$ are widely used in crystal chemistry to identify plausible equilibrium sites for an atom in a structure as sites, where the bond valence sum V(A) of A from interactions with all its surrounding counterions X matches its oxidation state.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
-<p>A few years ago, we introduced a systematic adjustment of the bond valence parameter b to bond softness.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> Together with the inclusion of the weak interactions beyond the first coordination shell, this makes it possible to extend the application range of the bond valence method to assess also non-equilibrium sites more adequately and therefrom to predict pathways for mobile ions in models of local structures as regions in a structure model where the bond valence sum V(A) deviates only marginally from the ideal valence V<sub>id</sub>(A) (i.e., its oxidation state). To enhance chemical plausibility of such bond valence mismatch landscapes $|\Delta V(A)|$ penalty functions have been introduced that (i) discriminate against sites, where a matching V(A) is achieved by strongly asymmetric coordinations and (ii) exclude sites close to other immobile cation types.</p>
+<p>Empirical relationships between bond length $R_{\rm A-X}$ and the so-called bond valence $s_{\rm A-X}= \exp[(R_0-R_{\rm A-X})/b]$ are widely used in crystal chemistry to identify plausible equilibrium sites for an atom in a structure as sites, where the bond valence sum V(A) of A from interactions with all its surrounding counterions X matches its oxidation state.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup></p>
+<p>A few years ago, we introduced a systematic adjustment of the bond valence parameter b to bond softness.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> Together with the inclusion of the weak interactions beyond the first coordination shell, this makes it possible to extend the application range of the bond valence method to assess also non-equilibrium sites more adequately and therefrom to predict pathways for mobile ions in models of local structures as regions in a structure model where the bond valence sum V(A) deviates only marginally from the ideal valence V<sub>id</sub>(A) (i.e., its oxidation state). To enhance chemical plausibility of such bond valence mismatch landscapes $|\Delta V(A)|$ penalty functions have been introduced that (i) discriminate against sites, where a matching V(A) is achieved by strongly asymmetric coordinations and (ii) exclude sites close to other immobile cation types.</p>
 <p>The determination of the empirical bond valence parameters R0 and b is based on fits to large sets of experimental reference structures. Thus it may be expected that their application to ab initio structure models (with typically slightly larger unit cell volumes) causes a somewhat reduced accuracy of the approach.</p>
 <h2 id="bond-valence-site-energy-calculation">Bond valence site energy calculation<a class="headerlink" href="#bond-valence-site-energy-calculation" title="Permanent link">&para;</a></h2>
-<p>A natural way to combine the bond valence approach with penalty functions for repulsions between the mobile and immobile cation types is to use Coulomb repulsion, but then the bond valence mismatch term also has to be expressed in energy units. In reference<sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup> we discuss in detail an effective way to translate the squared bond valence (sum) mismatches into approximate a Morse-type bond valence site energy for the mobile ion<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. The approach automatically includes bond asymmetry penalties (for details and a table of the employed parameters see reference Adams &amp; Rao<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>). In brief, the bond valence site energy E(Li) for a cation Li at a given position is calculated from the position of its N anion neighbours Xj (j = 1,…,N) and P immobile cations is calculated as:</p>
+<p>A natural way to combine the bond valence approach with penalty functions for repulsions between the mobile and immobile cation types is to use Coulomb repulsion, but then the bond valence mismatch term also has to be expressed in energy units. In reference<sup id="fnref2:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> we discuss in detail an effective way to translate the squared bond valence (sum) mismatches into approximate a Morse-type bond valence site energy for the mobile ion<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>. The approach automatically includes bond asymmetry penalties (for details and a table of the employed parameters see reference Adams &amp; Rao<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>). In brief, the bond valence site energy E(Li) for a cation Li at a given position is calculated from the position of its N anion neighbours Xj (j = 1,…,N) and P immobile cations is calculated as:</p>
 <p>$$
 E(Li)=\sum_{j=1}^{N}{{\frac{D_{Li-X_j}}{s^2_{min,Li-X_j}}(exp[\frac{R_{o,Li-X_j}-R_{Li-X_j}}{b_{Li-X_j}}]-s_{min,Li-X_j})^2-D_{Li-X_j}}}+E_{Coulomb}
 $$</p>
@@ -1047,7 +1047,7 @@ $D_{Li-X_j}=14.4\frac{eV}{Å}\frac{V_{id}(X_j)}{R_{min,Li-X_j}\sqrt{n_{Li}n_{X_j
 <ul>
 <li>the screened Coulomb repulsion between Li and an the P surrounding immobile cations Mi (i=1,…,P) is
 $E_{Coulomb}=\frac{1}{4\pi\epsilon_0}\sum_{i=1}^{P}[\frac{q_{Li}q_{M_i}}{R_{Li-M_i}}erfc(\frac{R_{Li-M_i}}{\rho_{Li-M_i}})]$
-using fractional charges, where the systematic assignment of context sensitive fractional charges again involves the inverse square root of the principal quantum number as a scaling factor (for details see<sup id="fnref3:4"><a class="footnote-ref" href="#fn:4">4</a></sup>). The screening factor ρLi-Mi is assumed to equal the sum of the covalent radii of the two ions involved times a scaling factor f that depends on the average absolute cation electronegativity and the average cation charge in the compound. Typical values of f in ternary and quaternary lithium oxides fall into the range 0.74±0.04 and thereby ρ is of the order of 2 Å.</li>
+using fractional charges, where the systematic assignment of context sensitive fractional charges again involves the inverse square root of the principal quantum number as a scaling factor (for details see<sup id="fnref3:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>). The screening factor ρLi-Mi is assumed to equal the sum of the covalent radii of the two ions involved times a scaling factor f that depends on the average absolute cation electronegativity and the average cation charge in the compound. Typical values of f in ternary and quaternary lithium oxides fall into the range 0.74±0.04 and thereby ρ is of the order of 2 Å.</li>
 </ul>
 <p>These calculations are repeated for a dense grid of points covering the unit cell (grid size ca. 0.1 Å) and pathways of low activation are identified as regions in the structure for which E(Li) assumes low values. It should be noted that the inclusion of weak interactions to counter-ions beyond the first coordination shell is indispensable for such a modeling ion transport to avoid artifacts when an ion moves across the border of its coordination shell. To limit computation-nal effort the well-converging E(Li) calculation can be cut off at a distance of 5 – 8 Å depending on the atom size and bond softness.</p>
 <p>As the parameters vary with the oxidation state of all atoms involved and atomic positions are slightly different, it is expected that transport pathways and especially the activation energies will differ between lithiated and delithiated forms of the cathode material. In the initial release only data for the delithiated phase of the redox couple are shown.</p>
@@ -1071,22 +1071,22 @@ using fractional charges, where the systematic assignment of context sensitive f
 <hr />
 <ol>
 <li id="fn:1">
-<p>S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. <a href="https://doi.org/10.1021/cm702327g">doi:10.1021/cm702327g</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. <a href="https://doi.org/10.1021/cm702327g">doi:10.1021/cm702327g</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. <a href="https://doi.org/10.1016/j.elecom.2010.01.010">doi:10.1016/j.elecom.2010.01.010</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. <a href="https://doi.org/10.1016/j.elecom.2010.01.010">doi:10.1016/j.elecom.2010.01.010</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>S. Adams, Solid State Ionics 177, 1625 (2006).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>S. Adams, Solid State Ionics 177, 1625 (2006).&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). <a href="https://doi.org/10.1002/pssa.201001116">doi:10.1002/pssa.201001116</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). <a href="https://doi.org/10.1002/pssa.201001116">doi:10.1002/pssa.201001116</a>&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1110,7 +1110,7 @@ using fractional charges, where the systematic assignment of context sensitive f
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../reaction-calculator/" title="Reaction Calculator" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../materials-explorer/" title="Materials Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1119,19 +1119,19 @@ using fractional charges, where the systematic assignment of context sensitive f
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Reaction Calculator
+                Materials Explorer
               </span>
             </div>
           </a>
         
         
-          <a href="../glossary-of-terms/" title="Glossary" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../molecules-explorer/" title="Molecules Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Glossary
+                Molecules Explorer
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

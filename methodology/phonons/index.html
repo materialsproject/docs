@@ -542,8 +542,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -568,6 +568,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -604,18 +616,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -810,7 +810,7 @@ in the calculations on the Materials project page.</p>
 <h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
 <p>In the density functional perturbation theory formalism the derivatives
 of the total energy with respect to a perturbation are directly obtained
-from the self-consistency loop <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> For a generic point <strong>q</strong> in the
+from the self-consistency loop <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> For a generic point <strong>q</strong> in the
 Brillouin zone the phonon frequencies \(\omega_{\mathbf{q},m}\) and
 eigenvectors \(U_m(\mathbf{q}\kappa'\beta)\) are obtained by solving
 of the generalized eigenvalue problem</p>
@@ -832,7 +832,7 @@ number of unit cells. The expressions for the Helmholtz free energy
 \(\Delta F\), the phonon contribution to the internal energy
 \(\Delta E_{\text{ph}}\), the constant-volume specific heat \(C_v\)
 and the entropy \(S\) can be obtained in the harmonic approximation
-<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></p>
 <p>\[\Delta F = 3nNk_BT\int_{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
 <p>\[\Delta E_{\text{ph}} = 3nN\frac{\hbar}{2}\int_{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
 <p>\[C_v = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
@@ -841,23 +841,23 @@ where \(k_B\) is the Boltzmann constant and \(\omega_L\) is the
 largest phonon frequency.</p>
 <h2 id="calculation-details">Calculation details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
 <p>All the DFT and DFPT calculations are performed with the ABINIT software
-package <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
-<p>The PBEsol <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> semilocal generalized gradient approximation
+package <sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>.</p>
+<p>The PBEsol <sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup> semilocal generalized gradient approximation
 exchange-correlation functional (XC) was used for the calculations. This
 functional was proven to provide accurate phonon frequencies compared to
-experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>
-and taken from the pseudopotentials table Pseudo-dojo version 0.3 <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
+experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>. The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>
+and taken from the pseudopotentials table Pseudo-dojo version 0.3 <sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup>.</p>
 <p>The plane wave cutoff is chosen based on the hardest element for each
 compound, according to the values suggested in the Pseudo-dojo table.
 The Brillouin zone has been sampled using equivalent <strong>k</strong>-point and
 <strong>q</strong>-point grids that respect the symmetries of the crystal with a
 density of approximately 1500 points per reciprocal atom and the
-<strong>q</strong>-point grid is always $\Gamma$-centered <sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>
+<strong>q</strong>-point grid is always $\Gamma$-centered <sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup>.</p>
 <p>All the structures are relaxed with strict convergence criteria, i.e.
 until all the forces on the atoms are below $10^{-6}$ Ha/Bohr and the
 stresses are below $10^{-4}$ Ha/Bohr$^3$.</p>
 <p>The primitive cells and the band structures are defined according to the
-conventions of Setyawan and Curtarolo <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>.</p>
+conventions of Setyawan and Curtarolo <sup id="fnref:10"><a class="footnote-ref" href="#fn:10" rel="footnote">10</a></sup>.</p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>Guido Petretto, Shyam Dwaraknath, Henrique P. C. Miranda, Donald
 Winston, Matteo Giantomassi, Michiel J. van Setten, Xavier Gonze,
@@ -873,53 +873,53 @@ inorganic materials</em>, <strong>Scientific Data</strong>, 5, 180065 (2018).
 <p>Gonze, X. &amp; Lee, C. Dynamical matrices, Born effective charges,
 dielectric permittivity tensors, and interatomic force constants
 from density functional perturbation theory. Phys. Rev. B 55,
-10355–10368 (1997)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+10355–10368 (1997)&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <p>C. Lee &amp; X. Gonze, Ab initio calculation of the thermodynamic
 properties and atomic temperature factors of SiO2 α-quartz and
-stishovite. Phys. Rev. B 51, 8610 (1995)&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+stishovite. Phys. Rev. B 51, 8610 (1995)&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>Gonze, X. et al. First-principles computation of material
 properties: the Abinit software project. Computational Materials
-Science 25, 478 – 492 (2002)&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+Science 25, 478 – 492 (2002)&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
 <p>Gonze, X. et al. ABINIT: First-principles approach to material and
 nanosystem properties. Computer Physics Communications 180, 2582 –
-2615 (2009)&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+2615 (2009)&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
 <p>Perdew, J. P. et al. Restoring the density-gradient expansion for
-exchange in solids and surfaces. Phys. Rev. Lett. 100, 136406 (2008)&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+exchange in solids and surfaces. Phys. Rev. Lett. 100, 136406 (2008)&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
 <p>He, L. et al. Accuracy of generalized gradient approximation
 functionals for density-functional perturbation theory calculations.
-Phys. Rev. B 89, 064305 (2014)&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+Phys. Rev. B 89, 064305 (2014)&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
 <p>Hamann, D. R. Optimized norm-conserving Vanderbilt
-pseudopotentials. Phys. Rev. B 88, 085117 (2013)&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+pseudopotentials. Phys. Rev. B 88, 085117 (2013)&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
 <p>van Setten, M., Giantomassi, M., Bousquet, E., Verstraete, M.J.,
 Hamann, D.R., Gonze, X. &amp; Rignanese, G.-M., et al. The PseudoDojo:
 Training and grading a 85 element optimized norm-conserving
 pseudopotential table (2018). Computer Physics Communications 226,
-39.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+39.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
 <p>Petretto, G., Gonze, X., Hautier, G. &amp; Rignanese, G.-M.
 Convergence and pitfalls of density functional perturbation theory
 phonons calculations from a high-throughput perspective.
-Computational Materials Science 144, 331 – 337 (2018)&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+Computational Materials Science 144, 331 – 337 (2018)&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 <li id="fn:10">
 <p>Setyawan, W. &amp; Curtarolo, S. High-throughput electronic band
 structure calculations: Challenges and tools. Computational
-Materials Science 49, 299 – 312 (2010)&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+Materials Science 49, 299 – 312 (2010)&#160;<a class="footnote-backref" href="#fnref:10" rev="footnote" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

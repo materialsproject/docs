@@ -478,8 +478,8 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
-      Batteries Explorer
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
     </a>
   </li>
 
@@ -504,6 +504,18 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
     </a>
   </li>
 
@@ -540,18 +552,6 @@ MathJax.Hub.Config({
   <li class="md-nav__item">
     <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
-      Battery Explorer
     </a>
   </li>
 
@@ -676,52 +676,40 @@ MathJax.Hub.Config({
                 
                 
                 <h1 id="initial-release-of-materials-explorer">Initial release of Materials Explorer.<a class="headerlink" href="#initial-release-of-materials-explorer" title="Permanent link">&para;</a></h1>
+<p>In Materials Project we offer 5 options to explore materials: by elements, by formula, by IDs, by mpquery and by Structure.  </p>
 <h1 id="key-features">Key features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h1>
-<h2 id="basic-search-over-multiple-data-fields">Basic search over multiple data fields.<a class="headerlink" href="#basic-search-over-multiple-data-fields" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>from pymatgen import MPRester, Composition
-import re
-import pprint
-
-mpr = MPRester()
-c = Composition(&#39;Ni3O4&#39;)
-data = mpr.query(criteria = {&#39;pretty_formula&#39;: c.reduced_formula}, 
-                 properties=[&#39;task_id&#39;, &#39;spacegroup&#39;, &#39;formation_energy_per_atom&#39;])
-</pre></div>
-
-
-<h2 id="complete-data-table-with-listing-of-stable-and-unstable-phases">Complete data table with listing of stable and unstable phases.<a class="headerlink" href="#complete-data-table-with-listing-of-stable-and-unstable-phases" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>import collections
-from pandas import DataFrame
-from pymatgen.ext.matproj import MPRester
-from pymatgen.analysis.phase_diagram import PhaseDiagram, PDPlotter
-
-a = MPRester()
-data = collections.defaultdict(list)
-entries = a.get_entries_in_chemsys([&#39;Li&#39;, &#39;Ni&#39;, &#39;O&#39;])
-pd = PhaseDiagram(entries)
-
-for e in pd.stable_entries:
-    decomp, ehull = pd.get_decomp_and_e_above_hull(e)
-    data[&quot;Materials ID&quot;].append(e.entry_id)
-    data[&quot;Composition&quot;].append(e.composition.reduced_formula)
-    data[&quot;Ehull&quot;].append(ehull)    
-    data[&quot;Decomposition&quot;].append(&quot; + &quot;.join([&quot;%.2f %s&quot; % (v, k.composition.formula) for k, v in decomp.items()]))
-
-df = DataFrame(data, columns=[&quot;Materials ID&quot;, &quot;Composition&quot;, &quot;Ehull&quot;, &quot;Decomposition&quot;])
-
-print(&#39;Stable phases\n%s&#39; % df)
-
-for e in pd.unstable_entries:
-    decomp, ehull = pd.get_decomp_and_e_above_hull(e)
-    data[&quot;Materials ID&quot;].append(e.entry_id)
-    data[&quot;Composition&quot;].append(e.composition.reduced_formula)
-    data[&quot;Ehull&quot;].append(ehull)    
-    data[&quot;Decomposition&quot;].append(&quot; + &quot;.join([&quot;%.2f %s&quot; % (v, k.composition.formula) for k, v in decomp.items()]))
-
-df = DataFrame(data, columns=[&quot;Materials ID&quot;, &quot;Composition&quot;, &quot;Ehull&quot;, &quot;Decomposition&quot;])
-
-print(&#39;\nUnstable phases\n%s&#39; % df)
-</pre></div>
+<h2 id="by-elements">By Elements<a class="headerlink" href="#by-elements" title="Permanent link">&para;</a></h2>
+<p>The following example is to show you how to query the materials by assigning the elements in the materials. Let's say
+you want to find all the materials that contain Li, Al and O. In the search box, simply type <code>Li-Al-O</code> and search. 
+You would see the following searching results. 
+<img alt="by_elements example" src="../img/materials-explorer/by_elements.png" /></p>
+<p><img alt="by_elements example_results" src="../img/materials-explorer/by_elements_results.png" /></p>
+<p><em>Figure 1: Exploring materials that contain Li, Al and O.</em></p>
+<h2 id="by-formula">By formula<a class="headerlink" href="#by-formula" title="Permanent link">&para;</a></h2>
+<p>If you have a specific material in mind, you can also explore the materials by its formula. For example,
+to search all the LaAlO<sub>3</sub>, change the search option to <code>by Formula</code> and type <code>LaAlO3</code>.
+ <img alt="by_formula example" src="../img/materials-explorer/by_formula.png" /></p>
+<p><em>Figure 2: Exploring all the LaAlO<sub>3</sub> materials.</em></p>
+<h2 id="by-ids">By IDs<a class="headerlink" href="#by-ids" title="Permanent link">&para;</a></h2>
+<p>If you know the mp id of the material, you can search it by ID. You can also search multiple IDs 
+at the same time. Change the search option to <code>by IDs</code> and type the mp IDs that you are looking
+for.
+ <img alt="by_ids example" src="../img/materials-explorer/by_ids.png" /></p>
+<p><em>Figure 3: Exploring specific materials by their mp IDs.</em></p>
+<h2 id="by-mpquery">By mpquery<a class="headerlink" href="#by-mpquery" title="Permanent link">&para;</a></h2>
+<p>In addition to the previous three basic explore options, Materials Project also provides an advanced
+query option by mpquery, using Mongo-like language for flexible queries on the Materials Project 
+database. This provides the possibility of queries which would otherwise not be possible using 
+the other simpler REST forms. For example, to search all the iron oxides and manganese oxides, 
+change the search option to <code>by mpquery</code> and type <code>{'elements':{'$in':['Fe', 'Mn'], '$all': ['O']}, 'nelements':2}</code>.
+ <img alt="by_mpquery example" src="../img/materials-explorer/by_mpquery.png" /></p>
+<p><em>Figure 4: Exploring  materials by using Mongo-like language for flexible queries.</em></p>
+<h2 id="by-structure">By Structure<a class="headerlink" href="#by-structure" title="Permanent link">&para;</a></h2>
+<p>Additionally, if you already have structure but need to know the materials properties, such as
+band gap and formation energy, from the Materials Project database, you can change the search option
+to <code>by Structure</code> and  drag and drop your structure file in the grey box.
+ <img alt="by_structure example" src="../img/materials-explorer/by_structure.png" /></p>
+<p><em>Figure 4: Exploring  materials by using Mongo-like language for flexible queries.</em></p>
                 
                   
                 
@@ -757,13 +745,13 @@ print(&#39;\nUnstable phases\n%s&#39; % df)
           </a>
         
         
-          <a href="../batteries-explorer/" title="Batteries Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../batteries-explorer/" title="Battery Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Batteries Explorer
+                Battery Explorer
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
