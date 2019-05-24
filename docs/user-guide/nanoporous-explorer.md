@@ -7,6 +7,8 @@ This manual covers the description of the classes of materials and type of prope
 
 ## Using the Nanoporous Explorer App
 
+![Explorer](/user-guide/img/nanoporous/Explorer.png)
+
 The search interface of the Nanoporous Explorer App is built around an interactive 2-dimensional scatter plot. In order to initiate a search and generate a scatter plot, you need to select one or more of the available material and adsorbate classes from the drop down menu at the top of the screen and hit the “Explore Nanoporous Materials” button. The default selection includes all the available material classes and no adsorbates. 
 
 ### Interfacing with the data
@@ -15,6 +17,9 @@ Once a scatter plot has been generated, for a set of material and adsorbate clas
 ## Material Classes
 
 ### CoRE MOFs
+
+![MOF](/user-guide/img/nanoporous/MOF.png)
+
 Computation-Ready, Experimental MOF database was constructed by a collaboration within the Nanoporous Materials Genome Center. The database is derived from the Cambridge Structural Database (CSD), which contains a large number of small organic and inorganic molecules as well as periodic structures. After the construction of the database, a large-scale GCMC simulation was carried out on all the structures in the database for methane storage and working capacity [^1].
 
 #### Key Assumptions in Creating the CoRE MOF Database
@@ -53,6 +58,8 @@ To make the hypothetical MOF database relevant for hydrogen storage, only magnes
 The generation procedure creates hypothetical MOFs by recombining building blocks derived from crystallographic data of already synthesized MOFs. Atoms are grouped into building blocks based on reagents used in reported synthesis procedures as shown in Table 1. A building block can be combined with any other building block provided that the local geometry and chemical composition are the same as in crystallographically determined structure. Building blocks are combined in a piece-wise manner. When atomic overlap occurs at a particular step, a different building block or connection site is chosen until all possibilities are exhausted. Note that there is no force field (or quantum mechanical) energy minimizations involved; the pieces are connected according to geometric rules that govern how the building blocks are connected in already synthesized MOFs.  Figure 2 summarizes the generation step discussed above.
 
 ### Hypothetical Zeolites
+
+![A hypothetical zeolite](/user-guide/img/nanoporous/Zeolite.png)
 
 Zeolites are crystalline nanoporous material made from tetrahedrally coordinated silicon or aluminum atoms connected by oxygen atoms. Zeolites are naturally occurring, but are usually produced synthetically for industrial applications in adsorption and catalysis. The International Zeolite Association database lists 218 siliceous zeolite structures that have been synthesized in the laboratory 6. Synthesis of new zeolite structures is an active area of research.
 Deem et al. generated a large database of hypothetical silica zeolite structures that could serve as targets for experimental  synthesis [^7],[^8]. First, graphs of possible framework were enumerated by placing tetrahedral nodes (“T-atoms”) in all 230 symmetry groups over a wide range of lattice constants. These candidate structure were then annealed with the Sander-Leslie-Catlow interatomic potential to yield over 300,000 structures within 30 kJ mol-1 of quartz.  
@@ -118,13 +125,15 @@ All the pore descriptors have been calculated using the open source software [Ze
 Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^24].
 PXRD pattern of a solid material is commonly recorded using a diffractometer. The results can be used to determine phase composition, unit cell lattice parameters, crystal structure, Texture/Orientation and crystalline size.
 
+![MOF](/user-guide/img/nanoporous/XRD.png)
+
 ## Authors
 * Jeffrey Camp
 * Greg Chung
 * Emmanuel Haldoupis
 * Dalar Nazarian
 * Tess Smidt
-
+* Koki Muraoka
 
 ## References
 
