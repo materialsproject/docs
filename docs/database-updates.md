@@ -1,4 +1,10 @@
 # Database updates
+
+!!! warning
+    The most up-to-date release notes are posted to
+    [this thread](https://discuss.materialsproject.org/t/materials-project-database-release-log/1609)
+    on our discussion forum.
+
 ## Current Database versions
 ### Version 2018.11, Release Date: 2018-11-01
 We've released a new revision of the Materials Project database as part of major overhaul of our software infrastructure 
