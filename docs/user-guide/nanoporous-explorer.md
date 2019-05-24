@@ -7,6 +7,8 @@ This manual covers the description of the classes of materials and type of prope
 
 ## Using the Nanoporous Explorer App
 
+![Explorer](/user-guide/img/nanoporous/Explorer.png)
+
 The search interface of the Nanoporous Explorer App is built around an interactive 2-dimensional scatter plot. In order to initiate a search and generate a scatter plot, you need to select one or more of the available material and adsorbate classes from the drop down menu at the top of the screen and hit the “Explore Nanoporous Materials” button. The default selection includes all the available material classes and no adsorbates. 
 
 ### Interfacing with the data
@@ -15,7 +17,10 @@ Once a scatter plot has been generated, for a set of material and adsorbate clas
 ## Material Classes
 
 ### CoRE MOFs
-Computation-Ready, Experimental MOF database was constructed by a collaboration within the Nanoporous Materials Genome Center. The database is derived from the Cambridge Structural Database (CSD), which contains a large number of small organic and inorganic molecules as well as periodic structures. After the construction of the database, a large-scale GCMC simulation was carried out on all the structures in the database for methane storage and working capacity [^1].
+
+![MOF](/user-guide/img/nanoporous/MOF.png)
+
+[Computation-Ready, Experimental MOF database](http://gregchung.github.io/CoRE-MOFs/) was constructed by a collaboration within the Nanoporous Materials Genome Center. The database is derived from the Cambridge Structural Database (CSD), which contains a large number of small organic and inorganic molecules as well as periodic structures. After the construction of the database, a large-scale GCMC simulation was carried out on all the structures in the database for methane storage and working capacity [^1].
 
 #### Key Assumptions in Creating the CoRE MOF Database
 1. Stoichiometry information provided by the CSD is correct. Crystal structures were categorized and processed based on the stoichiometry text information provided by the CSD.
@@ -42,7 +47,7 @@ All bonded components in the molecular graph of each structure other than the MO
 Many MOF structures with associated charge-balancing ions also contain undesirable neutral solvent molecules. To discriminate between ionic species and neutral solvent molecules, the elemental compositions of the bonded components in a molecular graph of each structure were compared to the chemical formulas reported by the CSD using an in-house python script. The bonded components are the independent “molecules” within each structure; these include the MOF framework, the ionic species, and any neutral solvent molecules. The bonded components with elemental compositions matching the composition of the ions reported by the CSD were exempted from deletion in the solvent removal step.
 
 ### Hypothetical MOFs
-Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation[^3], Xe/Kr separation[^4], and hydrogen storage applications[^5].
+Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation[^3], Xe/Kr separation[^4][^5], and hydrogen storage applications[^6].
 
 #### Building Blocks
 A novel, bottom-up algorithm was developed to speed up structure enumeration. One hundred and two building blocks with varying degree of geometry and number of acids sites (e.g., COOH- sites) were used. The building blocks are divided into three main groups: metal nodes, organic linkers, and functional groups. Table 1 and Figure 1 summarizes the building blocks used in structure generation algorithm for Ref. [^1].
@@ -54,7 +59,9 @@ The generation procedure creates hypothetical MOFs by recombining building block
 
 ### Hypothetical Zeolites
 
-Zeolites are crystalline nanoporous material made from tetrahedrally coordinated silicon or alumnimum atoms connected by oxygen atoms. Zeolites are naturally occuring, but are usually produced synthetically for industrial applications in adsorption and catalysis. The International Zeolite Association database lists 218 silaceous zeolite structures that have been synthesized in the laboratory 6. Synthesis of new zeolite structures is an active area of research.
+![A hypothetical zeolite](/user-guide/img/nanoporous/Zeolite.png)
+
+Zeolites are crystalline nanoporous material made from tetrahedrally coordinated silicon or aluminum atoms connected by oxygen atoms. Zeolites are naturally occurring, but are usually produced synthetically for industrial applications in adsorption and catalysis. The International Zeolite Association database lists 218 siliceous zeolite structures that have been synthesized in the laboratory 6. Synthesis of new zeolite structures is an active area of research.
 Deem et al. generated a large database of hypothetical silica zeolite structures that could serve as targets for experimental  synthesis [^7],[^8]. First, graphs of possible framework were enumerated by placing tetrahedral nodes (“T-atoms”) in all 230 symmetry groups over a wide range of lattice constants. These candidate structure were then annealed with the Sander-Leslie-Catlow interatomic potential to yield over 300,000 structures within 30 kJ mol-1 of quartz.  
 
 ### Other Hypothetical Materials
@@ -63,7 +70,7 @@ In addition to MOFs and Zeolites currently a set of 10,000 computational predict
 ## Properties
 
 ### Henry's Constants
-The Henry's constant (KH), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell [^11],[^12] by,
+The Henry's constant ($K_H$), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell by,
 
 $$K_H={M\over8{\pi}V{\rho}RT}{\int}e^{-{\beta}U}dr={1\over{RT}}{\sum_{i=1}^{N_{points}}{\exp(-{\beta}U_{i}^{ads})}\over{N_{points}}}$$ Eq. 1
 
@@ -89,7 +96,7 @@ In molecular simulations, the isosteric heat of adsorption can be calculated fro
 
 $$q_{st}={RT}-{{\langle{VN}\rangle-\langle{V}\rangle\langle{N}\rangle}\over{\langle{N^2}\rangle-\langle{N}\rangle^2}}$$ Eq.4
 
-Here, V is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by [^18]:
+Here, $V$ is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by [^18]:
 
 
 $$q_{st}={{\partial{\text{ln}K_H}}\over{\partial{\beta}}}$$ Eq.5
@@ -110,13 +117,15 @@ A series of pore descriptors have been proposed in the literature as way of quan
 * Pore Limiting Diameter (PLD): Is defined as the smallest opening along the pore that a molecule needs to cross in order to diffuse through this material. This quantity is also know as the largest free sphere. Reported in units of Å. 
 * Largest Cavity Diameter (LCD): Is defined as the largest opening along the pore. This quantity is also known as the largest included sphere. Reported in units of Å.
 * Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å.
-* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $m^2/\text{cm}^3$
+* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $\text{m}^2/\text{cm}^3$
 
-All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html)
+All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html). Recently, this software was used to generate fingerprints to evaluate similarity of porous structures [^23].
 
 ### P-XRD Patterns
-Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^23].
+Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^24].
 PXRD pattern of a solid material is commonly recorded using a diffractometer. The results can be used to determine phase composition, unit cell lattice parameters, crystal structure, Texture/Orientation and crystalline size.
+
+![MOF](/user-guide/img/nanoporous/XRD.png)
 
 ## Authors
 * Jeffrey Camp
@@ -124,34 +133,31 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 * Emmanuel Haldoupis
 * Dalar Nazarian
 * Tess Smidt
-
-##TODO
-* Add table
-* Add figures
-* Add reference doi's
+* Koki Muraoka
 
 ## References
 
-[^1]: 
-[^2]:
-[^3]:
-[^4]:
-[^5]:
-[^6]:
-[^7]:
-[^8]:
-[^9]:
-[^10]:
-[^11]:
-[^12]:
-[^13]:
-[^14]:
-[^15]:
-[^16]:
-[^17]:
-[^18]:
-[^19]:
-[^20]:
-[^21]:
-[^22]:
-[^23]:
+[^1]: Y. G. Chung, J. Camp, M. Haranczyk, B. J. Sikora, W. Bury, V. Krungleviciute, T. Yildirim, O. K. Farha, D. S. Sholl, R. Q. Snurr, Chem. Mater. 2014, 26, 6185–6192. [doi:10.1021/cm502594j](https://doi.org/10.1021/cm502594j)
+[^2]: C. E. Wilmer, M. Leaf, C. Y. Lee, O. K. Farha, B. G. Hauser, J. T. Hupp, R. Q. Snurr, Nat. Chem. 2012, 4, 83–89. [doi:10.1038/nchem.1192](https://doi.org/10.1038/nchem.1192)
+[^3]: C. E. Wilmer, O. K. Farha, Y.-S. Bae, J. T. Hupp, R. Q. Snurr, Energy Environ. Sci. 2012, 5, 9849.[doi:10.1039/c2ee23201d](https://doi.org/10.1039/c2ee23201d)
+[^4]: B. J. Sikora, C. E. Wilmer, M. L. Greenfield, R. Q. Snurr, Chem. Sci. 2012, 3, 2217. [doi:10.1039/C2SC01097F](https://doi.org/10.1039/C2SC01097F)
+[^5]: D. Banerjee, C. M. Simon, A. M. Plonka, R. K. Motkuri, J. Liu, X. Chen, B. Smit, J. B. Parise, M. Haranczyk, P. K. Thallapally, Nat. Commun. 2016, 7, 11831. [doi:10.1038/ncomms11831](https://doi.org/10.1038/ncomms11831)
+[^6]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010. [doi:10.1039/C4CP01848F](https://doi.org/10.1039/C4CP01848F)
+[^7]: D. J. Earl, M. W. Deem, Ind. Eng. Chem. Res. 2006, 45, 5449–5454. [doi:10.1021/ie0510728](https://doi.org/10.1021/ie0510728)
+[^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
+[^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
+[^10]: B. Widom, J. Chem. Phys. 1963, 39, 2808–2812. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
+[^11]: Molecular Simulations of Low Occupancy Adsorption of Aromatics In Silicates R. Q. Snurr, A. T. Bell, D. N. Theodorou, Proceedings of the 9thInternational Zeolite Conference, 1992.
+[^12]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2010, 132, 7528–7539. [doi:10.1021/ja1023699](https://doi.org/10.1021/ja1023699)
+[^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
+[^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836. [doi:10.1021/jp201075u](https://doi.org/10.1021/jp201075u)
+[^15]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
+[^16]: Smith, J. M., Van Ness, H. C. & Abbott, M. M. Introduction to Chemical Engineering Thermodynamics. (McGraw-Hill, 2005)
+[^17]: A. L. Myers, AIChE J. 2002, 48, 145–160.[doi:10.1002/aic.690480115](https://doi.org/10.1002/aic.690480115)
+[^18]: B. Smit, J. I. Siepmann, J. Phys. Chem. 1994, 98, 8442–8452.[doi:10.1021/j100085a027](https://doi.org/10.1021/j100085a027)
+[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B) 
+[^20]: Program Computing [DDEC Atomic Charges](http://ddec.sourceforge.net/)
+[^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
+[^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
+[^23]: Y. Lee, S. D. Barthel, P. Dłotko, S. M. Moosavi, K. Hess, B. Smit, Nat. Commun. 2017, 8, 15396. [doi:10.1038/ncomms15396](https://doi.org/10.1038/ncomms15396)
+[^24]: T. Willhammar, X. Zou, Zeitschrift fur Krist. 2013, 228, 11–27. [doi:10.1524/zkri.2012.1564](https://doi.org/10.1524/zkri.2012.1564)
