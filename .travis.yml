@@ -7,8 +7,7 @@ script: true
 before_deploy:
 - mkdocs build --verbose --clean
 deploy:
-  edge:
-    branch: v1.8.47
+  edge: true
   provider: pages
   skip_cleanup: true
   local_dir: site
