@@ -63,7 +63,7 @@ In addition to MOFs and Zeolites currently a set of 10,000 computational predict
 ## Properties
 
 ### Henry's Constants
-The Henry's constant (KH), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell [^11],[^12] by,
+The Henry's constant ($K_H$), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion [^10] method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell [^11],[^12] by,
 
 $$K_H={M\over8{\pi}V{\rho}RT}{\int}e^{-{\beta}U}dr={1\over{RT}}{\sum_{i=1}^{N_{points}}{\exp(-{\beta}U_{i}^{ads})}\over{N_{points}}}$$ Eq. 1
 
@@ -89,7 +89,7 @@ In molecular simulations, the isosteric heat of adsorption can be calculated fro
 
 $$q_{st}={RT}-{{\langle{VN}\rangle-\langle{V}\rangle\langle{N}\rangle}\over{\langle{N^2}\rangle-\langle{N}\rangle^2}}$$ Eq.4
 
-Here, V is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by [^18]:
+Here, $V$ is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by [^18]:
 
 
 $$q_{st}={{\partial{\text{ln}K_H}}\over{\partial{\beta}}}$$ Eq.5
@@ -110,12 +110,12 @@ A series of pore descriptors have been proposed in the literature as way of quan
 * Pore Limiting Diameter (PLD): Is defined as the smallest opening along the pore that a molecule needs to cross in order to diffuse through this material. This quantity is also know as the largest free sphere. Reported in units of Å. 
 * Largest Cavity Diameter (LCD): Is defined as the largest opening along the pore. This quantity is also known as the largest included sphere. Reported in units of Å.
 * Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å.
-* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $m^2/\text{cm}^3$
+* Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. [^22]. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $\text{m}^2/\text{cm}^3$
 
-All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html)
+All the pore descriptors have been calculated using the open source software [Zeo++](http://www.maciejharanczyk.info/Zeopp/about.html). Recently, this software was used to generate fingerprints to evaluate similarity of porous structures.[^23]
 
 ### P-XRD Patterns
-Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^23].
+Simulated powder X-ray diffraction (PXRD) patterns derived from crystallographic data are provided for nanoporous materials. PXRD is a widely used technique for characterizing solid materials. The scattering of X-rays from atoms produces a diffraction pattern, which contains information about the atomic arrangement within the crystal. Therefore, the PXRD pattern can serve as the fingerprint to identify the phase and structure of a solid materials [^24].
 PXRD pattern of a solid material is commonly recorded using a diffractometer. The results can be used to determine phase composition, unit cell lattice parameters, crystal structure, Texture/Orientation and crystalline size.
 
 ## Authors
@@ -141,7 +141,7 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^7]: D. J. Earl, M. W. Deem, Ind. Eng. Chem. Res. 2006, 45, 5449–5454. [doi:10.1021/ie0510728](https://doi.org/10.1021/ie0510728)
 [^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
 [^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
-[^10]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
+[^10]: B. Widom, J. Chem. Phys. 1963, 39, 2808–2812. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
 [^11]:
 [^12]:
 [^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
@@ -150,8 +150,9 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^16]:
 [^17]:
 [^18]:
-[^19]:
+[^19]: D. Nazarian, P. Ganesh, D. S. Sholl, J. Mater. Chem. A 2015, 3, 22432–22440.[doi:10.1039/C5TA03864B](https://doi.org/10.1039/C5TA03864B)
 [^20]:
 [^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
 [^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
-[^23]: T. Willhammar, X. Zou, Zeitschrift fur Krist. 2013, 228, 11–27. [doi:10.1524/zkri.2012.1564](https://doi.org/10.1524/zkri.2012.1564)
+[^23]: Y. Lee, S. D. Barthel, P. Dłotko, S. M. Moosavi, K. Hess, B. Smit, Nat. Commun. 2017, 8, 15396. [doi:10.1038/ncomms15396](https://doi.org/10.1038/ncomms15396)
+[^24]: T. Willhammar, X. Zou, Zeitschrift fur Krist. 2013, 228, 11–27. [doi:10.1524/zkri.2012.1564](https://doi.org/10.1524/zkri.2012.1564)
