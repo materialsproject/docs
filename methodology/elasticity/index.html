@@ -1,0 +1,1250 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Elasticity - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#elasticity" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Elasticity
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Elasticity
+      </label>
+    
+    <a href="./" title="Elasticity" class="md-nav__link md-nav__link--active">
+      Elasticity
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derived-elastic-properties" title="Derived elastic properties" class="md-nav__link">
+    Derived elastic properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft-parameters" title="DFT parameters" class="md-nav__link">
+    DFT parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetrization" title="Symmetrization" class="md-nav__link">
+    Symmetrization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derived-elastic-properties" title="Derived elastic properties" class="md-nav__link">
+    Derived elastic properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft-parameters" title="DFT parameters" class="md-nav__link">
+    DFT parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symmetrization" title="Symmetrization" class="md-nav__link">
+    Symmetrization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/elasticity.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="elasticity">Elasticity<a class="headerlink" href="#elasticity" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The elastic constants from the Materials Project (MP) are calculated
+from first principles Density Functional Theory (DFT). The process is
+started by performing an accurate structural relaxation for each
+structure, to a state of approximately zero stress. Subsequently,
+perturbations are applied to the lattice vectors and the resulting
+stress tensor is calculated from DFT, while allowing for relaxation of
+the ionic degrees of freedom. Finally, constitutive relations from
+linear elasticity, relating stress and strain, are employed to fit the
+full 6x6 elastic tensor. From this, aggregate properties such as Voigt
+and Reuss bounds on the bulk and shear moduli are derived. Multiple
+consistency checks are performed on all the calculated data to ensure
+its reliability and accuracy.</p>
+<h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
+<p>The relaxed lattice vectors
+\( \{\mathbf{a}_{1} , \mathbf{a}_{2} , \mathbf{a}_{3} \}\)
+are taken and these are deformed according to each of the 6 deformation
+gradients \(\mathbf{F}\) as shown in the equations below. These 6
+deformation gradients are applied one-by-one to the relaxed structure so
+that only one independent deformation is considered each time. For each
+of the 6 deformation modes, 4 different default magnitudes of
+deformation are applied:
+\(\delta_{1} \in  \left\{-0.01, -0.005, +0.005, +0.01\right\}\)
+(pertaining to non shear-modes) and
+\(\delta_2 \in  \left\{ -0.06, -0.03, +0.03, +0.06 \right\}\)
+(pertaining to shear-modes). This leads to a total of 24 deformed
+structures, for which the stress tensor, \(\mathbf{S}\), is
+calculated, allowing for relaxation of the ionic degrees of freedom.
+Note that in this work, conventional unit cells, obtained using
+<code>pymatgen.symmetry.SpacegroupAnalyzer.get_conventional_standard_structure</code>
+are employed for all elastic constant calculations. In our experience,
+these cells typically yield more accurate and better converged elastic
+constants than primitive cells, at the cost of more computational time.
+We suspect this has to do with the fact that unit cells often exhibit
+higher symmetries and simpler Brillouin zones than primitive cells (an
+example is face centered cubic cells).</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 + \delta _{1} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 + \delta _{1} &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 + \delta _{1} \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 &amp; \delta _{2} &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 &amp; 0 &amp; \delta _{2}  \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\boldsymbol{F}=
+\left[{\begin{matrix}
+1 &amp; 0 &amp; 0  \\
+0 &amp; 1 &amp; \delta _{2} \\
+0 &amp; 0 &amp; 1 \\
+\end{matrix}}\right]\,\]</p>
+<p>\[\mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})\,\]</p>
+<p>We employ the Green-Lagrange strain tensor, \(\mathbf{E}\), in this
+work, defined above. The 6x6 elastic tensor is calculated from the
+equation below, with \(\mathbf{E}\) again the Green-Lagrange strain
+tensor and \(\mathbf{S}\) the calculated stress tensor. The components
+are calculated from a linear least-squares-fit if stress versus strain.
+We make use of the following Voigt-notation in this work:
+\(11 \mapsto 1\), \(22 \mapsto 2\), \(33 \mapsto 3\),
+\(23 \mapsto 4\), \(13 \mapsto 5\), \(12 \mapsto 6\).</p>
+<p>\(\left[
+\begin{array}{c}
+S_{11} \\
+S_{22} \\
+S_{33} \\
+S_{23} \\
+S_{13} \\
+S_{12}
+\end{array}
+\right]
+=
+\left[
+\begin{array}{cccccc}
+C_{11} &amp; C_{12} &amp; C_{13} &amp; C_{14} &amp; C_{15} &amp; C_{16} \\
+C_{12} &amp; C_{22} &amp; C_{23} &amp; C_{24} &amp; C_{25} &amp; C_{26} \\
+C_{13} &amp; C_{23} &amp; C_{33} &amp; C_{34} &amp; C_{35} &amp; C_{36} \\
+C_{14} &amp; C_{24} &amp; C_{34} &amp; C_{44} &amp; C_{45} &amp; C_{46} \\
+C_{15} &amp; C_{25} &amp; C_{35} &amp; C_{45} &amp; C_{55} &amp; C_{56} \\
+C_{16} &amp; C_{26} &amp; C_{36} &amp; C_{46} &amp; C_{56} &amp; C_{66} \\
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+E_{11} \\
+E_{22} \\
+E_{33} \\
+2 E_{23} \\
+2 E_{13} \\
+2 E_{12}
+\end{array}
+\right]\)</p>
+<p>Different choices of lattice vectors with respect to a Cartesian
+coordinate system may lead to elastic tensors that look different from
+what might be expected. For example, for the hexagonal crystal system it
+is commonly stated that \(C_{11} = C_{22}\). However, this is true
+under the conditions that lattice vectors \(\mathbf{a}_{1}\) and
+\(\mathbf{a}_{2}\) are both in the basal plane, whereas
+\(\mathbf{a}_{3}\) is orthogonal to the basal plane. Hence, the
+elastic tensor can only be completely specified when the lattice vectors
+are expressed in a given coordinate system. To avoid confusion, we
+present the elastic tensor in 2 ways. First, the elastic tensor is
+presented for the exact choice of lattice vectors as presented on the
+Materials Project webpage. This is consistent with the cif-file of the
+"conventional standard" structure, which can also be downloaded from the
+Materials Project webpage. Elastic tensors can also be expressed in a
+standard format according to the IEEE standard. The standardized
+IEEE-format specifies the precise choice of lattice vectors in a
+coordinate system and thereby unambiguously defines the components of
+the elastic tensor <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. In most cases, the elastic tensors in the
+POSCAR-format and the IEEE-format are identical. When the elastic tensor
+in POSCAR-format and IEEE-format are not identical however, they are
+related by a rotation. Note that IEEE tensors can be obtained using the
+get_ieee_tensor method for any of the subclasses of
+pymatgen.analysis.elasticity.tensors.TensorBase (which include
+ElasticTensor and PiezoTensor).</p>
+<h2 id="derived-elastic-properties">Derived elastic properties<a class="headerlink" href="#derived-elastic-properties" title="Permanent link">&para;</a></h2>
+<p>From the elastic tensor defined above, a number of aggregate and derived
+properties is calculated. These properties are all available on the
+Materials Project webpage and are shown in the Table 1. As described
+above, the elastic tensor is presented in POSCAR-format. From the
+elastic tensor in POSCAR-format, the compliance tensor is calculated and
+reported. Also reported are Voigt, Reuss and Voigt-Reuss-Hill <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>
+bounds on the bulk and shear moduli for polycrystalline materials.
+Finally, the elastic anisotropy index <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and isotropic Poisson ratio
+are reported.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Unit</th>
+<th>Description</th>
+<th>Equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elastic tensor, \(C_{ij}\)</td>
+<td>GPa</td>
+<td>Tensor, describing elastic behavior, corresponding to IEEE orientation, symmetrized to crystal structure</td>
+<td>see main text</td>
+</tr>
+<tr>
+<td>Elastic tensor (original), \(C_{ij}\)</td>
+<td>GPa</td>
+<td>Tensor, describing elastic behavior, unsymmetrized, corresponding to POSCAR (conventional standard cell) orientation</td>
+<td>see main text</td>
+</tr>
+<tr>
+<td>Compliance tensor, \(s_{ij}\)</td>
+<td>GPa\(^{-1}\)</td>
+<td>Tensor, describing elastic behavior</td>
+<td>\(s_{ij} = C_{ij}^{-1}\)</td>
+</tr>
+<tr>
+<td>Bulk modulus Voigt average, \(K_{V}\)</td>
+<td>GPa</td>
+<td>Upper bound on \(K\) for polycrystalline material</td>
+<td>\(9K_{V}=\left(C_{11}+C_{22}+C_{33}\right) + 2\left(C_{12}+C_{23}+C_{31}\right)\)</td>
+</tr>
+<tr>
+<td>Bulk modulus Reuss average, \(K_{R}\)</td>
+<td>GPa</td>
+<td>Lower bound on \(K\) for polycrystalline material</td>
+<td>\(1 / K_{R} = \left(s_{11}+s_{22}+s_{33}\right) + 2\left(s_{12}+s_{23}+s_{31}\right)\)</td>
+</tr>
+<tr>
+<td>Shear modulus Voigt average, \(G_{V}\)</td>
+<td>GPa</td>
+<td>Upper bound on \(G\) for polycrystalline material</td>
+<td>\(15 G_{V} = \left(C_{11}+C_{22}+C_{33}\right)-\left(C_{12}+C_{23}+C_{31}\right) + 3\left(C_{44}+C_{55}+C_{66}\right)\)</td>
+</tr>
+<tr>
+<td>Shear modulus Reuss average, \(G_{R}\)</td>
+<td>GPa</td>
+<td>Lower bound on \(G\) for polycrystalline material</td>
+<td>\(15 / G_{R} = 4\left(s_{11}+s_{22}+s_{33}\right)-4\left(s_{12}+s_{23}+s_{31}\right) + 3\left(s_{44}+s_{55}+s_{66}\right)\)</td>
+</tr>
+<tr>
+<td>Bulk modulus VRH average, \(K_{VRH}\)</td>
+<td>GPa</td>
+<td>Average of \(K_{R}\) and \(K_{V}\)</td>
+<td>\(2 K_{VRH} = \left(K_{V} + K_{R} \right)\)</td>
+</tr>
+<tr>
+<td>Shear modulus VRH average, \(G_{VRH}\)</td>
+<td>GPa</td>
+<td>Average of \(G_{R}\) and \(G_{V}\)</td>
+<td>\(2 G_{VRH} = \left(G_{V} + G_{R} \right)\)</td>
+</tr>
+<tr>
+<td>Universal elastic anisotropy, \(A^{U}\)</td>
+<td>-</td>
+<td>Description of elastic anisotropy</td>
+<td>\(A^{U} = 5 \left(G_{V}/G_{R}\right) + \left(K_{V}/K_{R}\right) -6 \geq 0\)</td>
+</tr>
+<tr>
+<td>Isotropic Poisson ratio, \(\mu\)</td>
+<td>-</td>
+<td>Number, describing lateral response to loading</td>
+<td>\(\mu = \left(3K_{VRH} - 2G_{VRH}\right)\) / \(\left(6K_{VRH} + 2G_{VRH}\right)\)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dft-parameters">DFT parameters<a class="headerlink" href="#dft-parameters" title="Permanent link">&para;</a></h2>
+<p>To obtain accurate elastic constants from DFT, a well-converged stress
+tensor is required. This typically means that more precise
+DFT-parameters have to be employed, compared to for example a simple
+total energy-calculation. Careful convergence testing and comparison to
+experimental results has led to a set of DFT-parameters that yield
+elastic constants, converged to within approximately 5 % for over 95 %
+of the systems. In choosing DFT-parameters for the calculations, we
+distinguish between metals and metallic compounds (metallics) on one
+hand and semiconductors and insulators (non-metallics) on the other
+hand. The most relevant DFT-parameters used in our HT-calculations are
+shown in Table 2. K-point density is expressed in per-reciprocal-atom
+(pra). The first-principles results presented in this work are performed
+using the projector augmented wave (PAW) method <sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> as implemented
+in the Vienna Ab Initio Simulation Package (VASP) <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>. In all
+calculations, we employ the Perdew, Becke and Ernzerhof (PBE) <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>
+Generalized Gradient Approximation (GGA) for the exchange-correlation
+functional.<br />
+As described in the literature, several filters are used to detect cases
+where the elastic tensor might not have been converged properly. For
+those cases, the calculation is repeated but now with more stringent
+DFT-convergence parameters. Hence, the numerical values in Table 2 are
+representative for our calculations, but in some cases more strict
+parameters have been used. The calculation details for each compound can
+be found on the Materials Project webpage.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Metallics</th>
+<th>Non-metallics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plane wave energy cut-off (eV)</td>
+<td>700</td>
+<td>700</td>
+</tr>
+<tr>
+<td>Density of k-points (pra)</td>
+<td>7,000</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>Pseudo potential</td>
+<td>GGA-PBE</td>
+<td>GGA-PBE</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="elastic property database" src="/methodology/img/elasticity/Data_figure_11_22.png" />
+<em>Figure 1: Visualization of the current
+elastic-property database, consisting of over 1,100 metals and inorganic
+compounds. This map shows the shear and bulk moduli, together with
+isotropic Poisson ratio and volume-per-atom. See the paper <a href="http://www.nature.com/articles/sdata20159"><em>Charting
+the complete elastic properties of inorganic crystalline
+compounds</em></a> for
+details.</em></p>
+<h2 id="symmetrization">Symmetrization<a class="headerlink" href="#symmetrization" title="Permanent link">&para;</a></h2>
+<p>Tensor symmetrization and IEEE conversion procedures are implemented in
+<a href="http://pymatgen.org/_modules/pymatgen/core/tensors.html">pymatgen</a>.
+Symmetrization occurs by finding all of the symmetry operations that
+correspond to a particular crystal symmetry, and taking the average over
+all transformed tensors with respect to these operations. If there are
+\(y\) symmetry operations are denoted \(Q_{ij}^{(x)}\) then:</p>
+<p>\(C_{mnop}^{(sym)} = \sum_{x=1}^y  Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}\)</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the elastic constants within the Materials Project, please
+reference the following work:</p>
+<ul>
+<li>de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M,
+Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G,
+Persson KA, Asta M (2015) Charting the complete elastic properties of
+inorganic crystalline compounds. <a href="http://www.nature.com/articles/sdata20159">Scientific Data 2: 150009</a></li>
+</ul>
+<p>The paper presents the results of our elastic constant-calculations for
+the first batch of 1,181 metals and compounds. Our DFT-parameters, the
+workflow and comparison to experiments are described in detail. Also,
+the filters in the workflow used for detecting anomalies in the
+calculations are described in the paper.</p>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Maarten de Jong</li>
+</ol>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>IEEE standard on piezoelectricity. ANSI/IEEE Std 176-1987 0-1
+(1988).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Hill, R. The elastic behaviour of a crystalline aggregate.
+Proceedings of the Physical Society. Section A 65, 349 (1952).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Ranganathan, S. I. &amp; Ostoja-Starzewski, M. Universal elastic
+anisotropy index. Physical Review Letters 101, 055504 (2008).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Blochl, P. E. Projector augmented-wave method. Phys. Rev. B 50,
+17953{17979 (1994).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Kresse, G. &amp; Joubert, D. From ultrasoft pseudopotentials to the
+projector augmented-wave method. Phys. Rev. B59, 1758{1775 (1999).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Kresse, G. &amp; Hafner, J. Ab initio molecular dynamics for liquid
+metals. Phys. Rev. B 47, 558{561 (1993).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Kresse, G. &amp; Furthmuller, J. Efficffient iterative schemes for ab
+initio total-energy calculations using a plane-wave basis set. Phys.
+Rev. B 54, 11169{11186 (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Perdew, J. P., Burke, K. &amp; Ernzerhof, M. Generalized gradient
+approximation made simple. Physical Review Letters 77, 3865 (1996).&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../gga-plus-u/" title="GGA+U" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GGA+U
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Elasticity prediction
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

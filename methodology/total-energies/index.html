@@ -1,0 +1,1297 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Total energies - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#total-energy-calculations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Total energies
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Total energies
+      </label>
+    
+    <a href="./" title="Total energies" class="md-nav__link md-nav__link--active">
+      Total energies
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-details" title="Calculation Details" class="md-nav__link">
+    Calculation Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crystal-structures" title="Crystal structures" class="md-nav__link">
+    Crystal structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-energy-convergence" title="Total energy convergence" class="md-nav__link">
+    Total energy convergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-convergence" title="Structure convergence" class="md-nav__link">
+    Structure convergence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#total-energy-adjustments" title="Total Energy Adjustments" class="md-nav__link">
+    Total Energy Adjustments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-corrections" title="Default corrections" class="md-nav__link">
+    Default corrections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gases-liquids-and-elements" title="Gases, liquids, and elements" class="md-nav__link">
+    Gases, liquids, and elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ggau-calculations-and-adjustments-to-match-gga-energies" title="GGA+U calculations and adjustments to match GGA energies" class="md-nav__link">
+    GGA+U calculations and adjustments to match GGA energies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-total-energies" title="Accuracy of Total Energies" class="md-nav__link">
+    Accuracy of Total Energies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estimating-errors-in-calculated-reaction-energies" title="Estimating errors in calculated reaction energies" class="md-nav__link">
+    Estimating errors in calculated reaction energies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sources-of-error" title="Sources of error" class="md-nav__link">
+    Sources of error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gga-errors-on-reaction-energies-between-chemically-similar-compounds" title="GGA errors on reaction energies between chemically similar compounds" class="md-nav__link">
+    GGA errors on reaction energies between chemically similar compounds
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-calculated-volumes" title="Accuracy of Calculated Volumes" class="md-nav__link">
+    Accuracy of Calculated Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-details" title="Calculation Details" class="md-nav__link">
+    Calculation Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crystal-structures" title="Crystal structures" class="md-nav__link">
+    Crystal structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-energy-convergence" title="Total energy convergence" class="md-nav__link">
+    Total energy convergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-convergence" title="Structure convergence" class="md-nav__link">
+    Structure convergence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#total-energy-adjustments" title="Total Energy Adjustments" class="md-nav__link">
+    Total Energy Adjustments
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-corrections" title="Default corrections" class="md-nav__link">
+    Default corrections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gases-liquids-and-elements" title="Gases, liquids, and elements" class="md-nav__link">
+    Gases, liquids, and elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ggau-calculations-and-adjustments-to-match-gga-energies" title="GGA+U calculations and adjustments to match GGA energies" class="md-nav__link">
+    GGA+U calculations and adjustments to match GGA energies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-total-energies" title="Accuracy of Total Energies" class="md-nav__link">
+    Accuracy of Total Energies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estimating-errors-in-calculated-reaction-energies" title="Estimating errors in calculated reaction energies" class="md-nav__link">
+    Estimating errors in calculated reaction energies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sources-of-error" title="Sources of error" class="md-nav__link">
+    Sources of error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gga-errors-on-reaction-energies-between-chemically-similar-compounds" title="GGA errors on reaction energies between chemically similar compounds" class="md-nav__link">
+    GGA errors on reaction energies between chemically similar compounds
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-calculated-volumes" title="Accuracy of Calculated Volumes" class="md-nav__link">
+    Accuracy of Calculated Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/total-energies.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="total-energy-calculations">Total Energy Calculations<a class="headerlink" href="#total-energy-calculations" title="Permanent link">&para;</a></h1>
+<h2 id="calculation-details">Calculation Details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
+<p>We use density functional theory as implemented in the Vienna Ab Initio
+Simulation Package (VASP) software<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> to evaluate the total energy of
+compounds. For the exchange-correlational functional, we employ a mix of
+Generalized Gradient Approximation (GGA) and GGA+<em>U</em>, as
+described <a href="#ggau_tag">later in this manual</a>.
+We use the Projector Augmented Wave (PAW) method for modeling core
+electrons with an energy cutoff of 520 eV. This cutoff corresponds to
+1.3 times the highest cutoff recommended among all the pseudopotentials
+we use (more details can be found in the <a href="/methodology/pseudopotentials">Pseudopotentials
+Choice</a> manual). All calculations
+are performed at 0K and 0atm. All computations are performed with spin
+polarization on and with magnetic ions in a high-spin ferromagnetic
+initialization (the system can of course relax to a low spin state
+during the DFT relaxation). We used a k-point mesh of 1000/(number of
+atoms in the cell) for all computations, the Monkhorst-Pack method for
+the k-point choices (but \(\Gamma\)-centered for hexagonal cells) and
+the tetrahedron method to perform the k-point integration. Pymatgen
+could change those default parameters if they are not adequate for the
+computation (e.g., switch to another k-point integration scheme). Some
+details of our calculation method can be found in ref <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>; however, the
+Materials Project has updated many parameters as documented throughout
+the Methodology sections.</p>
+<h3 id="crystal-structures">Crystal structures<a class="headerlink" href="#crystal-structures" title="Permanent link">&para;</a></h3>
+<p>We use input structures from the Inorganic Crystal Structure Database
+(ICSD),<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> and relax all cell and atomic positions in our calculation
+two times in consecutive runs. When multiple crystal structures are
+present for a single chemical composition, we attempt to evaluate all
+unique structures as determined by an affine mapping technique.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<h3 id="total-energy-convergence">Total energy convergence<a class="headerlink" href="#total-energy-convergence" title="Permanent link">&para;</a></h3>
+<p>We currently employ a k-point mesh of 1000 per reciprocal atom (pra). We performed
+a convergence test of total energy with respect to k-point
+density and convergence energy difference for a subset of chemically
+diverse compounds for a previous parameter set, which employed a smaller
+k-point mesh of 500 pra. Using a 500 pra k-point mesh, the numerical
+convergence for most compounds tested was within 5 meV/atom, and 96% of
+compounds tested were converged to within 15 meV/atom. Results for the
+new parameter set will be better due to the denser k-point mesh
+employed. Convergence will depend on chemical system; for example,
+oxides were generally converged to less than 1 meV/atom.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+<h3 id="structure-convergence">Structure convergence<a class="headerlink" href="#structure-convergence" title="Permanent link">&para;</a></h3>
+<p>The energy difference for ionic convergence is set to 0.0005 * natoms
+in the cell. Data on expected accuracy on cell volumes can be found in a
+previous paper.<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> We have found these parameters to yield
+well-converged structures in most instances; however, if the structures
+are to be used for further calculations that require strictly converged
+atomic positions and cell parameters (e.g. elastic constants, phonon
+modes, etc.), we recommend that users re-optimize the structures with
+tighter cutoffs or in force convergence mode.</p>
+<h2 id="total-energy-adjustments">Total Energy Adjustments<a class="headerlink" href="#total-energy-adjustments" title="Permanent link">&para;</a></h2>
+<p>To better model energies across diverse chemical spaces, we apply
+several adjustments to the total energy. These adjustments are described
+below.</p>
+<h3 id="default-corrections">Default corrections<a class="headerlink" href="#default-corrections" title="Permanent link">&para;</a></h3>
+<h4 id="gases-liquids-and-elements">Gases, liquids, and elements<a class="headerlink" href="#gases-liquids-and-elements" title="Permanent link">&para;</a></h4>
+<p>Our total energy calculations are for periodic solids at 0K. For
+elements that are gaseous in their standard state, our raw calculations
+do not represent the same phase as standard experimental data. In
+addition, there may be GGA errors associated with reducing gas phases in
+gas-to-solid reactions. Rather than calculating the liquid/gas energies
+directly, we adjust the energies of several elements that are liquid or
+gaseous at room temperature using Wang's method.<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5">5</a></sup> The best-tested fit
+is for oxygen gas reacting to form to oxides. We have adjusted energies
+of the following compounds:</p>
+<ul>
+<li>$\ce{O2}$, $\ce{N2}$, $\ce{Cl2}$, $\ce{F2}$, $\ce{H2}$</li>
+</ul>
+<p>The adjusted energies outside of $\ce{O2}$ are not as well-tested, and
+calculations involving these elements should be taken with greater
+caution. For example, it is assumed in our elemental gas adjustments
+that reactions to the solid will involve reduction of the gas.</p>
+<p><a name="ggau_tag"></a></p>
+<h4 id="ggau-calculations-and-adjustments-to-match-gga-energies">GGA+<em>U</em> calculations and adjustments to match GGA energies<a class="headerlink" href="#ggau-calculations-and-adjustments-to-match-gga-energies" title="Permanent link">&para;</a></h4>
+<p>Some compounds are better modeled with a <em>U</em> correction term to
+the density functional theory Hamiltonian while others are better
+modeled without (i.e., straight GGA). Energies from calculations with
+the +<em>U</em> correction are not directly comparable to those without.
+To obtain better accuracy across chemical systems, we use GGA when
+appropriate, GGA+<em>U</em> otherwise, and mix energies from the two
+calculation methodologies by adding an energy correction term to the
+GGA+<em>U</em> calculations to make them comparable to the GGA
+calculations. The idea behind this approach is to split reactions into
+sub-reactions that are well-modeled by GGA, well-modeled by
+GGA+<em>U</em>, or a binary formation reaction that can be estimated
+from known experimental data. More details on this method can be found
+in ref <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+<h2 id="accuracy-of-total-energies">Accuracy of Total Energies<a class="headerlink" href="#accuracy-of-total-energies" title="Permanent link">&para;</a></h2>
+<p>To estimate the accuracy of our total energy calculations, we compute
+reaction data and compare against experimental data. Note that this data
+set was compiled using a lower k-point mesh and pseudopotentials with
+fewer electrons than the current Materials Project parameter set.</p>
+<h3 id="estimating-errors-in-calculated-reaction-energies">Estimating errors in calculated reaction energies<a class="headerlink" href="#estimating-errors-in-calculated-reaction-energies" title="Permanent link">&para;</a></h3>
+<p>The accuracy of calculated reaction energies depends on the chemical
+system investigated. In general, GGA calculations have similar errors
+among chemically similar systems. Hence, reaction energies between
+chemically similar systems (e.g., a reaction where the reactants and
+products are all oxides, such as $\ce{MgO + Al2O3 -&gt; MgAl2O4}$) tend
+to have smaller errors than reactions between chemically dissimilar
+systems (e.g., between metals and insulators).</p>
+<p><img alt="formen errors" src="/methodology/img/calculations-manual/FormE_errors.png" />
+<em>Figure 1: Errors in Calculated Formation Energies for
+413 binaries in the Kubaschewski Tables. Energies are normalized to per
+mol atom.</em></p>
+<p>To provide a quantitative indicator of the error we may expect from the
+reaction calculator, we have computed the reaction energies of
+<a href="/methodology/static/KtablesBinaries.txt">413 binaries</a> in the Kubaschewski
+Tables formed with Group V, VI and VII anions. Figure 1 shows the errors
+in the calculated formation energies (compared to the experimental
+values) for these compounds. The mean absolute error (MAE) is around 14
+kJ mol$^{-1}$. 75% of the calculated formation energies are within 20 kJ
+mol$^{-1}$. We also found that compounds of certain elements tend to have
+larger errors. For example, Bi, Co, Pb, Eu, U, Tl and W compounds often
+have errors larger than 20 kJ mol$^{-1}$.</p>
+<p>It should be noted that while an MAE of 14 kJ mol$^{-1}$ is significantly
+higher than the desired chemical accuracy of 4 kJ mol$^{-1}$, it compares
+fairly well with the performance of most quantum chemistry
+calculations<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>. Other than the most computationally expensive model
+chemistries such as G1-G3 and CBS, the reaction energy errors of most
+computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.</p>
+<p>For oxidation of the elements into binary compounds, an average error of
+~4% or 33 kJ/mol-$\ce{O2}$ is typical.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> For conventional ternary oxide
+formation from the elements, we have found a mean relative absolute
+error of about 2%.<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<h3 id="sources-of-error">Sources of error<a class="headerlink" href="#sources-of-error" title="Permanent link">&para;</a></h3>
+<p>The largest contribution to the error comes from the inability of the
+GGA to fully describe electronic exchange and correlation effects. In
+addition, there is some error associated with neglecting zero-point
+effects and with comparing 0K, 0atm computations with room-temperature
+enthalpy experiments. The latter effect was estimated to contribute less
+than 0.03 eV/atom by Lany.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> The stability of antiferromagnetic
+compounds may be underestimated, as the majority of our calculations are
+performed ferromagnetically only. The effect of magnetism may be small
+(under 10 meV/atom) or large (100 meV/atom or greater), depending on the
+compound. For compounds with heavy elements, relativistic effects may
+lead to greater-than-expected errors.</p>
+<h3 id="gga-errors-on-reaction-energies-between-chemically-similar-compounds">GGA errors on reaction energies between chemically similar compounds<a class="headerlink" href="#gga-errors-on-reaction-energies-between-chemically-similar-compounds" title="Permanent link">&para;</a></h3>
+<p>We recently conducted a more in-depth study comparing GGA (+U) reaction
+energies of ternary oxides from binary oxides on 135 compounds. <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup></p>
+<p>The main conclusions are:</p>
+<ul>
+<li>The error in reaction energies for the binary oxide to ternary
+    oxides reaction energies are an order of magnitude lower than for
+    the more often reported formation energies from the element. An
+    error intrinsic to GGA (+U) is estimated to follow a normal
+    distribution centered in zero (no systematic underestimation
+    or overestimation) and with a standard deviation around 24 meV/at.</li>
+<li>When looking at phase stability (and for instance assessing if a
+    phase is stable or not), the relevant reaction energies are most of
+    the time not the formation energies from the elements but reaction
+    energies from chemically similar compounds (e.g., two oxides forming
+    a third oxide). Large cancelation of errors explain
+    this observation.</li>
+<li>The +U is necessary for accurate description of the energetics evene
+    when reactions do not involve change in formal oxidation states</li>
+</ul>
+<h2 id="accuracy-of-calculated-volumes">Accuracy of Calculated Volumes<a class="headerlink" href="#accuracy-of-calculated-volumes" title="Permanent link">&para;</a></h2>
+<p>A discussion of errors in calculated volumes can be found in the <a href="/methodology/volume-change-error">Volume
+Change Error manual</a>.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the calculation methodology, please reference the following
+works:</p>
+<ol>
+<li>A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T.
+    Mueller, K.A. Persson, G. Ceder., A High-Throughput Infrastructure
+    for Density Functional Theory Calculations, Computational Materials
+    Science, vol. 50, 2011, pp. 2295-2310.
+    <a href="https://dx.doi.org/10.1016/j.commatsci.2011.02.023">DOI:10.1016/j.commatsci.2011.02.023</a></li>
+<li>A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+    Persson, G. Ceder, Accurate Formation Enthalpies by Mixing GGA and
+    GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
+    <a href="https://doi.org/10.1103/PhysRevB.84.045115">DOI:10.1103/PhysRevB.84.045115</a></li>
+</ol>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Anubhav Jain</li>
+<li>Shyue Ping Ong</li>
+<li>Geoffroy Hautier</li>
+<li>Charles Moore</li>
+</ol>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Kresse, G. &amp; Furthmuller, J., 1996. Efficient iterative schemes
+for ab initio total-energy calculations using a plane-wave basis
+set. Physical Review B, 54, pp.11169-11186.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T. Mueller,
+K.A. Persson, G. Ceder., A High-Throughput Infrastructure for
+Density Functional Theory Calculations, Computational Materials
+Science. vol. 50 (2011) 2295-2310.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>G. Bergerhoff, The inorganic crystal-structure data-base, Journal
+Of Chemical Information and Computer Sciences. 23 (1983) 66-69.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>R. Hundt, J.C. Schön, M. Jansen, CMPZ - an algorithm for the
+efficient comparison of periodic structures, Journal Of Applied
+Crystallography. 39 (2006) 6-16.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
+metal oxides within the GGA+U framework, Physical Review B. 73
+(2006) 1-6.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+Persson, G. Ceder, Formation Enthalpies by Mixing GGA and GGA+U
+calculations, Physical Review B, vol. 84 (2011), 045115.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
+Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
+Ceder, W.H. Green, Ab initio screening of metal sorbents for
+elemental mercury capture in syngas streams, Chemical Engineering
+Science. 65 (2010) 3025-3033.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>S. Lany, Semiconductor thermochemistry in density functional
+calculations, Physical Review B. 78 (2008) 1-8.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
+density functional theory in predicting formation energies of
+ternary oxides from binary oxides and its implication on phase
+stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../electronic-structure/" title="Electronic structure" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Electronic structure
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

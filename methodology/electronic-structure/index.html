@@ -1,0 +1,1051 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Electronic structure - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#electronic-structure-calculations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Electronic structure
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Electronic structure
+      </label>
+    
+    <a href="./" title="Electronic structure" class="md-nav__link md-nav__link--active">
+      Electronic structure
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#band-structure-and-dos-computations-details" title="Band Structure and DOS computations details" class="md-nav__link">
+    Band Structure and DOS computations details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-band-structures" title="Accuracy of Band Structures" class="md-nav__link">
+    Accuracy of Band Structures
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#band-gaps" title="Band gaps" class="md-nav__link">
+    Band gaps
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#origin-of-band-gap-error-and-improving-accuracy" title="Origin of band gap error and improving accuracy" class="md-nav__link">
+    Origin of band gap error and improving accuracy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#band-structure-and-dos-computations-details" title="Band Structure and DOS computations details" class="md-nav__link">
+    Band Structure and DOS computations details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accuracy-of-band-structures" title="Accuracy of Band Structures" class="md-nav__link">
+    Accuracy of Band Structures
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#band-gaps" title="Band gaps" class="md-nav__link">
+    Band gaps
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#origin-of-band-gap-error-and-improving-accuracy" title="Origin of band gap error and improving accuracy" class="md-nav__link">
+    Origin of band gap error and improving accuracy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/electronic-structure.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="electronic-structure-calculations">Electronic Structure Calculations<a class="headerlink" href="#electronic-structure-calculations" title="Permanent link">&para;</a></h1>
+<h2 id="band-structure-and-dos-computations-details">Band Structure and DOS computations details<a class="headerlink" href="#band-structure-and-dos-computations-details" title="Permanent link">&para;</a></h2>
+<p>We used the relaxed structure from the total energy run to perform using
+the same GGA functional (and U if any) a DOS and band structure run.
+This data is available for many entries in
+the materials explorer. We ran first a static run with a uniform
+(Monkhorst Pack or $\Gamma$-centered for hexagonal systems) k-point grid.
+From this run the DOS and the charge density were extracted. The charge
+density was then used to perform a band structure computation for
+k-points along the symmetry lines of the Brillouin zone. The symmetry
+lines have been determined following the methodology from Curtarolo et
+al.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> using the aconvasp software.</p>
+<p>The band structure data is displayed with full lines for up spin and
+dashed lines for down spin. For insulators, the band gap is computed
+according to the band structure. The nature of the gap (direct or
+undirect) as well as the k-points involved in the band gap transition
+are displayed. The VBM and CBMs are displayed for insulators as well by
+red and white dots. The web site does not display the 10% highest bands
+as those higher energies bands tend to converge more slowly.</p>
+<p>The DOS indicates the full DOS by default but projections along atoms or
+orbitals are also available through a scroll down menu. Please note that
+the DOS data and band structure can be slightly different as the k-point
+grid is not the same. For instance, the k-point grid for the DOS might
+not include Gamma while the band structure does.</p>
+<h2 id="accuracy-of-band-structures">Accuracy of Band Structures<a class="headerlink" href="#accuracy-of-band-structures" title="Permanent link">&para;</a></h2>
+<p><strong>Note</strong>: <em>the term 'band gap' in this section generally refers to the
+fundamental gap, not the optical gap. The difference between these
+quantities is reported to be small in semiconductors but significant in
+insulators.</em> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p><img alt="band gaps" src="/methodology/img/calculations-manual/Gaps.png" />
+<em>Figure 1: Experimental versus computed band gaps for
+237 compounds in an internal test. The computed gaps are underestimated
+by an average factor of 1.6, and the residual error even after
+accounting for this shift is significant (MAE of 0.6 eV). We thank M.
+Chan for her assistance in compiling this data.</em></p>
+<p>Density functional theory is formulated to calculate ground state
+properties. Although the band structure involves excitations of
+electrons to unoccupied states, the Kohn-Sham energies used in solving
+the DFT equations are often interpreted to correspond to electron energy
+levels in the solid.</p>
+<p>The correspondence between the Kohm-Sham eigenvalues computed by DFT and
+true electron energies is theoretically valid only for the highest
+occupied electron state. The Kohn-Sham energy of this state matches the
+first ionization energy of the material, given an exact
+exchange-correlation functional. However, for other energies, there is
+no guarantee that Kohn-Sham eigenvalues will correspond to physical
+observables.</p>
+<p>Despite the lack of a rigorous theoretical basis, the DFT band structure
+does provide useful information. In general, band dispersions predicted
+by DFT are reported to match experimental observations; one small test
+of band dispersion accuracy found that errors ranged from 0.1 to about
+0.4 eV.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> However, predicted band gaps are usually severely
+underestimated. Therefore, a common way to interpret DFT band structures
+is to apply a 'scissor' operation whereby the conduction bands are
+shifted in energy by a constant amount so that the band gap matches
+known experimental observations.</p>
+<h3 id="band-gaps">Band gaps<a class="headerlink" href="#band-gaps" title="Permanent link">&para;</a></h3>
+<p>In general, band gaps computed with common exchange-correlation
+functionals such as the LDA and GGA are severely underestimated.
+Typically the disagreement is reported to be around 50% in the
+literature. Some internal testing by the Materials Project supports
+these statements; typically, we find that band gaps are underestimated
+by about 40% (Figure 1). We additionally find that several known
+insulators are predicted to be metallic.</p>
+<h4 id="origin-of-band-gap-error-and-improving-accuracy">Origin of band gap error and improving accuracy<a class="headerlink" href="#origin-of-band-gap-error-and-improving-accuracy" title="Permanent link">&para;</a></h4>
+<p>The errors in DFT band gaps obtained from calculations can be attributed
+to two sources: 1. Approximations employed to the exchange correlation
+functional 2. A derivative discontinuity term, originating from the true
+density functional being discontinuous with the total number of
+electrons in the system.</p>
+<p>Of these contributions, (2) is generally regarded to be the larger and
+more important contribution to the error. It can be partly addressed by
+a variety of techniques such as the GW approximation but typically at
+high computational cost.</p>
+<p>Strategies to improve band gap prediction at moderate to low
+computational cost now been developed by several groups, including Chan
+and Ceder (delta-sol),<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> Heyd et al. (hybrid functionals) <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, and
+Setyawan et al. (empirical fits) <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. (These references also contain
+additional data regarding the accuracy of DFT band gaps.) The Materials
+Project may employ such methods in the future in order to more
+quantitatively predict band gaps. For the moment, computed band gaps
+should be interpreted with caution.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the calculation methodology, please reference the following
+works:</p>
+<ol>
+<li>A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T.
+    Mueller, K.A. Persson, G. Ceder., A High-Throughput Infrastructure
+    for Density Functional Theory Calculations, Computational Materials
+    Science, vol. 50, 2011, pp. 2295-2310.
+    <a href="https://dx.doi.org/10.1016/j.commatsci.2011.02.023">DOI:10.1016/j.commatsci.2011.02.023</a></li>
+<li>A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+    Persson, G. Ceder, Accurate Formation Enthalpies by Mixing GGA and
+    GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
+    <a href="https://doi.org/10.1103/PhysRevB.84.045115">DOI:10.1103/PhysRevB.84.045115</a></li>
+</ol>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Anubhav Jain</li>
+<li>Shyue Ping Ong</li>
+<li>Geoffroy Hautier</li>
+<li>Charles Moore</li>
+</ol>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Setyawan, W.; Curtarolo, S. Computational Materials Science 2010,
+49, 299-312.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>E.N. Brothers, A.F. Izmaylov, J.O. Normand, V. Barone, G.E.
+Scuseria, Accurate solid-state band gaps via screened hybrid
+electronic structure calculations., The Journal of Chemical Physics.
+129 (2008)&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>R. Godby, M. Schluter, L.J. Sham, Self-energy operators and
+exchange-correlation potentials in semiconductors, Physical Review
+B. 37 (1988).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>M. Chan, G. Ceder, Efficient Band Gap Predictions for Solids,
+Physical Review Letters 19 (2010)&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>J. Heyd, J.E. Peralta, G.E. Scuseria, R.L. Martin, Energy band
+gaps and lattice parameters evaluated with the
+Heyd-Scuseria-Ernzerhof screened hybrid functional, Journal of
+Chemical Physics 123 (2005)&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>W. Setyawan, R.M. Gaume, S. Lam, R. Feigelson, S. Curtarolo,
+High-throughput combinatorial database of electronic band structures
+for inorganic scintillator materials., ACS Combinatorial Science.
+(2011).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../total-energies/" title="Total energies" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Total energies
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pseudopotentials/" title="Pseudopotentials" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Pseudopotentials
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

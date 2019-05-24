@@ -1,0 +1,1831 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Pseudopotentials - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#pseudopotentials-choice" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Pseudopotentials
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pseudopotentials
+      </label>
+    
+    <a href="./" title="Pseudopotentials" class="md-nav__link md-nav__link--active">
+      Pseudopotentials
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-strategy" title="The strategy" class="md-nav__link">
+    The strategy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseudopotential-comments-and-choice" title="Pseudopotential comments and choice" class="md-nav__link">
+    Pseudopotential comments and choice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1st-row-elements" title="1st row elements" class="md-nav__link">
+    1st row elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alkali-and-alkali-earth" title="alkali and alkali-earth" class="md-nav__link">
+    alkali and alkali-earth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-elements-transition-metals" title="d-elements, transition metals" class="md-nav__link">
+    d-elements, transition metals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-group" title="main group" class="md-nav__link">
+    main group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rare-earth-f-electrons" title="rare-earth, f-electrons" class="md-nav__link">
+    rare-earth, f-electrons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transuranides-f-electrons" title="transuranides, f-electrons" class="md-nav__link">
+    transuranides, f-electrons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-strategy" title="The strategy" class="md-nav__link">
+    The strategy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseudopotential-comments-and-choice" title="Pseudopotential comments and choice" class="md-nav__link">
+    Pseudopotential comments and choice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1st-row-elements" title="1st row elements" class="md-nav__link">
+    1st row elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alkali-and-alkali-earth" title="alkali and alkali-earth" class="md-nav__link">
+    alkali and alkali-earth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-elements-transition-metals" title="d-elements, transition metals" class="md-nav__link">
+    d-elements, transition metals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-group" title="main group" class="md-nav__link">
+    main group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rare-earth-f-electrons" title="rare-earth, f-electrons" class="md-nav__link">
+    rare-earth, f-electrons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transuranides-f-electrons" title="transuranides, f-electrons" class="md-nav__link">
+    transuranides, f-electrons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/pseudopotentials.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="pseudopotentials-choice">Pseudopotentials Choice<a class="headerlink" href="#pseudopotentials-choice" title="Permanent link">&para;</a></h1>
+<p>Pseudopotentials are used to reduce computation time by replacing the
+full electron system in the coulombic potential by a system only taking
+explicitly into account the "valence" electrons (i.e., the electrons
+participating into bonding) but in a pseudopotential. This approach not
+only reduces the electron number but also the energy cutoff necessary
+(this is critical in plane-wave based computations). All computations in
+the materials project have been performed using a specific type of very
+efficient pseudopotentials: the projector augmented wave (PAW)
+pseudopotentials.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> We used the library of PAW pseudopotentials
+provided by VASP but for a given element there are often several
+possibilities in the VASP library. This wiki presents how the choices
+between the different pseudopotential options were made.</p>
+<h2 id="the-strategy">The strategy<a class="headerlink" href="#the-strategy" title="Permanent link">&para;</a></h2>
+<p>As a test set, we ran all elements and binary oxides present in the ICSD
+with the available PAW pseudopotentials. As it is difficult to
+test for all properties (structural, electronic, etc...), we chose to be
+inclusive and to select the pseudopotential (psp) with the largest number of
+electrons (high e) EXCEPT if convergence issues were seen on our test set, or if
+previous experience excluded a specific pseudopotential. We also
+excluded pseudopotentials with too large an energy cutoff.</p>
+<p>We also compared to recommendations from the VASP manual present in
+<a href="http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html">1</a>.</p>
+<p>Finally, as we had energies for elements and binary oxides, we compared
+binary oxide formation energies with the available pseudopotentials.
+The oxygen molecule energy was obtained from Wang et al.
+Please note that this data is pure GGA and some chemistries (e.g.,
+transition metals) will give extremely bad formation energy results in
+GGA. This is not an issue with the pseudopotential but with the
+functional, so we do not focus on that issue in this wiki.</p>
+<h2 id="pseudopotential-comments-and-choice">Pseudopotential comments and choice<a class="headerlink" href="#pseudopotential-comments-and-choice" title="Permanent link">&para;</a></h2>
+<h3 id="1st-row-elements">1st row elements<a class="headerlink" href="#1st-row-elements" title="Permanent link">&para;</a></h3>
+<p>B, C, N, O, F</p>
+<p>Usually they have three pseudopotentials: a soft _s, a hard _h, and a standard.
+The standard is recommended by VASP and will be used for all. The hard
+have extremely high cut-offs (700 eV)</p>
+<h3 id="alkali-and-alkali-earth">alkali and alkali-earth<a class="headerlink" href="#alkali-and-alkali-earth" title="Permanent link">&para;</a></h3>
+<p>The table below indicates our choices. Basically, we chose all high e-
+pseudopotentials except for Na where we excluded Na_sv due to its very high cutoff
+(700 eV).</p>
+<table>
+<thead>
+<tr>
+<th>element</th>
+<th>options</th>
+<th>VASP</th>
+<th>Low elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High e- conv. Stats</th>
+<th>our choice</th>
+<th>rem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Li</td>
+<td>Li, Li_sv</td>
+<td>Li_sv</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>all converged</td>
+<td>Li_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Na</td>
+<td>Na, Na_sv, Na_pv</td>
+<td>Na_pv</td>
+<td>0.06</td>
+<td>0.01</td>
+<td>all converged</td>
+<td>Na_pv</td>
+<td>Na_sv is extremely high in cutoff (700 eV) for marginal gain in accuracy on Na2O</td>
+</tr>
+<tr>
+<td>K</td>
+<td>K_pv, K_sv</td>
+<td>K_sv</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>80% conv for both</td>
+<td>K_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Cs</td>
+<td>Cs_sv</td>
+<td>Cs_sv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Cs_sv</td>
+<td></td>
+</tr>
+<tr>
+<td>Rb</td>
+<td>Rb_pv, Rb_sv</td>
+<td>Rb_sv</td>
+<td>0.05</td>
+<td>0.03</td>
+<td>all converged</td>
+<td>Rb_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Be</td>
+<td>Be, Be_sv</td>
+<td>Be</td>
+<td>0.04</td>
+<td>0.04</td>
+<td>all converged</td>
+<td>Be_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Mg</td>
+<td>Mg, Mg_pv</td>
+<td>Mg_pv</td>
+<td>0.02</td>
+<td>0.05</td>
+<td>all converged</td>
+<td>Mg_pv</td>
+<td>VASP and thermo suggest Mg as they are not much different; we decided to stick with the high e- psp.</td>
+</tr>
+<tr>
+<td>Ca</td>
+<td>Ca_sv, Ca_pv</td>
+<td>Ca_pv</td>
+<td>0.06</td>
+<td>0.03</td>
+<td>all converged</td>
+<td>Ca_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Sr</td>
+<td>Sr_sv</td>
+<td>Sr_sv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Sr_sv</td>
+<td></td>
+</tr>
+<tr>
+<td>Ba</td>
+<td>Ba_sv</td>
+<td>Ba_sv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ba_sv</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="d-elements-transition-metals">d-elements, transition metals<a class="headerlink" href="#d-elements-transition-metals" title="Permanent link">&para;</a></h3>
+<p>The table below shows the details on the psp choices. All high e- psp
+have been chosen except for Pd which had convergences problem with the
+high e- psp in PdO.</p>
+<table>
+<thead>
+<tr>
+<th>element</th>
+<th>options</th>
+<th>VASP</th>
+<th>Low elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High e- conv. Stats</th>
+<th>our choice</th>
+<th>rem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sc</td>
+<td>Sc_sv</td>
+<td>Sc_sv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Sc_sv</td>
+<td></td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Y_sv</td>
+<td>Y_sv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Y_sv</td>
+<td></td>
+</tr>
+<tr>
+<td>Ti</td>
+<td>Ti, Ti_pv, Ti_sv</td>
+<td>Ti_pv</td>
+<td>0.13</td>
+<td>0.23</td>
+<td>metal conv pb with Ti and Ti_sv</td>
+<td>Ti_pv</td>
+<td>highest e- psp with best conv. chosen</td>
+</tr>
+<tr>
+<td>Zr</td>
+<td>Zr, Zr_sv</td>
+<td>Zr_sv</td>
+<td>0.06</td>
+<td>0.03</td>
+<td>all converged</td>
+<td>Zr_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Hf</td>
+<td>Hf, Hf_pv</td>
+<td>Hf_pv</td>
+<td>0.19</td>
+<td>0.18</td>
+<td>all converged</td>
+<td>Hf_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>V</td>
+<td>V, V_pv, V_sv</td>
+<td>V_pv</td>
+<td>0.39</td>
+<td>0.46</td>
+<td>all converged</td>
+<td>V_sv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Nb</td>
+<td>Nb_pv</td>
+<td>Nb_pv</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Nb_pv</td>
+<td></td>
+</tr>
+<tr>
+<td>Ta</td>
+<td>Ta, Ta_pv</td>
+<td>Ta_pv</td>
+<td>0.3</td>
+<td>0.31</td>
+<td>similar conv. for both</td>
+<td>Ta_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Cr</td>
+<td>Cr, Cr_pv</td>
+<td>Cr_pv</td>
+<td>0.53</td>
+<td>0.6</td>
+<td>all converged</td>
+<td>Cr_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Mo</td>
+<td>Mo, Mo_pv</td>
+<td>Mo_pv</td>
+<td>0.39</td>
+<td>0.45</td>
+<td>all converged</td>
+<td>Mo_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>W</td>
+<td>W, W_pv</td>
+<td>W_pv</td>
+<td>0.47</td>
+<td>0.48</td>
+<td>all converged</td>
+<td>W_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Mn</td>
+<td>Mn, Mn_pv</td>
+<td>Mn or Mn_pv (!)</td>
+<td>0.29</td>
+<td>0.31</td>
+<td>all converged</td>
+<td>Mn_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Tc</td>
+<td>Tc, Tc_pv</td>
+<td>Tc or Tc_pv</td>
+<td></td>
+<td></td>
+<td>all converged (no metals BTW)</td>
+<td>Tc_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Re</td>
+<td>Re, Re_pv</td>
+<td>Re</td>
+<td>0.56</td>
+<td>0.59</td>
+<td>all converged</td>
+<td>Re_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Fe</td>
+<td>Fe, Fe_pv</td>
+<td>Fe_pv</td>
+<td>0.62</td>
+<td>0.47</td>
+<td>50% conv. on oxides for both psp</td>
+<td>Fe_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Co</td>
+<td>Co</td>
+<td>Co</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Co</td>
+<td></td>
+</tr>
+<tr>
+<td>Ni</td>
+<td>Ni, Ni_pv</td>
+<td>Ni</td>
+<td>0.4</td>
+<td>0.4</td>
+<td>all converged</td>
+<td>Ni_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Cu</td>
+<td>Cu, Cu_pv</td>
+<td>Cu</td>
+<td>0.07</td>
+<td>0.1</td>
+<td>all converged</td>
+<td>Cu_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Zn</td>
+<td>Zn</td>
+<td>Zn</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Zn</td>
+<td></td>
+</tr>
+<tr>
+<td>Ru</td>
+<td>Ru, Ru_pv</td>
+<td>Ru</td>
+<td>0.41</td>
+<td>0.41</td>
+<td>all converged</td>
+<td>Ru_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Rh</td>
+<td>Rh, Rh_pv</td>
+<td>Rh</td>
+<td>0.36</td>
+<td>0.35</td>
+<td>all converged</td>
+<td>Rh_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Pd</td>
+<td>Pd, Pd_pv</td>
+<td>Pd</td>
+<td>0.2</td>
+<td>0.2</td>
+<td>Pd_pv has one unconv. PdO</td>
+<td>Pd</td>
+<td>due to the conv. issue we chose Pd (recommended by VASP too).</td>
+</tr>
+<tr>
+<td>Ag</td>
+<td>Ag</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ag</td>
+<td></td>
+</tr>
+<tr>
+<td>Cd</td>
+<td>Cd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Cd</td>
+<td></td>
+</tr>
+<tr>
+<td>Hg</td>
+<td>Hg</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Hg</td>
+<td></td>
+</tr>
+<tr>
+<td>Au</td>
+<td>Au</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Au</td>
+<td></td>
+</tr>
+<tr>
+<td>Ir</td>
+<td>Ir</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ir</td>
+<td></td>
+</tr>
+<tr>
+<td>Pt</td>
+<td>Pt</td>
+<td>Pt</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Pt</td>
+<td></td>
+</tr>
+<tr>
+<td>Os</td>
+<td>Os, Os_pv</td>
+<td>Os_pv</td>
+<td>0.67</td>
+<td>0.7</td>
+<td>all converged</td>
+<td>Os_pv</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="main-group">main group<a class="headerlink" href="#main-group" title="Permanent link">&para;</a></h3>
+<p>Si, P, Cl, S will be used in their standard form (not hard) as suggested
+by VASP manual.</p>
+<p>The Al_h psp was found to be definitely wrong in terms of band
+structure. There were "ghost" states found in the DOS.</p>
+<p>Pb is interesting as the high e- psp shows significantly higher error in
+formation energies. We kept the high e- psp (Pb_d), but it might be
+interesting to study this a little more. One hypothesis relies on a
+recent result showing that lead oxide formation energies need the use of
+spin-orbit coupling to be accurate.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> Our computations do not include any
+relativistic corrections for valence electrons. However, spin-orbit
+coupling is taken into account during the psp construction. This would
+explain why a psp with more core electrons (treated undirectly with SO
+coupling) would give more accurate results than a psp with fewer
+electrons.</p>
+<p>Bi_d shows a convergence problem, so the decision on Bi has been
+postponed to further analysis.</p>
+<p>Finally, Po and At, while referred to in the VASP manual, are not present
+in the VASP PAW library.</p>
+<table>
+<thead>
+<tr>
+<th>element</th>
+<th>options</th>
+<th>VASP</th>
+<th>Low elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High e- conv. Stats</th>
+<th>our choice</th>
+<th>rem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ga</td>
+<td>Ga, Ga_d, Ga_h</td>
+<td>Ga_d</td>
+<td>0.05</td>
+<td>0.01</td>
+<td>all converged</td>
+<td>Ga_d</td>
+<td>Ga_h seems best (0.01 instead of 0.02) but same problem as Al_h?</td>
+</tr>
+<tr>
+<td>Ge</td>
+<td>Ge, Ge_d, Ge_h</td>
+<td>Ge_d</td>
+<td>0.06</td>
+<td>0.06</td>
+<td>all converged</td>
+<td>Ge_d</td>
+<td>Ge_h seems best (Ge_h and Ge_d similar though) but same problem as Al_h ?</td>
+</tr>
+<tr>
+<td>Al</td>
+<td>Al, Al_h</td>
+<td>Al</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>all converged</td>
+<td>Al</td>
+<td>Good energetics but pb in band structure</td>
+</tr>
+<tr>
+<td>As</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>As</td>
+<td></td>
+</tr>
+<tr>
+<td>Se</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Se</td>
+<td></td>
+</tr>
+<tr>
+<td>Br</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Br</td>
+<td></td>
+</tr>
+<tr>
+<td>In</td>
+<td>In, In_d</td>
+<td>In_d</td>
+<td>0.13</td>
+<td>0.1</td>
+<td>all converged</td>
+<td>In_d</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Sn</td>
+<td>S, Sn_d</td>
+<td>Sn_d</td>
+<td>0.16</td>
+<td>0.12</td>
+<td>all converged</td>
+<td>Sn_d</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Tl</td>
+<td>Tl, Tl_d</td>
+<td>Tl_d</td>
+<td>0.26</td>
+<td>0.31</td>
+<td>all converged</td>
+<td>Tl_d</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Pb</td>
+<td>Pb, Pb_d</td>
+<td>Pb_d</td>
+<td>0.17</td>
+<td>0.36</td>
+<td>all converged</td>
+<td>Pb_d</td>
+<td>highest e- psp chosen</td>
+</tr>
+<tr>
+<td>Bi</td>
+<td>Bi, Bi_d</td>
+<td>Bi_d</td>
+<td></td>
+<td></td>
+<td>convergence pb</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>Po</td>
+<td>Po, Po_d</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Po</td>
+<td>no Po psp is available in the PAW library!</td>
+</tr>
+<tr>
+<td>At</td>
+<td>At, At_d</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>At_d</td>
+<td>no At psp is available in the PAW library</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rare-earth-f-electrons">rare-earth, f-electrons<a class="headerlink" href="#rare-earth-f-electrons" title="Permanent link">&para;</a></h3>
+<p>These are probably the most problematic to use as pseudopotentials. Here
+is what the VASP manual says about them:</p>
+<p>"Due to self-interaction errors, f-electrons are not handled well by
+presently available density functionals. In particular, partially filled
+states are often incorrectly described, leading to large errors for
+Pr-Eu and Tb-Yb where the error increases in the middle (Gd is handled
+reasonably well, since 7 electrons occupy the majority shell). These
+errors are DFT and not VASP related. Particularly problematic is the
+description of the transition from an itinerant (band-like) behavior
+observed at the beginning of each period to localized states towards the
+end of the period. For the elements, this transition occurs already in
+La and Ce, whereas the transition sets in for Pu and Am for the
+elements. A routine way to cope with the inabilities of present DFT
+functionals to describe the localized electrons is to place the
+electrons in the core. Such potentials are available and described
+below. Furthermore, PAW potentials in which the states are treated as
+valence states are available, but these potentials are not expected to
+work reliable when the electrons are localized."</p>
+<p>In summary, the pseudopotentials can either include or not include f
+electrons; how accurate including them or not is depends on the nature of the bonding
+for each particular system (localized or not).</p>
+<p>What we found is that convergence issues are often seen for high
+electron psp (e.g., Pr, Nd, Sm). Also, some pseudopotentials (e.g.,
+Er_2, Eu_2) freeze too many electrons and therefore have issues with
+oxidation states that make one of the frozen electron participate in
+bonding (e.g., Eu2O3, Er2O3). Finally, there is a major problem with Tb.
+Only Tb_3 exists but Tb is known to also form Tb4+ compounds (e.g.,
+TbO2). For those Tb4+ compounds, this psp is likely to be extremely wrong. There is
+not much fix to this for now except waiting for someone to develop a PAW
+Tb_4 psp.</p>
+<table>
+<thead>
+<tr>
+<th>element</th>
+<th>options</th>
+<th>VASP</th>
+<th>Low elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High elec: oxide form_enth (exp-comp) eV per fu</th>
+<th>High e- conv. Stats</th>
+<th>our choice</th>
+<th>rem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>La</td>
+<td>La, La_s</td>
+<td>La</td>
+<td>0.12</td>
+<td>0.17</td>
+<td>all converged</td>
+<td>La</td>
+<td>La_s means soft</td>
+</tr>
+<tr>
+<td>Ce</td>
+<td>Ce_3, Ce</td>
+<td>/</td>
+<td>1.18</td>
+<td>0.26</td>
+<td>all converged</td>
+<td>Ce</td>
+<td>thermo data on CeO2 is terrible with Ce_3, cf Ce4+ thermo data on Ce2O3 is similar with both</td>
+</tr>
+<tr>
+<td>Pr</td>
+<td>Pr_3, Pr</td>
+<td>/</td>
+<td>0.00</td>
+<td>0.09</td>
+<td>Pr metal did not converge</td>
+<td>Pr_3</td>
+<td>Pr_3 better oxide thermo (surprisingly good!) and convergence in metal.</td>
+</tr>
+<tr>
+<td>Nd</td>
+<td>Nd_3, Nd</td>
+<td>/</td>
+<td>0.04</td>
+<td>0.01</td>
+<td>Nd metal conv. problem</td>
+<td>Nd_3</td>
+<td>convergence pb</td>
+</tr>
+<tr>
+<td>Pm</td>
+<td>Pm_3, Pm</td>
+<td>/</td>
+<td>/</td>
+<td>/</td>
+<td></td>
+<td>Pm_3</td>
+<td>no real data to compare, it is between Nd and Sm in the periodic table, so we decided to pick a _3 as Nd and Sm</td>
+</tr>
+<tr>
+<td>Sm</td>
+<td>Sm_3, Sm</td>
+<td>/</td>
+<td>0.1</td>
+<td>/</td>
+<td>Sm metal conv. pb</td>
+<td>Sm_3</td>
+<td>conv pb</td>
+</tr>
+<tr>
+<td>Eu</td>
+<td>Eu_2, Eu</td>
+<td>/</td>
+<td>0.68</td>
+<td>0.25</td>
+<td>all converged</td>
+<td>Eu</td>
+<td>Both EuO and Eu2O3 thermo worse with Eu_2</td>
+</tr>
+<tr>
+<td>Gd</td>
+<td>Gd_3, Gd</td>
+<td>/</td>
+<td>0.2</td>
+<td>0.12</td>
+<td>all converged</td>
+<td>Gd</td>
+<td>Gd has better thermo and highest e-</td>
+</tr>
+<tr>
+<td>Tb</td>
+<td>Tb_3</td>
+<td>/</td>
+<td></td>
+<td></td>
+<td>all converged</td>
+<td>Tb_3</td>
+<td>There is a major pb with Tb. It can 4+ and we have only a 3+ psps</td>
+</tr>
+<tr>
+<td>Dy</td>
+<td>Dy_3</td>
+<td>/</td>
+<td></td>
+<td></td>
+<td>all converged</td>
+<td>Dy_3</td>
+<td></td>
+</tr>
+<tr>
+<td>Ho</td>
+<td>Ho_3</td>
+<td>/</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ho_3</td>
+<td></td>
+</tr>
+<tr>
+<td>Er</td>
+<td>Er_2, Er_3</td>
+<td>/</td>
+<td>1.16</td>
+<td>0.15</td>
+<td>all converged</td>
+<td>Er_3</td>
+<td>thermo data on Er2O3 off with Er_2</td>
+</tr>
+<tr>
+<td>Tm</td>
+<td>Tm, Tm_3</td>
+<td>/</td>
+<td>0.2</td>
+<td>?</td>
+<td>could not converge any metal with Tm</td>
+<td>Tm_3</td>
+<td></td>
+</tr>
+<tr>
+<td>Yb</td>
+<td>Yb_2, Yb</td>
+<td>/</td>
+<td>1.03</td>
+<td>0.59</td>
+<td>all converged</td>
+<td>Yb</td>
+<td>thermo data off with Yb_2</td>
+</tr>
+<tr>
+<td>Lu</td>
+<td>Lu_3, Lu</td>
+<td>/</td>
+<td>0.43</td>
+<td>?</td>
+<td>Lu could not be converged</td>
+<td>Lu_3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="transuranides-f-electrons">transuranides, f-electrons<a class="headerlink" href="#transuranides-f-electrons" title="Permanent link">&para;</a></h3>
+<p>U, Ac, Th, Pa, Np, Pu, Am</p>
+<p>Following vasp suggestion, we decided to use the standard (and not the
+soft) version for all those pseudopotentials.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the Materials Project, please reference the following work:</p>
+<p>A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T.
+Mueller, K. A. Persson, and G. Ceder, A high-throughput
+infrastructure for density functional theory calculations,
+Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
+<a href="https://dx.doi.org/10.1016/j.commatsci.2011.02.023">DOI:10.1016/j.commatsci.2011.02.023</a></p>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Geoffroy Hautier</li>
+</ol>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>﻿P.E. Blöchl, Physical Review B 50, 17953-17979 (1994).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>﻿﻿R. Ahuja, A. Blomqvist, P. Larsson, P. Pyykkö, and P.
+Zaleski-Ejgierd, Physical Review Letters 106, 1-4 (2011).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../electronic-structure/" title="Electronic structure" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Electronic structure
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gga-plus-u/" title="GGA+U" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GGA+U
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

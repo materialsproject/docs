@@ -1,0 +1,1128 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Structure Predictor - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#structure-predictor" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Structure Predictor
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Structure Predictor
+      </label>
+    
+    <a href="./" title="Structure Predictor" class="md-nav__link md-nav__link--active">
+      Structure Predictor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-changes" title="Recent changes" class="md-nav__link">
+    Recent changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual" title="Manual" class="md-nav__link">
+    Manual
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background-on-data-mined-crystal-structure-and-compound-prediction" title="Background on Data Mined Crystal Structure and Compound Prediction" class="md-nav__link">
+    Background on Data Mined Crystal Structure and Compound Prediction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ionic-substitution-based-structure-prediction-method" title="The Ionic Substitution based Structure Prediction Method" class="md-nav__link">
+    The Ionic Substitution based Structure Prediction Method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-idea" title="The basic idea" class="md-nav__link">
+    The basic idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-compound-prediction-procedure" title="The compound prediction procedure" class="md-nav__link">
+    The compound prediction procedure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-and-limitations" title="Performance and Limitations" class="md-nav__link">
+    Performance and Limitations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-structure-predictor" title="Using the Structure Predictor" class="md-nav__link">
+    Using the Structure Predictor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-inputs" title="Entering Inputs" class="md-nav__link">
+    Entering Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-the-results" title="Interpreting the Results" class="md-nav__link">
+    Interpreting the Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-features" title="Future features" class="md-nav__link">
+    Future features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citations" title="Citations" class="md-nav__link">
+    Citations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-changes" title="Recent changes" class="md-nav__link">
+    Recent changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual" title="Manual" class="md-nav__link">
+    Manual
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background-on-data-mined-crystal-structure-and-compound-prediction" title="Background on Data Mined Crystal Structure and Compound Prediction" class="md-nav__link">
+    Background on Data Mined Crystal Structure and Compound Prediction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ionic-substitution-based-structure-prediction-method" title="The Ionic Substitution based Structure Prediction Method" class="md-nav__link">
+    The Ionic Substitution based Structure Prediction Method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-idea" title="The basic idea" class="md-nav__link">
+    The basic idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-compound-prediction-procedure" title="The compound prediction procedure" class="md-nav__link">
+    The compound prediction procedure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-and-limitations" title="Performance and Limitations" class="md-nav__link">
+    Performance and Limitations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-structure-predictor" title="Using the Structure Predictor" class="md-nav__link">
+    Using the Structure Predictor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entering-inputs" title="Entering Inputs" class="md-nav__link">
+    Entering Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-the-results" title="Interpreting the Results" class="md-nav__link">
+    Interpreting the Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-features" title="Future features" class="md-nav__link">
+    Future features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citations" title="Citations" class="md-nav__link">
+    Citations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/structure-predictor.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="structure-predictor">Structure Predictor<a class="headerlink" href="#structure-predictor" title="Permanent link">&para;</a></h1>
+<p>Welcome to the Structure Predictor App wiki!</p>
+<p>You will find in here all relevant information regarding the Structure Predictor App, including release notes, the manual, etc.</p>
+<h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h2>
+<h3 id="recent-changes">Recent changes<a class="headerlink" href="#recent-changes" title="Permanent link">&para;</a></h3>
+<h2 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
+<h3 id="background-on-data-mined-crystal-structure-and-compound-prediction">Background on Data Mined Crystal Structure and Compound Prediction<a class="headerlink" href="#background-on-data-mined-crystal-structure-and-compound-prediction" title="Permanent link">&para;</a></h3>
+<p>Crystal structure and compound prediction is an essential step of computational materials
+design. Indeed, while many materials properties can be computed nowadays with <em>ab initio</em>
+computations. Those computed properties are only relevant if they are evaluated on a compound (i.e., a
+stoichiometry and crystal structure) stable enough to be formed. Crystal structure prediction can be quite useful
+for experimentalists too. For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure determination through refinement for example.</p>
+<p>The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions). This optimization is extremely challenging as the energy landscape is very rugged and full of local minima. Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.</p>
+<p>In a departure to this traditional approach, the methods we have developed use a combination of data mining and <em>a initio</em> computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget. The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds. Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system. Finally, a last step consists in testing those candidates for stability using ab initio computations (see link to manual thermo).</p>
+<h3 id="the-ionic-substitution-based-structure-prediction-method">The Ionic Substitution based Structure Prediction Method<a class="headerlink" href="#the-ionic-substitution-based-structure-prediction-method" title="Permanent link">&para;</a></h3>
+<p>The compound prediction model available on the web site now through the structure predictor app is based on our recent work on the data mining of ionic substitutions. In this section we will briefly explain the idea of the approach and how to use the web site. More details can be found in Hautier et al.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<h3 id="the-basic-idea">The basic idea<a class="headerlink" href="#the-basic-idea" title="Permanent link">&para;</a></h3>
+<p><img alt="substitution example" src="../img/structure-predictor/substitution-example.png" />
+<em>Figure 1: An example of ionic substitution.</em></p>
+<p>It is common for chemists to propose new compounds from the substitution of
+another, chemically similar, ion. For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
+one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure. We have
+implemented a mathematical model that learns these substitution rules from a database of experimentally
+observed crystal structure (e.g., the ICSD). Basically, what the model provides is a probability
+distribution for any ionic substitution. In Figure 2 we show the matrix indicating the date mined
+substitution tendency for two ionic species obtained from this work. The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together. Red colors indicate that two ions
+tend to substitute while blue is associated with pair of species not substituting to each other.</p>
+<p><img alt="ionic substitution correlations" src="../img/structure-predictor/ions-correlation.png" />
+<em>Figure 2: Data mined tendency for ionic substitutions. Red indicates high substitution tendency. Blue indicates that the tow ions tend to not substitute.</em></p>
+<h3 id="the-compound-prediction-procedure">The compound prediction procedure<a class="headerlink" href="#the-compound-prediction-procedure" title="Permanent link">&para;</a></h3>
+<p>The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions. The model we used was inspired by previous work in the field of machine translation. In this field, it is the probability for a word in one language to be able to be substituted by a word in another language that is sought for. In our case, the words are replaced by ions.
+After we built this probability function from a database of experimental data (here the ICSD), we can perform compound predictions. Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species). Targeting a specific combinations of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound. If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we disregard it and go to the next ICSD compound. There is also a step making sure we do not form duplicate structures and we only form charge balanced compounds.</p>
+<p><img alt="substitution flowchart" src="../img/structure-predictor/substitution-flowchart.png" />
+<em>Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability.</em></p>
+<p>From this procedure, we can see that the threshold to set is quite important. A higher threshold will give you less false positives (suggested compounds that are not stable) but also less true positives. On the other hand, a too low threshold will give you more false positives but also more true positives. There is a compromise to find between how exhaustive you want to be and how many candidates you can have in terms of computational budget (that you will have to test down the road for stability using DFT).</p>
+<h3 id="performance-and-limitations">Performance and Limitations<a class="headerlink" href="#performance-and-limitations" title="Permanent link">&para;</a></h3>
+<h3 id="using-the-structure-predictor">Using the Structure Predictor<a class="headerlink" href="#using-the-structure-predictor" title="Permanent link">&para;</a></h3>
+<h4 id="entering-inputs">Entering Inputs<a class="headerlink" href="#entering-inputs" title="Permanent link">&para;</a></h4>
+<p>Practically, the procedure for getting predictions consists in 3 steps</p>
+<ol>
+<li>
+<p>Pick elements: choose in the periodic table what element constitute the chemical space you are interested in. For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.</p>
+</li>
+<li>
+<p>Pick oxidation states: the model use the oxidation states to make predictions. V<sup>3+</sup> does not substitute with the same elements than V<sup>5+</sup>. So, if you want to study Mn<sup>3+</sup> compounds you pick +3 for Mn, +1 for Li (no other choices anyway) and O<sup>2-</sup>. Sometimes you do not know what oxidation states you are interest in. Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn. Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, one for Mn<sup>4+</sup>. This should cover all the chemical space you are looking at.</p>
+</li>
+<li>
+<p>Pick a threshold. Be careful, the threshold depends on the number of species in your model. The probability model are actually not the same depending on the number of species they have (even though they are built on common building blocks). We suggest to use: -3 for binaries, -4 for ternaries and -5 for quaternaries. Of course, if you want less candidates you should reduce those numbers but those are pretty standard values that should work in most cases.</p>
+</li>
+<li>
+<p>type your e-mail and click results. An e-mail will be sent to you with the results of the prediction. We provide a log file indicating the ionic substitutions, their probability and from which ICSD entry. We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters. We do not provide any DFT results due our limited computational budget for the moment. It is the responsibility of the user to run the predictions. Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.</p>
+</li>
+</ol>
+<h4 id="interpreting-the-results">Interpreting the Results<a class="headerlink" href="#interpreting-the-results" title="Permanent link">&para;</a></h4>
+<p>The results are given as a set of cifs or VASP runs. These are '''only''' candidate structures. Typically, those candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature. For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>. This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull. Figure 4 shows a convex hull (in green) for an A-B system.Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases. For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.</p>
+<p><img alt="convex hull example" src="../img/structure-predictor/convex-hull.png" />
+<em>Figure 4: An example of the convex hull construction.</em></p>
+<p>More information about phase stability and convex hull can be obtained in the <a href="phase-diagram">phase diagram app manual</a>.</p>
+<p>Please note that we only presented an approach for building zero K, zero pressure phase diagrams. It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature. This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.</p>
+<p>Finally, as we present an usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.</p>
+<h3 id="future-features">Future features<a class="headerlink" href="#future-features" title="Permanent link">&para;</a></h3>
+<p>In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure. For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides). A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>. For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>. The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.</p>
+<p>The only data mined model accessible now is the substitution predictor. We have developed another model based on correlations between crystal structures at different compositions.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> We plan to give access to this model in the future. The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).</p>
+<h3 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h3>
+<p>To cite the Structure Predictor App, please reference the following works:</p>
+<ul>
+<li>G. Hautier, V. Ehrlacher, C.C. Fischer, A. Jain, G. Ceder, Data Mined Ionic Substitutions for the Discovery of New Compounds, Inorganic Chemistry, vol. 50, 2011, pp. 656-663.</li>
+<li>A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T. Mueller, K. A. Persson, and G. Ceder, A high-throughput infrastructure for density functional theory calculations, Computational Materials Science, vol. 50, 2011, pp. 2295-2310.</li>
+</ul>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<h3 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Geoffroy Hautier</li>
+<li>Anubhav Jain</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>10.1038/nmat2321&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>10.1021/ic102031h&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>10.1021/cm100795d&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>10.1038/nmat1691&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../molecules-explorer/" title="Molecules Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Molecules Explorer
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../phase-diagram/" title="Phase Diagram" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Phase Diagram
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -113,6 +113,10 @@ MathJax.Hub.Config({
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#phonons" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -297,7 +301,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../total-energies.md" title="Total energies" class="md-nav__link">
+    <a href="../total-energies/" title="Total energies" class="md-nav__link">
       Total energies
     </a>
   </li>
@@ -309,7 +313,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../electronic-structure.md" title="Electronic structure" class="md-nav__link">
+    <a href="../electronic-structure/" title="Electronic structure" class="md-nav__link">
       Electronic structure
     </a>
   </li>
@@ -321,7 +325,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../pseudopotentials.md" title="Pseudopotentials" class="md-nav__link">
+    <a href="../pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
       Pseudopotentials
     </a>
   </li>
@@ -333,7 +337,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../gga-plus-u.md" title="GGA+U" class="md-nav__link">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
       GGA+U
     </a>
   </li>
@@ -345,7 +349,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../elasticity.md" title="Elasticity" class="md-nav__link">
+    <a href="../elasticity/" title="Elasticity" class="md-nav__link">
       Elasticity
     </a>
   </li>
@@ -357,7 +361,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../elasticity-prediction.md" title="Elasticity prediction" class="md-nav__link">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
       Elasticity prediction
     </a>
   </li>
@@ -369,7 +373,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../piezoelectricity.md" title="Piezoelectricity" class="md-nav__link">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
       Piezoelectricity
     </a>
   </li>
@@ -381,7 +385,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../dielelectricity.md" title="Dielectricity" class="md-nav__link">
+    <a href="../dielectricity/" title="Dielectricity" class="md-nav__link">
       Dielectricity
     </a>
   </li>
@@ -393,7 +397,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../equations-of-state.md" title="Equations of State" class="md-nav__link">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
       Equations of State
     </a>
   </li>
@@ -410,10 +414,76 @@ MathJax.Hub.Config({
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Phonons
+      </label>
     
     <a href="./" title="Phonons" class="md-nav__link md-nav__link--active">
       Phonons
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermodynamic-properties" title="Thermodynamic properties" class="md-nav__link">
+    Thermodynamic properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-details" title="Calculation details" class="md-nav__link">
+    Calculation details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -433,11 +503,11 @@ MathJax.Hub.Config({
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      User Reference - Website
+      User Reference
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        User Reference - Website
+        User Reference
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -472,8 +542,116 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/molecules-explorer.md" title="Molecules Explorer" class="md-nav__link">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
       Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
     </a>
   </li>
 
@@ -488,15 +666,27 @@ MathJax.Hub.Config({
       
 
 
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Contribution
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         Contribution
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -526,6 +716,72 @@ MathJax.Hub.Config({
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thermodynamic-properties" title="Thermodynamic properties" class="md-nav__link">
+    Thermodynamic properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-details" title="Calculation details" class="md-nav__link">
+    Calculation details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -534,9 +790,139 @@ MathJax.Hub.Config({
                   <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/phonons.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Phonons</h1>
-                
-                
+                <h1 id="phonons">Phonons<a class="headerlink" href="#phonons" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>A phonon is a collective excitation of a set of atoms in condensed
+matter. These excitations can be decomposed in different modes each
+being associated with an energy that corresponds to the frequency of
+vibration. The different energies associated with each vibrational mode
+constitute the phonon vibrational spectra (or phonon band structure).
+The vibrational spectra of materials plays an important role in physical
+phenomena such as thermal conductivity, superconductivity,
+ferroelectricity and carrier thermalization.</p>
+<p>There are different methods to calculate the vibrational spectra from
+first-principles using the density functional theory formalism (DFT). It
+can be obtained from the Fourier transform of the trajectories of the
+atoms on a molecular dynamics run, from finite-differences of the total
+energy with respect to atomic displacements or directly from density
+functional perturbation theory (DFPT). The latter method is the one used
+in the calculations on the Materials project page.</p>
+<h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
+<p>In the density functional perturbation theory formalism the derivatives
+of the total energy with respect to a perturbation are directly obtained
+from the self-consistency loop <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> For a generic point <strong>q</strong> in the
+Brillouin zone the phonon frequencies \(\omega_{\mathbf{q},m}\) and
+eigenvectors \(U_m(\mathbf{q}\kappa'\beta)\) are obtained by solving
+of the generalized eigenvalue problem</p>
+<p>\[\sum_{\kappa'\beta}\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U_m(\mathbf{q}\kappa'\beta) = M_{\kappa}\omega^2_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]</p>
+<p>where \(\kappa\) labels the atoms in the cell, \(\alpha\) and
+\(\beta\) are cartesian coordinates and
+\(\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})\) are the
+interatomic force constants in reciprocal space, which are related to
+the second derivatives of the energy with respect to atomic
+displacements. These values have been obtained by performing a Fourier
+interpolation of those calculated on a regular grid of <strong>q</strong>-points
+obtained with DFPT.</p>
+<h2 id="thermodynamic-properties">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties" title="Permanent link">&para;</a></h2>
+<p>The vibrational density of states \(g(\omega)\) is obtained from the
+integration over the full Brillouin zone</p>
+<p>\[g(\omega) = \frac{1}{3nN}\sum_{\mathbf{q},m}\delta(\omega-\omega_{\mathbf{q},m}),\]</p>
+<p>where \(n\) is the number of atoms per unit cell and \(N\) is the
+number of unit cells. The expressions for the Helmholtz free energy
+\(\Delta F\), the phonon contribution to the internal energy
+\(\Delta E_{\text{ph}}\), the constant-volume specific heat \(C_v\)
+and the entropy \(S\) can be obtained in the harmonic approximation
+<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p>\[\Delta F = 3nNk_BT\int_{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
+<p>\[\Delta E_{\text{ph}} = 3nN\frac{\hbar}{2}\int_{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
+<p>\[C_v = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
+<p>\[S = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]
+where \(k_B\) is the Boltzmann constant and \(\omega_L\) is the
+largest phonon frequency.</p>
+<h2 id="calculation-details">Calculation details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
+<p>All the DFT and DFPT calculations are performed with the ABINIT software
+package <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+<p>The PBEsol <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> semilocal generalized gradient approximation
+exchange-correlation functional (XC) was used for the calculations. This
+functional was proven to provide accurate phonon frequencies compared to
+experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>
+and taken from the pseudopotentials table Pseudo-dojo version 0.3 <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
+<p>The plane wave cutoff is chosen based on the hardest element for each
+compound, according to the values suggested in the Pseudo-dojo table.
+The Brillouin zone has been sampled using equivalent <strong>k</strong>-point and
+<strong>q</strong>-point grids that respect the symmetries of the crystal with a
+density of approximately 1500 points per reciprocal atom and the
+<strong>q</strong>-point grid is always $\Gamma$-centered <sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>
+<p>All the structures are relaxed with strict convergence criteria, i.e.
+until all the forces on the atoms are below $10^{-6}$ Ha/Bohr and the
+stresses are below $10^{-4}$ Ha/Bohr$^3$.</p>
+<p>The primitive cells and the band structures are defined according to the
+conventions of Setyawan and Curtarolo <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>Guido Petretto, Shyam Dwaraknath, Henrique P. C. Miranda, Donald
+Winston, Matteo Giantomassi, Michiel J. van Setten, Xavier Gonze,
+Kristin A. Persson, Geoffroy Hautier, Gian-Marco Rignanese,
+<em>High-throughput density functional perturbation theory phonons for
+inorganic materials</em>, <strong>Scientific Data</strong>, 5, 180065 (2018).
+<a href="https://doi.org/10.1038/sdata.2018.65">doi:10.1038/sdata.2018.65</a></p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Gonze, X. &amp; Lee, C. Dynamical matrices, Born effective charges,
+dielectric permittivity tensors, and interatomic force constants
+from density functional perturbation theory. Phys. Rev. B 55,
+10355–10368 (1997)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>C. Lee &amp; X. Gonze, Ab initio calculation of the thermodynamic
+properties and atomic temperature factors of SiO2 α-quartz and
+stishovite. Phys. Rev. B 51, 8610 (1995)&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Gonze, X. et al. First-principles computation of material
+properties: the Abinit software project. Computational Materials
+Science 25, 478 – 492 (2002)&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Gonze, X. et al. ABINIT: First-principles approach to material and
+nanosystem properties. Computer Physics Communications 180, 2582 –
+2615 (2009)&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Perdew, J. P. et al. Restoring the density-gradient expansion for
+exchange in solids and surfaces. Phys. Rev. Lett. 100, 136406 (2008)&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>He, L. et al. Accuracy of generalized gradient approximation
+functionals for density-functional perturbation theory calculations.
+Phys. Rev. B 89, 064305 (2014)&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Hamann, D. R. Optimized norm-conserving Vanderbilt
+pseudopotentials. Phys. Rev. B 88, 085117 (2013)&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>van Setten, M., Giantomassi, M., Bousquet, E., Verstraete, M.J.,
+Hamann, D.R., Gonze, X. &amp; Rignanese, G.-M., et al. The PseudoDojo:
+Training and grading a 85 element optimized norm-conserving
+pseudopotential table (2018). Computer Physics Communications 226,
+39.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Petretto, G., Gonze, X., Hautier, G. &amp; Rignanese, G.-M.
+Convergence and pitfalls of density functional perturbation theory
+phonons calculations from a high-throughput perspective.
+Computational Materials Science 144, 331 – 337 (2018)&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Setyawan, W. &amp; Curtarolo, S. High-throughput electronic band
+structure calculations: Challenges and tools. Computational
+Materials Science 49, 299 – 312 (2010)&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
@@ -557,7 +943,7 @@ MathJax.Hub.Config({
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../equations-of-state/" title="Equations of State" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -566,7 +952,7 @@ MathJax.Hub.Config({
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Equations of State
               </span>
             </div>
           </a>

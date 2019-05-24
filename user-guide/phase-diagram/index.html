@@ -1,0 +1,1322 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Phase Diagram - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#phase-diagram-app" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Phase Diagram
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Phase Diagram
+      </label>
+    
+    <a href="./" title="Phase Diagram" class="md-nav__link md-nav__link--active">
+      Phase Diagram
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-changes" title="Recent changes" class="md-nav__link">
+    Recent changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-03-may-2-2011" title="Version 0.3 - May 2, 2011" class="md-nav__link">
+    Version 0.3 - May 2, 2011
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-02-march-28-2011" title="Version 0.2 - March 28, 2011" class="md-nav__link">
+    Version 0.2 - March 28, 2011
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-01-march-10-2011" title="Version 0.1 - March 10, 2011" class="md-nav__link">
+    Version 0.1 - March 10, 2011
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual" title="Manual" class="md-nav__link">
+    Manual
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-computational-phase-diagram-app" title="Using the Computational Phase Diagram App" class="md-nav__link">
+    Using the Computational Phase Diagram App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-phase-diagrams" title="Interpreting Phase Diagrams" class="md-nav__link">
+    Interpreting Phase Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-phase-diagram-information" title="Basic Phase Diagram Information" class="md-nav__link">
+    Basic Phase Diagram Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositional-phase-diagrams" title="Compositional Phase Diagrams" class="md-nav__link">
+    Compositional Phase Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-compositional-phase-diagrams" title="Binary Compositional Phase Diagrams" class="md-nav__link">
+    Binary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ternary-compositional-phase-diagrams" title="Ternary Compositional Phase Diagrams" class="md-nav__link">
+    Ternary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quaternary-compositional-phase-diagrams" title="Quaternary Compositional Phase Diagrams" class="md-nav__link">
+    Quaternary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grand-potential-phase-diagrams" title="Grand Potential Phase Diagrams" class="md-nav__link">
+    Grand Potential Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accuracy-of-calculated-phase-diagrams" title="Accuracy of Calculated Phase Diagrams" class="md-nav__link">
+    Accuracy of Calculated Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermodynamics-methodology" title="Thermodynamics Methodology" class="md-nav__link">
+    Thermodynamics Methodology
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compositional-phase-diagrams_1" title="Compositional Phase Diagrams" class="md-nav__link">
+    Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grand-potential-phase-diagrams_1" title="Grand Potential Phase Diagrams" class="md-nav__link">
+    Grand Potential Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-roadmap" title="Release Roadmap" class="md-nav__link">
+    Release Roadmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-resources" title="Other Resources" class="md-nav__link">
+    Other Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-changes" title="Recent changes" class="md-nav__link">
+    Recent changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-03-may-2-2011" title="Version 0.3 - May 2, 2011" class="md-nav__link">
+    Version 0.3 - May 2, 2011
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-02-march-28-2011" title="Version 0.2 - March 28, 2011" class="md-nav__link">
+    Version 0.2 - March 28, 2011
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-01-march-10-2011" title="Version 0.1 - March 10, 2011" class="md-nav__link">
+    Version 0.1 - March 10, 2011
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual" title="Manual" class="md-nav__link">
+    Manual
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-computational-phase-diagram-app" title="Using the Computational Phase Diagram App" class="md-nav__link">
+    Using the Computational Phase Diagram App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-phase-diagrams" title="Interpreting Phase Diagrams" class="md-nav__link">
+    Interpreting Phase Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-phase-diagram-information" title="Basic Phase Diagram Information" class="md-nav__link">
+    Basic Phase Diagram Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compositional-phase-diagrams" title="Compositional Phase Diagrams" class="md-nav__link">
+    Compositional Phase Diagrams
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-compositional-phase-diagrams" title="Binary Compositional Phase Diagrams" class="md-nav__link">
+    Binary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ternary-compositional-phase-diagrams" title="Ternary Compositional Phase Diagrams" class="md-nav__link">
+    Ternary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quaternary-compositional-phase-diagrams" title="Quaternary Compositional Phase Diagrams" class="md-nav__link">
+    Quaternary Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grand-potential-phase-diagrams" title="Grand Potential Phase Diagrams" class="md-nav__link">
+    Grand Potential Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accuracy-of-calculated-phase-diagrams" title="Accuracy of Calculated Phase Diagrams" class="md-nav__link">
+    Accuracy of Calculated Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermodynamics-methodology" title="Thermodynamics Methodology" class="md-nav__link">
+    Thermodynamics Methodology
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compositional-phase-diagrams_1" title="Compositional Phase Diagrams" class="md-nav__link">
+    Compositional Phase Diagrams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grand-potential-phase-diagrams_1" title="Grand Potential Phase Diagrams" class="md-nav__link">
+    Grand Potential Phase Diagrams
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-roadmap" title="Release Roadmap" class="md-nav__link">
+    Release Roadmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-resources" title="Other Resources" class="md-nav__link">
+    Other Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/phase-diagram.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="phase-diagram-app">Phase Diagram App<a class="headerlink" href="#phase-diagram-app" title="Permanent link">&para;</a></h1>
+<p>Welcome to the Phase Diagram App Reference!</p>
+<p>Here you will find all relevant information regarding the Phase Diagram App (PDApp), including release notes, the manual, etc.</p>
+<h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h2>
+<h3 id="recent-changes"><strong>Recent changes</strong><a class="headerlink" href="#recent-changes" title="Permanent link">&para;</a></h3>
+<h3 id="version-03-may-2-2011">Version 0.3 - May 2, 2011<a class="headerlink" href="#version-03-may-2-2011" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bug fixes for tabbing behavior, and unstable phase listing.</li>
+<li>New scroll layout for Data Tables for easier viewing.</li>
+</ul>
+<h3 id="version-02-march-28-2011">Version 0.2 - March 28, 2011<a class="headerlink" href="#version-02-march-28-2011" title="Permanent link">&para;</a></h3>
+<ul>
+<li>New tabbed formatting for PDApp which supports up to 7 PDs.</li>
+</ul>
+<h3 id="version-01-march-10-2011">Version 0.1 - March 10, 2011<a class="headerlink" href="#version-01-march-10-2011" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Initial release of Phase Diagram App</li>
+<li>Key features:<ul>
+<li>2-4 compositional components phase diagrams supported.</li>
+<li>Highlighting of nodes on mouse-over.</li>
+<li>Marking of an arbitrary composition in the phase diagram.</li>
+<li>Mouse-over popup of details at particular nodes.</li>
+<li>Complete data table with listing of stable and unstable phases.</li>
+</ul>
+</li>
+</ul>
+<h2 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
+<h3 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
+<p>Phase diagrams represent the thermodynamic phase equilibria of multicomponent systems and reveal useful insights into fundamental material aspects regarding the processing and reactions of materials. However, the experimental determination of a phase diagram is an extremely time-consuming process, requiring careful synthesis and characterization of all phases in a chemical system.</p>
+<p>Computational tools can accelerate phase diagram construction significantly. By calculating the energies of all known compounds in a given chemical system (e.g. $\ce{Li-Fe-O}$), we can determine the phase diagram for that system at 0 K and 0 atm. Furthermore, for systems comprised of predominantly solid phases open with respect to a gaseous element, approximations can be made as to the finite temperature and pressure phase diagrams.</p>
+<p>In this manual, we will outline the general usage and thermodynamics methodology of our computational phase diagrams app. The details of the calculations, including computational methodology and accuracy, used in constructing these phase diagrams are available in the <a href="/methodology/total-energies">Calculations Manual</a> and will not be further covered in this manual.</p>
+<h3 id="using-the-computational-phase-diagram-app"><strong>Using the Computational Phase Diagram App</strong><a class="headerlink" href="#using-the-computational-phase-diagram-app" title="Permanent link">&para;</a></h3>
+<p>To construct the phase diagram of a 2-4 component chemical system (e.g. $\ce{Li-Fe-O}$), you only need to select the desired elements from the periodic table and click the "Generate" button.</p>
+<p>To generate a grand potential phase diagram, for which one of the components of the phase diagram is considered 'open' to the system, select a projected element from the drop-down list, and input a desired chemical potential either manually or using the temperature slider (for supported elements $\ce{O2}$, $\ce{N2}$, $\ce{H2}$, $\ce{F2}$, and $\ce{Cl2}$ only). When available, the temperature slider has been calibrated using entropy data from NIST. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Once the phase diagram has been generated, there are multiple ways to interact with the data:</p>
+<ul>
+<li>When mousing over nodes in the phase diagram, a pop-up appears that identifies the phase. The pop-up lists both stable and unstable crystal structures computed at that composition. You may click the id link to bring up more details of that compound, such as detailed crystal structure information.</li>
+<li>Checking the 'Show Unstable' box will display the compositions at which unstable compounds have been computed as blue circles.</li>
+<li>You can zoom into a portion of the phase diagram by defining a zoom area: click and hold at the upper-left corner of the desired area, and drag down and right, releasing the mouse at the lower-right corner of the desired area. A pop-up with the zoomed-in portion should appear. To return to the original phase diagram, click anywhere outside the pop-up.</li>
+</ul>
+<h3 id="interpreting-phase-diagrams"><strong>Interpreting Phase Diagrams</strong><a class="headerlink" href="#interpreting-phase-diagrams" title="Permanent link">&para;</a></h3>
+<p>This section provides a short guide on interpreting phase diagrams generated by the PDApp. A more comprehensive discussion and example of phase diagram interpretation can be found in References 2 and 3.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h4 id="basic-phase-diagram-information">Basic Phase Diagram Information<a class="headerlink" href="#basic-phase-diagram-information" title="Permanent link">&para;</a></h4>
+<p>While the PDApp generates several types of phase diagrams, some information is common to all phase diagrams. As an illustrative example, we refer to <em>Figure 1</em>, a ternary $\ce{Li-Fe-O}$ phase diagram at 0 K and 0 atm calculated using the PDApp.</p>
+<p><img alt="Calculated Li-Fe-O Phase Diagram" src="/img/phase-diagram/Li-Fe-O_calculated.png" title="Calculated Li-Fe-O Phase Diagram" /></p>
+<p><em>Figure 1: Calculated Li-Fe-O Phase Diagram</em></p>
+<p>Several pieces of information can be obtained from <em>Figure 1</em>:</p>
+<ul>
+<li>The red nodes on the phase diagram represent phases that are calculated to be stable under the given conditions.</li>
+<li>Blue circles (not shown) represent phases that are calculated to be unstable under the given conditions.</li>
+<li>An arbitrary composition will thermodynamically decompose to stable phases (red nodes), with the relative proportion of each stable phase determined by the lever rule.</li>
+</ul>
+<p>Regarding polymorphic compounds (compounds that change crystal structure with respect to temperature or pressure), only limited information can be obtained because phase diagrams generated by the PDApp do not include an explicit temperature axis. For most solid materials, our experience indicates that temperature and pressure contribute fairly small changes to differences in total energy. Thus, we expect that crystal structures for which the PDApp reports similar formation energies (i.e., within about 50 meV/atom) might be candidates for polymorphism.</p>
+<p>The PDApp models only the thermodynamics of a system. Thus, compounds that are metastable (kinetically stabilized) may not show up as stable on the generated phase diagram. We expect that compounds for which the decomposition energy into stable phases is low are potential candidates for metastability; however, compounds with extremely high decomposition energies into stable phases (i.e., over about 200 meV/atom) are less likely to be metastable. The thermodynamic scale of inorganic crystalline metastability is discussed in Reference 4. <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<h4 id="compositional-phase-diagrams">Compositional Phase Diagrams<a class="headerlink" href="#compositional-phase-diagrams" title="Permanent link">&para;</a></h4>
+<p>In a compositional phase diagram, the system is closed with respect to the environment. We display compositional phase diagrams involving different numbers of components in slightly different ways.</p>
+<h5 id="binary-compositional-phase-diagrams">Binary Compositional Phase Diagrams<a class="headerlink" href="#binary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
+<p><em>Figure 2</em> is an example of a calculated binary $\ce{Fe-P}$ phase diagram at 0 K and 0 atm using the PDApp. Binary phase diagrams show the complete convex hull for the system, where the y-axis is the formation energy per atom and the x-axis is the composition (e.g. in the $\ce{Fe-P}$ phase diagram, the x-axis is the fraction of $\ce{P}$).</p>
+<p><img alt="Calculated Fe-P Phase Diagram" src="/img/phase-diagram/Fe-P_calculated.png" title="Calculated Fe-P Phase Diagram" /></p>
+<p><em>Figure 2: Calculated Fe-P Phase Diagram</em></p>
+<p>The black lines show the convex hull construction, which connects stable phases. Unstable phases will always appear above the convex hull line; one measure of the thermodynamic stability of an arbitrary compound is its distance from the convex hull line, which predicts the decomposition energy of that phase into the most stable phases.</p>
+<h5 id="ternary-compositional-phase-diagrams">Ternary Compositional Phase Diagrams<a class="headerlink" href="#ternary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
+<p><em>Figure 1</em> is an example of a calculated ternary $\ce{Li-Fe-O}$ phase diagram at 0 K and 0 atm using the PDApp. The presentation of ternary phase diagrams differs from that of binary phase diagrams; the energy axis is removed so that the entire compositional space can be represented. (The energy axis, not shown, can be thought of as coming 'out of the page').</p>
+<p>The black lines in the ternary phase diagrams are projections of the convex hull construction into compositional space. The lines form Gibbs triangles, which can be used to find stable phases at an arbitrary composition. At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by vertices of the triangle bounding that composition. For example, the equilibrium phases for a composition with $\ce{Li:Fe:O}$ ratio of 1:1:1 (i.e., in the center of the phase diagram), is predicted to be $\ce{Li5FeO4}$, $\ce{LiFeO2}$ and $\ce{Fe}$.</p>
+<h5 id="quaternary-compositional-phase-diagrams">Quaternary Compositional Phase Diagrams<a class="headerlink" href="#quaternary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
+<p>Quaternary phase diagrams are presented in the same general way as ternary phase diagrams, but an additional axis is needed to represent the fourth composition. Therefore, quaternary phase diagrams are shown in three dimensions rather than as a 2D plot.</p>
+<p>The lines in quaternary phase diagrams define polyhedra with 4 vertices each rather than triangles. At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by the vertices of the polyhedron bounding that composition.</p>
+<h4 id="grand-potential-phase-diagrams">Grand Potential Phase Diagrams<a class="headerlink" href="#grand-potential-phase-diagrams" title="Permanent link">&para;</a></h4>
+<p>Grand potential phase diagrams are phase diagrams representing phase equilibria that are open to a particular element. In these phase diagrams, the chemical potential of an element is an external input variable that the user must specify. In some cases (e.g. a gaseous element such as oxygen), the chemical potential can be related to temperature and partial pressure via thermodynamic relations and known experimental data.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<p>A grand potential phase diagram involving n components is presented in the same way as a compositional phase diagram involving $n-1$ components.</p>
+<p><img alt="Calculated Li-Fe-O Grand Potential Phase Diagram" src="/img/phase-diagram/Li-Fe-O_700K.png" title="Calculated Li-Fe-O Grand Potential Phase Diagram" /></p>
+<p><em>Figure 3: Calculated Li-Fe-O grand potential phase diagram at oxygen chemical potential consistent with approximately 700 K and 0 atm.</em></p>
+<p><em>Figure 3</em> shows the calculated grand potential phase diagram for the $\ce{Li-Fe-O}$ system at an oxygen chemical potential consistent with 700 K and 0 atm. The phase diagram provides information on the equilibrium phases under these conditions for any $\ce{Li:Fe}$ composition (note that the O fraction is controlled by interactions with the environment). For example, we may observe that a compositon with a relatively high Fe ratio (near composition = 1) will comprise $\ce{Fe2O3}$ and $\ce{LiFeO2}$. In addition, by examining the changes in the equilibrium phases as the chemical potential changes, we can obtain insights into how the phase equilibria are modified with changes in the chemical potential. A detailed discussion of this application can be found in References 2 and 3. <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h3 id="accuracy-of-calculated-phase-diagrams"><strong>Accuracy of Calculated Phase Diagrams</strong><a class="headerlink" href="#accuracy-of-calculated-phase-diagrams" title="Permanent link">&para;</a></h3>
+<p><img alt="Experimental Li-Fe-O Phase Diagram" src="/img/phase-diagram/Li-Fe-O_exp.png" title="Experimental Li-Fe-O Phase Diagram" /></p>
+<p><em>Figure 4: Experimental Li-Fe-O Phase Diagram</em></p>
+<p><em>Figure 4</em> shows the experimentally determined phase diagram for the $\ce{Li-Fe-O}$ system at 673K.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> Even though the experimental phase diagram is at a much higher temperature, we can see that our calculated phase diagram reproduces the features very well. The phases $\ce{Li2O}$, $\ce{Fe3O4}$, $\ce{Fe2O3}$, $\ce{LiFeO2}$, $\ce{Li5FeO4}$ are stable in both the experimental diagram and our calculated phase diagram. The only additional phase in our calculated diagram is $\ce{FeO}$, which is well known to be difficult to obtain in stoichiometric proportion under normal conditions. Our calculations correctly reproduce the $\ce{FeO}$ formation enthalpy to within experimental accuracy, and our calculated phase diagram is fullly consistent with known experimental thermochemical data along the $\ce{Fe-O}$ line at 1 atm and 298K.</p>
+<p>In general, we can expect that compositional phase diagrams comprising of predominantly solid phases to be reproduced fairly well by our calculations. However, it should be noted that there are <a href="/methodology/total-energies">inherent limitations in accuracy in the DFT calculated energies</a>. Furthermore, our calculated phase diagrams are at 0 K and 0 atm, and differences with non-zero temperature phase diagrams are to be expected.</p>
+<p>For grand potential phase diagrams, further approximations are made as to the entropic contributions.<sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref3:3"><a class="footnote-ref" href="#fn:3">3</a></sup> They are therefore expected to be less accurate, but nonetheless provide useful insights on general trends.</p>
+<h3 id="thermodynamics-methodology"><strong>Thermodynamics Methodology</strong><a class="headerlink" href="#thermodynamics-methodology" title="Permanent link">&para;</a></h3>
+<p>In the remainder of this section, we will use an $\ce{Li-Fe-O}$ system to illustrate the methodology without loss of generality.</p>
+<h4 id="compositional-phase-diagrams_1">Compositional Phase Diagrams<a class="headerlink" href="#compositional-phase-diagrams_1" title="Permanent link">&para;</a></h4>
+<p>To construct a phase diagram, one would need to compare the relative thermodynamic stability of phases belonging to the system using an appropriate free energy model. For an isothermal, isobaric, closed system, the relevant thermodynamic potential is the Gibbs free energy, $G$, which can be expressed as a Legendre transform of the enthalpy, $H$, and internal energy, $E$, as follows:</p>
+<p>$$\eqalign{G(T,P,N_{Li},N_{Fe},N_{O}) &amp;= H(T,P,N_{Li},N_{Fe},N_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr
+&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},N_{O}) + PV(T,P,N_{Li},N_{Fe},N_{O})\cr - TS(T,P,N_{Li},N_{Fe},N_{O}}}$$</p>
+<p>where $T$ is the temperature of the system, $S$ is the entropy of the system, $P$ is the pressure of the system, $V$ is the volume of the system, and $N_i$ is the number of atoms of species $i$ in the system.</p>
+<p>For systems comprising primarily of condensed phases, the $PV$ term can be neglected and at 0K, the expression for $G$ simplifies to just $E$. Normalizing $E$ with respect to the total number of particles in the system, we obtain $\bar{E}(0,P,x_{Li},x_{Fe},x_O)$, where $x_i = \frac{N_i}{N_{Li} + N_{Fe} + N_{O}}$. By taking the convex hull<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup> of $E$ for all phases belonging to the M-component system and projecting the stable nodes into the $(M - 1)$ - dimension composition space, one can obtain the 0 K phase diagram for the closed system at constant pressure. The convex hull of a set of points is the smallest convex set containing the points. For instance, to construct a 0 K, closed $\ce{Li-Fe-O}$ system phase diagram, the convex hull is taken on the set of points in $(\bar{E},x_{Li},x_{Fe})$ space with $x_O$ being related to the other composition variables by $x_O = 1 - x_{Li} - x_{Fe}$.</p>
+<h4 id="grand-potential-phase-diagrams_1">Grand Potential Phase Diagrams<a class="headerlink" href="#grand-potential-phase-diagrams_1" title="Permanent link">&para;</a></h4>
+<p>In many scientific applications, the phase equilibria of interest is not that of a closed system, but rather one which is open to a particular element. For instance, synthesis might be carried out in flowing Argon gas at a particular temperature, which would mean the system is open to gaseous elements such as oxygen. Other experiments may be carried out in air, which essentially serves as an infinite reservoir of atmospheric elements such as oxygen, nitrogen and others.</p>
+<p>In environments that are open to a particular element (say oxygen), the relevant control variable is the chemical potential of that element, $\mu_{O}$. The relevant thermodynamic potential to study phase equilibria in an open system is the grand potential, which is defined as the following for an $\ce{Li-Fe-O}$ system that is open with respect to oxygen:</p>
+<p>$$\eqalign{\phi(T,P,N_{Li},N_{Fe},\mu_{O}) &amp;= G(T,P,N_{Li},N_{Fe},\mu_{O}) - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})\cr
+&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},\mu_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})}}$$</p>
+<p>where the $PV$ term is again ignored.</p>
+<p>Normalizing with respect to $\ce{Li-Fe}$ composition and dropping the explicit expression of the functional dependence of $E$, $S$, and $N_{O}$ on the right-hand side henceforth for brevity, we can obtain</p>
+<p>$$\bar{\phi}(T,P,x_{Li},x_{Fe},\mu_{O}) = \frac{E-TS-\mu_ON_O}{N_{Li} + N_{Fe}}$$</p>
+<p>where $x_i = \frac{N_i}{N_{Li}+N_{Fe}}$ is the fraction of component $i$ in $\ce{Li-Fe}$ composition space.</p>
+<p>To formally introduce temperature into ab initio phase stability calculations, one would usually need to take into account all the relevant excitations (e.g. vibrational, configurational, and electronic) that contribute to entropy. However, for systems where phase equilibria changes takes place primarily between solid phases with absorption or loss of as gas, a few simplifying assumptions can be made that allow us to obtain a useful approximate phase diagram with less effort. In such reactions, the reaction entropy is dominated by the entropy of the gas, and the effect of temperature is mostly captured by changes in the chemical potential of the gas. Since the $TS$ term is the entropy contribution of the condensed system, it can be neglected compared to the entropy effect of the gas, and the expression for $\bar{\phi}$ simplifies to:</p>
+<p>$$\bar{\phi} = \frac{E-\mu_ON_O}{N_{Li} + N_{Fe}}$$</p>
+<p>Using the above assumption, the effect of temperature and partial pressure can be fully captured in a single chemical potential variable, with a more negative value corresponding to higher temperatures or lower partial pressures. The chemical potential is then treated as an external variable to obtain a grand potential phase diagram under a particular condition by taking the convex hull of $\bar{\phi}$ for all phases and projecting the stable nodes into the $\ce{Li-Fe}$ composition space.</p>
+<h3 id="citation"><strong>Citation</strong><a class="headerlink" href="#citation" title="Permanent link">&para;</a></h3>
+<p>To cite the Computational Phase Diagram App, please reference the following works:</p>
+<ul>
+<li>S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807.</li>
+<li>S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430.</li>
+</ul>
+<h3 id="authors"><strong>Authors</strong><a class="headerlink" href="#authors" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shyue Ping Ong</li>
+<li>Anubhav Jain</li>
+<li>Matthew McDermott</li>
+</ul>
+<h2 id="release-roadmap">Release Roadmap<a class="headerlink" href="#release-roadmap" title="Permanent link">&para;</a></h2>
+<h2 id="other-resources">Other Resources<a class="headerlink" href="#other-resources" title="Permanent link">&para;</a></h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>https://doi.org/10.1021/je000236i&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>https://doi.org/10.1021/cm702327g&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>https://doi.org/10.1016/j.elecom.2010.01.010&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>https://doi.org/10.1126/sciadv.1600225&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>V. Raghavan, Fe-Li-O Phase Diagram, ASM Alloy Phase Diagrams Center, P. Villars, editor-in-chief; H. Okamoto and K. Cenzual, section editors; http://www1.asminternational.org/AsmEnterprise/APD, ASM International, Materials Park, OH, 2006.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>https://dx.doi.org/10.1145/235815.235821&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../structure-predictor/" title="Structure Predictor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Structure Predictor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../xas-matcher/" title="XAS Matcher" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                XAS Matcher
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1143 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Dielectricity - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+<script type="text/x-mathjax-config">
+MathJax.Ajax.config.path["mhchem"] =
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
+MathJax.Hub.Config({
+  TeX: {
+    extensions: ["[mhchem]/mhchem.js"]
+  }
+});
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { fonts: ["TeX"] }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#dielectric-calculations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materials Project Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Dielectricity
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      materialsproject/docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dielectricity
+      </label>
+    
+    <a href="./" title="Dielectricity" class="md-nav__link md-nav__link--active">
+      Dielectricity
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft-parameters" title="DFT Parameters" class="md-nav__link">
+    DFT Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarking" title="Benchmarking" class="md-nav__link">
+    Benchmarking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Batteries Explorer" class="md-nav__link">
+      Batteries Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" title="Formalism" class="md-nav__link">
+    Formalism
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dft-parameters" title="DFT Parameters" class="md-nav__link">
+    DFT Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarking" title="Benchmarking" class="md-nav__link">
+    Benchmarking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" title="Citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/methodology/dielectricity.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="dielectric-calculations">Dielectric Calculations<a class="headerlink" href="#dielectric-calculations" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>A dielectric is a material that can be polarized by an applied electric
+field. This limits the dielectric effect to materials with a non-zero
+band gap. The mathematical description of the dielectric effect is a
+tensor constant of proportionality that relates an externally applied
+electric field to the field within the material. Along with the
+elastic and piezoelectric tensors, the dielectric tensor provides all
+the information necessary for the solution of the constitutive equations
+in applications where electric and mechanical stresses are coupled.</p>
+<p>The dielectric tensors from the Materials Project (MP) are calculated
+from first principles Density Functional Perturbation Theory (DFPT) <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+and are approximated as the superimposed effect of an electronic and
+ionic contribution. From the full piezoelectric tensor, several
+properties are derived such as the refractive index and potential for
+ferroelectricity. Just as with the piezoelectric and elastic constants,
+multiple consistency checks are performed on all the calculated
+dielectric data to ensure its reliability and accuracy.</p>
+<h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
+<p>Formally, the dielectric tensor ε relates the externally applied
+electric field to the field within the material and can be defined as:</p>
+<p>\[E_i=\sum_j \epsilon^{-1}_{ij}E_{0j}\] where \(E\) is the electric
+field inside the material and \(E_0\) is the externally applied
+electric field. the indices <em>i, j</em> refer to the direction in space and
+take the values: \({1, 2, 3}\). The dielectric tensor can be split in
+the ionic (\(\epsilon_0\)) and electronic (\(\epsilon_\infty\))
+contributions:</p>
+<p>\[\epsilon_{ij}=\epsilon_{ij}^0+\epsilon_{ij}^\infty\]
+Here, we
+consider only the response of non-zero band gap materials to
+time-invariant fields. In the hypothetical case that a material does not
+respond at all to the external field, \(\epsilon_{ij}^\infty\) would
+be equal to the identity tensor and  \(\epsilon_{ij}^0\) would be
+zero. In fact, materials with zero ionic contribution do exist. In
+general, for \(\epsilon_{ij}^0\) to be non-zero, compounds need to
+have at least 2 atoms per primitive cell, each having a different atomic
+charge. The dielectric tensor is symmetric and respects all the symmetry
+operations of the corresponding point group. This limits the number of
+independent elements in the tensor to a minimum of 1 and a maximum of 6
+depending on the crystal symmetry.</p>
+<p>The dielectric response calculated herein corresponds to that of a
+single crystal. In polycrystalline samples, grains are oriented randomly
+and hence, the actual response will be different. Generally, the
+dielectric response varies with the frequency of the applied external
+field however here, we consider the static response (i.e., the response
+at constant electric fields or the long wavelength limit). Since the
+ionic contribution vanishes at high frequencies, our results can be used
+to obtain an estimate of the refractive index, n, at optical frequencies
+and far from resonance effects using the well known formula<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
+<p>\[n=\sqrt{\epsilon^\infty_{poly}}\]</p>
+<p>where \(\epsilon^\infty_{poly}\) is the average of the eigenvalues of
+the electronic contribution to the dielectric tensor. It should be noted
+this equation for the refractive index assumes the material is
+non-magnetic.</p>
+<h2 id="dft-parameters">DFT Parameters<a class="headerlink" href="#dft-parameters" title="Permanent link">&para;</a></h2>
+<p>The inital set of 1,056 dielectric tensors were calculated using the
+Vienna Ab-Initio Simulation Package<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> (VASP version 5.3.4)
+combined with the Generalized Gradient Approximation
+GGA/PBE<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup><sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>+U<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup><sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> exchange-correlation functional and Projector
+Augmented Wave pseudopotentials<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup><sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>. The U values are energy
+corrections that address the spurious self-interaction energy introduced
+by GGA. Here, we used U values for d orbitals only that were fitted to
+experimental binary formation enthalpies using Wang et al.<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> method.
+The full list of U values used, can be found in ref.<sup id="fnref2:10"><a class="footnote-ref" href="#fn:10">10</a></sup>. The k-point
+density was set at 3,000 per reciprocal atom and the plane wave energy
+cut-off at 600 eV (ref. 4). For detailed information on the calculation
+of the dielectric tensor within the DFPT framework we refer to Baroni et
+al.<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup><sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup> and Gonze &amp; Lee<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>.</p>
+<p><a href="/methodology/piezoelectricity">Piezoelectricity calculations</a> use the same
+DFPT methodology with a tighter parameter set to achieve convergence. As
+a result, the dielectric tensor is already converged in these
+calculations and is reported for any non-centrosymmetric material, not
+in the initial dataset of dielectrics.</p>
+<h2 id="benchmarking">Benchmarking<a class="headerlink" href="#benchmarking" title="Permanent link">&para;</a></h2>
+<p>We see that in most cases, it is possible to predict the dielectric
+constant of materials with a relative deviation of less than +/−25% from
+experimental values at room temperature. Including local field effects
+gives the smallest mean absolute relative deviation ( MARD= 16.2 % for
+GGA). Furthermore, we note a tendency to overestimate rather than
+underestimate the dielectric constant relative to experiments, which is
+a well-known effect of DFPT <sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup><sup id="fnref:18"><a class="footnote-ref" href="#fn:18">18</a></sup><sup id="fnref:19"><a class="footnote-ref" href="#fn:19">19</a></sup> for the electronic
+contribution. Although it has often been related to the band gap
+underestimation problem of DFT, DFPT is a ground state theory and hence,
+the dielectric constant should, in principle, be described exactly
+<sup id="fnref:20"><a class="footnote-ref" href="#fn:20">20</a></sup>. In fact, as described by various authors, the problem is likely
+linked to the exchange-correlation functional
+<sup id="fnref:21"><a class="footnote-ref" href="#fn:21">21</a></sup><sup id="fnref:22"><a class="footnote-ref" href="#fn:22">22</a></sup><sup id="fnref:23"><a class="footnote-ref" href="#fn:23">23</a></sup><sup id="fnref:24"><a class="footnote-ref" href="#fn:24">24</a></sup><sup id="fnref:25"><a class="footnote-ref" href="#fn:25">25</a></sup><sup id="fnref:26"><a class="footnote-ref" href="#fn:26">26</a></sup>. Specifically, the exchange correlation
+functional has been found to depend on polarization but the actual
+dependence formula is, unfortunately, not known <sup id="fnref:27"><a class="footnote-ref" href="#fn:27">27</a></sup><sup id="fnref:28"><a class="footnote-ref" href="#fn:28">28</a></sup><sup id="fnref:29"><a class="footnote-ref" href="#fn:29">29</a></sup>.
+Additionally, the validity of GGA depends on the charge density varying
+slowly—an assumption that may be broken when an external electric field
+is applied <sup id="fnref:30"><a class="footnote-ref" href="#fn:30">30</a></sup>.
+<img alt="" src="/methodology/img/dielectricity/Dielectric_benchmarking.png" /></p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the dielectric properties within the Materials Project, please
+reference the following work:</p>
+<ul>
+<li>
+<p>Benchmarking density functional perturbation theory to enable
+high-throughput screening of materials for dielectric constant and
+refractive index. Ioannis Petousis, Wei Chen, Geoffroy Hautier, Tanja
+Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz. Phys.
+Rev. B 93(11). <a href="https://doi.org/10.1103/PhysRevB.93.115151">DOI:10.1103/PhysRevB.93.115151</a></p>
+</li>
+<li>
+<p>High-throughput screening of inorganic compounds for the discovery of
+novel dielectric and optical materials. Ioannis Petousis, David
+Mrdjenovich, Eric Ballouz, Miao Liu, Donald Winston, Wei Chen, Tanja
+Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz.
+Scientific Data 4. <a href="https://doi.org/10.1038/sdata.2016.134">DOI:10.1038/sdata.2016.134</a></p>
+</li>
+</ul>
+<p>These papers present the results of our dielectric constant-calculations
+for the first batch of 1,056 compounds. Our DFT-parameters, the
+workflow, the workflow filters used for detecting anomalies in the
+calculations and comparison to experiments are described in detail.</p>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Shyam Dwaraknath</li>
+<li>Ioannis Petousis</li>
+</ol>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
+(1987)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Petousis I. et al. Benchmarking of the density functional
+perturbation theory to enable the high-throughput screening of
+materials for the dielectric constant and refractive index. Phys.
+Rev. B 93, 115151 (2016).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Kresse G. &amp; Hafner J. Ab initio molecular dynamics for liquid
+metals. Phys. Rev. B 47, 558–561 (1993).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Kresse G. &amp; Hafner J. Ab initio molecular-dynamics simulation of
+the liquid-metal-amorphous-semiconductor transition in germanium.
+Phys. Rev. B 49, 14251 (1994).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Kresse G. &amp; Furthmüller J. Efficiency of ab-initio total energy
+calculations for metals and semiconductors using a plane-wave basis
+set. Comp. Mater. Sci. 6, 15–50 (1996).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Kresse G. &amp; Furthmüller J. Efficient iterative schemes for ab
+initio total-energy calculations using a plane-wave basis set. Phys.
+Rev. B 54, 11169 (1996).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Perdew J. P., Burke K. &amp; Ernzerhof M. Generalized gradient
+approximation made simple. Phys. Rev. Lett. 77, 3865 (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Perdew J. P., Burke K. &amp; Ernzerhof M. Generalized gradient
+approximation made simple [Phys. Rev. Lett. 77, 3865 (1996)].
+Phys. Rev. Lett. 78, 1396 (1997).&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Dudarev S. L., Botton G. A., Savrasov S. Y., Humphreys C. J. &amp;
+Sutton A. P. Electron-energy-loss spectra and the structural
+stability of nickel oxide: An LSDA+U study. Phys. Rev. B 57, 1505
+(1998).&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Jain A. et al. A high-throughput infrastructure for density
+functional theory calculations. Comp. Mater. Sci. 50, 8 2295 (2011).&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>Blöchl P. E. Projector augmented-wave method. Phys. Rev. B 50,
+17953 (1994).&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>Kresse G. &amp; Joubert D. From ultrasoft pseudopotentials to the
+projector augmented-wave method. Phys. Rev. B 59, 1758 (1999).&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Wang L., Maxisch T. &amp; Ceder G. Oxidation energies of transition
+metal oxides within the GGA+ U framework. Phys. Rev. B 73, 195107
+(2006).&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>Baroni S., Giannozzi P. &amp; Testa A. Elastic constants of crystals
+from linear-response theory. Phys. Rev. Lett. 59, 2662 (1987).&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Baroni S., de Gironcoli S., Dal Corso A. &amp; Giannozzi P. Phonons
+and related crystal properties from density-functional perturbation
+theory. Rev. Mod. Phys. 73, 515 (2001).&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16">
+<p>Gonze X. &amp; Lee C. Dynamical matrices, born effective charges,
+dielectric permittivity tensors, and interatomic force constants
+from density-functional perturbation theory. Phys. Rev. B 55, 10355
+(1997).&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:17">
+<p>N. Marzari and D. J. Singh, Phys. Rev. B 62, 12724 (2000).&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+<li id="fn:18">
+<p>A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+(1994).&#160;<a class="footnote-backref" href="#fnref:18" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+</li>
+<li id="fn:19">
+<p>F. Kootstra, P. L. de Boeij, and J. G. Snijders, Phys. Rev. B 62,
+7071 (2000).&#160;<a class="footnote-backref" href="#fnref:19" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+</li>
+<li id="fn:20">
+<p>A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+(1994).&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+</li>
+<li id="fn:21">
+<p>A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+(1994).&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+</li>
+<li id="fn:22">
+<p>V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
+60, 14224 (1999).&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+</li>
+<li id="fn:23">
+<p>W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
+8540 (1996).&#160;<a class="footnote-backref" href="#fnref:23" title="Jump back to footnote 23 in the text">&#8617;</a></p>
+</li>
+<li id="fn:24">
+<p>Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
+(1997).&#160;<a class="footnote-backref" href="#fnref:24" title="Jump back to footnote 24 in the text">&#8617;</a></p>
+</li>
+<li id="fn:25">
+<p>R. Resta, Phys. Rev. Lett. 77, 2265 (1996).&#160;<a class="footnote-backref" href="#fnref:25" title="Jump back to footnote 25 in the text">&#8617;</a></p>
+</li>
+<li id="fn:26">
+<p>R. Resta, Phys. Rev. Lett. 78, 2030 (1997).&#160;<a class="footnote-backref" href="#fnref:26" title="Jump back to footnote 26 in the text">&#8617;</a></p>
+</li>
+<li id="fn:27">
+<p>A. Dal Corso, S. Baroni, and R. Resta, Phys. Rev. B 49, 5323
+(1994).&#160;<a class="footnote-backref" href="#fnref:27" title="Jump back to footnote 27 in the text">&#8617;</a></p>
+</li>
+<li id="fn:28">
+<p>W. G. Aulbur, L. Jönsson, and J. W. Wilkins, Phys. Rev. B 54,
+8540 (1996).&#160;<a class="footnote-backref" href="#fnref:28" title="Jump back to footnote 28 in the text">&#8617;</a></p>
+</li>
+<li id="fn:29">
+<p>Ph. Ghosez, X. Gonze, and R. W. Godby, Phys. Rev. B 56, 12811
+(1997).&#160;<a class="footnote-backref" href="#fnref:29" title="Jump back to footnote 29 in the text">&#8617;</a></p>
+</li>
+<li id="fn:30">
+<p>V. Olevano, M. Palummo, G. Onida, and R. Del Sole, Phys. Rev. B
+60, 14224 (1999).&#160;<a class="footnote-backref" href="#fnref:30" title="Jump back to footnote 30 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../piezoelectricity/" title="Piezoelectricity" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Piezoelectricity
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../equations-of-state/" title="Equations of State" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Equations of State
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
