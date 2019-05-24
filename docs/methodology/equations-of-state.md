@@ -6,12 +6,12 @@ Thermodynamic equations of state (EOS) for crystalline solids describe
 material behaviors under changes in pressure, volume, entropy and
 temperature. Despite over a century of theoretical development and
 experimental testing of energy-volume (E-V) EOS for solids, there is
-still a lack of consensus with regard to which equation is indeed
-optimal, as well as to what metric is most appropriate for making this
+still a lack of consensus with regard to which equation is optimal, as 
+well as to what metrics are most appropriate for making this
 judgment.
 
-The calculation of EOS is automated using self-documenting workflows
-compiled in the atomate code base that couples pymatgen for materials
+alculation of EOS is automated using self-documenting workflows
+compiled in the atomate code base. Atomate couples pymatgen for materials
 analysis, custodian for just-in-time debugging of DFT codes, and
 Fireworks for workflow management. The EOS workflow begins with a
 structure optimization and subsequently calculates the energy of
