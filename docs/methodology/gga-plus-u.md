@@ -7,22 +7,36 @@ transition metal compounds. This error arises from the self-interaction
 error in LDA and GGA, which is not canceled out in redox reactions where
 an electron is transferred between significantly different environments,
 such as between a metal and a transition metal or between a transition
-metal and oxygen. Extensive discussion of this issue can be found in the
+metal and oxygen or fluorine. Extensive discussion of this issue can be found in the
 following works.[^1][^2][^3][^4]
 
 In the Materials Project, we have calibrated U values for many
 transition metals of interest using the approach outlined in Wang et
-al.'s work[^5]. At the present moment, U values have been calibrated for
-transition metal oxide systems only. The choice of systems to which we
+al.'s work[^5]. At the present moment, U values have only been calibrated for
+transition metal oxide systems. U values were calibrated for the following 
+elements: Co, Cr, Fe, Mn, Mo, Ni, V and W. The choice of systems to which we
 apply U was largely determined by our experience and by systematic
 benchmarking. It is very likely that we will expand calibration of U
 values to more chemical systems in the future.
+
+In the Materials Project, for an oxide or fluoride material with a transition
+element listed previously, the following INCAR tags were used to calculate 
+the GGA+U energies:
+
+* LDAU = true
+* LDAUJ = 0
+* LDAUL = 0
+* LDAUTYPE = 2 - Note that U values only get applied to the d-orbitals.
+* Finally LDAUU gets sets to the value listed in the table below depending on the element used.
+
+Note that for fluorides, the U value gets set to the one calibrated from the oxide system. 
+
 
 Calibration of U values
 -----------------------
 
 The U values were obtained by fitting to experimental binary formation
-enthalpies as described in Wang et al.'s work, which is simple and
+enthalpies as described in Wang et al.'s work. This method is simple yet
 accurately reproduces phase stabilities. A least squares method of
 obtaining the correct U value was used, as follows:
 
@@ -41,8 +55,10 @@ U values
 --------
 
 The full list of U values used is described in the table below. For
-oxides containing any of the elements, both GGA and GGA+U calculations
-were performed.
+oxides and fluorides containing any of the elements, only GGA+U calculations
+are performed.
+
+<!-- Why do fluorides and oxides have the same values? -->
 
 | Element | System | Fitting Reaction                  | Redox Couple         | Calibrated U (eV) | Comments                                                                       |
 |:--------|--------|-----------------------------------|----------------------|-------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -60,8 +76,10 @@ Caveats
 
 The U values are calibrated for phase stability analyses, and should be
 used with care if applied to obtain other properties such as band
-structures. Also, the U values depend on the pseudopotential used. A
-discussion of the pseudopotentials used in the Materials Project can be
+structures. Also, the U values depend on the pseudopotential used. Further,
+typically, U values should be site specific, however in our approach, U values were
+applied to all sites with an element listed above, and only to the d-orbitals. A discussion of the 
+pseudopotentials used in the Materials Project can be
 found [here](/methodology/pseudopotentials).
 
 Authors

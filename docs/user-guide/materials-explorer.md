@@ -1,47 +1,44 @@
 # Initial release of Materials Explorer.
+In Materials Project we offer 5 options to explore materials: by elements, by formula, by IDs, by mpquery and by Structure.  
 # Key features
-## Basic search over multiple data fields.
-```
-from pymatgen import MPRester, Composition
-import re
-import pprint
+## By Elements
+The following example is to show you how to query the materials by assigning the elements in the materials. Let's say
+you want to find all the materials that contain Li, Al and O. In the search box, simply type ```Li-Al-O``` and search. 
+You would see the following searching results. 
+![by_elements example](img/materials-explorer/by_elements.png)
 
-mpr = MPRester()
-c = Composition('Ni3O4')
-data = mpr.query(criteria = {'pretty_formula': c.reduced_formula}, 
-                 properties=['task_id', 'spacegroup', 'formation_energy_per_atom'])
-```
-## Complete data table with listing of stable and unstable phases.
-```
-import collections
-from pandas import DataFrame
-from pymatgen.ext.matproj import MPRester
-from pymatgen.analysis.phase_diagram import PhaseDiagram, PDPlotter
+![by_elements example_results](img/materials-explorer/by_elements_results.png)
 
-a = MPRester()
-data = collections.defaultdict(list)
-entries = a.get_entries_in_chemsys(['Li', 'Ni', 'O'])
-pd = PhaseDiagram(entries)
+*Figure 1: Exploring materials that contain Li, Al and O.*
 
-for e in pd.stable_entries:
-    decomp, ehull = pd.get_decomp_and_e_above_hull(e)
-    data["Materials ID"].append(e.entry_id)
-    data["Composition"].append(e.composition.reduced_formula)
-    data["Ehull"].append(ehull)    
-    data["Decomposition"].append(" + ".join(["%.2f %s" % (v, k.composition.formula) for k, v in decomp.items()]))
+## By formula
+If you have a specific material in mind, you can also explore the materials by its formula. For example,
+to search all the LaAlO<sub>3</sub>, change the search option to ```by Formula``` and type ```LaAlO3```.
+ ![by_formula example](img/materials-explorer/by_formula.png)
+ 
+ *Figure 2: Exploring all the LaAlO<sub>3</sub> materials.*
+## By IDs
+If you know the mp id of the material, you can search it by ID. You can also search multiple IDs 
+at the same time. Change the search option to ```by IDs``` and type the mp IDs that you are looking
+for.
+ ![by_ids example](img/materials-explorer/by_ids.png)
+ 
+ *Figure 3: Exploring specific materials by their mp IDs.*
+                          
+## By mpquery
+In addition to the previous three basic explore options, Materials Project also provides an advanced
+query option by mpquery, using Mongo-like language for flexible queries on the Materials Project 
+database. This provides the possibility of queries which would otherwise not be possible using 
+the other simpler REST forms. For example, to search all the iron oxides and manganese oxides, 
+change the search option to ```by mpquery``` and type ```{'elements':{'$in':['Fe', 'Mn'], '$all': ['O']}, 'nelements':2}```.
+ ![by_mpquery example](img/materials-explorer/by_mpquery.png)
+ 
+ *Figure 4: Exploring  materials by using Mongo-like language for flexible queries.*
 
-df = DataFrame(data, columns=["Materials ID", "Composition", "Ehull", "Decomposition"])
-
-print('Stable phases\n%s' % df)
-
-for e in pd.unstable_entries:
-    decomp, ehull = pd.get_decomp_and_e_above_hull(e)
-    data["Materials ID"].append(e.entry_id)
-    data["Composition"].append(e.composition.reduced_formula)
-    data["Ehull"].append(ehull)    
-    data["Decomposition"].append(" + ".join(["%.2f %s" % (v, k.composition.formula) for k, v in decomp.items()]))
-
-df = DataFrame(data, columns=["Materials ID", "Composition", "Ehull", "Decomposition"])
-
-print('\nUnstable phases\n%s' % df)
-```
+## By Structure
+Additionally, if you already have structure but need to know the materials properties, such as
+band gap and formation energy, from the Materials Project database, you can change the search option
+to ```by Structure``` and  drag and drop your structure file in the grey box.
+ ![by_structure example](img/materials-explorer/by_structure.png)
+ 
+ *Figure 4: Exploring  materials by using Mongo-like language for flexible queries.*
