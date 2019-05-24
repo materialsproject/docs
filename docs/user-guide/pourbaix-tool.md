@@ -111,8 +111,6 @@ Barin Knacke Kubaschewski: Thermochemical Properties of Inorganic Substances [^6
 Barner and Scheuerman (1978): Handbook of thermochemical data for compounds and aqueous species [^7]
 Beverskog and Puigdomenech (1997): Beverskog and Puigdomenech, Corr. Sci. (1997) [^8]
 
-## References
-
 [^1]: K. A. Persson, B. Waldwick, P. Lazic, and G. Ceder, Phys. Rev. B, 85, 235438 (2012)
 [^2]: A. K. Singh, L. Zhou, A. Shinde, S. K. Suram, J. H. Montoya, D. Winston, J. M. Gregoire, K. A. Persson, Chem. Mater. 29, 10159 (2017)
 [^3]: Pourbaix Diagrams for Multielement Systems, Thompson, W. T., Kaye, M. H., Bale, C. W. and Pelton, A. D. (2011), in Uhlig's Corrosion Handbook, Third Edition (ed R. W. Revie), John Wiley & Sons, Inc., Hoboken, NJ, USA.
