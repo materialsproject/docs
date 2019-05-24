@@ -1,13 +1,5 @@
 # Structure Predictor
 
-Welcome to the Structure Predictor App wiki!
-
-You will find in here all relevant information regarding the Structure Predictor App, including release notes, the manual, etc.
-
-## Release Notes
-
-### Recent changes
-
 ## Manual
 
 ### Background on Data Mined Crystal Structure and Compound Prediction
