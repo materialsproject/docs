@@ -42,7 +42,7 @@ All bonded components in the molecular graph of each structure other than the MO
 Many MOF structures with associated charge-balancing ions also contain undesirable neutral solvent molecules. To discriminate between ionic species and neutral solvent molecules, the elemental compositions of the bonded components in a molecular graph of each structure were compared to the chemical formulas reported by the CSD using an in-house python script. The bonded components are the independent “molecules” within each structure; these include the MOF framework, the ionic species, and any neutral solvent molecules. The bonded components with elemental compositions matching the composition of the ions reported by the CSD were exempted from deletion in the solvent removal step.
 
 ### Hypothetical MOFs
-Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation[^3], Xe/Kr separation[^4], and hydrogen storage applications[^5].
+Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks [^2]. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation[^3], Xe/Kr separation[^4][^5], and hydrogen storage applications[^6].
 
 #### Building Blocks
 A novel, bottom-up algorithm was developed to speed up structure enumeration. One hundred and two building blocks with varying degree of geometry and number of acids sites (e.g., COOH- sites) were used. The building blocks are divided into three main groups: metal nodes, organic linkers, and functional groups. Table 1 and Figure 1 summarizes the building blocks used in structure generation algorithm for Ref. [^1].
@@ -136,22 +136,22 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 [^2]: C. E. Wilmer, M. Leaf, C. Y. Lee, O. K. Farha, B. G. Hauser, J. T. Hupp, R. Q. Snurr, Nat. Chem. 2012, 4, 83–89. [doi:10.1038/nchem.1192](https://doi.org/10.1038/nchem.1192)
 [^3]:
 [^4]: B. J. Sikora, C. E. Wilmer, M. L. Greenfield, R. Q. Snurr, Chem. Sci. 2012, 3, 2217. [doi:10.1039/C2SC01097F](https://doi.org/10.1039/C2SC01097F)
-[^5]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010.
-[^6]: 
-[^7]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
-[^8]:
-[^9]:
-[^10]:
+[^5]: D. Banerjee, C. M. Simon, A. M. Plonka, R. K. Motkuri, J. Liu, X. Chen, B. Smit, J. B. Parise, M. Haranczyk, P. K. Thallapally, Nat. Commun. 2016, 7, 11831. [doi:10.1038/ncomms11831](https://doi.org/10.1038/ncomms11831)
+[^6]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010.
+[^7]: D. J. Earl, M. W. Deem, Ind. Eng. Chem. Res. 2006, 45, 5449–5454. [doi:10.1021/ie0510728](https://doi.org/10.1021/ie0510728)
+[^8]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
+[^9]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1021/ja4123939](https://doi.org/10.1021/ja4123939)
+[^10]: R. L. Martin, C. M. Simon, B. Smit, M. Haranczyk, J. Am. Chem. Soc. 2014, 136, 5006–5022. [doi:10.1063/1.1734110](https://doi.org/10.1063/1.1734110)
 [^11]:
 [^12]:
-[^13]:
-[^14]:
-[^15]:
+[^13]: E. Haldoupis, S. Nair, D. S. Sholl, J. Am. Chem. Soc. 2012, 134, 4313–4323. [doi:10.1021/ja2108239](https://doi.org/10.1021/ja2108239)
+[^14]: T. Watanabe, T. A. Manz, D. S. Sholl, J. Phys. Chem. C 2011, 115, 4824–4836.
+[^15]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
 [^16]:
 [^17]:
 [^18]:
 [^19]:
 [^20]:
-[^21]:
-[^22]:
-[^23]:
+[^21]: G. Kresse, J. Hafner, Phys. Rev. B 1993, 47, 558–561. [doi:10.1103/PhysRevB.47.558](https://doi.org/10.1103/PhysRevB.47.558)
+[^22]: M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051–1069. [doi:10.1515/pac-2014-1117](https://doi.org/10.1515/pac-2014-1117)
+[^23]: T. Willhammar, X. Zou, Zeitschrift fur Krist. 2013, 228, 11–27. [doi:10.1524/zkri.2012.1564](https://doi.org/10.1524/zkri.2012.1564)
