@@ -20,7 +20,7 @@ Once a scatter plot has been generated, for a set of material and adsorbate clas
 
 ![MOF](/user-guide/img/nanoporous/MOF.png)
 
-Computation-Ready, Experimental MOF database was constructed by a collaboration within the Nanoporous Materials Genome Center. The database is derived from the Cambridge Structural Database (CSD), which contains a large number of small organic and inorganic molecules as well as periodic structures. After the construction of the database, a large-scale GCMC simulation was carried out on all the structures in the database for methane storage and working capacity [^1].
+[Computation-Ready, Experimental MOF database](http://gregchung.github.io/CoRE-MOFs/) was constructed by a collaboration within the Nanoporous Materials Genome Center. The database is derived from the Cambridge Structural Database (CSD), which contains a large number of small organic and inorganic molecules as well as periodic structures. After the construction of the database, a large-scale GCMC simulation was carried out on all the structures in the database for methane storage and working capacity [^1].
 
 #### Key Assumptions in Creating the CoRE MOF Database
 1. Stoichiometry information provided by the CSD is correct. Crystal structures were categorized and processed based on the stoichiometry text information provided by the CSD.
