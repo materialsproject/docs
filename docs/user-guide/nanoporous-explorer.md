@@ -125,20 +125,20 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
 * Dalar Nazarian
 * Tess Smidt
 
-##TODO
+## TODO
 * Add table
 * Add figures
 * Add reference doi's
 
 ## References
 
-[^1]: 
-[^2]:
+[^1]: Y. G. Chung, J. Camp, M. Haranczyk, B. J. Sikora, W. Bury, V. Krungleviciute, T. Yildirim, O. K. Farha, D. S. Sholl, R. Q. Snurr, Chem. Mater. 2014, 26, 6185–6192. [doi:10.1021/cm502594j](https://doi.org/10.1021/cm502594j)
+[^2]: C. E. Wilmer, M. Leaf, C. Y. Lee, O. K. Farha, B. G. Hauser, J. T. Hupp, R. Q. Snurr, Nat. Chem. 2012, 4, 83–89. [doi:10.1038/nchem.1192](https://doi.org/10.1038/nchem.1192)
 [^3]:
-[^4]:
-[^5]:
-[^6]:
-[^7]:
+[^4]: B. J. Sikora, C. E. Wilmer, M. L. Greenfield, R. Q. Snurr, Chem. Sci. 2012, 3, 2217. [doi:10.1039/C2SC01097F](https://doi.org/10.1039/C2SC01097F)
+[^5]: D. A. Gomez, J. Toda, G. Sastre, Phys. Chem. Chem. Phys. 2014, 16, 19001–19010.
+[^6]: 
+[^7]: R. Pophale, P. A. Cheeseman, M. W. Deem, Phys. Chem. Chem. Phys. 2011, 13, 12407. [doi:10.1039/c0cp02255a](https://doi.org/10.1039/c0cp02255a)
 [^8]:
 [^9]:
 [^10]:
