@@ -1,7 +1,7 @@
 # Database updates
 
 !!! warning
-    Up-to-date release notes are posted to
+    Up-to-date release notes are now posted to
     [this thread](https://discuss.materialsproject.org/t/materials-project-database-release-log/1609)
     on our forum.
 
