@@ -3,7 +3,7 @@
 !!! warning
     Up-to-date release notes are posted to
     [this thread](https://discuss.materialsproject.org/t/materials-project-database-release-log/1609)
-    on our discussion forum.
+    in our discussion forum.
 
 ## Current Database versions
 ### Version 2018.11, Release Date: 2018-11-01
