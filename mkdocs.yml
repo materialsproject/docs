@@ -24,6 +24,7 @@ nav:
         - 'Batteries Explorer': 'user-guide/batteries-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
         - 'Structure Predictor': 'user-guide/structure-predictor.md'
+        - 'Pourbaix Diagram': 'user-guide/pourbaix-tool.md'
         - 'Phase Diagram': 'user-guide/phase-diagram.md'
         - 'XAS Matcher': 'user-guide/xas-matcher.md'
         - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
