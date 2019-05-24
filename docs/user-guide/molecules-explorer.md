@@ -19,7 +19,7 @@ An atomic structure is stable if its vibrational frequency spectrum contains no 
 
 
 
-##$ Properties
+### Properties
 The electron affinity (EA) and ionization potential (IP) are given by
 $$EA = -\frac{\Delta G_{red}(sol)}{nF}$$
 $$IP = -\frac{\Delta G_{ox}(sol)}{nF}$$
