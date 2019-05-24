@@ -1,21 +1,18 @@
-language: python # Set the build language to Python
-
-python: 3.6 # Set the version of Python to use
-
-branches: master # Set the branch to build from
-
+language: python
+python: 3.6
+branches: master
 install:
-    - pip install mkdocs mkdocs-material # Install the required dependencies
-
-script: true # Skip script (Don't use this if one already exists)
-
+- pip install mkdocs mkdocs-material
+script: true
 before_deploy:
-    - mkdocs build --verbose --clean # Build a local version of the docs
-
-deploy: # Deploy documentation to Github in the gh_pages branch
-    provider: pages
-    skip_cleanup: true
-    local_dir: site
-    github_token: $GITHUB_TOKEN
-    on:
-        branch: master
+- mkdocs build --verbose --clean
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: site
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+env:
+  matrix:
+    secure: KFu1YaJtftFj4mknC5xS9yrMZd2B8AcdzvZ326sCVBwvTF82Ws+nLUT3Ys1O6K6XORMXaAVC0GNDC8JTCmD7RvxolbpC3jTGiF+5ron079L/nSkAHEqryerD5DhFmz5XV/FH6jGOaHkzZ6X5rvgmnY638e5GPjFLgozxgw/ryf9id+MKjPSM0tNO+hTOwTpQCyfED01jbYgu++N0/ldpomLQ3OdQV6KIjWKdasXtHTIlpKysOuM2QPMKiZKRV4nfJYS4eG0Faqe6KO7aOaADlZlL/z9dlp1hqTHsgfYWOqFg79qUiDgjRzA8N4y/lSQqKYO4KeOcY7ZUb65bdE5qsL0UYw7tGz+ROsPeXg55aAj1yURE3qJLEtwKxMxJAo3y1yIae5r1sk/DTxk15McdJzU24J+/KHLITEI9VeNpczdFdTQ9E+nU+YSWbrklvcXbLZzOFU5H3llD3i507bdtxPtu0l17ZHnbOC1wxnsQ5366TaeNGTYW3uLtXOR+q1Xwx8qTMcEH/caQiZpkpAIizjLtySfjuC01TKXJhL4D+5qyUpvXerMsBDGD19PC1QgtMaxRtar8qgCT0rhIEIFyW6+Y8G699IFF0/zFIqGYummXL+WlSTzZf3N/W3Awe2E8X7dqrC9amSXWn1Cw+3j+fUGa3HJnou6yG71Eq69RFHo=
