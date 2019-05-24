@@ -16,32 +16,41 @@ including the electron affinity (EA) and ionization energies (IE), are also repo
 ## Calculations
 Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the 
 quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 
-6-31+G* Pople bases [^1] and the hybrid-functional B3LYP [^2]. For molecules with more than 50 atoms, a hybrid procedure
+6-31+G\* Pople bases [^1] and the hybrid-functional B3LYP [^2]. For molecules with more than 50 atoms, a hybrid procedure
  [^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still 
- calculated at the B3LYP/6-31+G* level.
+ calculated at the B3LYP/6-31+G\* level.
  
 ### Geometry Optimization
 An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic
 structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero 
 imaginary frequencies is obtained [^3]. 
 
-### Properties
+
+Xiaowei Xie
+2:26 PM (0 minutes ago)
+to me
+
+## Properties
 the electron affinity (EA) and ionization potential (IP) are given by
-$$EA = -\delta G_red(sol)/nF$$
-$$IP = -\delta G_ox(sol)/nF$$
+$$EA = -\frac{\Delta G_{red}(sol)}{nF}$$
+$$IP = -\frac{\Delta G_{ox}(sol)}{nF}$$
+
+where F is the Faraday constant, and $\delta G_ox(sol)$ and $\delta G_red(sol)$ are
+the Gibbs free energy change of oxidation and reduction in the
+solution phase, respectively.
 
 ![Free energy cycle](img/molecules-explorer/free_energy_cycle.png)
 *Figure 2: Free energy cycle for computing the oxidation/reduction potential. R denotes the molecule of interest.*
 
 According to the above thermodynamic cycle in Fig. 1,
-$delta G_ox(sol)$ and $\delta G_red(sol)$ can be calculated from the Gibbs free
+$\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ can be calculated from the Gibbs free
 energy change of gas phase:
 
-$$\delta G_ox(sol)=\delta G_ox(gas)+\delta G_solv(R^+)-\delta G_solv(R)$$
-$$\delta G_red(sol)=\delta G_red(gas)+\delta G_solv(R^-)-\delta G_solv(R)$$
+$$\Delta G_{ox}(sol)=\Delta G_{ox}(gas)+\Delta G_{solv}(R^+)-\Delta G_{solv}(R)$$
+$$\Delta G_{red}(sol)=\Delta G_{red}(gas)+\Delta G_{solv}(R^-)-\Delta G_{solv}(R)$$
 
-The reported IP/EA are the adiabatic IP/EA[^1], which optimizes the geometry at different charge states (cation, anion, neutral), which emphasizes high-fidelity results.
-
+The reported IP/EA are the adiabatic IP/EA[^4], which optimizes the geometry at different charge states (cation, anion,
+ neutral), which emphasizes high-fidelity results.
 
 
 ## Database
@@ -71,3 +80,4 @@ In order to search the database for the molecule in question, four methods can b
 [^1]: Ditchfield, R., Hehre, W.J. & Pople, J.A. J. Chem. Phys. 54, 724 (1971)
 [^2]: Becke, A.D. Phys. Rev. A. 38, 3098 (1988)
 [^3]: https://doi.org/10.1016/j.commatsci.2015.02.050
+[^4]: S. P. Ong , G. Ceder , Electrochim. Acta , 55 , 3804 (2010)
