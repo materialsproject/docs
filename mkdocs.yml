@@ -15,17 +15,29 @@ nav:
         - 'Elasticity': 'methodology/elasticity.md'
         - 'Elasticity prediction': 'methodology/elasticity-prediction.md'
         - 'Piezoelectricity': 'methodology/piezoelectricity.md'
-        - 'Dielectricity': 'methodology/dielelectricity.md'
+        - 'Dielectricity': 'methodology/dielectricity.md'
         - 'Equations of State': 'methodology/equations-of-state.md'
         - 'Phonons': 'methodology/phonons.md'
-    - User Reference - Website:
+    - User Reference:
+        - 'Crystal Toolkit': 'user-guide/crystal-toolkit.md'
         - 'Materials Explorer': 'user-guide/materials-explorer.md'
+        - 'Batteries Explorer': 'user-guide/batteries-explorer.md'
         - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
+        - 'Structure Predictor': 'user-guide/structure-predictor.md'
+        - 'Phase Diagram': 'user-guide/phase-diagram.md'
+        - 'XAS Matcher': 'user-guide/xas-matcher.md'
+        - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
+        - 'Battery Explorer': 'user-guide/batteries-explorer.md'
+        - 'Glossary': 'user-guide/glossary-of-terms.md'
+        - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
+        - 'Nanoporous Explorer': 'user-guide/nanoporous-explorer.md'
+    - Database Updates: 'database-updates.md'
     - Contribution:
         - 'Newsfeed': 'contrib/spec/newsfeed.md'
 
 theme:
   name: 'material'
+  custom_dir: docs/custom_dir
 
 # Extensions
 markdown_extensions:
@@ -34,3 +46,4 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - footnotes
