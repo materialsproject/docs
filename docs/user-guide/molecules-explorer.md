@@ -12,15 +12,15 @@ The primary goal of the molecular explorer is to report the atomic structure of 
 * [Molecular Glossary of Terms](/user-guide/molecular_terms)
 
 ## Calculations
-Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G\* Pople bases [^1] and the hybrid-functional B3LYP [^2]. For molecules with more than 50 atoms, a hybrid procedure [^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G\* level.
+Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G\* Pople bases [^1] and the hybrid-functional B3LYP [^2]. For molecules with more than 50 atoms, a hybrid procedure [^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G\* level as a single point calculation.
  
 ### Geometry Optimization
 An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained [^3]. 
 
 
 
-## Properties
-the electron affinity (EA) and ionization potential (IP) are given by
+##$ Properties
+The electron affinity (EA) and ionization potential (IP) are given by
 $$EA = -\frac{\Delta G_{red}(sol)}{nF}$$
 $$IP = -\frac{\Delta G_{ox}(sol)}{nF}$$
 
@@ -29,12 +29,12 @@ where F is the Faraday constant, and $\Delta G_{ox}(sol)$ and $\Delta G_{red}(so
 ![Free energy cycle](img/molecules-explorer/free_energy_cycle.png)
 *Figure 2: Free energy cycle for computing the oxidation/reduction potential. R denotes the molecule of interest.*
 
-According to the above thermodynamic cycle in Fig. 1, $\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ can be calculated from the Gibbs free energy change of gas phase:
+According to the thermodynamic cycle in Fig. 1, $\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ can be calculated from the Gibbs free energy change of gas phase:
 
 $$\Delta G_{ox}(sol)=\Delta G_{ox}(gas)+\Delta G_{solv}(R^+)-\Delta G_{solv}(R)$$
 $$\Delta G_{red}(sol)=\Delta G_{red}(gas)+\Delta G_{solv}(R^-)-\Delta G_{solv}(R)$$
 
-The reported IP/EA are the adiabatic IP/EA[^4], which optimizes the geometry at different charge states (cation, anion, neutral), which emphasizes high-fidelity results.
+The reported IP/EA are the adiabatic IP/EA[^4], which optimizes the geometry at different charge states (cation, anion, neutral) to emphasize high-fidelity results.
 
 
 ## Database
