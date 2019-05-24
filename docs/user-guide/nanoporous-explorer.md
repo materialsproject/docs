@@ -54,7 +54,7 @@ The generation procedure creates hypothetical MOFs by recombining building block
 
 ### Hypothetical Zeolites
 
-Zeolites are crystalline nanoporous material made from tetrahedrally coordinated silicon or alumnimum atoms connected by oxygen atoms. Zeolites are naturally occuring, but are usually produced synthetically for industrial applications in adsorption and catalysis. The International Zeolite Association database lists 218 silaceous zeolite structures that have been synthesized in the laboratory 6. Synthesis of new zeolite structures is an active area of research.
+Zeolites are crystalline nanoporous material made from tetrahedrally coordinated silicon or aluminum atoms connected by oxygen atoms. Zeolites are naturally occurring, but are usually produced synthetically for industrial applications in adsorption and catalysis. The International Zeolite Association database lists 218 siliceous zeolite structures that have been synthesized in the laboratory 6. Synthesis of new zeolite structures is an active area of research.
 Deem et al. generated a large database of hypothetical silica zeolite structures that could serve as targets for experimental  synthesis [^7],[^8]. First, graphs of possible framework were enumerated by placing tetrahedral nodes (“T-atoms”) in all 230 symmetry groups over a wide range of lattice constants. These candidate structure were then annealed with the Sander-Leslie-Catlow interatomic potential to yield over 300,000 structures within 30 kJ mol-1 of quartz.  
 
 ### Other Hypothetical Materials
