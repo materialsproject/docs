@@ -25,34 +25,28 @@ At the bottom of the toolbar to the right of the periodic table, a number of adv
 * Max. Volume Change in fractional units (for example 1 corresponds to 100% volume change)
 * Max. Instability in eV/atom determined from the energy above hull metric (see glossary for more information)
 
-## The Search Result Table
-The search result table presents the resulting battery material entries from your search. You can add or hide fields from the result table by clicking the "Show/ hide columns" button and filter the results based on these fields by clicking the arrow in the column of interest. There are also buttons to print or export the Search Result Table to save your results for future reference.
+## The Search Results Table
+The search results table presents the resulting battery material entries from your search. You can add or hide fields from the result table by clicking the "Show/ hide columns" button and filter the results based on these fields by clicking the arrow in the column of interest. There are also buttons to print or export the Search Results Table to save your results for future reference.
 
-## Viewing Details of a Battery Compound
+To investigate an individual battery material entry, click on one of the rows in the Search Results Table. This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc. 
 
-To investigate an individual battery material entry, click on one of the rows in the Search Results Table. This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc.
+## Viewing Details of a Battery Material
 
-Within a single battery material entry, each associated material entry is dedicated to one structural framework (e.g. $\ce{Mn2O4}$ spinel, $\ce{Li0.5Mn2O4}$ spinel, or $\ce{LiMn2O4}$ spinel) that represents a different state of charge or working ion intercalation level. These material entries have been grouped together into a single battery material entry using structural analysis of the structures with the working ion(s) removed.
-
-The details view has many components including interactive plots:
+Within a single battery material entry, each associated material entry is dedicated to one structural framework that represents a different state of charge or working ion intercalation level (e.g. $\ce{Mn2O4}$ spinel, $\ce{Li0.5Mn2O4}$ spinel, or $\ce{LiMn2O4}$ spinel). These entries have been grouped together into a single battery material entry by comparing the structure frameworks with the working ion(s) removed to match similar host lattices. The details view has many components and more detailed data analysis from these grouped entries (including interactive plots and features) which are described below.
 
 ### Voltage Curve
 
-The voltage curve graph displays the calculated equilibrium voltage versus state of charge. If voltage criteria were specified in the query, the line might be segmented into different colors. The green portion of the curve matches the query, whereas the the blue portion of the curve does not.
-
-Try hovering over points on the voltage curve plot with your mouse for more information on that data point.
+The voltage curve graph displays the calculated equilibrium voltage versus state of charge. If voltage criteria were specified in the query, the line might be segmented into different colors. Try hovering over points on the voltage curve plot with your mouse for more details on that data point.
 
 ### O<sub>2</sub> Evolution Curve
 
-One concern for battery electrode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from an electrode can lead to thermal runaway which is a safety hazard. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released[^1][^2]. 
-
-One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. The $\mu_\ce{O_2}$ needed for release can be referenced against established battery compounds to get an idea of stability to $\ce{O_2}$ release. This plot is interactive so you can hover over a data point with your mouse for more detailed information.
+One concern for battery electrode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from an electrode can lead to thermal runaway which is a safety hazard. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released[^1][^2]. One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. The $\mu_\ce{O_2}$ needed for release can be referenced against established battery compounds to get an idea of stability to $\ce{O_2}$ release. This plot is interactive so you can hover over a data point with your mouse for more detailed information.
 
 ### Structure Viewer
 
 For viewing convenience, there is a drop down list below the structure viewer window where you can select the structure of each material entries associated with a battery material entry.
 
-### Overall Battery Material properties
+### Overall Battery Material Properties
 
 The overall battery materials properties display aggregate or average properties derived from all states of charge (e.g. intercalation levels) for a given structural framework. Note that some intercalation levels presented in this section may be outside the desired range of voltage, stability, or safety. More details are given in the 'Voltage pair properties' section.
 
