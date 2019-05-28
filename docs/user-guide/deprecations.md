@@ -6,6 +6,6 @@ In 2019 we have decided to implement a formal deprecation process, whereby we ca
 
 Deprecations are not retractions. However, if a material only had a single deprecated task associated with it, that material will no longer have data associated with it on the website until the updated calculation is completed. We are running these calculations continuously, with the website database being updated around once a month.
 
-We will update this document with a full list of deprecated calculations ("task_ids"), along with the reason for their deprecation, in due course.
+We will update this document with a full list of deprecated calculations ("task_ids") in due course, along with the reason for their deprecation.
 
 If you have any questions about the deprecation process, or if there's a material ID you're interested in that you can no longer find, [please ask us on our community forum](https://discuss.materialsproject.org) and we'd be happy to help.
