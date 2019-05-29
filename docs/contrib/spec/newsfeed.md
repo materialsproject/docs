@@ -1,8 +1,8 @@
 # Newsfeed
 
 !!! info
-    This page is a *design specification* for a feature to be implemented and
-    tested before release. 
+    This page is a *design specification* for a feature that was implemented and
+    tested before release.
 
 The [MP website](//materialsproject.org) exposes a lot of data and tools.
 Sometimes, people are surprised to learn about data and tools that have been
