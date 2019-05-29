@@ -910,9 +910,9 @@ MathJax.Hub.Config({
 <li><a href="/user-guide/molecular_terms">Molecular Glossary of Terms</a></li>
 </ul>
 <h2 id="calculations">Calculations<a class="headerlink" href="#calculations" title="Permanent link">&para;</a></h2>
-<p>Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G* Pople bases<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> and the hybrid-functional B3LYP<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>. For molecules with more than 50 atoms, a hybrid procedure<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G* level as a single point calculation.</p>
+<p>Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G* Pople bases<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> and the hybrid-functional B3LYP<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. For molecules with more than 50 atoms, a hybrid procedure<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G* level as a single point calculation.</p>
 <h3 id="geometry-optimization">Geometry Optimization<a class="headerlink" href="#geometry-optimization" title="Permanent link">&para;</a></h3>
-<p>An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. </p>
+<p>An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. </p>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <p>The electron affinity (EA) and ionization potential (IP) are given by
 $$EA = -\frac{\Delta G_{red}(sol)}{nF}$$
@@ -923,7 +923,7 @@ $$IP = -\frac{\Delta G_{ox}(sol)}{nF}$$</p>
 <p>According to the thermodynamic cycle in Fig. 1, $\Delta G_{ox}(sol)$ and $\Delta G_{red}(sol)$ can be calculated from the Gibbs free energy change of gas phase:</p>
 <p>$$\Delta G_{ox}(sol)=\Delta G_{ox}(gas)+\Delta G_{solv}(R^+)-\Delta G_{solv}(R)$$
 $$\Delta G_{red}(sol)=\Delta G_{red}(gas)+\Delta G_{solv}(R^-)-\Delta G_{solv}(R)$$</p>
-<p>The reported IP/EA are the adiabatic IP/EA<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>, which optimizes the geometry at different charge states (cation, anion, neutral) to emphasize high-fidelity results.</p>
+<p>The reported IP/EA are the adiabatic IP/EA<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>, which optimizes the geometry at different charge states (cation, anion, neutral) to emphasize high-fidelity results.</p>
 <h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
 <p>The database was generated from three sources:</p>
 <ol>
@@ -951,16 +951,16 @@ $$\Delta G_{red}(sol)=\Delta G_{red}(gas)+\Delta G_{solv}(R^-)-\Delta G_{solv}(R
 <hr />
 <ol>
 <li id="fn:1">
-<p>Ditchfield, R., Hehre, W.J. &amp; Pople, J.A. J. Chem. Phys. 54, 724 (1971)&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Ditchfield, R., Hehre, W.J. &amp; Pople, J.A. J. Chem. Phys. 54, 724 (1971)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Becke, A.D. Phys. Rev. A. 38, 3098 (1988)&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Becke, A.D. Phys. Rev. A. 38, 3098 (1988)&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>https://doi.org/10.1016/j.commatsci.2015.02.050&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>https://doi.org/10.1016/j.commatsci.2015.02.050&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>S. P. Ong , G. Ceder , Electrochim. Acta , 55 , 3804 (2010)&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>S. P. Ong , G. Ceder , Electrochim. Acta , 55 , 3804 (2010)&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

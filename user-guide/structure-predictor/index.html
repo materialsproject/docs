@@ -906,11 +906,11 @@ design. Indeed, while many materials properties can be computed nowadays with <e
 computations. Those computed properties are only relevant if they are evaluated on a compound (i.e., a
 stoichiometry and crystal structure) stable enough to be formed. Crystal structure prediction can be quite useful
 for experimentalists too. For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.</p>
-<p>The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>
+<p>The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
 Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions). This optimization is extremely challenging as the energy landscape is very rugged and full of local minima. Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.</p>
 <p>In a departure to this traditional approach, the methods we have developed use a combination of data mining and <em>ab-initio</em> computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget. The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds. Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system. Finally, the last step consists of testing those candidates for stability using <em>ab-initio</em> computations (<a href="../phase-diagram/">see Phase Diagram</a>).</p>
 <h3 id="the-ionic-substitution-based-structure-prediction-method">The Ionic Substitution based Structure Prediction Method<a class="headerlink" href="#the-ionic-substitution-based-structure-prediction-method" title="Permanent link">&para;</a></h3>
-<p>The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions. In this section we will briefly explain the idea of the approach and how to use the explorer. More details can be found in Hautier et al.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></p>
+<p>The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions. In this section we will briefly explain the idea of the approach and how to use the explorer. More details can be found in Hautier et al.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h3 id="the-basic-idea">The basic idea<a class="headerlink" href="#the-basic-idea" title="Permanent link">&para;</a></h3>
 <p><img alt="substitution example" src="../img/structure-predictor/substitution-example.png" />
 <em>Figure 1: An example of ionic substitution.</em></p>
@@ -957,7 +957,7 @@ After we built this probability function, from a database of experimental data (
 <p>Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.</p>
 <h3 id="future-features">Future features<a class="headerlink" href="#future-features" title="Permanent link">&para;</a></h3>
 <p>In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure. For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides). A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>. For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>. The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.</p>
-<p>The only data mined model accessible now is the substitution predictor. We have developed another model based on correlations between crystal structures at different compositions.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> We plan to give access to this model in the future. The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).</p>
+<p>The only data mined model accessible now is the substitution predictor. We have developed another model based on correlations between crystal structures at different compositions.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> We plan to give access to this model in the future. The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).</p>
 <h3 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h3>
 <p>To cite the Structure Predictor App, please reference the following works:</p>
 <ul>
@@ -973,16 +973,16 @@ After we built this probability function, from a database of experimental data (
 <hr />
 <ol>
 <li id="fn:1">
-<p>10.1038/nmat2321&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>10.1038/nmat2321&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>10.1021/ic102031h&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>10.1021/ic102031h&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>10.1021/cm100795d&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>10.1021/cm100795d&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>10.1038/nmat1691&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>10.1038/nmat1691&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
