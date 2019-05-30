@@ -41,6 +41,32 @@ The energy of decomposition of this material into the set of most stable materia
 
 A positive E above hull indicates that this material is unstable with respect to decomposition. A zero E above hull indicates that this is the most stable material at its composition.
 
+## Mechanics
+**Elastic Tensor:**
+The elastic tensor $C$ describes the response of a crystalline material to mechanical stress. Specifically, it relates the stress tensor $S$ to the strain tensor $E$.
+
+**Bulk, Shear, and Young's Moduli:**
+The bulk modulus $K$ describes the response of a material to compression. The shear modulus $G$ describes the response of a material to shear stress. Young's modulus $E$ relates uniaxial strain to stress in the same direction. All three are scalars with units of pressure.
+
+For isotropic materials, these three moduli fully describe the linear elastic reponse, and are related to each other by the Poisson ratio $\nu$: $2G(1+\nu)=E=3K(1-2\nu)$. For anisotropic materials (most crystals), the full elastic tensor $C$ is required because the stress-strain ratio is dependent on the direction of the stress and strain.
+
+**Poisson Ratio:**
+The Poisson ratio $\nu$ is the negative of the ratio of tranvserse strain to axial strain under uniaxial stress.
+
+**Voigt-Reuss-Hill Average Bulk and Shear Moduli:**
+The Voigt-Reuss-Hill (VRH) moduli describe a polycrystalline material's approximate average responses to stress. See the [Elasticity calculations](/methodology/elasticity) page for details on how these moduli are constructed.
+
+## Data Science and Machine/Statistical Learning
+
+**Cross validation**:
+Cross validation is a method for testing the accuracy of a machine learning model by setting aside part of the available data as a validation set, training the model on the remaining data, and comparing the predicted values for the validation set to the known values. [Cross Validation Wikipedia article](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
+
+**Gradient Boosting**:
+Gradient boosting is a machine learning method in which weak learner models are repeatedly fit to the residual (errors) of the existing model in order to improve it. [Gradient Boosting Wikipedia article](https://en.wikipedia.org/wiki/Gradient_boosting)
+
+**Local Polynomial Regression**:
+In local polynomial regression, polynomial curves are fit to subsets of the data in proximity to specific points. Predictions are made by combining these curves weighted by how close the test sample is to each local regression's center. [Local Regression Wikipedia article](https://en.wikipedia.org/wiki/Local_regression)
+
 ## Authors
 * Handong Ling
 * Oxana Andriuc
