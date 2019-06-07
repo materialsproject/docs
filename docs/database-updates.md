@@ -4,6 +4,9 @@
     Up-to-date release notes are now posted to
     [this thread](https://discuss.materialsproject.org/t/materials-project-database-release-log/1609)
     on our discussion forum.
+    
+!!! info
+    Confused about materials being "deprecated"? [More info here](/user-guide/deprecations).
 
 ## Current Database versions
 
