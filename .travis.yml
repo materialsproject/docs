@@ -2,7 +2,7 @@ language: python
 python: 3.6
 branches: master
 install:
-- pip install mkdocs mkdocs-material
+- pip install -r requirements.txt
 script: true
 before_deploy:
 - mkdocs build --verbose --clean
