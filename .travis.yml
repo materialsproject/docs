@@ -11,6 +11,7 @@ deploy:
   skip_cleanup: true
   local_dir: site
   keep_history: true
-  github_token: $GITHUB_TOKEN
   on:
     branch: master
+  github_token:
+    secure: Sjw2+sqWGGKfi3/wyG8/euSiiX/aUzJKjEvla5igX2axS/Z1aP+V9z7V79DtZqade/28wT66Xnevvpf/EptefDp3sgU5H5zTbGqbrsNfSVBFz5aPR5Ig0kMZHtr8YmT8G7p3VSXLjdE1GRASJqhdslA8ePQsI9X/OeoDQbXSqMKXycNPGdccD3nCiZRheYSuegNFKuCfAbL9mwM9WKGZcvh4yTj3qIhLjHIqW+LapIlL02kk1yMc9P+Amahq0s6PTm+6628ls0bi7kiMDfbICY0URFxLjh7PCTfkkeATJX8v7WXFcwNjopB827slGsU5zI0MeWZelk9Hgkpr6gS19hR5id5OW5j2fH951QFezqOJ3cxqQTIOZhflufVMFEZ/SSgRhH2JgGJ3+NoMBldAh8ZRpDO3L9QXF92/0tATg4IVh0U9Qz1UwLIMCIowwJ/DCK0I5D0wEys096p//id4XQrvRkVbuLuDrSTLmkrNm5M//CxtYj+OD9S2cGNu3CE7qkjqfRMjRj/rWTOucaONRD5IGfcsf6QOw3WU19WfZ6xhfAzBtgunnsEOAJCar5cpq2u+/XDEdoh66YC03u0+4chaLHV94d7FUEOl0iVdfk/4FSxHlRGhzojukvyCjjlE/sonIW9HT7YFllrE/eIlLU8IIBT8PJWF6JSWTWkRcGQ=
