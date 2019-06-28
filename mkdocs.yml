@@ -47,3 +47,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - footnotes
+
+# Plugins
+plugins:
+  - bibtex:
+      bib_dir: "refs"
+      cite_style: "pandoc"
