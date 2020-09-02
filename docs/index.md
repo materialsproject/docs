@@ -1,12 +1,10 @@
 # Materials Project Documentation
 
 !!! warning
-    Migration of content from our wiki
+    Migration of content from our old wiki
     ([https://www.materialsproject.org/wiki](
     https://www.materialsproject.org/wiki)) is underway. Until this notice is
-    removed, please go there (or use documentation links on
-    [https://materialsproject.org/](https://materialsproject.org/)) for
-    up-to-date documentation.
+    removed, there might still be inconsistencies.
 
 This is a place for all documentation relating to the
 [Materials Project](https://materialsproject.org) (MP), encompassing:
