@@ -20,16 +20,11 @@ benchmarking. It is very likely that we will expand calibration of U
 values to more chemical systems in the future.
 
 In the Materials Project, for an oxide or fluoride material with a transition
-element listed previously, the following INCAR tags were used to calculate 
-the GGA+U energies:
+element listed previously, with the VASP input settings constructed according to 
+the logic defined in [pymatgen](https://github.com/materialsproject/pymatgen/blob/master/pymatgen/io/vasp/MPRelaxSet.yaml).
 
-* LDAU = true
-* LDAUJ = 0
-* LDAUL = 0
-* LDAUTYPE = 2 - Note that U values only get applied to the d-orbitals.
-* Finally LDAUU gets sets to the value listed in the table below depending on the element used.
-
-Note that for fluorides, the U value gets set to the one calibrated from the oxide system. 
+Note that for fluorides, the U value gets set to the one calibrated from the oxide system, although 
+in principle our architecture allows different U values to be set for oxides and fluorides respectively.
 
 
 Calibration of U values
