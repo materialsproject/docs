@@ -1,8 +1,11 @@
 site_name: 'Materials Project Documentation'
+site_description: Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.
+copyright: Built by The Materials Project
+site_url: https://docs.materialsproject.org
 
-# Repository
 repo_name: 'materialsproject/docs'
 repo_url: 'https://github.com/materialsproject/docs'
+
 
 nav:
     - Home: 'index.md'
@@ -37,19 +40,22 @@ nav:
 
 theme:
   name: 'material'
-  custom_dir: docs/custom_dir
-
-# Extensions
 markdown_extensions:
   - admonition
+  - footnotes 
+  - pymdownx.arithmatex:
+      generic: true
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
-  - footnotes
 
-# Plugins
 plugins:
   - bibtex:
       bib_dir: "refs"
       cite_style: "pandoc"
+
+extra_javascript:
+- static/js/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
