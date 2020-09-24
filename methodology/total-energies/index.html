@@ -1,6 +1,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,10 +9,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
+      
+      
+        <link rel="canonical" href="https://docs.materialsproject.org/methodology/total-energies/">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
     
     
       
@@ -19,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
       
       
     
@@ -37,28 +42,6 @@
       
     
     
-<script type="text/x-mathjax-config">
-MathJax.Ajax.config.path["mhchem"] =
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
-MathJax.Hub.Config({
-  TeX: {
-    extensions: ["[mhchem]/mhchem.js"]
-  }
-});
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-    processEscapes: true
-  },
-  "HTML-CSS": { fonts: ["TeX"] }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
   </head>
   
   
@@ -82,7 +65,7 @@ MathJax.Hub.Config({
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -105,36 +88,6 @@ MathJax.Hub.Config({
         </div>
       
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -169,7 +122,7 @@ MathJax.Hub.Config({
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -997,9 +950,9 @@ gaseous at room temperature using Wang's method.<sup id="fnref2:5"><a class="foo
 is for oxygen gas reacting to form to oxides. We have adjusted energies
 of the following compounds:</p>
 <ul>
-<li>$\ce{O2}$, $\ce{N2}$, $\ce{Cl2}$, $\ce{F2}$, $\ce{H2}$</li>
+<li><span class="arithmatex">\(\ce{O2}\)</span>, <span class="arithmatex">\(\ce{N2}\)</span>, <span class="arithmatex">\(\ce{Cl2}\)</span>, <span class="arithmatex">\(\ce{F2}\)</span>, <span class="arithmatex">\(\ce{H2}\)</span></li>
 </ul>
-<p>The adjusted energies outside of $\ce{O2}$ are not as well-tested, and
+<p>The adjusted energies outside of <span class="arithmatex">\(\ce{O2}\)</span> are not as well-tested, and
 calculations involving these elements should be taken with greater
 caution. For example, it is assumed in our elemental gas adjustments
 that reactions to the solid will involve reduction of the gas.</p>
@@ -1028,7 +981,7 @@ fewer electrons than the current Materials Project parameter set.</p>
 system investigated. In general, GGA calculations have similar errors
 among chemically similar systems. Hence, reaction energies between
 chemically similar systems (e.g., a reaction where the reactants and
-products are all oxides, such as $\ce{MgO + Al2O3 -&gt; MgAl2O4}$) tend
+products are all oxides, such as <span class="arithmatex">\(\ce{MgO + Al2O3 -&gt; MgAl2O4}\)</span>) tend
 to have smaller errors than reactions between chemically dissimilar
 systems (e.g., between metals and insulators).</p>
 <p><img alt="formen errors" src="/methodology/img/calculations-manual/FormE_errors.png" />
@@ -1041,18 +994,18 @@ reaction calculator, we have computed the reaction energies of
 Tables formed with Group V, VI and VII anions. Figure 1 shows the errors
 in the calculated formation energies (compared to the experimental
 values) for these compounds. The mean absolute error (MAE) is around 14
-kJ mol$^{-1}$. 75% of the calculated formation energies are within 20 kJ
-mol$^{-1}$. We also found that compounds of certain elements tend to have
+kJ mol<span class="arithmatex">\(^{-1}\)</span>. 75% of the calculated formation energies are within 20 kJ
+mol<span class="arithmatex">\(^{-1}\)</span>. We also found that compounds of certain elements tend to have
 larger errors. For example, Bi, Co, Pb, Eu, U, Tl and W compounds often
-have errors larger than 20 kJ mol$^{-1}$.</p>
-<p>It should be noted that while an MAE of 14 kJ mol$^{-1}$ is significantly
-higher than the desired chemical accuracy of 4 kJ mol$^{-1}$, it compares
+have errors larger than 20 kJ mol<span class="arithmatex">\(^{-1}\)</span>.</p>
+<p>It should be noted that while an MAE of 14 kJ mol<span class="arithmatex">\(^{-1}\)</span> is significantly
+higher than the desired chemical accuracy of 4 kJ mol<span class="arithmatex">\(^{-1}\)</span>, it compares
 fairly well with the performance of most quantum chemistry
 calculations<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>. Other than the most computationally expensive model
 chemistries such as G1-G3 and CBS, the reaction energy errors of most
-computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.</p>
+computational chemistry model chemistries are well above 10 kJ mol<span class="arithmatex">\(^{-1}\)</span>.</p>
 <p>For oxidation of the elements into binary compounds, an average error of
-~4% or 33 kJ/mol-$\ce{O2}$ is typical.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> For conventional ternary oxide
+~4% or 33 kJ/mol-<span class="arithmatex">\(\ce{O2}\)</span> is typical.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> For conventional ternary oxide
 formation from the elements, we have found a mean relative absolute
 error of about 2%.<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
 <h3 id="sources-of-error">Sources of error<a class="headerlink" href="#sources-of-error" title="Permanent link">&para;</a></h3>
@@ -1221,6 +1174,10 @@ stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref"
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
         Made with
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
@@ -1233,8 +1190,8 @@ stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref"
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
@@ -1245,6 +1202,12 @@ stability, Physical Review B, 85 (2012), 155208&#160;<a class="footnote-backref"
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../../static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

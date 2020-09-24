@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/total-energies/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/electronic-structure/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/pseudopotentials/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/gga-plus-u/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/elasticity/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/elasticity-prediction/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/piezoelectricity/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/dielectricity/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/equations-of-state/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/methodology/phonons/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/crystal-toolkit/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/materials-explorer/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/batteries-explorer/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/molecules-explorer/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/structure-predictor/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/pourbaix-tool/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/phase-diagram/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/xas-matcher/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/reaction-calculator/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/glossary-of-terms/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/open-apis/the-materials-api/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/user-guide/nanoporous-explorer/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/database-updates/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-09-02</lastmod>
+     <loc>https://docs.materialsproject.org/contrib/spec/newsfeed/</loc>
+     <lastmod>2020-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

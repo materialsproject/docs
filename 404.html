@@ -1,6 +1,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,10 +9,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
       
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
     
     
       
@@ -19,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.077507d7.min.css">
       
       
     
@@ -37,28 +40,6 @@
       
     
     
-<script type="text/x-mathjax-config">
-MathJax.Ajax.config.path["mhchem"] =
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
-MathJax.Hub.Config({
-  TeX: {
-    extensions: ["[mhchem]/mhchem.js"]
-  }
-});
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-    processEscapes: true
-  },
-  "HTML-CSS": { fonts: ["TeX"] }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
   </head>
   
   
@@ -77,7 +58,7 @@ MathJax.Hub.Config({
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="/." title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -100,36 +81,6 @@ MathJax.Hub.Config({
         </div>
       
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -164,7 +115,7 @@ MathJax.Hub.Config({
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -194,7 +145,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/." title="Home" class="md-nav__link">
+    <a href="." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -206,7 +157,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/foundation.md" title="Foundation" class="md-nav__link">
+    <a href="foundation.md" title="Foundation" class="md-nav__link">
       Foundation
     </a>
   </li>
@@ -239,7 +190,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/total-energies/" title="Total energies" class="md-nav__link">
+    <a href="methodology/total-energies/" title="Total energies" class="md-nav__link">
       Total energies
     </a>
   </li>
@@ -251,7 +202,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+    <a href="methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
       Electronic structure
     </a>
   </li>
@@ -263,7 +214,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+    <a href="methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
       Pseudopotentials
     </a>
   </li>
@@ -275,7 +226,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+    <a href="methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
       GGA+U
     </a>
   </li>
@@ -287,7 +238,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/elasticity/" title="Elasticity" class="md-nav__link">
+    <a href="methodology/elasticity/" title="Elasticity" class="md-nav__link">
       Elasticity
     </a>
   </li>
@@ -299,7 +250,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+    <a href="methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
       Elasticity prediction
     </a>
   </li>
@@ -311,7 +262,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+    <a href="methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
       Piezoelectricity
     </a>
   </li>
@@ -323,7 +274,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+    <a href="methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
       Dielectricity
     </a>
   </li>
@@ -335,7 +286,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+    <a href="methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
       Equations of State
     </a>
   </li>
@@ -347,7 +298,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/methodology/phonons/" title="Phonons" class="md-nav__link">
+    <a href="methodology/phonons/" title="Phonons" class="md-nav__link">
       Phonons
     </a>
   </li>
@@ -385,7 +336,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+    <a href="user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
       Crystal Toolkit
     </a>
   </li>
@@ -397,7 +348,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+    <a href="user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
       Materials Explorer
     </a>
   </li>
@@ -409,7 +360,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+    <a href="user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
       Battery Explorer
     </a>
   </li>
@@ -421,7 +372,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+    <a href="user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
       Molecules Explorer
     </a>
   </li>
@@ -433,7 +384,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+    <a href="user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
       Structure Predictor
     </a>
   </li>
@@ -445,7 +396,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+    <a href="user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
       Pourbaix Diagram
     </a>
   </li>
@@ -457,7 +408,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+    <a href="user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
       Phase Diagram
     </a>
   </li>
@@ -469,7 +420,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+    <a href="user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
   </li>
@@ -481,7 +432,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+    <a href="user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
       Reaction Calculator
     </a>
   </li>
@@ -493,7 +444,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+    <a href="user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
       Glossary
     </a>
   </li>
@@ -505,7 +456,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+    <a href="open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
       Materials API (MAPI)
     </a>
   </li>
@@ -517,7 +468,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+    <a href="user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
       Nanoporous Explorer
     </a>
   </li>
@@ -534,7 +485,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/database-updates/" title="Database Updates" class="md-nav__link">
+    <a href="database-updates/" title="Database Updates" class="md-nav__link">
       Database Updates
     </a>
   </li>
@@ -567,7 +518,7 @@ MathJax.Hub.Config({
 
 
   <li class="md-nav__item">
-    <a href="/contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+    <a href="contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
       Newsfeed
     </a>
   </li>
@@ -608,6 +559,10 @@ MathJax.Hub.Config({
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
         Made with
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
@@ -620,18 +575,24 @@ MathJax.Hub.Config({
       
     </div>
     
-      <script src="/assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="/assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "/",
+          base: "",
           features: [],
           search: Object.assign({
-            worker: "/assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -1,6 +1,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,10 +9,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
+      
+      
+        <link rel="canonical" href="https://docs.materialsproject.org/user-guide/nanoporous-explorer/">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
     
     
       
@@ -19,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
       
       
     
@@ -37,28 +42,6 @@
       
     
     
-<script type="text/x-mathjax-config">
-MathJax.Ajax.config.path["mhchem"] =
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
-MathJax.Hub.Config({
-  TeX: {
-    extensions: ["[mhchem]/mhchem.js"]
-  }
-});
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-    processEscapes: true
-  },
-  "HTML-CSS": { fonts: ["TeX"] }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
   </head>
   
   
@@ -82,7 +65,7 @@ MathJax.Hub.Config({
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -105,36 +88,6 @@ MathJax.Hub.Config({
         </div>
       
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -169,7 +122,7 @@ MathJax.Hub.Config({
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -1145,7 +1098,7 @@ MathJax.Hub.Config({
 <h4 id="retention-of-charge-balancing-ions">Retention of Charge-Balancing Ions<a class="headerlink" href="#retention-of-charge-balancing-ions" title="Permanent link">&para;</a></h4>
 <p>Many MOF structures with associated charge-balancing ions also contain undesirable neutral solvent molecules. To discriminate between ionic species and neutral solvent molecules, the elemental compositions of the bonded components in a molecular graph of each structure were compared to the chemical formulas reported by the CSD using an in-house python script. The bonded components are the independent “molecules” within each structure; these include the MOF framework, the ionic species, and any neutral solvent molecules. The bonded components with elemental compositions matching the composition of the ions reported by the CSD were exempted from deletion in the solvent removal step.</p>
 <h3 id="hypothetical-mofs">Hypothetical MOFs<a class="headerlink" href="#hypothetical-mofs" title="Permanent link">&para;</a></h3>
-<p>Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for $\ce{CO2}$ and $\ce{N2}$ separation<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, Xe/Kr separation<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, and hydrogen storage applications<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+<p>Wilmer and co-workers at Northwestern University have created a database of 137,953 hypothetical Metal-organic frameworks <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Current analysis of this database includes Grand Canonical Monte Carlo (GCMC) simulations to estimate the methane storage and working capacity of MOFs using Universal Force Field parameters (UFF). Among the top 300 hypothetical MOFs, Wilmer and co-workers identified target materials for synthesis and measured gas adsorption characteristics and found that excellent agreement between simulation and experiment. The hypothetical MOF database has also been used to define the structure-property relationship for <span class="arithmatex">\(\ce{CO2}\)</span> and <span class="arithmatex">\(\ce{N2}\)</span> separation<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, Xe/Kr separation<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, and hydrogen storage applications<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
 <h4 id="building-blocks">Building Blocks<a class="headerlink" href="#building-blocks" title="Permanent link">&para;</a></h4>
 <p>A novel, bottom-up algorithm was developed to speed up structure enumeration. One hundred and two building blocks with varying degree of geometry and number of acids sites (e.g., COOH- sites) were used. The building blocks are divided into three main groups: metal nodes, organic linkers, and functional groups. Table 1 and Figure 1 summarizes the building blocks used in structure generation algorithm for Ref. <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <p>To make the hypothetical MOF database relevant for hydrogen storage, only magnesium atoms were incorporated into the linker as a functional group, and new types of linkers were used as building blocks. The two hydrogen atoms on the phenyl ring group were substituted with two oxygen atoms and one magnesium atom. For each MOF structure, 0%, 50% and 100% magnesium functionalization was used. The list of building blocks and functionalization scheme is shown in Figure 2.</p>
@@ -1159,25 +1112,25 @@ Deem et al. generated a large database of hypothetical silica zeolite structures
 <p>In addition to MOFs and Zeolites currently a set of 10,000 computational predicted porous polymeric networks (PPNs) are available <sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <h3 id="henrys-constants">Henry's Constants<a class="headerlink" href="#henrys-constants" title="Permanent link">&para;</a></h3>
-<p>The Henry's constant ($K_H$), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell by,</p>
-<p>$$K_H={M\over8{\pi}V{\rho}RT}{\int}e^{-{\beta}U}dr={1\over{RT}}{\sum_{i=1}^{N_{points}}{\exp(-{\beta}U_{i}^{ads})}\over{N_{points}}}$$ Eq. 1</p>
+<p>The Henry's constant (<span class="arithmatex">\(K_H\)</span>), expressed in mol/kg/bar for gas phase system, defines the slope on the adsorption isotherm at the low-pressure limit. Computational calculation of Henry's constant can be efficiently carried out using Widom’s ghost particle insertion <sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> method over the simulation cell volume and calculating the energy difference of the system with the sorbate molecule in the nanoporous material (adsorbed phase) and with the sorbate molecule in the surrounding fluid phase. The Henry's constant is related to the energy difference for the molecule in the simulation cell by,</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(K_H={M\over8{\pi}V{\rho}RT}{\int}e^{-{\beta}U}dr={1\over{RT}}{\sum_{i=1}^{N_{points}}{\exp(-{\beta}U_{i}^{ads})}\over{N_{points}}}\)</span>\)</span> Eq. 1</p>
 <p>The obtained Henry’s constant can be used to calculate the free energy of adsorption in the infinite-dilution limit of the sorbate molecule via the following thermodynamic relationship  (Equation 2):</p>
-<p>$$A_{ads}=-RT\text{ln}(RT{\rho}_sK_H)$$ Eq.2</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(A_{ads}=-RT\text{ln}(RT{\rho}_sK_H)\)</span>\)</span> Eq.2</p>
 <h4 id="application-to-large-scale-screening">Application to Large-scale screening<a class="headerlink" href="#application-to-large-scale-screening" title="Permanent link">&para;</a></h4>
-<p>Recently, the ratio of Henry’s constant has been used to rapidly assess the materials selectivity of one molecule over another (e.g., $\ce{CO2}$ over $\ce{H2}$). Examples of such studies in literature include work by Haldoupis, et. al ($\ce{CO2}$/$\ce{H2}$)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> and Watanabe, et. al. ($\ce{CO2}$/$\ce{N2}$)<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>.</p>
+<p>Recently, the ratio of Henry’s constant has been used to rapidly assess the materials selectivity of one molecule over another (e.g., <span class="arithmatex">\(\ce{CO2}\)</span> over <span class="arithmatex">\(\ce{H2}\)</span>). Examples of such studies in literature include work by Haldoupis, et. al (<span class="arithmatex">\(\ce{CO2}\)</span>/<span class="arithmatex">\(\ce{H2}\)</span>)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> and Watanabe, et. al. (<span class="arithmatex">\(\ce{CO2}\)</span>/<span class="arithmatex">\(\ce{N2}\)</span>)<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>.</p>
 <h3 id="absorption-isotherms">Absorption Isotherms<a class="headerlink" href="#absorption-isotherms" title="Permanent link">&para;</a></h3>
 <p>In porous materials, such as zeolites, metal-organic frameworks (MOFs), and porous polymer networks (PPNs), adsorption is the physical adsorption of molecules from a gas or liquid phase onto the solid surface, such as pore wall. An adsorption isotherm is the loading of adsorbate as a function of pressure and/or composition at a given temperature in thermodynamic equilibrium. Adsorption isotherms are sometimes normalized by the mass or volume of the adsorbent to allow comparison of the adsorption capacity of different materials.  Adsorption isotherms are fundamental in characterizing the suitability of nanoporous materials for gas storage and separation applications. Experimentally measured nitrogen and argon isotherms are used to determine the surface area and pore size distribution of nanoporous materials <sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>.
 The adsorption isotherms can be predicted computationally using Grand Canonical Monte Carlo (GCMC) or Gibbs Ensemble Monte Carlo (GEMC) techniques. This is useful for efficiently screening large databases of experimentally synthesized and hypothetical constructed nanoporous materials for desirable adsorption properties <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The accuracy of the simulations depends on choice of the force fields that describe fluid-fluid and fluid-solid interactions. Nanoporous Materials Explorer includes GCMC simulation results for methane uptake in each material at a temperature of 298 K and pressures of 5.8, 35, and 65 bar.</p>
 <h3 id="heat-of-adsorption">Heat of Adsorption<a class="headerlink" href="#heat-of-adsorption" title="Permanent link">&para;</a></h3>
-<p>In two phase gas-liquid systems, the Clausius-Clapeyron equation states that the latent heat of vaporization of a pure component is approximately proportional to the slope of a plot of $\text{ln}(P_{sat})$ vs. $1/T$ <sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>. The analogous expression for two phase systems consists of gas and porous materials defines the isosteric heat of adsorption qst <sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup>:</p>
-<p>$$q_{st}={RT^2}\left ({{\partial{\text{ln}P}}\over{\partial{T}}}\right )_N$$ Eq.3</p>
+<p>In two phase gas-liquid systems, the Clausius-Clapeyron equation states that the latent heat of vaporization of a pure component is approximately proportional to the slope of a plot of <span class="arithmatex">\(\text{ln}(P_{sat})\)</span> vs. <span class="arithmatex">\(1/T\)</span> <sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>. The analogous expression for two phase systems consists of gas and porous materials defines the isosteric heat of adsorption qst <sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup>:</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(q_{st}={RT^2}\left ({{\partial{\text{ln}P}}\over{\partial{T}}}\right )_N\)</span>\)</span> Eq.3</p>
 <p>Therefore, the isosteric heat of adsorption may be obtained by plotting ln P vs T relations from several isotherms at a constant adsorbate loading of N. The heat of adsorption is positive by definition, and the negative heat of adsorption is also known as the differential enthalpy of adsorption. The negative sign reflects the exothermic nature of adsorption.
 The heat adsorption is a quantitative measure of whether a species is strongly adsorbing or weakly adsorbing, with values typically ranging from 10 to 40 kJ/mol. Heats of adsorption can be determined experimentally by differential calorimetry. 
 In molecular simulations, the isosteric heat of adsorption can be calculated from a fluctuation method <sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
-<p>$$q_{st}={RT}-{{\langle{VN}\rangle-\langle{V}\rangle\langle{N}\rangle}\over{\langle{N^2}\rangle-\langle{N}\rangle^2}}$$ Eq.4</p>
-<p>Here, $V$ is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by <sup id="fnref:18"><a class="footnote-ref" href="#fn:18">18</a></sup>:</p>
-<p>$$q_{st}={{\partial{\text{ln}K_H}}\over{\partial{\beta}}}$$ Eq.5</p>
-<p>Here, β is $1/(k_BT)$ where $k_B$ is the Boltzmann constant.</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(q_{st}={RT}-{{\langle{VN}\rangle-\langle{V}\rangle\langle{N}\rangle}\over{\langle{N^2}\rangle-\langle{N}\rangle^2}}\)</span>\)</span> Eq.4</p>
+<p>Here, <span class="arithmatex">\(V\)</span> is the potential energy per adsorbate molecule. The angled brackets indicate an ensemble average taken over a grand-canonical Monte Carlo (GCMC) simulation at low loading to minimize the influence of adsorbate-adsorbate interactions.  In the limit of low loading, the heat of adsorption is related to the Henry’s constant by <sup id="fnref:18"><a class="footnote-ref" href="#fn:18">18</a></sup>:</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(q_{st}={{\partial{\text{ln}K_H}}\over{\partial{\beta}}}\)</span>\)</span> Eq.5</p>
+<p>Here, β is <span class="arithmatex">\(1/(k_BT)\)</span> where <span class="arithmatex">\(k_B\)</span> is the Boltzmann constant.</p>
 <h3 id="ddec-point-charges">DDEC Point Charges<a class="headerlink" href="#ddec-point-charges" title="Permanent link">&para;</a></h3>
 <p>Partial point charges are provided for a majority of the structures in the CoRE MOF database. These charges were calculated using the Density Derived Electrostatic and Chemical (DDEC) method that involves atomic population analysis on the electron and spin density distributions generated by quantum chemistry methods <sup id="fnref:19"><a class="footnote-ref" href="#fn:19">19</a></sup>.
 DDEC charges reproduce atomic chemical states and the electrostatic potential surrounding a material.  Such charges are well suited for constructing force fields used in atomistic simulations such as classical molecular dynamics or Monte Carlo simulations.</p>
@@ -1189,8 +1142,8 @@ While the DDEC method provides an individual charge for each atom in the system,
 <ul>
 <li>Pore Limiting Diameter (PLD): Is defined as the smallest opening along the pore that a molecule needs to cross in order to diffuse through this material. This quantity is also know as the largest free sphere. Reported in units of Å. </li>
 <li>Largest Cavity Diameter (LCD): Is defined as the largest opening along the pore. This quantity is also known as the largest included sphere. Reported in units of Å.</li>
-<li>Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å.</li>
-<li>Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. <sup id="fnref:22"><a class="footnote-ref" href="#fn:22">22</a></sup>. All the values have been so far computed for a $\ce{CH4}$ molecule using a sphere of radius 1.645 Å. Reported in units of $\text{m}^2/\text{cm}^3$</li>
+<li>Void Fraction: Is defined as the fraction of the unit cell volume that is accessible to specific molecule. All the values have been so far computed for a <span class="arithmatex">\(\ce{CH4}\)</span> molecule using a sphere of radius 1.645 Å.</li>
+<li>Accessible Surface Area: Is defined as the surface area that a sorbate molecule can access inside the pores of a material. It is computed using the method by Düren et al. <sup id="fnref:22"><a class="footnote-ref" href="#fn:22">22</a></sup>. All the values have been so far computed for a <span class="arithmatex">\(\ce{CH4}\)</span> molecule using a sphere of radius 1.645 Å. Reported in units of <span class="arithmatex">\(\text{m}^2/\text{cm}^3\)</span></li>
 </ul>
 <p>All the pore descriptors have been calculated using the open source software <a href="http://www.maciejharanczyk.info/Zeopp/about.html">Zeo++</a>. Recently, this software was used to generate fingerprints to evaluate similarity of porous structures <sup id="fnref:23"><a class="footnote-ref" href="#fn:23">23</a></sup>.</p>
 <h3 id="p-xrd-patterns">P-XRD Patterns<a class="headerlink" href="#p-xrd-patterns" title="Permanent link">&para;</a></h3>
@@ -1338,6 +1291,10 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
         Made with
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
@@ -1350,8 +1307,8 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
@@ -1362,6 +1319,12 @@ PXRD pattern of a solid material is commonly recorded using a diffractometer. Th
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../../static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

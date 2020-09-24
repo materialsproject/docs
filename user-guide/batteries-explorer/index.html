@@ -1,6 +1,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -8,10 +9,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
+      
+      
+        <link rel="canonical" href="https://docs.materialsproject.org/user-guide/batteries-explorer/">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
     
     
       
@@ -19,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
       
       
     
@@ -37,28 +42,6 @@
       
     
     
-<script type="text/x-mathjax-config">
-MathJax.Ajax.config.path["mhchem"] =
-  "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
-MathJax.Hub.Config({
-  TeX: {
-    extensions: ["[mhchem]/mhchem.js"]
-  }
-});
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-    processEscapes: true
-  },
-  "HTML-CSS": { fonts: ["TeX"] }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
   </head>
   
   
@@ -82,7 +65,7 @@ MathJax.Hub.Config({
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -105,36 +88,6 @@ MathJax.Hub.Config({
         </div>
       
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header-nav__source">
@@ -169,7 +122,7 @@ MathJax.Hub.Config({
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -849,11 +802,11 @@ MathJax.Hub.Config({
 <p>The search results table presents the resulting battery material entries from your search. You can add or hide fields from the result table by clicking the "Show/ hide columns" button and filter the results based on these fields by clicking the arrow in the column of interest. There are also buttons to print or export the Search Results Table to save your results for future reference.</p>
 <p>To investigate an individual battery material entry, click on one of the rows in the Search Results Table. This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc. </p>
 <h2 id="viewing-details-of-a-battery-material">Viewing Details of a Battery Material<a class="headerlink" href="#viewing-details-of-a-battery-material" title="Permanent link">&para;</a></h2>
-<p>Within a single battery material entry, each associated material entry is dedicated to one structural framework that represents a different state of charge or working ion intercalation level (e.g. $\ce{Mn2O4}$ spinel, $\ce{Li0.5Mn2O4}$ spinel, or $\ce{LiMn2O4}$ spinel). These entries have been grouped together into a single battery material entry by comparing the structure frameworks with the working ion(s) removed to match similar host lattices. The details view has many components and more detailed data analysis from these grouped entries (including interactive plots and features) which are described below.</p>
+<p>Within a single battery material entry, each associated material entry is dedicated to one structural framework that represents a different state of charge or working ion intercalation level (e.g. <span class="arithmatex">\(\ce{Mn2O4}\)</span> spinel, <span class="arithmatex">\(\ce{Li0.5Mn2O4}\)</span> spinel, or <span class="arithmatex">\(\ce{LiMn2O4}\)</span> spinel). These entries have been grouped together into a single battery material entry by comparing the structure frameworks with the working ion(s) removed to match similar host lattices. The details view has many components and more detailed data analysis from these grouped entries (including interactive plots and features) which are described below.</p>
 <h3 id="voltage-curve">Voltage Curve<a class="headerlink" href="#voltage-curve" title="Permanent link">&para;</a></h3>
 <p>The voltage curve graph displays the calculated equilibrium voltage versus state of charge. If voltage criteria were specified in the query, the line might be segmented into different colors. Try hovering over points on the voltage curve plot with your mouse for more details on that data point.</p>
 <h3 id="o2-evolution-curve">O<sub>2</sub> Evolution Curve<a class="headerlink" href="#o2-evolution-curve" title="Permanent link">&para;</a></h3>
-<p>One concern for battery electrode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from an electrode can lead to thermal runaway which is a safety hazard. The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release. The $\mu_\ce{O_2}$ needed for release can be referenced against established battery compounds to get an idea of stability to $\ce{O_2}$ release. This plot is interactive so you can hover over a data point with your mouse for more detailed information.</p>
+<p>One concern for battery electrode design is resistance to <span class="arithmatex">\(\ce{O_2}\)</span> release, as <span class="arithmatex">\(\ce{O_2}\)</span> release from an electrode can lead to thermal runaway which is a safety hazard. The <span class="arithmatex">\(\ce{O_2}\)</span> evolution diagram determines the equilibrium chemical potentials at which <span class="arithmatex">\(\ce{O_2}\)</span> release can be expected, and the amount of <span class="arithmatex">\(\ce{O_2}\)</span> released<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. One way to read this chart is to look at the chemical potential at which <span class="arithmatex">\(\ce{O_2}\)</span> release begins (the first x-value for which the y-axis is greater than zero). Compounds for which O2 release begins at more negative muO2 are more stable with respect to <span class="arithmatex">\(\ce{O_2}\)</span> release. The <span class="arithmatex">\(\mu_\ce{O_2}\)</span> needed for release can be referenced against established battery compounds to get an idea of stability to <span class="arithmatex">\(\ce{O_2}\)</span> release. This plot is interactive so you can hover over a data point with your mouse for more detailed information.</p>
 <h3 id="structure-viewer">Structure Viewer<a class="headerlink" href="#structure-viewer" title="Permanent link">&para;</a></h3>
 <p>For viewing convenience, there is a drop down list below the structure viewer window where you can select the structure of each material entries associated with a battery material entry.</p>
 <h3 id="overall-battery-material-properties">Overall Battery Material Properties<a class="headerlink" href="#overall-battery-material-properties" title="Permanent link">&para;</a></h3>
@@ -947,6 +900,10 @@ MathJax.Hub.Config({
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
         Made with
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
@@ -959,8 +916,8 @@ MathJax.Hub.Config({
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
@@ -971,6 +928,12 @@ MathJax.Hub.Config({
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../../static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
