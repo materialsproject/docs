@@ -45,7 +45,7 @@ convergence for most compounds tested was within 5 meV/atom, and 96% of
 compounds tested were converged to within 15 meV/atom. Results for the
 new parameter set will be better due to the denser k-point mesh
 employed. Convergence will depend on chemical system; for example,
-oxides were generally converged to less than 1 meV/atom.[^5]
+oxides were generally converged to less than 1 meV/atom.[^6]
 
 ### Structure convergence
 
@@ -62,46 +62,57 @@ Total Energy Adjustments
 ------------------------
 
 To better model energies across diverse chemical spaces, we apply
-several adjustments to the total energy. These adjustments are described
-below.
+several adjustments to the total energy. These adjustments fall into two categories,
+each of which is briefly described below. Our correction scheme assumes independent,
+linear corrections associated with each corrected element. For example, $\ce{VO_2}$
+would receive both a 'V' and an 'oxide' correction (as explained below), while
+elemental $\ce{V}$ would receive no corrections. For complete details of our correction
+scheme, refer to Wang et al[^5]
 
-### Default corrections
+### Anion corrections
 
-#### Gases, liquids, and elements
+For many elements that take on negative oxidation states in solids, differences
+in electron localization between the elements and the solid can result in substantial
+errors in formation energies computed from DFT calculations. This is especially
+true for elements that are gaseous in their standard state - $\ce{O2}$,
+$\ce{N2}$, $\ce{Cl2}$, $\ce{F2}$, and $\ce{H2}$.
 
-Our total energy calculations are for periodic solids at 0K. For
-elements that are gaseous in their standard state, our raw calculations
-do not represent the same phase as standard experimental data. In
-addition, there may be GGA errors associated with reducing gas phases in
-gas-to-solid reactions. Rather than calculating the liquid/gas energies
-directly, we adjust the energies of several elements that are liquid or
-gaseous at room temperature using Wang's method.[^5] The best-tested fit
-is for oxygen gas reacting to form to oxides. We have adjusted energies
-of the following compounds:
+To address this, we adjust the energies of materials containing certain elements
+by applying a correction to anionic species, as explained in ref [^5]. Specifically, 
+we apply energy corrections to 14 anion species -- 'oxide', 'peroxide', 'superoxide', 
+$\ce{S}$, $\ce{F}$, $\ce{Cl}$, $\ce{Br}$, $\ce{I}$, $\ce{N}$, $\ce{H}$, 
+$\ce{Se}$, $\ce{Si}$, $\ce{Sb}$, and $\ce{Te}$. In the case of oxygen-containing compounds,
+separate corrections are applied to oxides, superoxides, and peroxides based 
+on the specific bonding environment of oxygen in the material, as determined
+from nearest-neighbor bond lengths (e.g., <1.35 Å for superoxide, <1.49 Å 
+for 'peroxide', and 'oxide' otherwise). Thus, $\ce{Na_2O}$ receives an 'oxide' 
+correction while $\ce{NaO_2}$ receives a `superoxide' correction. 
 
--   $\ce{O2}$, $\ce{N2}$, $\ce{Cl2}$, $\ce{F2}$, $\ce{H2}$
+Anion corrections are applied tto a material only when it contains a corrected 
+element *as an anion.* For example, the `H''correction is applied to LiH but not
+to H$_2$O. A specie is classified as an anion if its estimated oxidation state
+(when available) is negative, or if it is the most electronegative element in
+the formula.
 
-The adjusted energies outside of $\ce{O2}$ are not as well-tested, and
-calculations involving these elements should be taken with greater
-caution. For example, it is assumed in our elemental gas adjustments
-that reactions to the solid will involve reduction of the gas.
+### GGA / GGA+<em>U</em> Mixing Corrections
 
 <a name="ggau_tag"></a>
-#### GGA+<em>U</em> calculations and adjustments to match GGA energies
 
 Some compounds are better modeled with a <em>U</em> correction term to
 the density functional theory Hamiltonian while others are better
-modeled without (i.e., straight GGA). Energies from calculations with
+modeled without (i.e., regular GGA). Energies from calculations with
 the +<em>U</em> correction are not directly comparable to those without.
-To obtain better accuracy across chemical systems, we use GGA when
-appropriate, GGA+<em>U</em> otherwise, and mix energies from the two
+To obtain better accuracy across chemical systems, we use GGA+<em>U</em> when
+appropriate, GGA otherwise, and mix energies from the two
 calculation methodologies by adding an energy correction term to the
 GGA+<em>U</em> calculations to make them comparable to the GGA
-calculations. The idea behind this approach is to split reactions into
-sub-reactions that are well-modeled by GGA, well-modeled by
-GGA+<em>U</em>, or a binary formation reaction that can be estimated
-from known experimental data. More details on this method can be found
-in ref [^6].
+calculations. 
+
+Specifically, we use GGA+<em>U</em> for oxide and fluoride 
+compounds containing any of the transition metals $\ce{V}$, $\ce{Cr}$, 
+$\ce{Mn}$, $\ce{Fe}$, $\ce{Co}$, $\ce{Ni}$, $\ce{W}$, and $\ce{Mo}$, and GGA for
+everything else. More details on this method can be found in ref [^5] and [^7].
+
 
 Accuracy of Total Energies
 --------------------------
@@ -140,14 +151,14 @@ have errors larger than 20 kJ mol$^{-1}$.
 It should be noted that while an MAE of 14 kJ mol$^{-1}$ is significantly
 higher than the desired chemical accuracy of 4 kJ mol$^{-1}$, it compares
 fairly well with the performance of most quantum chemistry
-calculations[^7]. Other than the most computationally expensive model
+calculations[^8]. Other than the most computationally expensive model
 chemistries such as G1-G3 and CBS, the reaction energy errors of most
 computational chemistry model chemistries are well above 10 kJ mol$^{-1}$.
 
 For oxidation of the elements into binary compounds, an average error of
-~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^8] For conventional ternary oxide
+~4% or 33 kJ/mol-$\ce{O2}$ is typical.[^9] For conventional ternary oxide
 formation from the elements, we have found a mean relative absolute
-error of about 2%.[^6]
+error of about 2%.[^9]
 
 ### Sources of error
 
@@ -156,7 +167,7 @@ GGA to fully describe electronic exchange and correlation effects. In
 addition, there is some error associated with neglecting zero-point
 effects and with comparing 0K, 0atm computations with room-temperature
 enthalpy experiments. The latter effect was estimated to contribute less
-than 0.03 eV/atom by Lany.[^9] The stability of antiferromagnetic
+than 0.03 eV/atom by Lany.[^10] The stability of antiferromagnetic
 compounds may be underestimated, as the majority of our calculations are
 performed ferromagnetically only. The effect of magnetism may be small
 (under 10 meV/atom) or large (100 meV/atom or greater), depending on the
@@ -166,7 +177,7 @@ lead to greater-than-expected errors.
 ### GGA errors on reaction energies between chemically similar compounds
 
 We recently conducted a more in-depth study comparing GGA (+U) reaction
-energies of ternary oxides from binary oxides on 135 compounds. [^10]
+energies of ternary oxides from binary oxides on 135 compounds. [^11]
 
 The main conclusions are:
 
@@ -234,26 +245,30 @@ References
     efficient comparison of periodic structures, Journal Of Applied
     Crystallography. 39 (2006) 6-16.
 
-[^5]: L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
+[^5]: A. Wang, R. Kingsbury, M. McDermott, M. Horton, A. Jain, S.P. Ong S. Dwaraknath,
+    K. Persson, A framework for quantifying uncertainty in DFT energy corrections,
+    ChemRxiv (2021). DOI: XXXXX
+
+[^6]: L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
     metal oxides within the GGA+U framework, Physical Review B. 73
     (2006) 1-6. 
 
-[^6]: A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+[^7]: A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
     Persson, G. Ceder, Formation Enthalpies by Mixing GGA and GGA+U
     calculations, Physical Review B, vol. 84 (2011), 045115.
 
-[^7]: J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
+[^8]: J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
     Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).
 
-[^8]: A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
+[^9]: A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
     Ceder, W.H. Green, Ab initio screening of metal sorbents for
     elemental mercury capture in syngas streams, Chemical Engineering
     Science. 65 (2010) 3025-3033.
 
-[^9]: S. Lany, Semiconductor thermochemistry in density functional
+[^10]: S. Lany, Semiconductor thermochemistry in density functional
     calculations, Physical Review B. 78 (2008) 1-8.
 
-[^10]: G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
+[^11]: G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
     density functional theory in predicting formation energies of
     ternary oxides from binary oxides and its implication on phase
     stability, Physical Review B, 85 (2012), 155208
