@@ -247,7 +247,7 @@ References
 
 [^5]: A. Wang, R. Kingsbury, M. McDermott, M. Horton, A. Jain, S.P. Ong S. Dwaraknath,
     K. Persson, A framework for quantifying uncertainty in DFT energy corrections,
-    ChemRxiv (2021). DOI: XXXXX
+    ChemRxiv. Preprint. [DOI:10.26434/chemrxiv.14593476.v1](https://doi.org/10.26434/chemrxiv.14593476.v1).
 
 [^6]: L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
     metal oxides within the GGA+U framework, Physical Review B. 73
