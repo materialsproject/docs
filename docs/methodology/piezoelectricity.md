@@ -23,9 +23,9 @@ performed on all the calculated piezoelectric data to ensure its
 reliability and accuracy.
 
 ![Cubic_pic1](/methodology/img/piezoelectricity/Cubic_pic1.png)
-*Figure 1: longitudinal piezoelectric modulus-surface
+_Figure 1: longitudinal piezoelectric modulus-surface
 for a cubic compound, showing the maximum response in the &lt;111&gt;
-family of directions.*
+family of directions._
 
 ## Formalism
 
@@ -59,8 +59,7 @@ shown below
 
 It is well-known that the piezoelectric behavior can only occur in
 crystals that lack inversion symmetry. This is the direct consequence of
-the symmetry properties of the piezoelectric tensor, which is of order
-3. Another fundamental requirement for piezoelectric behavior is that
+the symmetry properties of the piezoelectric tensor, which is of order 3. Another fundamental requirement for piezoelectric behavior is that
 the material has a band gap. Combined, these criteria severely limit the
 amount of compounds in nature that have the potential to exhibit
 piezoelectric behavior.
@@ -101,8 +100,8 @@ be depicted such as in Figs. 1 and 2. The representations such as in
 Figs. 1 and 2 and created using the open-source MTEX package [^3][^4][^5].
 
 ![ortho_1](/methodology/img/piezoelectricity/Ortho_1.png)
-*Figure 2: longitudinal piezoelectric modulus-surface
-for an orthorhombic compound.*
+_Figure 2: longitudinal piezoelectric modulus-surface
+for an orthorhombic compound._
 
 ## DFT parameters
 
@@ -163,8 +162,8 @@ To cite the piezoelectric properties within the Materials Project,
 please reference the following work:
 
 - de Jong, Maarten and Chen, Wei and Geerlings, Henry and Asta, Mark and
-Persson, Kristin Aslaug. *A database to enable discovery and design of
-piezoelectric materials*, [Scientific Data 2 (2015)](http://www.nature.com/articles/sdata201553)
+  Persson, Kristin Aslaug. _A database to enable discovery and design of
+  piezoelectric materials_, [Scientific Data 2 (2015)](http://www.nature.com/articles/sdata201553)
 
 The paper presents the results of our piezoelectric
 constant-calculations for the first batch of 941 compounds. Our
@@ -178,22 +177,26 @@ anomalies in the calculations are described in the paper.
 
 ## References
 
-[^1]: Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
-(1987)
+[^1]:
+    Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
+    (1987)
 
-[^2]: Nye, J. F. Physical properties of crystals (Clarendon press,
-1985).
+[^2]:
+    Nye, J. F. Physical properties of crystals (Clarendon press,
+    1985).
 
-[^3]: Bachmann, F., Hielscher, R. & Schaeben, H. Texture analysis with
-MTEX-free and open source software toolbox. Solid State Phenomena 160,
-63–68 (2010).
+[^3]:
+    Bachmann, F., Hielscher, R. & Schaeben, H. Texture analysis with
+    MTEX-free and open source software toolbox. Solid State Phenomena 160,
+    63–68 (2010).
 
-[^4]: Hielscher, R. & Schaeben, H. A novel pole figure inversion method:
-specification of the MTEX algorithm. Journal of Applied Crystallography
-41, 1024–1037 (2008).
+[^4]:
+    Hielscher, R. & Schaeben, H. A novel pole figure inversion method:
+    specification of the MTEX algorithm. Journal of Applied Crystallography
+    41, 1024–1037 (2008).
 
-[^5]: Mainprice, D., Hielscher, R. & Schaeben, H. Calculating
-anisotropic physical properties from texture data using the MTEX
-open-source package. Geological Society, London, Special Publications
-360, 175–192 (2011).
-
+[^5]:
+    Mainprice, D., Hielscher, R. & Schaeben, H. Calculating
+    anisotropic physical properties from texture data using the MTEX
+    open-source package. Geological Society, London, Special Publications
+    360, 175–192 (2011).

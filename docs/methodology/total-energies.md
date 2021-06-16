@@ -1,7 +1,6 @@
 # Total Energy Calculations
 
-Calculation Details
--------------------
+## Calculation Details
 
 We use density functional theory as implemented in the Vienna Ab Initio
 Simulation Package (VASP) software[^1] to evaluate the total energy of
@@ -58,8 +57,7 @@ atomic positions and cell parameters (e.g. elastic constants, phonon
 modes, etc.), we recommend that users re-optimize the structures with
 tighter cutoffs or in force convergence mode.
 
-Total Energy Adjustments
-------------------------
+## Total Energy Adjustments
 
 To better model energies across diverse chemical spaces, we apply
 several adjustments to the total energy. These adjustments fall into two categories,
@@ -78,18 +76,18 @@ true for elements that are gaseous in their standard state - $\ce{O2}$,
 $\ce{N2}$, $\ce{Cl2}$, $\ce{F2}$, and $\ce{H2}$.
 
 To address this, we adjust the energies of materials containing certain elements
-by applying a correction to anionic species, as explained in ref [^5]. Specifically, 
-we apply energy corrections to 14 anion species -- 'oxide', 'peroxide', 'superoxide', 
-$\ce{S}$, $\ce{F}$, $\ce{Cl}$, $\ce{Br}$, $\ce{I}$, $\ce{N}$, $\ce{H}$, 
+by applying a correction to anionic species, as explained in ref [^5]. Specifically,
+we apply energy corrections to 14 anion species -- 'oxide', 'peroxide', 'superoxide',
+$\ce{S}$, $\ce{F}$, $\ce{Cl}$, $\ce{Br}$, $\ce{I}$, $\ce{N}$, $\ce{H}$,
 $\ce{Se}$, $\ce{Si}$, $\ce{Sb}$, and $\ce{Te}$. In the case of oxygen-containing compounds,
-separate corrections are applied to oxides, superoxides, and peroxides based 
+separate corrections are applied to oxides, superoxides, and peroxides based
 on the specific bonding environment of oxygen in the material, as determined
-from nearest-neighbor bond lengths (e.g., <1.35 Å for superoxide, <1.49 Å 
-for 'peroxide', and 'oxide' otherwise). Thus, $\ce{Na_2O}$ receives an 'oxide' 
-correction while $\ce{NaO_2}$ receives a `superoxide' correction. 
+from nearest-neighbor bond lengths (e.g., <1.35 Å for superoxide, <1.49 Å
+for 'peroxide', and 'oxide' otherwise). Thus, $\ce{Na_2O}$ receives an 'oxide'
+correction while $\ce{NaO_2}$ receives a `superoxide' correction.
 
-Anion corrections are applied tto a material only when it contains a corrected 
-element *as an anion.* For example, the `H''correction is applied to LiH but not
+Anion corrections are applied tto a material only when it contains a corrected
+element _as an anion._ For example, the `H''correction is applied to LiH but not
 to H$_2$O. A specie is classified as an anion if its estimated oxidation state
 (when available) is negative, or if it is the most electronegative element in
 the formula.
@@ -106,16 +104,14 @@ To obtain better accuracy across chemical systems, we use GGA+<em>U</em> when
 appropriate, GGA otherwise, and mix energies from the two
 calculation methodologies by adding an energy correction term to the
 GGA+<em>U</em> calculations to make them comparable to the GGA
-calculations. 
+calculations.
 
-Specifically, we use GGA+<em>U</em> for oxide and fluoride 
-compounds containing any of the transition metals $\ce{V}$, $\ce{Cr}$, 
+Specifically, we use GGA+<em>U</em> for oxide and fluoride
+compounds containing any of the transition metals $\ce{V}$, $\ce{Cr}$,
 $\ce{Mn}$, $\ce{Fe}$, $\ce{Co}$, $\ce{Ni}$, $\ce{W}$, and $\ce{Mo}$, and GGA for
 everything else. More details on this method can be found in ref [^5] and [^7].
 
-
-Accuracy of Total Energies
---------------------------
+## Accuracy of Total Energies
 
 To estimate the accuracy of our total energy calculations, we compute
 reaction data and compare against experimental data. Note that this data
@@ -133,9 +129,9 @@ to have smaller errors than reactions between chemically dissimilar
 systems (e.g., between metals and insulators).
 
 ![formen errors](/methodology/img/calculations-manual/FormE_errors.png)
-*Figure 1: Errors in Calculated Formation Energies for
+_Figure 1: Errors in Calculated Formation Energies for
 413 binaries in the Kubaschewski Tables. Energies are normalized to per
-mol atom.*
+mol atom._
 
 To provide a quantitative indicator of the error we may expect from the
 reaction calculator, we have computed the reaction energies of
@@ -181,29 +177,27 @@ energies of ternary oxides from binary oxides on 135 compounds. [^11]
 
 The main conclusions are:
 
--   The error in reaction energies for the binary oxide to ternary
-    oxides reaction energies are an order of magnitude lower than for
-    the more often reported formation energies from the element. An
-    error intrinsic to GGA (+U) is estimated to follow a normal
-    distribution centered in zero (no systematic underestimation
-    or overestimation) and with a standard deviation around 24 meV/at.
--   When looking at phase stability (and for instance assessing if a
-    phase is stable or not), the relevant reaction energies are most of
-    the time not the formation energies from the elements but reaction
-    energies from chemically similar compounds (e.g., two oxides forming
-    a third oxide). Large cancelation of errors explain
-    this observation.
--   The +U is necessary for accurate description of the energetics evene
-    when reactions do not involve change in formal oxidation states
+- The error in reaction energies for the binary oxide to ternary
+  oxides reaction energies are an order of magnitude lower than for
+  the more often reported formation energies from the element. An
+  error intrinsic to GGA (+U) is estimated to follow a normal
+  distribution centered in zero (no systematic underestimation
+  or overestimation) and with a standard deviation around 24 meV/at.
+- When looking at phase stability (and for instance assessing if a
+  phase is stable or not), the relevant reaction energies are most of
+  the time not the formation energies from the elements but reaction
+  energies from chemically similar compounds (e.g., two oxides forming
+  a third oxide). Large cancelation of errors explain
+  this observation.
+- The +U is necessary for accurate description of the energetics evene
+  when reactions do not involve change in formal oxidation states
 
-Accuracy of Calculated Volumes
-------------------------------
+## Accuracy of Calculated Volumes
 
 A discussion of errors in calculated volumes can be found in the [Volume
 Change Error manual](/methodology/volume-change-error).
 
-Citation
---------
+## Citation
 
 To cite the calculation methodology, please reference the following
 works:
@@ -218,57 +212,66 @@ works:
     GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
     [DOI:10.1103/PhysRevB.84.045115](https://doi.org/10.1103/PhysRevB.84.045115)
 
-Authors
--------
+## Authors
 
 1. Anubhav Jain
 2. Shyue Ping Ong
 3. Geoffroy Hautier
 4. Charles Moore
 
-References
-----------
+## References
 
-[^1]: Kresse, G. & Furthmuller, J., 1996. Efficient iterative schemes
+[^1]:
+    Kresse, G. & Furthmuller, J., 1996. Efficient iterative schemes
     for ab initio total-energy calculations using a plane-wave basis
     set. Physical Review B, 54, pp.11169-11186.
 
-[^2]: A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T. Mueller,
+[^2]:
+    A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T. Mueller,
     K.A. Persson, G. Ceder., A High-Throughput Infrastructure for
     Density Functional Theory Calculations, Computational Materials
     Science. vol. 50 (2011) 2295-2310.
 
-[^3]: G. Bergerhoff, The inorganic crystal-structure data-base, Journal
+[^3]:
+    G. Bergerhoff, The inorganic crystal-structure data-base, Journal
     Of Chemical Information and Computer Sciences. 23 (1983) 66-69.
 
-[^4]: R. Hundt, J.C. Schön, M. Jansen, CMPZ - an algorithm for the
+[^4]:
+    R. Hundt, J.C. Schön, M. Jansen, CMPZ - an algorithm for the
     efficient comparison of periodic structures, Journal Of Applied
     Crystallography. 39 (2006) 6-16.
 
-[^5]: A. Wang, R. Kingsbury, M. McDermott, M. Horton, A. Jain, S.P. Ong S. Dwaraknath,
+[^5]:
+    A. Wang, R. Kingsbury, M. McDermott, M. Horton, A. Jain, S.P. Ong S. Dwaraknath,
     K. Persson, A framework for quantifying uncertainty in DFT energy corrections,
     ChemRxiv. Preprint. [DOI:10.26434/chemrxiv.14593476.v1](https://doi.org/10.26434/chemrxiv.14593476.v1).
 
-[^6]: L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
+[^6]:
+    L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
     metal oxides within the GGA+U framework, Physical Review B. 73
-    (2006) 1-6. 
+    (2006) 1-6.
 
-[^7]: A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+[^7]:
+    A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
     Persson, G. Ceder, Formation Enthalpies by Mixing GGA and GGA+U
     calculations, Physical Review B, vol. 84 (2011), 045115.
 
-[^8]: J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
+[^8]:
+    J.B. Foresman, A.E. Frisch, Exploring Chemistry With Electronic
     Structure Methods: A Guide to Using Gaussian, Gaussian. (1996).
 
-[^9]: A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
+[^9]:
+    A. Jain, S.-a Seyed-Reihani, C.C. Fischer, D.J. Couling, G.
     Ceder, W.H. Green, Ab initio screening of metal sorbents for
     elemental mercury capture in syngas streams, Chemical Engineering
     Science. 65 (2010) 3025-3033.
 
-[^10]: S. Lany, Semiconductor thermochemistry in density functional
+[^10]:
+    S. Lany, Semiconductor thermochemistry in density functional
     calculations, Physical Review B. 78 (2008) 1-8.
 
-[^11]: G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
+[^11]:
+    G. Hautier, S.P. Ong, A. Jain, C. J. Moore, G. Ceder, Accuracy of
     density functional theory in predicting formation energies of
     ternary oxides from binary oxides and its implication on phase
     stability, Physical Review B, 85 (2012), 155208

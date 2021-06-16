@@ -5,7 +5,7 @@
 ### Background on Data Mined Crystal Structure and Compound Prediction
 
 Crystal structure and compound prediction is an essential step of computational materials
-design. Indeed, while many materials properties can be computed nowadays with *ab-initio*
+design. Indeed, while many materials properties can be computed nowadays with _ab-initio_
 computations. Those computed properties are only relevant if they are evaluated on a compound (i.e., a
 stoichiometry and crystal structure) stable enough to be formed. Crystal structure prediction can be quite useful
 for experimentalists too. For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
@@ -13,8 +13,7 @@ for experimentalists too. For instance, when only powder XRD experiments are ava
 The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^1]
 Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions). This optimization is extremely challenging as the energy landscape is very rugged and full of local minima. Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.
 
-In a departure to this traditional approach, the methods we have developed use a combination of data mining and *ab-initio* computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget. The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds. Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system. Finally, the last step consists of testing those candidates for stability using *ab-initio* computations ([see Phase Diagram](phase-diagram.md)).
-
+In a departure to this traditional approach, the methods we have developed use a combination of data mining and _ab-initio_ computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget. The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds. Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system. Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
 
 ### The Ionic Substitution based Structure Prediction Method
 
@@ -23,7 +22,7 @@ The compound prediction model available on the Materials Project now, through th
 ### The basic idea
 
 ![substitution example](img/structure-predictor/substitution-example.png)
-*Figure 1: An example of ionic substitution.*
+_Figure 1: An example of ionic substitution._
 
 It is common for chemists to propose new compounds from the substitution of
 another, chemically similar, ion. For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
@@ -35,7 +34,7 @@ substitution tendency for two ionic species obtained from this work. The ions ha
 tend to substitute while blue is associated with pair of species not substituting to each other.
 
 ![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
-*Figure 2: Data mined tendency for ionic substitutions. Red indicates high substitution tendency. Blue indicates that the tow ions tend to not substitute.*
+_Figure 2: Data mined tendency for ionic substitutions. Red indicates high substitution tendency. Blue indicates that the tow ions tend to not substitute._
 
 ### The compound prediction procedure
 
@@ -43,7 +42,7 @@ The product of our data mining approach is a probability function indicating how
 After we built this probability function, from a database of experimental data (here the ICSD), we can perform compound predictions. Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species). Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound. If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound. There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.
 
 ![substitution flowchart](img/structure-predictor/substitution-flowchart.png)
-*Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability.*
+_Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability._
 
 From this procedure, we can see that the threshold set is quite important. A higher threshold will give you less false positives (suggested compounds that are not stable), but also less true positives. On the other hand, too low a threshold will give more true positives, but consequently, more false positives. There is a compromise to find between how exhaustive you want to be and how many candidates you can have, in terms of computational budget (that you will have to test down the road for stability using DFT).
 
@@ -68,7 +67,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 The results pages provides a set of structure id's corresponding to the candidate structures. A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra. Cif and POSCAR files for each candidate can be downloaded. Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature. For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>. This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull. Figure 4 shows a convex hull (in green) for an A-B system. Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases. For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.
 
 ![convex hull example](img/structure-predictor/convex-hull.png)
-*Figure 4: An example of the convex hull construction.*
+_Figure 4: An example of the convex hull construction._
 
 More information about phase stability and convex hull can be obtained in the [phase diagram app manual](phase-diagram.md).
 

@@ -117,7 +117,7 @@ The accuracy of the model is summarized below.
 	</tr>
 </table>
 
-Table 2: Iteration threshold as determined by cross validation, prediction root mean squared error (RMSE), and percentage of predictions within 5, 10, 20, and 30 percent relative error for *K* and *G* models. This table and caption are from de Jong et al.'s SL paper [^3].
+Table 2: Iteration threshold as determined by cross validation, prediction root mean squared error (RMSE), and percentage of predictions within 5, 10, 20, and 30 percent relative error for _K_ and _G_ models. This table and caption are from de Jong et al.'s SL paper [^3].
 
 ## Citations
 
@@ -144,14 +144,12 @@ To cite elastic constant predictions within the Materials Project, please refere
 ## References
 
 [^1]: de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M, Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G, Persson KA, Asta M (2015) Charting the complete elastic properties of inorganic crystalline compounds. Scientific Data 2: 150009.
-
 [^2]: Hill, R. The elastic behaviour of a crystalline aggregate. Proceedings of the Physical Society. Section A 65, 349 (1952).
-
-[^3]: de Jong M, Chen W, Notestine R, Persson K, Ceder G, Jain A, Asta M,
+[^3]:
+    de Jong M, Chen W, Notestine R, Persson K, Ceder G, Jain A, Asta M,
     and Gamst A (2016) A Statistical Learning Framework for Materials
     Science: Application to Elastic Moduli of k-nary Inorganic
     Polycrystalline Compounds, Scientific Reports 6: 34256.
     [doi:10.1038/srep34256](http://dx.doi.org/10.1038/srep34256)
 
 [^4]: Hastie, T., Tibshirani, R. & Friedman, J. The elements of statistical learning: data mining, inference, and prediction. (Springer, 2011), second edn.
-

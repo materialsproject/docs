@@ -1,791 +1,791 @@
 {
-    "created_at": "2012-08-30T03:11:25.797075", 
+    "created_at": "2012-08-30T03:11:25.797075",
     "version": {
-        "pymatgen": "2.2.1dev", 
-        "db": "2012.07.09", 
+        "pymatgen": "2.2.1dev",
+        "db": "2012.07.09",
         "rest": "1.0"
-    }, 
-    "valid_response": true, 
-    "copyright": "Copyright 2012, The Materials Project", 
+    },
+    "valid_response": true,
+    "copyright": "Copyright 2012, The Materials Project",
     "response": [
         {
-            "material_id": 24, 
+            "material_id": 24,
             "structure": {
                 "lattice": {
-                    "a": 3.8786493734496585, 
-                    "c": 3.87864937, 
-                    "b": 3.8786493706639256, 
+                    "a": 3.8786493734496585,
+                    "c": 3.87864937,
+                    "b": 3.8786493706639256,
                     "matrix": [
                         [
-                            3.65682570000557, 
-                            0.0, 
+                            3.65682570000557,
+                            0.0,
                             -1.2928831199842468
-                        ], 
+                        ],
                         [
-                            -1.8284128499770478, 
-                            3.1669039500079355, 
+                            -1.8284128499770478,
+                            3.1669039500079355,
                             -1.2928831200130235
-                        ], 
+                        ],
                         [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             3.87864937
                         ]
-                    ], 
-                    "module": "pymatgen.core.lattice", 
-                    "volume": 44.91792372771052, 
-                    "beta": 109.471220564, 
-                    "alpha": 109.471220579, 
-                    "class": "Lattice", 
+                    ],
+                    "module": "pymatgen.core.lattice",
+                    "volume": 44.91792372771052,
+                    "beta": 109.471220564,
+                    "alpha": 109.471220579,
+                    "class": "Lattice",
                     "gamma": 109.471220719
-                }, 
-                "class": "Structure", 
-                "module": "pymatgen.core.structure", 
+                },
+                "class": "Structure",
+                "module": "pymatgen.core.structure",
                 "sites": [
                     {
                         "abc": [
-                            0.18781239, 
-                            0.18781239, 
+                            0.18781239,
+                            0.18781239,
                             0.18781239
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                -0.00051196, 
-                                -0.00088674, 
+                                -0.00051196,
+                                -0.00088674,
                                 -0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.34339858727056827, 
-                            0.5947837997514308, 
+                            0.34339858727056827,
+                            0.5947837997514308,
                             0.24281947063649334
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            1.0, 
-                            0.31218761, 
+                            1.0,
+                            0.31218761,
                             0.5
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                -0.00051196, 
-                                0.00088674, 
+                                -0.00051196,
+                                0.00088674,
                                 -0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            3.086017862277947, 
-                            0.9886681752525369, 
+                            3.086017862277947,
+                            0.9886681752525369,
                             0.24281947376954438
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.5, 
-                            0.0, 
+                            0.5,
+                            0.0,
                             0.31218761
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.00108604
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.828412850002785, 
-                            0.0, 
+                            1.828412850002785,
+                            0.0,
                             0.5644247168561825
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.31218761, 
-                            0.5, 
+                            0.31218761,
+                            0.5,
                             1.0
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.00102392, 
-                                0.0, 
+                                0.00102392,
+                                0.0,
                                 -0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.22740925048279192, 
-                            1.5834519750039677, 
+                            0.22740925048279192,
+                            1.5834519750039677,
                             2.8285857187562633
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.81218761, 
-                            0.81218761, 
+                            0.81218761,
+                            0.81218761,
                             0.81218761
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.00051196, 
-                                0.00088674, 
+                                0.00051196,
+                                0.00088674,
                                 0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.485014262757954, 
-                            2.5721201502565045, 
+                            1.485014262757954,
+                            2.5721201502565045,
                             1.0500636593662365
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.0, 
-                            0.68781239, 
+                            0.0,
+                            0.68781239,
                             0.5
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.00051196, 
-                                -0.00088674, 
+                                0.00051196,
+                                -0.00088674,
                                 0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            -1.2576050122494247, 
-                            2.178235774755399, 
+                            -1.2576050122494247,
+                            2.178235774755399,
                             1.0500636562331855
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.5, 
-                            1.0, 
+                            0.5,
+                            1.0,
                             0.68781239
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 -0.00108604
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            2.573719015686038e-11, 
-                            3.1669039500079355, 
+                            2.573719015686038e-11,
+                            3.1669039500079355,
                             0.7284584131465479
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.68781239, 
-                            0.5, 
+                            0.68781239,
+                            0.5,
                             0.0
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                -0.00102392, 
-                                0.0, 
+                                -0.00102392,
+                                0.0,
                                 0.00036201
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.6010035995457303, 
-                            1.5834519750039677, 
+                            1.6010035995457303,
+                            1.5834519750039677,
                             -1.5357025887535334
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
                     }
                 ]
             }
-        }, 
+        },
         {
-            "material_id": 66, 
+            "material_id": 66,
             "structure": {
                 "lattice": {
-                    "a": 2.5276189372922024, 
-                    "c": 2.52761893, 
-                    "b": 2.527618938703292, 
+                    "a": 2.5276189372922024,
+                    "c": 2.52761893,
+                    "b": 2.527618938703292,
                     "matrix": [
                         [
-                            2.188982210009656, 
-                            0.0, 
+                            2.188982210009656,
+                            0.0,
                             1.2638094699832745
-                        ], 
+                        ],
                         [
-                            0.7296607400182504, 
-                            2.0637922199928553, 
+                            0.7296607400182504,
+                            2.0637922199928553,
                             1.2638094700011298
-                        ], 
+                        ],
                         [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             2.52761893
                         ]
-                    ], 
-                    "module": "pymatgen.core.lattice", 
-                    "volume": 11.418782538004358, 
-                    "beta": 59.999999965, 
-                    "alpha": 59.999999983, 
-                    "class": "Lattice", 
+                    ],
+                    "module": "pymatgen.core.lattice",
+                    "volume": 11.418782538004358,
+                    "beta": 59.999999965,
+                    "alpha": 59.999999983,
+                    "class": "Lattice",
                     "gamma": 59.999999919
-                }, 
-                "class": "Structure", 
-                "module": "pymatgen.core.structure", 
+                },
+                "class": "Structure",
+                "module": "pymatgen.core.structure",
                 "sites": [
                     {
                         "abc": [
-                            0.875, 
-                            0.875, 
+                            0.875,
+                            0.875,
                             0.875
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            2.5538125812744186, 
-                            1.8058181924937484, 
+                            2.5538125812744186,
+                            1.8058181924937484,
                             4.423333136236353
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.125, 
-                            0.125, 
+                            0.125,
+                            0.125,
                             0.125
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 5
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.3648303687534883, 
-                            0.2579740274991069, 
+                            0.3648303687534883,
+                            0.2579740274991069,
                             0.6319047337480506
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
                     }
                 ]
             }
-        }, 
+        },
         {
-            "material_id": 169, 
+            "material_id": 169,
             "structure": {
                 "lattice": {
-                    "a": 4.265459983324214, 
-                    "c": 4.265459982975509, 
-                    "b": 4.2654599819167895, 
+                    "a": 4.265459983324214,
+                    "c": 4.265459982975509,
+                    "b": 4.2654599819167895,
                     "matrix": [
                         [
-                            2.3627712514537795, 
-                            0.0, 
+                            2.3627712514537795,
+                            0.0,
                             3.5512618718764943
-                        ], 
+                        ],
                         [
-                            1.0734447983079192, 
-                            2.1048525504481366, 
+                            1.0734447983079192,
+                            2.1048525504481366,
                             3.5512618691376767
-                        ], 
+                        ],
                         [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             4.265459982975509
                         ]
-                    ], 
-                    "module": "pymatgen.core.lattice", 
-                    "volume": 21.213348555576264, 
-                    "beta": 33.63712814, 
-                    "alpha": 33.637128178, 
-                    "class": "Lattice", 
+                    ],
+                    "module": "pymatgen.core.lattice",
+                    "volume": 21.213348555576264,
+                    "beta": 33.63712814,
+                    "alpha": 33.637128178,
+                    "class": "Lattice",
                     "gamma": 33.637128239
-                }, 
-                "class": "Structure", 
-                "module": "pymatgen.core.structure", 
+                },
+                "class": "Structure",
+                "module": "pymatgen.core.structure",
                 "sites": [
                     {
                         "abc": [
-                            0.16666796, 
-                            0.16666796, 
+                            0.16666796,
+                            0.16666796,
                             0.16666796
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                -0.00037124, 
-                                -0.00023304, 
+                                -0.00037124,
+                                -0.00023304,
                                 -0.00102694
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.5727071191330408, 
-                            0.35081148068398804, 
+                            0.5727071191330408,
+                            0.35081148068398804,
                             1.8946786565905631
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.83333204, 
-                            0.83333204, 
+                            0.83333204,
+                            0.83333204,
                             0.83333204
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.00037124, 
-                                0.00023304, 
+                                0.00037124,
+                                0.00023304,
                                 0.00102694
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            2.863508930628658, 
-                            1.7540410697641486, 
+                            2.863508930628658,
+                            1.7540410697641486,
                             9.473305067399117
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
                     }
                 ]
             }
-        }, 
+        },
         {
-            "material_id": 47, 
+            "material_id": 47,
             "structure": {
                 "lattice": {
-                    "a": 2.51309421, 
-                    "c": 4.18140241, 
-                    "b": 2.5130942092635875, 
+                    "a": 2.51309421,
+                    "c": 4.18140241,
+                    "b": 2.5130942092635875,
                     "matrix": [
                         [
-                            2.51309421, 
-                            0.0, 
+                            2.51309421,
+                            0.0,
                             1.5388263901161232e-16
-                        ], 
+                        ],
                         [
-                            -1.2565470999975743, 
-                            2.176403430001401, 
+                            -1.2565470999975743,
+                            2.176403430001401,
                             1.5388263896652005e-16
-                        ], 
+                        ],
                         [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             4.18140241
                         ]
-                    ], 
-                    "module": "pymatgen.core.lattice", 
-                    "volume": 22.870209159897076, 
-                    "beta": 90.0, 
-                    "alpha": 90.0, 
-                    "class": "Lattice", 
+                    ],
+                    "module": "pymatgen.core.lattice",
+                    "volume": 22.870209159897076,
+                    "beta": 90.0,
+                    "alpha": 90.0,
+                    "class": "Lattice",
                     "gamma": 119.999999878
-                }, 
-                "class": "Structure", 
-                "module": "pymatgen.core.structure", 
+                },
+                "class": "Structure",
+                "module": "pymatgen.core.structure",
                 "sites": [
                     {
                         "abc": [
-                            0.33333333, 
-                            0.66666667, 
+                            0.33333333,
+                            0.66666667,
                             0.06277228
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 -0.00477687
-                            ], 
+                            ],
                             "coordination_no": 4
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            -9.230520570113754e-09, 
-                            1.450935627255612, 
+                            -9.230520570113754e-09,
+                            1.450935627255612,
                             0.2624761628731949
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.66666667, 
-                            0.33333333, 
+                            0.66666667,
+                            0.33333333,
                             0.56277228
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 -0.00477687
-                            ], 
+                            ],
                             "coordination_no": 4
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.2565471192329465, 
-                            0.7254678027457888, 
+                            1.2565471192329465,
+                            0.7254678027457888,
                             2.3531773678731946
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.66666667, 
-                            0.33333333, 
+                            0.66666667,
+                            0.33333333,
                             0.93722772
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.00477687
-                            ], 
+                            ],
                             "coordination_no": 4
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.2565471192329465, 
-                            0.7254678027457888, 
+                            1.2565471192329465,
+                            0.7254678027457888,
                             3.9189262471268047
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.33333333, 
-                            0.66666667, 
+                            0.33333333,
+                            0.66666667,
                             0.43722772
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.00477687
-                            ], 
+                            ],
                             "coordination_no": 4
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            -9.230520570113754e-09, 
-                            1.450935627255612, 
+                            -9.230520570113754e-09,
+                            1.450935627255612,
                             1.8282250421268051
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
                     }
                 ]
             }
-        }, 
+        },
         {
-            "material_id": 48, 
+            "material_id": 48,
             "structure": {
                 "lattice": {
-                    "a": 2.46729128, 
-                    "c": 7.80307263, 
-                    "b": 2.467291282584372, 
+                    "a": 2.46729128,
+                    "c": 7.80307263,
+                    "b": 2.467291282584372,
                     "matrix": [
                         [
-                            2.46729128, 
-                            0.0, 
+                            2.46729128,
+                            0.0,
                             1.510780184308088e-16
-                        ], 
+                        ],
                         [
-                            -1.2336456399869271, 
-                            2.136736930007548, 
+                            -1.2336456399869271,
+                            2.136736930007548,
                             1.5107801858905593e-16
-                        ], 
+                        ],
                         [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             7.80307263
                         ]
-                    ], 
-                    "module": "pymatgen.core.lattice", 
-                    "volume": 41.13742744056806, 
-                    "beta": 90.0, 
-                    "alpha": 90.0, 
-                    "class": "Lattice", 
+                    ],
+                    "module": "pymatgen.core.lattice",
+                    "volume": 41.13742744056806,
+                    "beta": 90.0,
+                    "alpha": 90.0,
+                    "class": "Lattice",
                     "gamma": 119.999999965
-                }, 
-                "class": "Structure", 
-                "module": "pymatgen.core.structure", 
+                },
+                "class": "Structure",
+                "module": "pymatgen.core.structure",
                 "sites": [
                     {
                         "abc": [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             0.25
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             1.9507681575
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             0.75
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            0.0, 
-                            0.0, 
+                            0.0,
+                            0.0,
                             5.8523044725
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.33333333, 
-                            0.66666667, 
+                            0.33333333,
+                            0.66666667,
                             0.25
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            -1.2327741272244452e-08, 
-                            1.424491293794155, 
+                            -1.2327741272244452e-08,
+                            1.424491293794155,
                             1.9507681575000002
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]
-                    }, 
+                    },
                     {
                         "abc": [
-                            0.66666667, 
-                            0.33333333, 
+                            0.66666667,
+                            0.33333333,
                             0.75
-                        ], 
-                        "occu": 1, 
+                        ],
+                        "occu": 1,
                         "properties": {
                             "forces": [
-                                0.0, 
-                                0.0, 
+                                0.0,
+                                0.0,
                                 0.0
-                            ], 
+                            ],
                             "coordination_no": 3
-                        }, 
-                        "label": "C", 
+                        },
+                        "label": "C",
                         "xyz": [
-                            1.2336456523408141, 
-                            0.7122456362133928, 
+                            1.2336456523408141,
+                            0.7122456362133928,
                             5.8523044725
-                        ], 
+                        ],
                         "species": [
                             {
-                                "occu": 1, 
-                                "class": "Element", 
-                                "module": "pymatgen.core.periodic_table", 
+                                "occu": 1,
+                                "class": "Element",
+                                "module": "pymatgen.core.periodic_table",
                                 "element": "C"
                             }
                         ]

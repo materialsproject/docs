@@ -1,48 +1,47 @@
-site_name: 'Materials Project Documentation'
+site_name: "Materials Project Documentation"
 site_description: Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.
 copyright: Built by The Materials Project
 site_url: https://docs.materialsproject.org
 
-repo_name: 'materialsproject/docs'
-repo_url: 'https://github.com/materialsproject/docs'
-
+repo_name: "materialsproject/docs"
+repo_url: "https://github.com/materialsproject/docs"
 
 nav:
-    - Home: 'index.md'
-    - Foundation: 'foundation.md'
-    - Methodology:
-        - 'Total energies': 'methodology/total-energies.md'
-        - 'Electronic structure': 'methodology/electronic-structure.md'
-        - 'Pseudopotentials': 'methodology/pseudopotentials.md'
-        - 'GGA+U': 'methodology/gga-plus-u.md'
-        - 'Elasticity': 'methodology/elasticity.md'
-        - 'Elasticity prediction': 'methodology/elasticity-prediction.md'
-        - 'Piezoelectricity': 'methodology/piezoelectricity.md'
-        - 'Dielectricity': 'methodology/dielectricity.md'
-        - 'Equations of State': 'methodology/equations-of-state.md'
-        - 'Phonons': 'methodology/phonons.md'
-    - User Reference:
-        - 'Crystal Toolkit': 'user-guide/crystal-toolkit.md'
-        - 'Materials Explorer': 'user-guide/materials-explorer.md'
-        - 'Battery Explorer': 'user-guide/batteries-explorer.md'
-        - 'Molecules Explorer': 'user-guide/molecules-explorer.md'
-        - 'Structure Predictor': 'user-guide/structure-predictor.md'
-        - 'Pourbaix Diagram': 'user-guide/pourbaix-tool.md'
-        - 'Phase Diagram': 'user-guide/phase-diagram.md'
-        - 'XAS Matcher': 'user-guide/xas-matcher.md'
-        - 'Reaction Calculator': 'user-guide/reaction-calculator.md'
-        - 'Glossary': 'user-guide/glossary-of-terms.md'
-        - 'Materials API (MAPI)': 'open-apis/the-materials-api.md'
-        - 'Nanoporous Explorer': 'user-guide/nanoporous-explorer.md'
-    - Database Updates: 'database-updates.md'
-    - Contribution:
-        - 'Newsfeed': 'contrib/spec/newsfeed.md'
+  - Home: "index.md"
+  - Foundation: "foundation.md"
+  - Methodology:
+      - "Total energies": "methodology/total-energies.md"
+      - "Electronic structure": "methodology/electronic-structure.md"
+      - "Pseudopotentials": "methodology/pseudopotentials.md"
+      - "GGA+U": "methodology/gga-plus-u.md"
+      - "Elasticity": "methodology/elasticity.md"
+      - "Elasticity prediction": "methodology/elasticity-prediction.md"
+      - "Piezoelectricity": "methodology/piezoelectricity.md"
+      - "Dielectricity": "methodology/dielectricity.md"
+      - "Equations of State": "methodology/equations-of-state.md"
+      - "Phonons": "methodology/phonons.md"
+  - User Reference:
+      - "Crystal Toolkit": "user-guide/crystal-toolkit.md"
+      - "Materials Explorer": "user-guide/materials-explorer.md"
+      - "Battery Explorer": "user-guide/batteries-explorer.md"
+      - "Molecules Explorer": "user-guide/molecules-explorer.md"
+      - "Structure Predictor": "user-guide/structure-predictor.md"
+      - "Pourbaix Diagram": "user-guide/pourbaix-tool.md"
+      - "Phase Diagram": "user-guide/phase-diagram.md"
+      - "XAS Matcher": "user-guide/xas-matcher.md"
+      - "Reaction Calculator": "user-guide/reaction-calculator.md"
+      - "Glossary": "user-guide/glossary-of-terms.md"
+      - "Materials API (MAPI)": "open-apis/the-materials-api.md"
+      - "Nanoporous Explorer": "user-guide/nanoporous-explorer.md"
+  - Database Updates: "database-updates.md"
+  - Contribution:
+      - "Newsfeed": "contrib/spec/newsfeed.md"
 
 theme:
-  name: 'material'
+  name: "material"
 markdown_extensions:
   - admonition
-  - footnotes 
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
   - codehilite:
@@ -56,6 +55,6 @@ plugins:
       cite_style: "pandoc"
 
 extra_javascript:
-- static/js/mathjax.js
-- https://polyfill.io/v3/polyfill.min.js?features=es6
-- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - static/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

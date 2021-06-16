@@ -1,7 +1,6 @@
 # Electronic Structure Calculations
 
-Band Structure and DOS computations details
--------------------------------------------
+## Band Structure and DOS computations details
 
 We used the relaxed structure from the total energy run to perform using
 the same GGA functional (and U if any) a DOS and band structure run.
@@ -28,20 +27,19 @@ the DOS data and band structure can be slightly different as the k-point
 grid is not the same. For instance, the k-point grid for the DOS might
 not include Gamma while the band structure does.
 
-Accuracy of Band Structures
----------------------------
+## Accuracy of Band Structures
 
-**Note**: *the term 'band gap' in this section generally refers to the
+**Note**: _the term 'band gap' in this section generally refers to the
 fundamental gap, not the optical gap. The difference between these
 quantities is reported to be small in semiconductors but significant in
-insulators.* [^2]
+insulators._ [^2]
 
 ![band gaps](/methodology/img/calculations-manual/Gaps.png)
-*Figure 1: Experimental versus computed band gaps for
+_Figure 1: Experimental versus computed band gaps for
 237 compounds in an internal test. The computed gaps are underestimated
 by an average factor of 1.6, and the residual error even after
 accounting for this shift is significant (MAE of 0.6 eV). We thank M.
-Chan for her assistance in compiling this data.*
+Chan for her assistance in compiling this data._
 
 Density functional theory is formulated to calculate ground state
 properties. Although the band structure involves excitations of
@@ -99,8 +97,7 @@ Project may employ such methods in the future in order to more
 quantitatively predict band gaps. For the moment, computed band gaps
 should be interpreted with caution.
 
-Citation
---------
+## Citation
 
 To cite the calculation methodology, please reference the following
 works:
@@ -115,38 +112,42 @@ works:
     GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
     [DOI:10.1103/PhysRevB.84.045115](https://doi.org/10.1103/PhysRevB.84.045115)
 
-Authors
--------
+## Authors
 
 1. Anubhav Jain
 2. Shyue Ping Ong
 3. Geoffroy Hautier
 4. Charles Moore
 
-References
-----------
+## References
 
-[^1]: Setyawan, W.; Curtarolo, S. Computational Materials Science 2010,
+[^1]:
+    Setyawan, W.; Curtarolo, S. Computational Materials Science 2010,
     49, 299-312.
 
-[^2]: E.N. Brothers, A.F. Izmaylov, J.O. Normand, V. Barone, G.E.
+[^2]:
+    E.N. Brothers, A.F. Izmaylov, J.O. Normand, V. Barone, G.E.
     Scuseria, Accurate solid-state band gaps via screened hybrid
     electronic structure calculations., The Journal of Chemical Physics.
     129 (2008)
 
-[^3]: R. Godby, M. Schluter, L.J. Sham, Self-energy operators and
+[^3]:
+    R. Godby, M. Schluter, L.J. Sham, Self-energy operators and
     exchange-correlation potentials in semiconductors, Physical Review
     B. 37 (1988).
 
-[^4]: M. Chan, G. Ceder, Efficient Band Gap Predictions for Solids,
+[^4]:
+    M. Chan, G. Ceder, Efficient Band Gap Predictions for Solids,
     Physical Review Letters 19 (2010)
 
-[^5]: J. Heyd, J.E. Peralta, G.E. Scuseria, R.L. Martin, Energy band
+[^5]:
+    J. Heyd, J.E. Peralta, G.E. Scuseria, R.L. Martin, Energy band
     gaps and lattice parameters evaluated with the
     Heyd-Scuseria-Ernzerhof screened hybrid functional, Journal of
     Chemical Physics 123 (2005)
 
-[^6]: W. Setyawan, R.M. Gaume, S. Lam, R. Feigelson, S. Curtarolo,
+[^6]:
+    W. Setyawan, R.M. Gaume, S. Lam, R. Feigelson, S. Curtarolo,
     High-throughput combinatorial database of electronic band structures
     for inorganic scintillator materials., ACS Combinatorial Science.
     (2011).

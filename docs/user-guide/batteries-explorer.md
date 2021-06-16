@@ -12,23 +12,25 @@ The battery explorer is designed to help battery scientists find electrode mater
 
 The search bar above the periodic table in the battery explorer app can be used to search for battery material entries based on the composition (either by typying into the search bar or clicking on the periodic table to specify elements), by Material ID, or by Battery ID. In the toolbar to the right of the periodic table, there are a number of additional criteria that can be used to filter the results:
 
-* Number of Elements (including the working ion)
-* Excluded Elements
-* Toggle select between Intercalation Compounds or Conversion Compounds
-* Type of Working Ion 
-* Average Voltage in V with respect to the voltage of the pure metal for the corresponding working ion
-* Volumetric Capacity in Ah/L
-* Gravimetric Capacity (also known as Specific Capacity) in (mAh/g)
+- Number of Elements (including the working ion)
+- Excluded Elements
+- Toggle select between Intercalation Compounds or Conversion Compounds
+- Type of Working Ion
+- Average Voltage in V with respect to the voltage of the pure metal for the corresponding working ion
+- Volumetric Capacity in Ah/L
+- Gravimetric Capacity (also known as Specific Capacity) in (mAh/g)
 
 At the bottom of the toolbar to the right of the periodic table, a number of advanced search options can be expanded:
-* Max. Voltage Step in V
-* Max. Volume Change in fractional units (for example 1 corresponds to 100% volume change)
-* Max. Instability in eV/atom determined from the energy above hull metric (see glossary for more information)
+
+- Max. Voltage Step in V
+- Max. Volume Change in fractional units (for example 1 corresponds to 100% volume change)
+- Max. Instability in eV/atom determined from the energy above hull metric (see glossary for more information)
 
 ## The Search Results Table
+
 The search results table presents the resulting battery material entries from your search. You can add or hide fields from the result table by clicking the "Show/ hide columns" button and filter the results based on these fields by clicking the arrow in the column of interest. There are also buttons to print or export the Search Results Table to save your results for future reference.
 
-To investigate an individual battery material entry, click on one of the rows in the Search Results Table. This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc. 
+To investigate an individual battery material entry, click on one of the rows in the Search Results Table. This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc.
 
 ## Viewing Details of a Battery Material
 
@@ -55,6 +57,7 @@ The overall battery materials properties display aggregate or average properties
 This table displays calculated data for each voltage step along the voltage profile. In each row, the two material entries associated with a single voltage step and the corresponding properties (volume change, capacity, voltage, etc.) are displayed. Click on the composition of one of the materials listed to be directed to that material entry.
 
 ## Authors
+
 1. Shyue Ping Ong
 2. Anubhav Jain
 3. Stefan Adams (diffusion data)
@@ -63,9 +66,10 @@ This table displays calculated data for each voltage step along the voltage prof
 6. Ann Rutt
 
 ## References
-[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [doi:10.1021/cm702327g](https://doi.org/10.1021/cm702327g)  
-[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [doi:10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)  
-[^3]: S. Adams, Solid State Ionics 177, 1625 (2006).  
-[^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).  
-[^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).  
-[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [doi:10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)  
+
+[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [doi:10.1021/cm702327g](https://doi.org/10.1021/cm702327g)
+[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [doi:10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)
+[^3]: S. Adams, Solid State Ionics 177, 1625 (2006).
+[^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).
+[^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).
+[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [doi:10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)
