@@ -1,0 +1,784 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
+      
+      
+        <link rel="canonical" href="https://docs.materialsproject.org/user-guide/structure-similarity/">
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+    
+    
+      
+        <title>Structure similarity - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#structure-similarity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Materials Project Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Structure similarity
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    materialsproject/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    materialsproject/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Methodology" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#near-neighbor-finding" class="md-nav__link">
+    Near-neighbor finding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-fingerprints" class="md-nav__link">
+    Site Fingerprints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-fingerprints" class="md-nav__link">
+    Structure Fingerprints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-distancedissimilarity" class="md-nav__link">
+    Structure Distance/Dissimilarity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/user-guide/structure-similarity.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="structure-similarity">Structure similarity<a class="headerlink" href="#structure-similarity" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The similarity between two structures <em>i</em> and <em>j</em> is assessed on the basis of local coordination information from all sites in the two structures. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> The four basic steps involved are:</p>
+<ol>
+<li>Find near(est) neighbors of all sites in both structures.</li>
+<li>Evaluate each coordination pattern via coordination descriptors observed at each site to define site fingerprints.</li>
+<li>Compute statistics of the descriptor values across all sites in a structure to define structure fingerprints.</li>
+<li>Use structure fingerprints to rate the (dis)similarity between the two (vectors representing the two) structures.</li>
+</ol>
+<h2 id="near-neighbor-finding">Near-neighbor finding<a class="headerlink" href="#near-neighbor-finding" title="Permanent link">&para;</a></h2>
+<p>We use a novel method called CrystallNN to find near(est) neighbors in periodic structures. While the method will be introduced shortly<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, it is already available through the python package <a href="https://github.com/materialsproject/pymatgen">pymatgen</a>.</p>
+<h2 id="site-fingerprints">Site Fingerprints<a class="headerlink" href="#site-fingerprints" title="Permanent link">&para;</a></h2>
+<p>The second step of the structure similarity calculation is the computation of a crystal site fingerprint, <span class="arithmatex">\(v^{site}\)</span>, for each site in the two structures. The fingerprint is a 61-dimensional vector in which each element carries information about the local coordination environment computed with the <em>site</em> module of the python package <a href="https://github.com/hackingmaterials/matminer">matminer</a>. For example, the first two elements "wt <span class="arithmatex">\(\ce{CN1}\)</span>" and "single bond <span class="arithmatex">\(\ce{CN1}\)</span>" provide estimates of the likelihood (or weight) of how much the given site should be considered 1-fold coordinated (i.e., <em>w</em><span class="arithmatex">\(|_{CN=1}\)</span>). The third element "wt <span class="arithmatex">\(\ce{CN2}\)</span>" provides a 2-fold coordination likelihood, whereas the fourth element "L-shaped <span class="arithmatex">\(\ce{CN2}\)</span>" holds the resemblance similarity to an L-shaped coordination geometry (also called local structure order parameter) given that we find a coordination configuration with 2 atoms (<span class="arithmatex">\(q_{L}|_{CN=2}\)</span>). The local structure order parameters can assume values between 0, meaning that the observed local environment has no resemblance with the target motif to which it is compared, and 1, which stands for perfect motif match. The remaining elements are: "water-like <span class="arithmatex">\(\ce{CN2}\)</span>," "bent 120 degrees <span class="arithmatex">\(\ce{CN2}\)</span>," "bent 150 degrees <span class="arithmatex">\(\ce{CN2}\)</span>," "linear <span class="arithmatex">\(\ce{CN2}\)</span>," "wt <span class="arithmatex">\(\ce{CN3}\)</span>," "trigonal planar <span class="arithmatex">\(\ce{CN3}\)</span>," "trigonal non-coplanar <span class="arithmatex">\(\ce{CN3}\)</span>," "T-shaped <span class="arithmatex">\(\ce{CN3}\)</span>," "wt <span class="arithmatex">\(\ce{CN4}\)</span>," "square co-planar <span class="arithmatex">\(\ce{CN4}\)</span>," "tetrahedral <span class="arithmatex">\(\ce{CN4}\)</span>," "rectangular see-saw-like <span class="arithmatex">\(\ce{CN4}\)</span>," "see-saw-like <span class="arithmatex">\(\ce{CN4}\)</span>," "trigonal pyramidal <span class="arithmatex">\(\ce{CN4}\)</span>," "wt <span class="arithmatex">\(\ce{CN5}\)</span>," "pentagonal planar <span class="arithmatex">\(\ce{CN5}\)</span>," "square pyramidal <span class="arithmatex">\(\ce{CN5}\)</span>," "trigonal bipyramidal <span class="arithmatex">\(\ce{CN5}\)</span>," "wt <span class="arithmatex">\(\ce{CN6}\)</span>," "hexagonal planar <span class="arithmatex">\(\ce{CN6}\)</span>," "octahedral <span class="arithmatex">\(\ce{CN6}\)</span>," "pentagonal pyramidal <span class="arithmatex">\(\ce{CN6}\)</span>," "wt <span class="arithmatex">\(\ce{CN7}\)</span>," "hexagonal pyramidal <span class="arithmatex">\(\ce{CN7}\)</span>," "pentagonal bipyramidal <span class="arithmatex">\(\ce{CN7}\)</span>," "wt <span class="arithmatex">\(\ce{CN8}\)</span>," "body-centered cubic <span class="arithmatex">\(\ce{CN8}\)</span>," "hexagonal bipyramidal <span class="arithmatex">\(\ce{CN8}\)</span>," "wt <span class="arithmatex">\(\ce{CN9}\)</span>," "q2 <span class="arithmatex">\(\ce{CN9}\)</span>," "q4 <span class="arithmatex">\(\ce{CN9}\)</span>," "q6 <span class="arithmatex">\(\ce{CN9}\)</span>," "wt <span class="arithmatex">\(\ce{CN10}\)</span>," "q2 <span class="arithmatex">\(\ce{CN10}\)</span>," "q4 <span class="arithmatex">\(\ce{CN10}\)</span>," "q6 <span class="arithmatex">\(\ce{CN10}\)</span>," "wt <span class="arithmatex">\(\ce{CN11}\)</span>," "q2 <span class="arithmatex">\(\ce{CN11}\)</span>," "q4 <span class="arithmatex">\(\ce{CN11}\)</span>," "q6 <span class="arithmatex">\(\ce{CN11}\)</span>," "wt <span class="arithmatex">\(\ce{CN12}\)</span>," "cuboctahedral <span class="arithmatex">\(\ce{CN12}\)</span>," "q2 <span class="arithmatex">\(\ce{CN12}\)</span>," "q4 <span class="arithmatex">\(\ce{CN12}\)</span>," "q6 <span class="arithmatex">\(\ce{CN12}\)</span>," "wt <span class="arithmatex">\(\ce{CN13}\)</span>," "wt <span class="arithmatex">\(\ce{CN14}\)</span>," "wt <span class="arithmatex">\(\ce{CN15}\)</span>," "wt <span class="arithmatex">\(\ce{CN16}\)</span>," "wt <span class="arithmatex">\(\ce{CN17}\)</span>," "wt <span class="arithmatex">\(\ce{CN18}\)</span>," "wt <span class="arithmatex">\(\ce{CN19}\)</span>," "wt <span class="arithmatex">\(\ce{CN20}\)</span>," "wt <span class="arithmatex">\(\ce{CN21}\)</span>," "wt <span class="arithmatex">\(\ce{CN22}\)</span>," "wt <span class="arithmatex">\(\ce{CN23}\)</span>," and "wt <span class="arithmatex">\(\ce{CN24}\)</span>." Note that <span class="arithmatex">\(q_{n}\)</span> refers to Steinhardt bond orientational order parameter of order <em>n</em>. The resulting site fingerprint is thus defined as:<br />
+$$
+\mathbf{v}^\mathrm{site} = [w|<em>{\mathrm{CN}=1}, \quad w|</em>{\mathrm{CN}=2}, \quad q_\mathrm{L}|<em>{\mathrm{CN}=2}, \quad q</em>\mathrm{water}|<em>{\mathrm{CN}=2}, \quad \dots, \quad w|</em>{\mathrm{CN}=24}]^\mathrm{T}
+$$</p>
+<h2 id="structure-fingerprints">Structure Fingerprints<a class="headerlink" href="#structure-fingerprints" title="Permanent link">&para;</a></h2>
+<p>The fingerprints from sites in a given structure are subsequently statistically processed to yield the minimum, maximum, mean, and standard deviation of each coordination information element. The resultant ordered vector defines a structure fingerprint, <span class="arithmatex">\(v^{struct}\)</span>:</p>
+<p>$$
+\mathbf{v}^\mathrm{struct} = [</p>
+<p>\min(w|<em>{\mathrm{CN}=1}), \quad \max(w|</em>{\mathrm{CN}=1}), \quad \mathrm{mean}(w|<em>{\mathrm{CN}=1}), \quad \mathrm{std}(w|</em>{\mathrm{CN}=1}), \dots,</p>
+<p>\min(w|<em>{\mathrm{CN}=24}), \quad \max(w|</em>{\mathrm{CN}=24}), \quad \mathrm{mean}(w|<em>{\mathrm{CN}=24}), \quad \mathrm{std}(w|</em>{\mathrm{CN}=24})</p>
+<p>]^\mathrm{T}
+$$</p>
+<h2 id="structure-distancedissimilarity">Structure Distance/Dissimilarity<a class="headerlink" href="#structure-distancedissimilarity" title="Permanent link">&para;</a></h2>
+<p>Finally, structure similarity is determined by the distance, <em>d</em>, between two structure fingerprints <span class="arithmatex">\(v_{i}^{struct}\)</span> and <span class="arithmatex">\(v_{j}^{struct}\)</span>:</p>
+<div class="arithmatex">\[
+d = || \mathbf{v}_{i}^\mathrm{struct} - \mathbf{v}_{j}^\mathrm{struct} ||
+\]</div>
+<p>A small distance value indicates high similarity between two structures, whereas a large distance (&gt;1) suggests that the structures are very dissimilar. The spinel example below gives an approximate threshold up to which <strong>distance you can still consider two structures to be similar (0.9)</strong>. Anything beyond 0.9 is most certainly not the same structure prototype.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Diamond (<a href="https://materialsproject.org/materials/mp-66/">mp-66</a>) vs. <span class="arithmatex">\(\ce{GaAs}\)</span> (<a href="https://materialsproject.org/materials/mp-2534/">mp-2534</a>) <span class="arithmatex">\(\rightarrow\)</span> <em>d</em> = 0</li>
+<li>Diamond (<a href="https://materialsproject.org/materials/mp-66/">mp-66</a>) vs. rocksalt (<a href="https://materiahttps://materialsproject.org/materials/mp-5827/lsproject.org/materials/mp-22862/">mp-22862</a>) <span class="arithmatex">\(\rightarrow\)</span> <em>d</em> = 3.5724</li>
+<li>Diamond (<a href="https://materialsproject.org/materials/mp-66/">mp-66</a>) vs. perfect <span class="arithmatex">\(\ce{CaTiO3}\)</span> perovskite (<a href="https://materialsproject.org/materials/mp-5827/">mp-5827</a>) <span class="arithmatex">\(\rightarrow\)</span> <em>d</em> = 3.5540</li>
+<li>Rocksalt (<a href="https://materialsproject.org/materials/mp-22862/">mp-22862</a>) vs. perfect <span class="arithmatex">\(\ce{CaTiO3}\)</span> perovskite (<a href="https://materialsproject.org/materials/mp-5827/">mp-5827</a>) <span class="arithmatex">\(\rightarrow\)</span> <em>d</em> = 2.7417</li>
+<li><span class="arithmatex">\(\ce{Ca(CoS2)2}\)</span>-spinel (<a href="https://materialsproject.org/materials/mvc-12728/">mvc-12728</a>) vs. <span class="arithmatex">\(\ce{Si(CdO2)2}\)</span>-spinel (<a href="https://materialsproject.org/materials/mp-560842/">mp-560842</a>) <span class="arithmatex">\(\rightarrow\)</span> <em>d</em> = 0.8877</li>
+</ul>
+<p>Below is a python code snippet that allows you to quickly reproduce above results. You will need to install <a href="https://github.com/materialsproject/pymatgen">pymatgen</a> and <a href="https://github.com/hackingmaterials/matminer">matminer</a> for this to work. Both are easily accessible via the <a href="https://pypi.python.org/pypi">Python Package Index</a>.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">pymatgen</span> <span class="kn">import</span> <span class="n">MPRester</span>
+<span class="kn">from</span> <span class="nn">matminer.featurizers.site</span> <span class="kn">import</span> <span class="n">CrystalNNFingerprint</span>
+<span class="kn">from</span> <span class="nn">matminer.featurizers.structure</span> <span class="kn">import</span> <span class="n">SiteStatsFingerprint</span>
+
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">()</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+
+    <span class="c1"># Get structures.</span>
+    <span class="n">diamond</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mp-66&quot;</span><span class="p">)</span>
+    <span class="n">gaas</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mp-2534&quot;</span><span class="p">)</span>
+    <span class="n">rocksalt</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mp-22862&quot;</span><span class="p">)</span>
+    <span class="n">perovskite</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mp-5827&quot;</span><span class="p">)</span>
+    <span class="n">spinel_caco2s4</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mvc-12728&quot;</span><span class="p">)</span>
+    <span class="n">spinel_sicd2O4</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">get_structure_by_material_id</span><span class="p">(</span><span class="s2">&quot;mp-560842&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Calculate structure fingerprints.</span>
+    <span class="n">ssf</span> <span class="o">=</span> <span class="n">SiteStatsFingerprint</span><span class="p">(</span>
+        <span class="n">CrystalNNFingerprint</span><span class="o">.</span><span class="n">from_preset</span><span class="p">(</span><span class="s1">&#39;ops&#39;</span><span class="p">,</span> <span class="n">distance_cutoffs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x_diff_weight</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+        <span class="n">stats</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;std_dev&#39;</span><span class="p">,</span> <span class="s1">&#39;minimum&#39;</span><span class="p">,</span> <span class="s1">&#39;maximum&#39;</span><span class="p">))</span>
+    <span class="n">v_diamond</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">diamond</span><span class="p">))</span>
+    <span class="n">v_gaas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">gaas</span><span class="p">))</span>
+    <span class="n">v_rocksalt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">rocksalt</span><span class="p">))</span>
+    <span class="n">v_perovskite</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">perovskite</span><span class="p">))</span>
+    <span class="n">v_spinel_caco2s4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">spinel_caco2s4</span><span class="p">))</span>
+    <span class="n">v_spinel_sicd2O4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ssf</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">spinel_sicd2O4</span><span class="p">))</span>
+
+    <span class="c1"># Print out distance between structures.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance between diamond and GaAs: </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_diamond</span> <span class="o">-</span> <span class="n">v_gaas</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance between diamond and rocksalt: </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_diamond</span> <span class="o">-</span> <span class="n">v_rocksalt</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance between diamond and perovskite: </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_diamond</span> <span class="o">-</span> <span class="n">v_perovskite</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance between rocksalt and perovskite: </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_rocksalt</span> <span class="o">-</span> <span class="n">v_perovskite</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Distance between Ca(CoS2)2-spinel and Si(CdO2)2-spinel: </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_spinel_caco2s4</span> <span class="o">-</span> <span class="n">v_spinel_sicd2O4</span><span class="p">)))</span>
+</code></pre></div>
+
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<p>Nils Zimmermann, Donny Winston, Handong Ling, Oxana Andriuc</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>N. E. R. Zimmermann, D. Winston, K. A. Persson, A. Jain, in preparation (2018)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>10.3389/fmats.2017.00034&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>H. Pan, J. Dagdelen, N. E. R. Zimmermann, A. Jain, in preparation (2018)&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
