@@ -699,11 +699,11 @@
                 <h1 id="phonons">Phonons<a class="headerlink" href="#phonons" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>A phonon is a collective excitation of a set of atoms in condensed
-matter. These excitations can be decomposed in different modes each
-being associated with an energy that corresponds to the frequency of
+matter. These excitations can be decomposed into different modes, each
+being associated with an energy that corresponds to the frequency of the
 vibration. The different energies associated with each vibrational mode
 constitute the phonon vibrational spectra (or phonon band structure).
-The vibrational spectra of materials plays an important role in physical
+The vibrational spectra of materials play an important role in physical
 phenomena such as thermal conductivity, superconductivity,
 ferroelectricity and carrier thermalization.</p>
 <p>There are different methods to calculate the vibrational spectra from
@@ -730,7 +730,7 @@ displacements. These values have been obtained by performing a Fourier
 interpolation of those calculated on a regular grid of <strong>q</strong>-points
 obtained with DFPT.</p>
 <h2 id="thermodynamic-properties">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties" title="Permanent link">&para;</a></h2>
-<p>The vibrational density of states \(g(\omega)\) is obtained from the
+<p>The vibrational density of states \(g(\omega)\) is obtained from an
 integration over the full Brillouin zone</p>
 <p>\[g(\omega) = \frac{1}{3nN}\sum_{\mathbf{q},m}\delta(\omega-\omega_{\mathbf{q},m}),\]</p>
 <p>where \(n\) is the number of atoms per unit cell and \(N\) is the
@@ -749,13 +749,13 @@ largest phonon frequency.</p>
 <p>All the DFT and DFPT calculations are performed with the ABINIT software
 package <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
 <p>The PBEsol <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> semilocal generalized gradient approximation
-exchange-correlation functional (XC) was used for the calculations. This
-functional was proven to provide accurate phonon frequencies compared to
+exchange-correlation functional (XC) is used for the calculations. This
+functional is proven to provide accurate phonon frequencies compared to
 experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>
 and taken from the pseudopotentials table Pseudo-dojo version 0.3 <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
 <p>The plane wave cutoff is chosen based on the hardest element for each
 compound, according to the values suggested in the Pseudo-dojo table.
-The Brillouin zone has been sampled using equivalent <strong>k</strong>-point and
+The Brillouin zone is sampled using equivalent <strong>k</strong>-point and
 <strong>q</strong>-point grids that respect the symmetries of the crystal with a
 density of approximately 1500 points per reciprocal atom and the
 <strong>q</strong>-point grid is always <span class="arithmatex">\(\Gamma\)</span>-centered <sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>

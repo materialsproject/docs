@@ -1,0 +1,731 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.">
+      
+      
+        <link rel="canonical" href="https://docs.materialsproject.org/error-checking/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+    
+    
+      
+        <title>High-pressure phase detection manual - Materials Project Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.077507d7.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#high-pressure-phase-detection-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-header-nav__button md-logo" aria-label="Materials Project Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Materials Project Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              High-pressure phase detection manual
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    materialsproject/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://docs.materialsproject.org" title="Materials Project Documentation" class="md-nav__button md-logo" aria-label="Materials Project Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Materials Project Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/materialsproject/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    materialsproject/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../foundation.md" title="Foundation" class="md-nav__link">
+      Foundation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Methodology
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Methodology" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Methodology
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/total-energies/" title="Total energies" class="md-nav__link">
+      Total energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/electronic-structure/" title="Electronic structure" class="md-nav__link">
+      Electronic structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/pseudopotentials/" title="Pseudopotentials" class="md-nav__link">
+      Pseudopotentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/gga-plus-u/" title="GGA+U" class="md-nav__link">
+      GGA+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/elasticity/" title="Elasticity" class="md-nav__link">
+      Elasticity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/elasticity-prediction/" title="Elasticity prediction" class="md-nav__link">
+      Elasticity prediction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/piezoelectricity/" title="Piezoelectricity" class="md-nav__link">
+      Piezoelectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/dielectricity/" title="Dielectricity" class="md-nav__link">
+      Dielectricity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/equations-of-state/" title="Equations of State" class="md-nav__link">
+      Equations of State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../methodology/phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      User Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        User Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/crystal-toolkit/" title="Crystal Toolkit" class="md-nav__link">
+      Crystal Toolkit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/materials-explorer/" title="Materials Explorer" class="md-nav__link">
+      Materials Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/batteries-explorer/" title="Battery Explorer" class="md-nav__link">
+      Battery Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/molecules-explorer/" title="Molecules Explorer" class="md-nav__link">
+      Molecules Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/structure-predictor/" title="Structure Predictor" class="md-nav__link">
+      Structure Predictor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/pourbaix-tool/" title="Pourbaix Diagram" class="md-nav__link">
+      Pourbaix Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/phase-diagram/" title="Phase Diagram" class="md-nav__link">
+      Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
+      XAS Matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/reaction-calculator/" title="Reaction Calculator" class="md-nav__link">
+      Reaction Calculator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/glossary-of-terms/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../open-apis/the-materials-api/" title="Materials API (MAPI)" class="md-nav__link">
+      Materials API (MAPI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/nanoporous-explorer/" title="Nanoporous Explorer" class="md-nav__link">
+      Nanoporous Explorer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../database-updates/" title="Database Updates" class="md-nav__link">
+      Database Updates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contrib/spec/newsfeed/" title="Newsfeed" class="md-nav__link">
+      Newsfeed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialsproject/docs/edit/master/docs/error-checking.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="high-pressure-phase-detection-manual">High-pressure phase detection manual<a class="headerlink" href="#high-pressure-phase-detection-manual" title="Permanent link">&para;</a></h1>
+<p>So far, all computations in the materials project database have been ran assuming 0 pressure. However, sometimes 
+experimental data refers to high-pressure phases. While the ICSD web site tags high-pressure phases, we could not 
+technically retrieved this data. To detect high-pressure phase, we had instead to rely on an imperfect word detection 
+in the journal title of the entry. Any entry with a journal title containing G[Pp]a, [kM]bar or [Pp]ressure will be 
+considered as likely high-pressure phase and will be tagged with a warning accordingly.</p>
+<h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Geoffroy Hautier</li>
+<li>Jordan Burns</li>
+</ol>
+<h1 id="unusual-oxidation-state-detection-manual">Unusual oxidation state detection manual<a class="headerlink" href="#unusual-oxidation-state-detection-manual" title="Permanent link">&para;</a></h1>
+<p>Unusual oxidation states (e.g., +2 for Al) can be the indication of a problem with the experiment or lead to large errors 
+in computations (e.g., when an oxidation state requires electrons in the core of the pseudopotential to participate in 
+bonding).</p>
+<p>To tag the entries with less common oxidation states and warn the user about them, we performed statistics on all the 
+unique entries in the ICSD. From this statistical analysis, we estimated the probability p(n|A) where n is an oxidation 
+state and A is an element. For instance, we p(+2|Al) will be very low, as it is very rare to observe Al in a +2 state.</p>
+<p>We decided to tag any entry with oxidation states according to the ICSD with a probability lower than 10%. Please note that 
+this affect only compounds with assigned oxidation states in the ICSD.</p>
+<h2 id="authors_1">Authors<a class="headerlink" href="#authors_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Geoffroy Hautier</li>
+<li>Jordan Burns</li>
+</ol>
+<h1 id="volume-change-error-manual">Volume Change Error manual<a class="headerlink" href="#volume-change-error-manual" title="Permanent link">&para;</a></h1>
+<p>We have used the difference between the computed volume after DFT relaxation and the volume reported experimentally as an 
+indicator of a problem with a computation or entry. The problem can come from the experimental side (for instance atomic 
+positions wrongly assigned in the ICSD) or from the approximation used in DFT.</p>
+<p>Our analysis focused only on GGA (without U) results. Our strategy consist in first establishing a volume change distribution 
+from our large data set. After establishing this distribution, outliers will be easily identified and tagged with a warning.</p>
+<h2 id="volume-change-distribution-in-gga">Volume Change Distribution in GGA<a class="headerlink" href="#volume-change-distribution-in-gga" title="Permanent link">&para;</a></h2>
+<p>Our analysis focused on the GGA data in the database available on Friday September 23, 2011. In total, we considered 
+11579 entries. We report on volume changes by computing:
+$$ \Delta V=\frac{V_{GGA}-V_{exp}}{V_{exp}} $$
+Where $$ V_{GGA} $$ is the unit cell volume obtained by GGA and $$ V_{exp} $$ the experimental volume given by the ICSD</p>
+<h3 id="the-issue-with-high-pressure-phases">The issue with high pressure phases<a class="headerlink" href="#the-issue-with-high-pressure-phases" title="Permanent link">&para;</a></h3>
+<p>If the data is right away used, we would observe a longer tail on the positive values. This data is from the high pressure 
+phase. Indeed, while our computations have been performed at 0 atm, compounds characterized at high-pressure will show a 
+lower experimental than computed volume. This is not per se an error but instead a discrepancy between the experimental and 
+computational conditions. To mitigate, this issue we removed from this analysis any entry likely to refer to a high-pressure 
+phase according to the methodology presented in [^1]</p>
+<h3 id="the-fitting-of-the-distribution">The fitting of the distribution<a class="headerlink" href="#the-fitting-of-the-distribution" title="Permanent link">&para;</a></h3>
+<p>After exclusion of the possible high-pressure phases, we have 10768 points available to study the difference between
+experimental and computed volume. Figure 1 shows the histogram of volume difference. The distribution is symmetric but
+its median is positive (3.2%) indicating a tendency for GGA to overestimate the volume. This is in agreement with the
+know-how in the field established from previous studies on smaller set of compounds.</p>
+<p>We obtained a very good fit to the data by using the a t-location scale distribution.[^2] A normal distribution could not 
+be fitted to this data because of the heavy tail observed. Using matlab and a maximum likelihood approach, we obtained 
+maximum likelihood estimates as well as confidence intervals for the three parameters of the distribution. Figure 2 shows 
+the good agreement between the raw data and the t-location scale probability density distribution.</p>
+<h3 id="the-tagging-of-the-entries">The tagging of the entries<a class="headerlink" href="#the-tagging-of-the-entries" title="Permanent link">&para;</a></h3>
+<p>After fitting the distribution, it is possible to tag the entries outlying the distribution. We assigned a warning tag to 
+any entry in our database with a volume error higher than the 95th percentile (situated at 9.6% volume change) and lower 
+than the 5th percentile (situated at -3,2% volume change). Figure 3 shows these boundaries on the cumulative t-location 
+scale distribution.</p>
+<p>In total, 959 entries have been assigned a warning.</p>
+<h3 id="some-examples-of-outliers-detected-by-the-volume-difference">Some examples of outliers detected by the volume difference<a class="headerlink" href="#some-examples-of-outliers-detected-by-the-volume-difference" title="Permanent link">&para;</a></h3>
+<p>Here, we analyze some of the largest outliers found in our analysis. Through these examples, we illustrate what kind of 
+errors can be observed.</p>
+<h4 id="yzn-and-ybzn">YZn and YbZn<a class="headerlink" href="#yzn-and-ybzn" title="Permanent link">&para;</a></h4>
+<p>Both compounds (task_id: 11577 and 179, icsd_id: 106232, 206226) show enormous volume differences: 370% and 350% ! Looking 
+at the data present in the ICSD, we found that the paper reference mentioned CsCl structures, while the entry given by the 
+ICSD is a fcc based alloy. The volume discrepancy comes therefore from an erroneous export of the experimental data in the 
+paper to the ICSD.</p>
+<h4 id="sn">Sn<a class="headerlink" href="#sn" title="Permanent link">&para;</a></h4>
+<p>55% volume difference task_id: 7162 and icsd_id: 52487. This entry refers to a high pressure structure our algorithm did
+not catch. It is not surprising to see the computed data reporting a much larger volume than the experimental obtained at 
+high-pressure</p>
+<h4 id="tamn2o3">TaMn<sub>2</sub>O<sub>3</sub><a class="headerlink" href="#tamn2o3" title="Permanent link">&para;</a></h4>
+<p>-27% volume difference task_id: 7521, icsd_id: 15995 The icsd indicates already that the experimental data is dubious. 
+There is a warning on the ICSD web site: "Unusual difference between calculated and measured density". The oxidation state 
+reported for Ta: +2 is extremely rare.</p>
+<h4 id="mos2">MoS2<a class="headerlink" href="#mos2" title="Permanent link">&para;</a></h4>
+<p>18% volume difference task_id: 1434, icsd_id: 644257 This is most likely due to an inherent error from GGA. The MoS2 
+structure is layered and van der Waals interactions between the S atoms are essential to the geometry of the structure 
+(c lattice parameter especially). However, it is known that GGA does not model well VDW interactions.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>To cite the Materials Project, please reference the following work:
+* A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T. Mueller, K. A. Persson, and G. Ceder, A high-throughput infrastructure for density functional theory calculations, Computational Materials Science, vol. 50, 2011, pp. 2295-2310.</p>
+<h2 id="authors_2">Authors<a class="headerlink" href="#authors_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Geoffroy Hautier</li>
+<li>Jordan Burns</li>
+</ol>
+<h1 id="bond-length-change-error-manual">Bond length Change Error manual<a class="headerlink" href="#bond-length-change-error-manual" title="Permanent link">&para;</a></h1>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Built by The Materials Project
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../static/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
