@@ -25,7 +25,7 @@ In the density functional perturbation theory formalism the derivatives
 of the total energy with respect to a perturbation are directly obtained
 from the self-consistency loop [^1] For a generic point **q** in the
 Brillouin zone the phonon frequencies \\(\omega\_{\mathbf{q},m}\\) and
-eigenvectors \\(U\_m(\mathbf{q}\kappa'\beta)\\) are obtained by solving
+eigenvectors \\(U_m(\mathbf{q}\kappa'\beta)\\) are obtained by solving
 of the generalized eigenvalue problem
 
 \\[\sum\_{\kappa'\beta}\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U\_m(\mathbf{q}\kappa'\beta) = M\_{\kappa}\omega^2\_{\mathbf{q},m}U\_m(\mathbf{q}\kappa\alpha),\\]
@@ -49,7 +49,7 @@ integration over the full Brillouin zone
 where \\(n\\) is the number of atoms per unit cell and \\(N\\) is the
 number of unit cells. The expressions for the Helmholtz free energy
 \\(\Delta F\\), the phonon contribution to the internal energy
-\\(\Delta E\_{\text{ph}}\\), the constant-volume specific heat \\(C\_v\\)
+\\(\Delta E\_{\text{ph}}\\), the constant-volume specific heat \\(C_v\\)
 and the entropy \\(S\\) can be obtained in the harmonic approximation
 [^2]
 
@@ -60,7 +60,7 @@ and the entropy \\(S\\) can be obtained in the harmonic approximation
 \\[C\_v = 3nNk\_B\int\_{0}^{\omega\_L}\left(\frac{\hbar\omega}{2k\_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k\_BT}\right)g(\omega)d\omega\\]
 
 \\[S = 3nNk\_B\int\_{0}^{\omega\_L}\left(\frac{\hbar\omega}{2k\_BT}\text{coth}\left(\frac{\hbar\omega}{2k\_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k\_BT}\right)\right)g(\omega)d\omega,\\]
-where \\(k\_B\\) is the Boltzmann constant and \\(\omega\_L\\) is the
+where \\(k_B\\) is the Boltzmann constant and \\(\omega_L\\) is the
 largest phonon frequency.
 
 ## Calculation details
@@ -93,50 +93,59 @@ conventions of Setyawan and Curtarolo [^10].
 Guido Petretto, Shyam Dwaraknath, Henrique P. C. Miranda, Donald
 Winston, Matteo Giantomassi, Michiel J. van Setten, Xavier Gonze,
 Kristin A. Persson, Geoffroy Hautier, Gian-Marco Rignanese,
-*High-throughput density functional perturbation theory phonons for
-inorganic materials*, **Scientific Data**, 5, 180065 (2018).
+_High-throughput density functional perturbation theory phonons for
+inorganic materials_, **Scientific Data**, 5, 180065 (2018).
 [doi:10.1038/sdata.2018.65](https://doi.org/10.1038/sdata.2018.65)
 
 ## References
 
-[^1]: Gonze, X. & Lee, C. Dynamical matrices, Born effective charges,
+[^1]:
+    Gonze, X. & Lee, C. Dynamical matrices, Born effective charges,
     dielectric permittivity tensors, and interatomic force constants
     from density functional perturbation theory. Phys. Rev. B 55,
     10355–10368 (1997)
 
-[^2]: C. Lee & X. Gonze, Ab initio calculation of the thermodynamic
+[^2]:
+    C. Lee & X. Gonze, Ab initio calculation of the thermodynamic
     properties and atomic temperature factors of SiO2 α-quartz and
     stishovite. Phys. Rev. B 51, 8610 (1995)
 
-[^3]: Gonze, X. et al. First-principles computation of material
+[^3]:
+    Gonze, X. et al. First-principles computation of material
     properties: the Abinit software project. Computational Materials
     Science 25, 478 – 492 (2002)
 
-[^4]: Gonze, X. et al. ABINIT: First-principles approach to material and
+[^4]:
+    Gonze, X. et al. ABINIT: First-principles approach to material and
     nanosystem properties. Computer Physics Communications 180, 2582 –
     2615 (2009)
 
-[^5]: Perdew, J. P. et al. Restoring the density-gradient expansion for
+[^5]:
+    Perdew, J. P. et al. Restoring the density-gradient expansion for
     exchange in solids and surfaces. Phys. Rev. Lett. 100, 136406 (2008)
 
-[^6]: He, L. et al. Accuracy of generalized gradient approximation
+[^6]:
+    He, L. et al. Accuracy of generalized gradient approximation
     functionals for density-functional perturbation theory calculations.
     Phys. Rev. B 89, 064305 (2014)
 
-[^7]: Hamann, D. R. Optimized norm-conserving Vanderbilt
+[^7]:
+    Hamann, D. R. Optimized norm-conserving Vanderbilt
     pseudopotentials. Phys. Rev. B 88, 085117 (2013)
 
-[^8]: van Setten, M., Giantomassi, M., Bousquet, E., Verstraete, M.J.,
+[^8]:
+    van Setten, M., Giantomassi, M., Bousquet, E., Verstraete, M.J.,
     Hamann, D.R., Gonze, X. & Rignanese, G.-M., et al. The PseudoDojo:
     Training and grading a 85 element optimized norm-conserving
-    pseudopotential table (2018). Computer Physics Communications 226,
-    39.
+    pseudopotential table (2018). Computer Physics Communications 226, 39.
 
-[^9]: Petretto, G., Gonze, X., Hautier, G. & Rignanese, G.-M.
+[^9]:
+    Petretto, G., Gonze, X., Hautier, G. & Rignanese, G.-M.
     Convergence and pitfalls of density functional perturbation theory
     phonons calculations from a high-throughput perspective.
     Computational Materials Science 144, 331 – 337 (2018)
 
-[^10]: Setyawan, W. & Curtarolo, S. High-throughput electronic band
+[^10]:
+    Setyawan, W. & Curtarolo, S. High-throughput electronic band
     structure calculations: Challenges and tools. Computational
     Materials Science 49, 299 – 312 (2010)

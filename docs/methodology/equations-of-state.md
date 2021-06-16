@@ -33,20 +33,20 @@ available MP data.
 
 ## Fitted Equation Forms
 
-| **Equation** | **\\(\boldsymbol{E(\nu^*)}\\)** | **\\(\boldsymbol{K(\nu = 1)}\\)** | **\\(\boldsymbol{K'(\nu = 1)}\\)** | **Ref**  
-|------------|----------------------------------|-----------------------------------|---------------------------------------|-------------
-| Birch (Euler) |  \\(E = E_o^{**} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 +   \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)\\) | \\(\frac{8B}{9}\\) | \\(C + 4\\) | [^1]  
-| Birch (Lagrange) | \\(E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)\\) | \\(\frac{16B}{9}\\) | \\(C - 2\\) | [^1]  
-| Mie-Gruneisen | \\(E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} -  \frac{1}{C}\nu^{-\frac{C}{3}}\Big)\\) | \\(\frac{B}{9}\\) | \\(\frac{7 + C}{3}\\) | [^2]  
-| Murnaghan | \\(E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)\\) | \\(B\\) | \\(C + 1\\) | [^3] 
-| Pack-Evans-James | \\(E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1  -\nu^{\frac{1}{3}}\big)\Big)\\) | \\(B\\) | \\(C + 1\\) | [^4] 
-| Poirier-Tarantola | \\(E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)\\) | \\(6B\\) | \\(C + 2\\) | [^5]  
-| Tait | \\(E =  E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)\\) | \\(B\\) | \\(C - 1\\) | [^6]
-| Vinet | \\(E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} -   1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)\\) | \\(\frac{B}{9}\\) | \\(\frac{2}{3}C + 1\\) | [^7] 
+| **Equation**      | **\\(\boldsymbol{E(\nu^\*)}\\)**                                                                                                               | **\\(\boldsymbol{K(\nu = 1)}\\)** | **\\(\boldsymbol{K'(\nu = 1)}\\)** | **Ref** |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------------------------------- | ------- |
+| Birch (Euler)     | \\(E = E_o^{\*\*} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 + \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)\\)                        | \\(\frac{8B}{9}\\)                | \\(C + 4\\)                        | [^1]    |
+| Birch (Lagrange)  | \\(E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)\\) | \\(\frac{16B}{9}\\)               | \\(C - 2\\)                        | [^1]    |
+| Mie-Gruneisen     | \\(E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} - \frac{1}{C}\nu^{-\frac{C}{3}}\Big)\\)                                | \\(\frac{B}{9}\\)                 | \\(\frac{7 + C}{3}\\)              | [^2]    |
+| Murnaghan         | \\(E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)\\)                                                                 | \\(B\\)                           | \\(C + 1\\)                        | [^3]    |
+| Pack-Evans-James  | \\(E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1 -\nu^{\frac{1}{3}}\big)\Big)\\)               | \\(B\\)                           | \\(C + 1\\)                        | [^4]    |
+| Poirier-Tarantola | \\(E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)\\)                                                                        | \\(6B\\)                          | \\(C + 2\\)                        | [^5]    |
+| Tait              | \\(E = E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)\\)                                                       | \\(B\\)                           | \\(C - 1\\)                        | [^6]    |
+| Vinet             | \\(E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} - 1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)\\)                              | \\(\frac{B}{9}\\)                 | \\(\frac{2}{3}C + 1\\)             | [^7]    |
 
-\\(^*\\) \\(\nu = \frac{V}{V_o}\\), where \\(V_o\\) is the volume at zero pressure.  
+\\(^\*\\) \\(\nu = \frac{V}{V_o}\\), where \\(V_o\\) is the volume at zero pressure.
 
-\\(^{**}\\) \\(E_o = E(\nu = 1)\\)
+\\(^{\*\*}\\) \\(E_o = E(\nu = 1)\\)
 
 ## Citation
 
@@ -54,7 +54,7 @@ To cite the EOS data in the Materials Project, please reference the following wo
 
 Latimer, K., Dwaraknath, S., Mathew, K., Winston, D., Persson, K. A.
 Evaluation of thermodynamic equations of state across chemistry and structure in the materials project.
-*NPJ Computational Materials.* **4,** 1, 2057-3960 (2018).
+_NPJ Computational Materials._ **4,** 1, 2057-3960 (2018).
 [DOI:10.1038/s41524-018-0091-x](https://doi.org/10.1038/s41524-018-0091-x)
 
 ## Authors
@@ -65,29 +65,36 @@ Evaluation of thermodynamic equations of state across chemistry and structure in
 
 ## References
 
-[^1]: Birch, F. Finite elastic strain of cubic crystals. *Physical
-Review.* **71,** 11, 809–824 (1947).
+[^1]:
+    Birch, F. Finite elastic strain of cubic crystals. _Physical
+    Review._ **71,** 11, 809–824 (1947).
 
-[^2]: Roy, B. and Roy, S. B. Applicability of isothermal three-parameter
-equations of state of solids: A reappraisal. *Journal of Physics:
-Condensed Matter.* **17,** 39, 6193–6216 (2005).
+[^2]:
+    Roy, B. and Roy, S. B. Applicability of isothermal three-parameter
+    equations of state of solids: A reappraisal. _Journal of Physics:
+    Condensed Matter._ **17,** 39, 6193–6216 (2005).
 
-[^3]: Murnaghan, F. D. The compressibility of media under extreme pressures.
-*Proceedings of the National Academy of Sciences.* **30,**
-244–247 (1944).
+[^3]:
+    Murnaghan, F. D. The compressibility of media under extreme pressures.
+    _Proceedings of the National Academy of Sciences._ **30,**
+    244–247 (1944).
 
-[^4]: Pack, D., Evans, W., James, H. The Propagation of Shock Waves in Steel
-and Lead. *The Proceedings of the Physical Society.*
-**60,** 1–8 (1948).
+[^4]:
+    Pack, D., Evans, W., James, H. The Propagation of Shock Waves in Steel
+    and Lead. _The Proceedings of the Physical Society._
+    **60,** 1–8 (1948).
 
-[^5]: Poirier,  J. P. and Tarantola, A. A logarithmic equation of state.
-*Physics of the Earth and Planetary Interiors.* **109,**
-1-2, 1–8 (1998).
+[^5]:
+    Poirier,  J. P. and Tarantola, A. A logarithmic equation of state.
+    _Physics of the Earth and Planetary Interiors._ **109,**
+    1-2, 1–8 (1998).
 
-[^6]: Dymond,  J. H. and Malhotra, R. The Tait equation: 100 years on.
-*International Journal of Thermophysics.* **9,** 6, 941–951
-(1988).
+[^6]:
+    Dymond,  J. H. and Malhotra, R. The Tait equation: 100 years on.
+    _International Journal of Thermophysics._ **9,** 6, 941–951
+    (1988).
 
-[^7]: Vinet, P., Ferrante, J., Rose,  J. H., Smith,  J. R. Compressibility of
-solids. *Journal of Geophysical Research.* **92,**
-9319–9325 (1987).
+[^7]:
+    Vinet, P., Ferrante, J., Rose,  J. H., Smith,  J. R. Compressibility of
+    solids. _Journal of Geophysical Research._ **92,**
+    9319–9325 (1987).

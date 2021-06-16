@@ -1,8 +1,8 @@
 # Newsfeed
 
 !!! info
-    This page is a *design specification* for a feature that was implemented and
-    tested before release.
+This page is a _design specification_ for a feature that was implemented and
+tested before release.
 
 The [MP website](//materialsproject.org) exposes a lot of data and tools.
 Sometimes, people are surprised to learn about data and tools that have been
@@ -50,7 +50,6 @@ format) should be added -- do not change the filename. If a change to the entry
 is insignificant, like fixing a typo, then you don't need to create or update an
 `updated` field.
 
-
 ## Data display
 
 The news feed is displayed in two places: on the static (not-signed-in) home
@@ -70,12 +69,14 @@ items are presented in reverse chronological order.
 
 The last time a user has seen the newsfeed is stored in the `app_db`'s
 `newsfeed_views` collection, one document per user. The query
+
 ```python
 return_document = app_db.newsfeed_views.find_one_and_update(
     {"user": request.user.username},
     {"$set": {"last_seen": datetime.utcnow()},
     upsert=True)
 ```
+
 will update a user's document (inserting a document if one doesn't exist) with
 the current time as the last-seen time, and return the old user document (or
 `None` if no document existed). The application can then determine which
