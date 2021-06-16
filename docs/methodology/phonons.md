@@ -3,11 +3,11 @@
 ## Introduction
 
 A phonon is a collective excitation of a set of atoms in condensed
-matter. These excitations can be decomposed in different modes each
-being associated with an energy that corresponds to the frequency of
+matter. These excitations can be decomposed into different modes, each
+being associated with an energy that corresponds to the frequency of the
 vibration. The different energies associated with each vibrational mode
 constitute the phonon vibrational spectra (or phonon band structure).
-The vibrational spectra of materials plays an important role in physical
+The vibrational spectra of materials play an important role in physical
 phenomena such as thermal conductivity, superconductivity,
 ferroelectricity and carrier thermalization.
 
@@ -41,7 +41,7 @@ obtained with DFPT.
 
 ## Thermodynamic properties
 
-The vibrational density of states \\(g(\omega)\\) is obtained from the
+The vibrational density of states \\(g(\omega)\\) is obtained from an
 integration over the full Brillouin zone
 
 \\[g(\omega) = \frac{1}{3nN}\sum\_{\mathbf{q},m}\delta(\omega-\omega\_{\mathbf{q},m}),\\]
@@ -69,14 +69,14 @@ All the DFT and DFPT calculations are performed with the ABINIT software
 package [^3] [^4].
 
 The PBEsol [^5] semilocal generalized gradient approximation
-exchange-correlation functional (XC) was used for the calculations. This
-functional was proven to provide accurate phonon frequencies compared to
+exchange-correlation functional (XC) is used for the calculations. This
+functional is proven to provide accurate phonon frequencies compared to
 experimental data [^6]. The pseudopotentials are norm-conserving [^7]
 and taken from the pseudopotentials table Pseudo-dojo version 0.3 [^8].
 
 The plane wave cutoff is chosen based on the hardest element for each
 compound, according to the values suggested in the Pseudo-dojo table.
-The Brillouin zone has been sampled using equivalent **k**-point and
+The Brillouin zone is sampled using equivalent **k**-point and
 **q**-point grids that respect the symmetries of the crystal with a
 density of approximately 1500 points per reciprocal atom and the
 **q**-point grid is always $\Gamma$-centered [^9].
