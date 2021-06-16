@@ -14,7 +14,3 @@ repos:
     rev: "" # Use the sha or tag you want to point at
     hooks:
       - id: prettier
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.27.1
-    hooks:
-      - id: markdownlint
