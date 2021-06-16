@@ -1055,9 +1055,9 @@
 <p>For a comprehensive listing of all criteria available for advanced queries via the <a href="#mpquery">#mpquery</a> endpoint, see <a href="https://github.com/materialsproject/mapidoc">this repository</a>.</p>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <p>In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction). Currently supported information types (v2 of the REST API) include the following:</p>
-<p><strong>Materials</strong> - Standard calculated or experimental information about a material.  </p>
-<p><strong>Battery</strong> - Battery application specific information. </p>
-<p><strong>Reaction</strong> - Information about a reaction.  </p>
+<p><strong>Materials</strong> - Standard calculated or experimental information about a material.</p>
+<p><strong>Battery</strong> - Battery application specific information.</p>
+<p><strong>Reaction</strong> - Information about a reaction.</p>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
 <h3 id="ssl-encryption">SSL Encryption<a class="headerlink" href="#ssl-encryption" title="Permanent link">&para;</a></h3>
 <p>All requests to the Materials API must be done over HTTPS. Non-secure http requests are not allowed and will result in a HTTP 403 (Forbidden) response.</p>
@@ -1078,7 +1078,7 @@
 <p>All URIs in the MAPI are of the general form</p>
 <p><code>https://www.materialsproject.org/rest/v2/{request_type}[/{identifier}][/{parameters}]</code></p>
 <ol>
-<li>The initial part of the URI (https://www.materialsproject.org/rest/v2/) is a preamble, specifying a https REST request. The v2 denotes version 2 of the MAPI, to provide flexibility to support multiple versions of the API in future.</li>
+<li>The initial part of the URI (<a href="https://www.materialsproject.org/rest/v2/">https://www.materialsproject.org/rest/v2/</a>) is a preamble, specifying a https REST request. The v2 denotes version 2 of the MAPI, to provide flexibility to support multiple versions of the API in future.</li>
 <li>{request_type} specifies the kind of information or operation being requested. Currently supported request types include "materials", "battery", "reaction", "mpquery" and "api_check".</li>
 <li>{identifier} is an identifier for the specific information requested. Depending on the {request_type}, an identifier may or may not be necessary.</li>
 <li>{parameters} - Some requests require additional parameters to be provided.</li>
@@ -1098,14 +1098,13 @@
 }
 </code></pre></div>
 
-
 <h3 id="resources_1">Resources<a class="headerlink" href="#resources_1" title="Permanent link">&para;</a></h3>
 <h4 id="materials-calculated-materials-data">materials (calculated materials data)<a class="headerlink" href="#materials-calculated-materials-data" title="Permanent link">&para;</a></h4>
 <p><code>GET https://www.materialsproject.org/rest/v2/materials/{material id, formula, or chemical system}/vasp/{property}</code></p>
 <p>Obtain material information based on an identifier. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The identifier can be a Materials Project material id (e.g., mp-1234), a formula, e.g. (Fe2O3), or a chemical system ("-" separated list of elemments, e.g., Li-Fe-O). Specifying a formula or chemical system will return information for all materials with that formula or in that chemical system respectively. Note that a chemical system includes all sub-systems, i.e., the Li-Fe-O chemical system will include all Li, Fe, O, FexOy, LixOy, LixFey, LixFeyOz compounds.</p>
 <p>A property may be specified to request a specific subset of information. If no property is specified, a set of typically useful properties is returned. The materials id is always returned as part of the response. Currently supported properties and their definitions are as follows:</p>
 <h5 id="basic-properties">Basic properties<a class="headerlink" href="#basic-properties" title="Permanent link">&para;</a></h5>
-<p><dl>
+<dl>
   <dt>pretty_formula</dt>
   <dd>A nice formula where the element amounts are normalized</dd>
   <dt>unit_cell_formula</dt>
@@ -1136,50 +1135,56 @@
   <dd>An alias for final_structure.</dd>
   <dt>cif</dt>
   <dd>A string containing the structure in the CIF format.</dd>
-</dl> </p>
+</dl>
+
 <h5 id="thermodynamic-properties">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties" title="Permanent link">&para;</a></h5>
-<p><dl>
+<dl>
   <dt>formation_energy_per_atom</dt>
   <dd>Calculated formation energy from the elements normalized to per atom in the unit cell</dd>
   <dt>e_above_hull</dt>
   <dd>Calculated energy above convex hull for structure. Please see Phase Diagram Manual for the interpretation of this quantity.</dd>
-</dl> </p>
+</dl>
+
 <h5 id="mechanical-properties">Mechanical properties<a class="headerlink" href="#mechanical-properties" title="Permanent link">&para;</a></h5>
-<p><dl>
-    <dt>elasticity</dt>
-    <dd>Mechanical properties in the elastic limit. Contains the full elastic tensor as well as derived properties, e.g. Poisson ratio and bulk (K) and shear (G) moduli. Consult our hierarchical documentation for the particular names of sub-keys.</dd>
-    <dt>piezo</dt>
-    <dd>Piezoelectric properties. Contains a tensor and derived properties. Again, consult our repository for the names of sub-keys.</dd>
-    <dt>diel</dt>
-    <dd>Dielectric properties. Contains a tensor (one each for total and electronic contribution) and derived properties, e.g. dielectric constant, refractive index, and recognized potential for ferroelectricity.</dd>
-</dl></p>
+<dl>
+ <dt>elasticity</dt>
+ <dd>Mechanical properties in the elastic limit. Contains the full elastic tensor as well as derived properties, e.g. Poisson ratio and bulk (K) and shear (G) moduli. Consult our hierarchical documentation for the particular names of sub-keys.</dd>
+ <dt>piezo</dt>
+ <dd>Piezoelectric properties. Contains a tensor and derived properties. Again, consult our repository for the names of sub-keys.</dd>
+ <dt>diel</dt>
+ <dd>Dielectric properties. Contains a tensor (one each for total and electronic contribution) and derived properties, e.g. dielectric constant, refractive index, and recognized potential for ferroelectricity.</dd>
+</dl>
+
 <h5 id="calculation-parameters">Calculation parameters<a class="headerlink" href="#calculation-parameters" title="Permanent link">&para;</a></h5>
-<p><dl>
-    <dt>is_hubbard</dt>
-    <dd>A boolean indicating whether the structure was calculated using the Hubbard U extension to DFT</dd>
-    <dt>hubbards</dt>
-    <dd>An array of Hubbard U values, where applicable.</dd>
-    <dt>is_compatible</dt>
-    <dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
-</dl></p>
+<dl>
+ <dt>is_hubbard</dt>
+ <dd>A boolean indicating whether the structure was calculated using the Hubbard U extension to DFT</dd>
+ <dt>hubbards</dt>
+ <dd>An array of Hubbard U values, where applicable.</dd>
+ <dt>is_compatible</dt>
+ <dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
+</dl>
+
 <h5 id="electronic-structure">Electronic structure<a class="headerlink" href="#electronic-structure" title="Permanent link">&para;</a></h5>
-<p><dl>
-    <dt>band_gap</dt>
-    <dd>The calculated band gap</dd>
-    <dt>dos</dt>
-    <dd>The calculated density of states in the pymatgen json representation</dd>
-    <dt>bandstructure</dt>
-    <dd>The calculated "line mode" band structure (along selected symmetry lines -- aka "branches", e.g. \Gamma to Z -- in the Brillouin zone) in the pymatgen json representation</dd>
-    <dt>bandstructure_uniform</dt>
-    <dd>The calculated uniform band structure in the pymatgen json representation</dd>
-</dl></p>
+<dl>
+ <dt>band_gap</dt>
+ <dd>The calculated band gap</dd>
+ <dt>dos</dt>
+ <dd>The calculated density of states in the pymatgen json representation</dd>
+ <dt>bandstructure</dt>
+ <dd>The calculated "line mode" band structure (along selected symmetry lines -- aka "branches", e.g. \Gamma to Z -- in the Brillouin zone) in the pymatgen json representation</dd>
+ <dt>bandstructure_uniform</dt>
+ <dd>The calculated uniform band structure in the pymatgen json representation</dd>
+</dl>
+
 <h5 id="others">Others<a class="headerlink" href="#others" title="Permanent link">&para;</a></h5>
-<p><dl>
-    <dt>entry</dt>
-    <dd>This is a special property that returns a pymatgen ComputedEntry in the json representation. ComputedEntries are the basic unit for many structural and thermodynamic analyses in the pymatgen code base.</dd>
-    <dt>total_magnetization</dt>
-    <dd>total magnetic moment of the unit cell</dd>
-</dl></p>
+<dl>
+ <dt>entry</dt>
+ <dd>This is a special property that returns a pymatgen ComputedEntry in the json representation. ComputedEntries are the basic unit for many structural and thermodynamic analyses in the pymatgen code base.</dd>
+ <dt>total_magnetization</dt>
+ <dd>total magnetic moment of the unit cell</dd>
+</dl>
+
 <p>Example responses:</p>
 <ol>
 <li><code>https://www.materialsproject.org/rest/v1/materials/24972/vasp</code>: <a href="/static/mapi/24972.txt">File:24972.txt</a></li>
@@ -1191,78 +1196,85 @@
 <h4 id="materials-experimental-data">materials (experimental data)<a class="headerlink" href="#materials-experimental-data" title="Permanent link">&para;</a></h4>
 <p><code>GET https://www.materialsproject.org/rest/v2/materials/{formula}/exp</code></p>
 <p>Obtain experimental thermochemical information based on an formula. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The associative arrays are pymatgen ThermoData objects in json representation.</p>
-<p>Example response: 
-1. <code>https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp</code>: <a href="/static/mapi/Fe2O3_exp.txt">File:Fe2O3_exp.txt</a></p>
+<p>Example response:</p>
+<ol>
+<li><code>https://www.materialsproject.org/rest/v1/materials/Fe2O3/exp</code>: <a href="/static/mapi/Fe2O3_exp.txt">File:Fe2O3_exp.txt</a></li>
+</ol>
 <h4 id="tasks-detailed-calculation-data">tasks (detailed calculation data)<a class="headerlink" href="#tasks-detailed-calculation-data" title="Permanent link">&para;</a></h4>
 <p><code>GET https://www.materialsproject.org/rest/v2/tasks/{task id}/{property}</code></p>
 <p>Obtain information about a particular calculation based on a task id. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...].</p>
 <p>A property may be specified to request a specific subset of information. If no property is specified, a set of typically useful properties is returned. The materials id is always returned as part of the response. Currently supported properties and their definitions are as follows:</p>
 <h5 id="basic-properties_1">Basic properties<a class="headerlink" href="#basic-properties_1" title="Permanent link">&para;</a></h5>
-<p><dl>
-    <dt>pretty_formula</dt>
-    <dd>A nice formula where the element amounts are normalized</dd>
-    <dt>unit_cell_formula</dt>
-    <dd>The full explicit formula for the unit cell</dd>
-    <dt>icsd_id</dt>
-    <dd>The Inorganic Crystal Structure Database id for the initial structure, if any.</dd>
-    <dt>energy</dt>
-    <dd>Calculated vasp energy for structure</dd>
-    <dt>energy_per_atom</dt>
-    <dd>Calculated vasp energy normalized to per atom in the unit cell</dd>
-    <dt>volume</dt>
-    <dd>Final relaxed volume of the material</dd>
-    <dt>density</dt>
-    <dd>Final relaxed density of the material</dd>
-    <dt>nsites</dt>
-    <dd>Number of sites in the unit cell</dd>
-    <dt>elements</dt>
-    <dd>A array of the elements in the material</dd>
-    <dt>nelements</dt>
-    <dd>The number of elements in the material</dd>
-    <dt>initial_structure</dt>
-    <dd>The initial input structure for the calculation in the pymatgen json representation (see later section).</dd>
-    <dt>final_structure</dt>
-    <dd>The final relaxed structure in the pymatgen json representation (see later section).</dd>
-    <dt>structure</dt>
-    <dd>An alias for final_structure.</dd>
-</dl></p>
+<dl>
+ <dt>pretty_formula</dt>
+ <dd>A nice formula where the element amounts are normalized</dd>
+ <dt>unit_cell_formula</dt>
+ <dd>The full explicit formula for the unit cell</dd>
+ <dt>icsd_id</dt>
+ <dd>The Inorganic Crystal Structure Database id for the initial structure, if any.</dd>
+ <dt>energy</dt>
+ <dd>Calculated vasp energy for structure</dd>
+ <dt>energy_per_atom</dt>
+ <dd>Calculated vasp energy normalized to per atom in the unit cell</dd>
+ <dt>volume</dt>
+ <dd>Final relaxed volume of the material</dd>
+ <dt>density</dt>
+ <dd>Final relaxed density of the material</dd>
+ <dt>nsites</dt>
+ <dd>Number of sites in the unit cell</dd>
+ <dt>elements</dt>
+ <dd>A array of the elements in the material</dd>
+ <dt>nelements</dt>
+ <dd>The number of elements in the material</dd>
+ <dt>initial_structure</dt>
+ <dd>The initial input structure for the calculation in the pymatgen json representation (see later section).</dd>
+ <dt>final_structure</dt>
+ <dd>The final relaxed structure in the pymatgen json representation (see later section).</dd>
+ <dt>structure</dt>
+ <dd>An alias for final_structure.</dd>
+</dl>
+
 <h4 id="thermodynamic-properties_1">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties_1" title="Permanent link">&para;</a></h4>
-<p><dl>
-    <dt>formation_energy_per_atom</dt>
-    <dd>Calculated formation energy from the elements normalized to per atom in the unit cell</dd>
-    <dt>e_above_hull</dt>
-    <dd>Calculated energy above convex hull for structure. Please see Phase Diagram Manual for the interpretation of this quantity.</dd>
-</dl></p>
+<dl>
+ <dt>formation_energy_per_atom</dt>
+ <dd>Calculated formation energy from the elements normalized to per atom in the unit cell</dd>
+ <dt>e_above_hull</dt>
+ <dd>Calculated energy above convex hull for structure. Please see Phase Diagram Manual for the interpretation of this quantity.</dd>
+</dl>
+
 <h4 id="calculation-parameters_1">Calculation parameters<a class="headerlink" href="#calculation-parameters_1" title="Permanent link">&para;</a></h4>
-<p><dl>
-    <dt>is_hubbard</dt>
-    <dd>A boolean indicating whether the structure was calculated using the Hubbard U extension to DFT</dd>
-    <dt>hubbards</dt>
-    <dd>An array of Hubbard U values, where applicable.</dd>
-    <dt>is_compatible</dt>
-    <dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
-</dl></p>
+<dl>
+ <dt>is_hubbard</dt>
+ <dd>A boolean indicating whether the structure was calculated using the Hubbard U extension to DFT</dd>
+ <dt>hubbards</dt>
+ <dd>An array of Hubbard U values, where applicable.</dd>
+ <dt>is_compatible</dt>
+ <dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
+</dl>
+
 <h4 id="electronic-structure_1">Electronic structure<a class="headerlink" href="#electronic-structure_1" title="Permanent link">&para;</a></h4>
 <dl>
-    <dt>band_gap</dt>
-    <dd>The calculated band gap</dd>
-    <dt>dos</dt>
-    <dd>The calculated density of states in the pymatgen json representation</dd>
-    <dt>incar</dt>
-    <dd>The INCAR parameters used for the run.</dd>
-    <dt>kpoints</dt>
-    <dd>The KPOINTS grid used for the run.</dd>
-    <dt>potcar</dt>
-    <dd>The pseudopotentials used for the run.</dd>
+ <dt>band_gap</dt>
+ <dd>The calculated band gap</dd>
+ <dt>dos</dt>
+ <dd>The calculated density of states in the pymatgen json representation</dd>
+ <dt>incar</dt>
+ <dd>The INCAR parameters used for the run.</dd>
+ <dt>kpoints</dt>
+ <dd>The KPOINTS grid used for the run.</dd>
+ <dt>potcar</dt>
+ <dd>The pseudopotentials used for the run.</dd>
 </dl>
 
 <p>The responses are similar to the materials responses.</p>
 <h4 id="materials-ids">materials ids<a class="headerlink" href="#materials-ids" title="Permanent link">&para;</a></h4>
 <p><code>GET https://www.materialsproject.org/rest/v2/materials/{formula or chemical system}/mids</code></p>
 <p>Obtain the material ids relating to a formula or chemical system. The response is always a list of integers. This is one of the few types of queries that do not require an API key to be supplied.</p>
-<p>Example responses: 
-1. https://www.materialsproject.org/rest/v2/materials/Fe2O3/mids
-2. https://www.materialsproject.org/rest/v2/materials/Fe-O/mids</p>
+<p>Example responses:</p>
+<ol>
+<li><a href="https://www.materialsproject.org/rest/v2/materials/Fe2O3/mids">https://www.materialsproject.org/rest/v2/materials/Fe2O3/mids</a></li>
+<li><a href="https://www.materialsproject.org/rest/v2/materials/Fe-O/mids">https://www.materialsproject.org/rest/v2/materials/Fe-O/mids</a></li>
+</ol>
 <h4 id="mpquery">mpquery<a class="headerlink" href="#mpquery" title="Permanent link">&para;</a></h4>
 <p><code>POST https://www.materialsproject.org/rest/v2/query</code></p>
 <p>Advanced query using Mongo-like language for flexible queries on the Materials Project database. This provides the possibility of queries which would otherwise not be possible using the other simpler REST forms.</p>

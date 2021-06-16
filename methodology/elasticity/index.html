@@ -747,9 +747,9 @@ deformation gradients are applied one-by-one to the relaxed structure so
 that only one independent deformation is considered each time. For each
 of the 6 deformation modes, 4 different default magnitudes of
 deformation are applied:
-\(\delta_{1} \in  \left\{-0.01, -0.005, +0.005, +0.01\right\}\)
+\(\delta_{1} \in \left\{-0.01, -0.005, +0.005, +0.01\right\}\)
 (pertaining to non shear-modes) and
-\(\delta_2 \in  \left\{ -0.06, -0.03, +0.03, +0.06 \right\}\)
+\(\delta_2 \in \left\{ -0.06, -0.03, +0.03, +0.06 \right\}\)
 (pertaining to shear-modes). This leads to a total of 24 deformed
 structures, for which the stress tensor, \(\mathbf{S}\), is
 calculated, allowing for relaxation of the ionic degrees of freedom.
@@ -787,13 +787,13 @@ example is face centered cubic cells).</p>
 \end{matrix}}\right]\,\]</p>
 <p>\[\boldsymbol{F}=
 \left[{\begin{matrix}
-1 &amp; 0 &amp; \delta _{2}  \\
+1 &amp; 0 &amp; \delta _{2} \\
 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
 \end{matrix}}\right]\,\]</p>
 <p>\[\boldsymbol{F}=
 \left[{\begin{matrix}
-1 &amp; 0 &amp; 0  \\
+1 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; \delta _{2} \\
 0 &amp; 0 &amp; 1 \\
 \end{matrix}}\right]\,\]</p>
@@ -966,7 +966,7 @@ using the projector augmented wave (PAW) method <sup id="fnref2:3"><a class="foo
 in the Vienna Ab Initio Simulation Package (VASP) <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>. In all
 calculations, we employ the Perdew, Becke and Ernzerhof (PBE) <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>
 Generalized Gradient Approximation (GGA) for the exchange-correlation
-functional.<br />
+functional.
 As described in the literature, several filters are used to detect cases
 where the elastic tensor might not have been converged properly. For
 those cases, the calculation is repeated but now with more stringent
@@ -1015,15 +1015,15 @@ Symmetrization occurs by finding all of the symmetry operations that
 correspond to a particular crystal symmetry, and taking the average over
 all transformed tensors with respect to these operations. If there are
 \(y\) symmetry operations are denoted \(Q_{ij}^{(x)}\) then:</p>
-<p>\(C_{mnop}^{(sym)} = \sum_{x=1}^y  Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}\)</p>
+<p>\(C_{mnop}^{(sym)} = \sum_{x=1}^y Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}\)</p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To cite the elastic constants within the Materials Project, please
 reference the following work:</p>
 <ul>
 <li>de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M,
-Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G,
-Persson KA, Asta M (2015) Charting the complete elastic properties of
-inorganic crystalline compounds. <a href="http://www.nature.com/articles/sdata20159">Scientific Data 2: 150009</a></li>
+  Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G,
+  Persson KA, Asta M (2015) Charting the complete elastic properties of
+  inorganic crystalline compounds. <a href="http://www.nature.com/articles/sdata20159">Scientific Data 2: 150009</a></li>
 </ul>
 <p>The paper presents the results of our elastic constant-calculations for
 the first batch of 1,181 metals and compounds. Our DFT-parameters, the

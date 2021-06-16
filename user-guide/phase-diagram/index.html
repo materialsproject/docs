@@ -1025,14 +1025,12 @@
 <h3 id="version-01-march-10-2011">Version 0.1 - March 10, 2011<a class="headerlink" href="#version-01-march-10-2011" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Initial release of Phase Diagram App</li>
-<li>Key features:<ul>
+<li>Key features:</li>
 <li>2-4 compositional components phase diagrams supported.</li>
 <li>Highlighting of nodes on mouse-over.</li>
 <li>Marking of an arbitrary composition in the phase diagram.</li>
 <li>Mouse-over popup of details at particular nodes.</li>
 <li>Complete data table with listing of stable and unstable phases.</li>
-</ul>
-</li>
 </ul>
 <h2 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
 <h3 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
@@ -1091,15 +1089,19 @@
 <p>In the remainder of this section, we will use an <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system to illustrate the methodology without loss of generality.</p>
 <h4 id="compositional-phase-diagrams_1">Compositional Phase Diagrams<a class="headerlink" href="#compositional-phase-diagrams_1" title="Permanent link">&para;</a></h4>
 <p>To construct a phase diagram, one would need to compare the relative thermodynamic stability of phases belonging to the system using an appropriate free energy model. For an isothermal, isobaric, closed system, the relevant thermodynamic potential is the Gibbs free energy, <span class="arithmatex">\(G\)</span>, which can be expressed as a Legendre transform of the enthalpy, <span class="arithmatex">\(H\)</span>, and internal energy, <span class="arithmatex">\(E\)</span>, as follows:</p>
-<div class="arithmatex">\[\eqalign{G(T,P,N_{Li},N_{Fe},N_{O}) &amp;= H(T,P,N_{Li},N_{Fe},N_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr
-&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},N_{O}) + PV(T,P,N_{Li},N_{Fe},N_{O})\cr - TS(T,P,N_{Li},N_{Fe},N_{O}}}\]</div>
+<div class="arithmatex">\[
+\eqalign{G(T,P,N_{Li},N_{Fe},N_{O}) &amp;= H(T,P,N_{Li},N_{Fe},N_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr
+&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},N_{O}) + PV(T,P,N_{Li},N_{Fe},N_{O})\cr - TS(T,P,N_{Li},N_{Fe},N_{O}}}
+\]</div>
 <p>where <span class="arithmatex">\(T\)</span> is the temperature of the system, <span class="arithmatex">\(S\)</span> is the entropy of the system, <span class="arithmatex">\(P\)</span> is the pressure of the system, <span class="arithmatex">\(V\)</span> is the volume of the system, and <span class="arithmatex">\(N_i\)</span> is the number of atoms of species <span class="arithmatex">\(i\)</span> in the system.</p>
 <p>For systems comprising primarily of condensed phases, the <span class="arithmatex">\(PV\)</span> term can be neglected and at 0K, the expression for <span class="arithmatex">\(G\)</span> simplifies to just <span class="arithmatex">\(E\)</span>. Normalizing <span class="arithmatex">\(E\)</span> with respect to the total number of particles in the system, we obtain <span class="arithmatex">\(\bar{E}(0,P,x_{Li},x_{Fe},x_O)\)</span>, where <span class="arithmatex">\(x_i = \frac{N_i}{N_{Li} + N_{Fe} + N_{O}}\)</span>. By taking the convex hull<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup> of <span class="arithmatex">\(E\)</span> for all phases belonging to the M-component system and projecting the stable nodes into the <span class="arithmatex">\((M - 1)\)</span> - dimension composition space, one can obtain the 0 K phase diagram for the closed system at constant pressure. The convex hull of a set of points is the smallest convex set containing the points. For instance, to construct a 0 K, closed <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system phase diagram, the convex hull is taken on the set of points in <span class="arithmatex">\((\bar{E},x_{Li},x_{Fe})\)</span> space with <span class="arithmatex">\(x_O\)</span> being related to the other composition variables by <span class="arithmatex">\(x_O = 1 - x_{Li} - x_{Fe}\)</span>.</p>
 <h4 id="grand-potential-phase-diagrams_1">Grand Potential Phase Diagrams<a class="headerlink" href="#grand-potential-phase-diagrams_1" title="Permanent link">&para;</a></h4>
 <p>In many scientific applications, the phase equilibria of interest is not that of a closed system, but rather one which is open to a particular element. For instance, synthesis might be carried out in flowing Argon gas at a particular temperature, which would mean the system is open to gaseous elements such as oxygen. Other experiments may be carried out in air, which essentially serves as an infinite reservoir of atmospheric elements such as oxygen, nitrogen and others.</p>
 <p>In environments that are open to a particular element (say oxygen), the relevant control variable is the chemical potential of that element, <span class="arithmatex">\(\mu_{O}\)</span>. The relevant thermodynamic potential to study phase equilibria in an open system is the grand potential, which is defined as the following for an <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system that is open with respect to oxygen:</p>
-<div class="arithmatex">\[\eqalign{\phi(T,P,N_{Li},N_{Fe},\mu_{O}) &amp;= G(T,P,N_{Li},N_{Fe},\mu_{O}) - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})\cr
-&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},\mu_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})}}\]</div>
+<div class="arithmatex">\[
+\eqalign{\phi(T,P,N_{Li},N_{Fe},\mu_{O}) &amp;= G(T,P,N_{Li},N_{Fe},\mu_{O}) - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})\cr
+&amp;= \eqalign{E(T,P,N_{Li},N_{Fe},\mu_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})}}
+\]</div>
 <p>where the <span class="arithmatex">\(PV\)</span> term is again ignored.</p>
 <p>Normalizing with respect to <span class="arithmatex">\(\ce{Li-Fe}\)</span> composition and dropping the explicit expression of the functional dependence of <span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(S\)</span>, and <span class="arithmatex">\(N_{O}\)</span> on the right-hand side henceforth for brevity, we can obtain</p>
 <div class="arithmatex">\[\bar{\phi}(T,P,x_{Li},x_{Fe},\mu_{O}) = \frac{E-TS-\mu_ON_O}{N_{Li} + N_{Fe}}\]</div>

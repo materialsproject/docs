@@ -629,25 +629,37 @@
 <h2 id="programming-environment">Programming environment<a class="headerlink" href="#programming-environment" title="Permanent link">&para;</a></h2>
 <p>If you are programming in Python, we suggest using a Python IDE such as PyCharm (commercial) or Eclipse+PyDev (free). However, some people prefer to use a UNIX-style text editor such as vi or emacs.</p>
 <h2 id="getting-and-analyzing-data-using-pymatgen">Getting and analyzing data using pymatgen<a class="headerlink" href="#getting-and-analyzing-data-using-pymatgen" title="Permanent link">&para;</a></h2>
-<p>The Materials Project provides an open-source Python code, pymatgen (Python Materials Genomics), that can be used to:
-* Access Materials Project data
-* Convert data between several file formats
-* Perform materials analyses
-* Set up calculations
-The pymatgen documentation provides many examples on how to perform common tasks. For example, this <a href="https://gist.github.com/shyuep/3570304">gist</a> by Shyue Ping Ong demonstrates how to generate phase diagrams dynamically using Materials Project data, as well as check a new material's stability with respect to decomposition.</p>
+<p>The Materials Project provides an open-source Python code, pymatgen (Python Materials Genomics), that can be used to:</p>
+<ul>
+<li>Access Materials Project data</li>
+<li>Convert data between several file formats</li>
+<li>Perform materials analyses</li>
+<li>Set up calculations
+  The pymatgen documentation provides many examples on how to perform common tasks. For example, this <a href="https://gist.github.com/shyuep/3570304">gist</a> by Shyue Ping Ong demonstrates how to generate phase diagrams dynamically using Materials Project data, as well as check a new material's stability with respect to decomposition.</li>
+</ul>
 <p>To get started with pymatgen, we suggest you visit the <a href="http://pymatgen.org/">official pymatgen documentation</a>.</p>
 <h2 id="accessing-materials-project-data-from-any-program">Accessing Materials Project data from any program<a class="headerlink" href="#accessing-materials-project-data-from-any-program" title="Permanent link">&para;</a></h2>
 <p>With the Materials API, you can get Materials Project data from any program that can perform a GET request to our server. To get started:</p>
 <ol>
-<li>Generate an API key in your profile page.</li>
-<li>Log into the Materials Project web site (top-right)</li>
+<li>
+<p>Generate an API key in your profile page.</p>
+</li>
+<li>
+<p>Log into the Materials Project web site (top-right)</p>
+</li>
 <li>Click 'profile' (top-right)</li>
 <li>In the section labeled 'API key', click 'regenerate key'. This is your API key (copy it).</li>
-<li>Click 'Save Settings' (your API key will not work until this is done)</li>
-<li>Make a GET request to a valid URL, for example: https://www.materialsproject.org/rest/v1/materials/C/vasp/density?API_KEY=YOUR_API_KEY</li>
-<li>(make sure you replace the text YOUR_API_KEY with your Materials Project API key)</li>
+<li>
+<p>Click 'Save Settings' (your API key will not work until this is done)</p>
+</li>
+<li>
+<p>Make a GET request to a valid URL, for example: https://www.materialsproject.org/rest/v1/materials/C/vasp/density?API_KEY=YOUR_API_KEY</p>
+</li>
+<li>
+<p>(make sure you replace the text YOUR_API_KEY with your Materials Project API key)</p>
+</li>
 <li>You should see a JSON-formatted response that includes the density of the material.
-A simple description of the Materials API <a href="http://www.materialsproject.org/open#">can be found here</a> (click the 'Materials API' button). For more details, see our documentation on The Materials API.</li>
+  A simple description of the Materials API <a href="http://www.materialsproject.org/open#">can be found here</a> (click the 'Materials API' button). For more details, see our documentation on The Materials API.</li>
 </ol>
 <h2 id="automating-calculations-using-fireworks">Automating calculations using FireWorks<a class="headerlink" href="#automating-calculations-using-fireworks" title="Permanent link">&para;</a></h2>
 <p>FireWorks is an open-source Python code developed by the Materials Project for automating calculations over supercomputing clusters. More information, including download links, is at http://pythonhosted.org/FireWorks</p>

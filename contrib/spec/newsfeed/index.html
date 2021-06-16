@@ -657,9 +657,9 @@
                 <h1 id="newsfeed">Newsfeed<a class="headerlink" href="#newsfeed" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
+</div>
 <p>This page is a <em>design specification</em> for a feature that was implemented and
 tested before release.</p>
-</div>
 <p>The <a href="//materialsproject.org">MP website</a> exposes a lot of data and tools.
 Sometimes, people are surprised to learn about data and tools that have been
 available on the site for months, especially if they have logged in and used the
@@ -680,13 +680,12 @@ directory with a name of the format <code>YYYY-MM-DD-entry-title.md</code>, wher
 <code>YYYY-MM-DD</code> is a <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>-formatted
 date. The file itself will look something like</p>
 <div class="codehilite"><pre><span></span><code>---
-title: My feed item title
----
+<span class="gu">title: My feed item title</span>
+<span class="gu">---</span>
 
 This is a great piece of news.
-More info [here](https://materialsproject.org/newstuff).
+More info [<span class="nt">here</span>](<span class="na">https://materialsproject.org/newstuff</span>).
 </code></pre></div>
-
 
 <p>This format is based on that used by the <a href="https://jekyllrb.com/">Jekyll</a> static
 site framework -- a simple organization of news items into separate files. The
@@ -720,7 +719,6 @@ items are presented in reverse chronological order.</p>
     <span class="p">{</span><span class="s2">&quot;$set&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;last_seen&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()},</span>
     <span class="n">upsert</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
-
 
 <p>will update a user's document (inserting a document if one doesn't exist) with
 the current time as the last-seen time, and return the old user document (or

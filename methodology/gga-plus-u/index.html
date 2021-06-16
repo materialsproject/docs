@@ -695,15 +695,15 @@ following works.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></su
 <p>In the Materials Project, we have calibrated U values for many
 transition metals of interest using the approach outlined in Wang et
 al.'s work<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. At the present moment, U values have only been calibrated for
-transition metal oxide systems. U values were calibrated for the following 
+transition metal oxide systems. U values were calibrated for the following
 elements: Co, Cr, Fe, Mn, Mo, Ni, V and W. The choice of systems to which we
 apply U was largely determined by our experience and by systematic
 benchmarking. It is very likely that we will expand calibration of U
 values to more chemical systems in the future.</p>
 <p>In the Materials Project, for an oxide or fluoride material with a transition
-element listed previously, with the VASP input settings constructed according to 
+element listed previously, with the VASP input settings constructed according to
 the logic defined in <a href="https://github.com/materialsproject/pymatgen/blob/master/pymatgen/io/vasp/MPRelaxSet.yaml">pymatgen</a>.</p>
-<p>Note that for fluorides, the U value gets set to the one calibrated from the oxide system, although 
+<p>Note that for fluorides, the U value gets set to the one calibrated from the oxide system, although
 in principle our architecture allows different U values to be set for oxides and fluorides respectively.</p>
 <h2 id="calibration-of-u-values">Calibration of U values<a class="headerlink" href="#calibration-of-u-values" title="Permanent link">&para;</a></h2>
 <p>The U values were obtained by fitting to experimental binary formation
@@ -769,7 +769,7 @@ are performed.</p>
 <tr>
 <td align="left">Mn</td>
 <td>Oxides</td>
-<td><span class="arithmatex">\(\ce{6 MnO + O2 -&gt; 2 Mn3O4}\)</span>  <br>  <span class="arithmatex">\(\ce{Mn3O4 + O2 -&gt; 3 MnO2}\)</span></td>
+<td><span class="arithmatex">\(\ce{6 MnO + O2 -&gt; 2 Mn3O4}\)</span> <br> <span class="arithmatex">\(\ce{Mn3O4 + O2 -&gt; 3 MnO2}\)</span></td>
 <td><span class="arithmatex">\(\ce{Mn^{2+} -&gt; Mn^{2.67+}}\)</span> <br> <span class="arithmatex">\(\ce{Mn^{2.67+} -&gt; Mn^{4+}}\)</span></td>
 <td>3.9</td>
 <td><span class="arithmatex">\(\ce{Mn2O3}\)</span> was explicitly excluded from calibration set due to the large number of atoms in its unit cell.</td>
@@ -813,7 +813,7 @@ are performed.</p>
 used with care if applied to obtain other properties such as band
 structures. Also, the U values depend on the pseudopotential used. Further,
 typically, U values should be site specific, however in our approach, U values were
-applied to all sites with an element listed above, and only to the d-orbitals. A discussion of the 
+applied to all sites with an element listed above, and only to the d-orbitals. A discussion of the
 pseudopotentials used in the Materials Project can be
 found <a href="/methodology/pseudopotentials">here</a>.</p>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>

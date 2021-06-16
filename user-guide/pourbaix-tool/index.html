@@ -870,16 +870,20 @@
 <p>For an aqueous ion i at standard state conditions (e.g., room temperature, atmospheric pressure, and <span class="arithmatex">\(10^{-6}\)</span> M concentration) using a representative solid s, we define the chemical potential as:</p>
 <p><img alt="pourbaix_reference_energeis" src="../img/pourbaix-app/Ion_ref_energy.png" />
 <em>Figure 1: Schematic to reference experimental aqueous ion energies to DFT data</em></p>
-<div class="arithmatex">\[\begin{align} \mu_{i(aq)}^0 &amp;= \mu_{i(aq)}^{0,{\rm exp}} + \left[\Delta g_s^{0,{\rm DFT}} - \Delta g_s^{0,{\rm exp}}\right] \\
+<div class="arithmatex">\[
+\begin{align} \mu_{i(aq)}^0 &amp;= \mu_{i(aq)}^{0,{\rm exp}} + \left[\Delta g_s^{0,{\rm DFT}} - \Delta g_s^{0,{\rm exp}}\right] \\
 &amp; = \mu_{i(aq)}^{0,{\rm exp}} + \Delta\mu_s^{0, {\rm DFT - exp}}
-\end{align}\]</div>
+\end{align}
+\]</div>
 <p>Figure 1 shows this schematically.</p>
 <h3 id="correction-for-water">Correction for Water<a class="headerlink" href="#correction-for-water" title="Permanent link">&para;</a></h3>
 <p>In an aqueous environment, many chemical and electrochemical reactions are enabled by the breakdown, formation, or incorporation of water molecules. It is therefore important that the free energy of formation of water is captured accurately. This is known accurately from experiments as <span class="arithmatex">\(-2.46~eV\)</span>. So, at standard state, the free energy of formation of water is set as follows:</p>
-<div class="arithmatex">\[\begin{align}
+<div class="arithmatex">\[
+\begin{align}
 \mu^0_{{\rm H_2O}} &amp;= \Delta g^{0, {\rm exp}}_{\rm H_2O} \\
  &amp; = -2.46 eV
-\end{align}\]</div>
+\end{align}
+\]</div>
 <h3 id="correction-for-elemental-gaseous-and-liquid-states-except-ceh2">Correction for Elemental Gaseous, and Liquid States, except <span class="arithmatex">\(\ce{H2}\)</span><a class="headerlink" href="#correction-for-elemental-gaseous-and-liquid-states-except-ceh2" title="Permanent link">&para;</a></h3>
 <p>For all gaseous elements, the experimentally determined entropic contribution at 298 K is added to the DFT/corrected energy of the element as follows:</p>
 <div class="arithmatex">\[\mu_i^{\rm ref} = E_i^{0, {\rm DFT}} + \Delta E_i^{\rm correction} - Ts_i^{\rm exp}\]</div>
@@ -888,10 +892,12 @@
 <p>In an aqueous environment, <span class="arithmatex">\(\ce{O_2}\)</span> and <span class="arithmatex">\(\ce{H_2}\)</span> in their gaseous states are in equilibrium with water through the reaction</p>
 <p><span class="arithmatex">\(\ce{H2(g) + 1/2O2(g) &lt;-&gt; H2O(l)}\)</span></p>
 <p>Hence, the hydrogen energy is corrected such that the experimental free energy of formation of <span class="arithmatex">\(\ce{H_2O}\)</span> is reproduced.</p>
-<div class="arithmatex">\[\begin{align}
+<div class="arithmatex">\[
+\begin{align}
 \mu_{\rm H}^{\rm ref} &amp; = \frac{1}{2}\left[g_{\rm H_2O}^0 - \mu_O^0 - \Delta g_{\rm H_2O}^{0, {\rm exp}} \right] \\
 &amp; \approx \frac{1}{2}\left[ E_{\rm H_2O}^{0, {\rm DFT}} -Ts_{\rm H_2O}^0 - \mu_O^0 - \mu_{\rm H_2O}^{0, {\rm exp}} \right]
-\end{align}\]</div>
+\end{align}
+\]</div>
 <h3 id="electrochemical-stability-of-metastable-materials">Electrochemical Stability of Metastable Materials<a class="headerlink" href="#electrochemical-stability-of-metastable-materials" title="Permanent link">&para;</a></h3>
 <p>In principle, Pourbaix diagrams account for materials only at thermodynamic equilibrium, providing no insight into the electrochemical stability of metastable materials which find practical applications in many commercial applications. However, one can compute the Gibbs free energy difference for an arbitrary material with respect to the Pourbaix stable domains as a function of pH and E, providing an electrochemical (in)stability map for this material. For detailed information on the formalism and its applications see reference 2.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h2 id="using-the-computational-pourbaix-app">Using the Computational Pourbaix App<a class="headerlink" href="#using-the-computational-pourbaix-app" title="Permanent link">&para;</a></h2>
