@@ -837,19 +837,22 @@
                 <h1 id="phonons">Phonons<a class="headerlink" href="#phonons" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>A phonon is a collective excitation of a set of atoms in condensed
-matter. These excitations can be decomposed into different modes, each
+matter.
+These excitations can be decomposed into different modes, each
 being associated with an energy that corresponds to the frequency of the
-vibration. The different energies associated with each vibrational mode
+vibration.
+The different energies associated with each vibrational mode
 constitute the phonon vibrational spectra (or phonon band structure).
 The vibrational spectra of materials play an important role in physical
 phenomena such as thermal conductivity, superconductivity,
 ferroelectricity and carrier thermalization.</p>
 <p>There are different methods to calculate the vibrational spectra from
-first-principles using the density functional theory formalism (DFT). It
-can be obtained from the Fourier transform of the trajectories of the
+first-principles using the density functional theory formalism (DFT).
+It can be obtained from the Fourier transform of the trajectories of the
 atoms on a molecular dynamics run, from finite-differences of the total
 energy with respect to atomic displacements or directly from density
-functional perturbation theory (DFPT). The latter method is the one used
+functional perturbation theory (DFPT).
+The latter method is the one used
 in the calculations on the Materials project page.</p>
 <h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
 <p>In the density functional perturbation theory formalism the derivatives
@@ -858,38 +861,54 @@ from the self-consistency loop <sup id="fnref:1"><a class="footnote-ref" href="#
 Brillouin zone the phonon frequencies <span class="arithmatex">\(\omega\_{\mathbf{q},m}\)</span> and
 eigenvectors <span class="arithmatex">\(U_m(\mathbf{q}\kappa'\beta)\)</span> are obtained by solving
 of the generalized eigenvalue problem</p>
-<div class="arithmatex">\[\sum*{\kappa'\beta}\widetilde{C}*{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M*{\kappa}\omega^2\_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]</div>
+<div class="arithmatex">\[
+\sum_{\kappa'\beta}\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M_{\kappa}\omega^2_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha)
+\]</div>
 <p>where <span class="arithmatex">\(\kappa\)</span> labels the atoms in the cell, <span class="arithmatex">\(\alpha\)</span> and
 <span class="arithmatex">\(\beta\)</span> are cartesian coordinates and
 <span class="arithmatex">\(\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})\)</span> are the
 interatomic force constants in reciprocal space, which are related to
 the second derivatives of the energy with respect to atomic
-displacements. These values have been obtained by performing a Fourier
+displacements.
+These values have been obtained by performing a Fourier
 interpolation of those calculated on a regular grid of <strong>q</strong>-points
 obtained with DFPT.</p>
 <h2 id="thermodynamic-properties">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties" title="Permanent link">&para;</a></h2>
 <p>The vibrational density of states <span class="arithmatex">\(g(\omega)\)</span> is obtained from an
 integration over the full Brillouin zone</p>
-<div class="arithmatex">\[g(\omega) = \frac{1}{3nN}\sum*{\mathbf{q},m}\delta(\omega-\omega*{\mathbf{q},m}),\]</div>
+<div class="arithmatex">\[
+g(\omega) = \frac{1}{3nN}\sum_{\mathbf{q},m}\delta(\omega-\omega_{\mathbf{q},m})
+\]</div>
 <p>where <span class="arithmatex">\(n\)</span> is the number of atoms per unit cell and <span class="arithmatex">\(N\)</span> is the
-number of unit cells. The expressions for the Helmholtz free energy
+number of unit cells.
+The expressions for the Helmholtz free energy
 <span class="arithmatex">\(\Delta F\)</span>, the phonon contribution to the internal energy
 <span class="arithmatex">\(\Delta E\_{\text{ph}}\)</span>, the constant-volume specific heat <span class="arithmatex">\(C_v\)</span>
 and the entropy <span class="arithmatex">\(S\)</span> can be obtained in the harmonic approximation
 <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
-<div class="arithmatex">\[\Delta F = 3nNk*BT\int*{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
-<div class="arithmatex">\[\Delta E*{\text{ph}} = 3nN\frac{\hbar}{2}\int*{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
-<div class="arithmatex">\[C*v = 3nNk_B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
-<div class="arithmatex">\[S = 3nNk*B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]</div>
+<div class="arithmatex">\[
+\Delta F = 3nNk*BT\int_{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+\]</div>
+<div class="arithmatex">\[
+\Delta E_{\text{ph}} = 3nN\frac{\hbar}{2}\int_{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+\]</div>
+<div class="arithmatex">\[
+C*v = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+\]</div>
+<div class="arithmatex">\[
+S = 3nNk*B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega
+\]</div>
 <p>where <span class="arithmatex">\(k_B\)</span> is the Boltzmann constant and <span class="arithmatex">\(\omega_L\)</span> is the
 largest phonon frequency.</p>
 <h2 id="calculation-details">Calculation details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
 <p>All the DFT and DFPT calculations are performed with the ABINIT software
 package <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
 <p>The PBEsol <sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> semilocal generalized gradient approximation
-exchange-correlation functional (XC) is used for the calculations. This
+exchange-correlation functional (XC) is used for the calculations.
+This
 functional is proven to provide accurate phonon frequencies compared to
-experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>
+experimental data <sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.
+The pseudopotentials are norm-conserving <sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>
 and taken from the pseudopotentials table Pseudo-dojo version 0.3 <sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>.</p>
 <p>The plane wave cutoff is chosen based on the hardest element for each
 compound, according to the values suggested in the Pseudo-dojo table.
