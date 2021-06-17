@@ -45,6 +45,7 @@ jobs:
   merge-deps:
     needs:
       - test
+      - lint
     runs-on: ubuntu-latest
     steps:
       - name: Merge me!
