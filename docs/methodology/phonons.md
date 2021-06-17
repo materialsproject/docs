@@ -3,20 +3,23 @@
 ## Introduction
 
 A phonon is a collective excitation of a set of atoms in condensed
-matter. These excitations can be decomposed into different modes, each
+matter.
+These excitations can be decomposed into different modes, each
 being associated with an energy that corresponds to the frequency of the
-vibration. The different energies associated with each vibrational mode
+vibration.
+The different energies associated with each vibrational mode
 constitute the phonon vibrational spectra (or phonon band structure).
 The vibrational spectra of materials play an important role in physical
 phenomena such as thermal conductivity, superconductivity,
 ferroelectricity and carrier thermalization.
 
 There are different methods to calculate the vibrational spectra from
-first-principles using the density functional theory formalism (DFT). It
-can be obtained from the Fourier transform of the trajectories of the
+first-principles using the density functional theory formalism (DFT).
+It can be obtained from the Fourier transform of the trajectories of the
 atoms on a molecular dynamics run, from finite-differences of the total
 energy with respect to atomic displacements or directly from density
-functional perturbation theory (DFPT). The latter method is the one used
+functional perturbation theory (DFPT).
+The latter method is the one used
 in the calculations on the Materials project page.
 
 ## Formalism
@@ -28,14 +31,17 @@ Brillouin zone the phonon frequencies $\omega\_{\mathbf{q},m}$ and
 eigenvectors $U_m(\mathbf{q}\kappa'\beta)$ are obtained by solving
 of the generalized eigenvalue problem
 
-\[\sum*{\kappa'\beta}\widetilde{C}*{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M*{\kappa}\omega^2\_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]
+$$
+\sum_{\kappa'\beta}\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M_{\kappa}\omega^2_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha)
+$$
 
 where $\kappa$ labels the atoms in the cell, $\alpha$ and
 $\beta$ are cartesian coordinates and
 $\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})$ are the
 interatomic force constants in reciprocal space, which are related to
 the second derivatives of the energy with respect to atomic
-displacements. These values have been obtained by performing a Fourier
+displacements.
+These values have been obtained by performing a Fourier
 interpolation of those calculated on a regular grid of **q**-points
 obtained with DFPT.
 
@@ -44,22 +50,33 @@ obtained with DFPT.
 The vibrational density of states $g(\omega)$ is obtained from an
 integration over the full Brillouin zone
 
-\[g(\omega) = \frac{1}{3nN}\sum*{\mathbf{q},m}\delta(\omega-\omega*{\mathbf{q},m}),\]
+$$
+g(\omega) = \frac{1}{3nN}\sum_{\mathbf{q},m}\delta(\omega-\omega_{\mathbf{q},m})
+$$
 
 where $n$ is the number of atoms per unit cell and $N$ is the
-number of unit cells. The expressions for the Helmholtz free energy
+number of unit cells.
+The expressions for the Helmholtz free energy
 $\Delta F$, the phonon contribution to the internal energy
 $\Delta E\_{\text{ph}}$, the constant-volume specific heat $C_v$
 and the entropy $S$ can be obtained in the harmonic approximation
 [^2]
 
-\[\Delta F = 3nNk*BT\int*{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
+$$
+\Delta F = 3nNk*BT\int_{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+$$
 
-\[\Delta E*{\text{ph}} = 3nN\frac{\hbar}{2}\int*{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
+$$
+\Delta E_{\text{ph}} = 3nN\frac{\hbar}{2}\int_{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+$$
 
-\[C*v = 3nNk_B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
+$$
+C*v = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega
+$$
 
-\[S = 3nNk*B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]
+$$
+S = 3nNk*B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega
+$$
 
 where $k_B$ is the Boltzmann constant and $\omega_L$ is the
 largest phonon frequency.
@@ -70,9 +87,11 @@ All the DFT and DFPT calculations are performed with the ABINIT software
 package [^3] [^4].
 
 The PBEsol [^5] semilocal generalized gradient approximation
-exchange-correlation functional (XC) is used for the calculations. This
+exchange-correlation functional (XC) is used for the calculations.
+This
 functional is proven to provide accurate phonon frequencies compared to
-experimental data [^6]. The pseudopotentials are norm-conserving [^7]
+experimental data [^6].
+The pseudopotentials are norm-conserving [^7]
 and taken from the pseudopotentials table Pseudo-dojo version 0.3 [^8].
 
 The plane wave cutoff is chosen based on the hardest element for each
