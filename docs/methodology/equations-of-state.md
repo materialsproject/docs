@@ -59,9 +59,9 @@ _NPJ Computational Materials._ **4,** 1, 2057-3960 (2018).
 
 ## Authors
 
-1.  Katherine Latimer
-2.  Shyam Dwaraknath
-3.  Donny Winston
+1. Katherine Latimer
+2. Shyam Dwaraknath
+3. Donny Winston
 
 ## References
 

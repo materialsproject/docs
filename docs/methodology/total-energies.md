@@ -202,15 +202,15 @@ Change Error manual](/methodology/volume-change-error).
 To cite the calculation methodology, please reference the following
 works:
 
-1.  A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T.
-    Mueller, K.A. Persson, G. Ceder., A High-Throughput Infrastructure
-    for Density Functional Theory Calculations, Computational Materials
-    Science, vol. 50, 2011, pp. 2295-2310.
-    [DOI:10.1016/j.commatsci.2011.02.023](https://dx.doi.org/10.1016/j.commatsci.2011.02.023)
-2.  A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
-    Persson, G. Ceder, Accurate Formation Enthalpies by Mixing GGA and
-    GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
-    [DOI:10.1103/PhysRevB.84.045115](https://doi.org/10.1103/PhysRevB.84.045115)
+1. A. Jain, G. Hautier, C. Moore, S.P. Ong, C.C. Fischer, T.
+   Mueller, K.A. Persson, G. Ceder., A High-Throughput Infrastructure
+   for Density Functional Theory Calculations, Computational Materials
+   Science, vol. 50, 2011, pp. 2295-2310.
+   [DOI:10.1016/j.commatsci.2011.02.023](https://dx.doi.org/10.1016/j.commatsci.2011.02.023)
+2. A. Jain, G. Hautier, S.P. Ong, C. Moore, C.C. Fischer, K.A.
+   Persson, G. Ceder, Accurate Formation Enthalpies by Mixing GGA and
+   GGA+U calculations, Physical Review B, vol. 84, 2011, p. 045115.
+   [DOI:10.1103/PhysRevB.84.045115](https://doi.org/10.1103/PhysRevB.84.045115)
 
 ## Authors
 

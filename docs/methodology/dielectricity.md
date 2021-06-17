@@ -29,7 +29,7 @@ electric field to the field within the material and can be defined as:
 
 where $E$ is the electric
 field inside the material and $E*0$ is the externally applied
-electric field. the indices *i, j* refer to the direction in space and
+electric field. the indices *i*, *j* refer to the direction in space and
 take the values: ${1, 2, 3}$. The dielectric tensor can be split in
 the ionic ($\epsilon_0$) and electronic ($\epsilon*\infty$)
 contributions:
@@ -107,7 +107,7 @@ dependence formula is, unfortunately, not known [^27][^28][^29].
 Additionally, the validity of GGA depends on the charge density varying
 slowly—an assumption that may be broken when an external electric field
 is applied [^30].
-![](/methodology/img/dielectricity/Dielectric_benchmarking.png)
+![Benchmarking DFPT dielectric constants](/methodology/img/dielectricity/Dielectric_benchmarking.png)
 
 ## Citation
 
@@ -133,8 +133,8 @@ calculations and comparison to experiments are described in detail.
 
 ## Authors
 
-1.  Shyam Dwaraknath
-2.  Ioannis Petousis
+1. Shyam Dwaraknath
+2. Ioannis Petousis
 
 ## References
 

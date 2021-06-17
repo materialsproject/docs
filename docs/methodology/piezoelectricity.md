@@ -180,7 +180,7 @@ anomalies in the calculations are described in the paper.
 
 ## Authors
 
-1.  Maarten de Jong
+1. Maarten de Jong
 
 ## References
 

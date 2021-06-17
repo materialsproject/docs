@@ -2,23 +2,29 @@
 
 ## What is MPComplete?
 
-MPComplete is a service we offer to the community, whereby users can submit crystal structures to us that are not already in our database, that we then add to our calculation queue to calculate lattice parameters, relaxed atomic geometries, and total energies. This helps us to complete our database.
+MPComplete is a service we offer to the community, whereby users can submit crystal structures to us that are not already in our database, that we then add to our calculation queue to calculate lattice parameters, relaxed atomic geometries, and total energies.
+This helps us to complete our database.
 
 ## What Crystal Structures Are Appropriate
 
-Any bulk-like crystal structure can be submitted to the Materials Project using MPComplete. Please do not submit defects, surfaces, and the like, or organic compounds.
+Any bulk-like crystal structure can be submitted to the Materials Project using MPComplete.
+Please do not submit defects, surfaces, and the like, or organic compounds.
 
-Two-dimensional materials can be submitted but we do not currently converge the vacuum layer, so please make sure there is sufficient vacuum in the cell (typically at least greater than 10 Å). Layered materials can also be submitted but note that we do not currently use a van der Waals functional so inter-layer spacing will not be calculated accurately.
+Two-dimensional materials can be submitted but we do not currently converge the vacuum layer, so please make sure there is sufficient vacuum in the cell (typically at least greater than 10 Å).
+Layered materials can also be submitted but note that we do not currently use a van der Waals functional so inter-layer spacing will not be calculated accurately.
 
 ## Submitting Crystal Structures via the Website
 
-You can submit individual structures online using [Crystal Toolkit](crystal-toolkit.md) and using the 'Submit to MPComplete' button. Crystal structures can be imported by uploading a CIF file or similar and can be optionally transformed by substituting atomic species or similar before submission. Please make sure to enter any comments or references as appropriate so that we can properly attribute the source of the crystal structure.
+You can submit individual structures online using [Crystal Toolkit](crystal-toolkit.md) and using the 'Submit to MPComplete' button.
+Crystal structures can be imported by uploading a CIF file or similar and can be optionally transformed by substituting atomic species or similar before submission.
+Please make sure to enter any comments or references as appropriate so that we can properly attribute the source of the crystal structure.
 
 A one-minute video walkthrough of the process is available [here](https://www.youtube.com/watch?v=4c8MZdD0L3c).
 
 ## Submitting Crystal Structures in Bulk
 
-For bulk submission of structures it would be easier to use our _pymatgen_ Python code and API to submit structures. Please contact us for detailed instructions at feedback@materialsproject.org
+For bulk submission of structures it would be easier to use our _pymatgen_ Python code and API to submit structures.
+Please contact us for detailed instructions at feedback@materialsproject.org
 
 ## Monitoring the Status of Your Submissions
 

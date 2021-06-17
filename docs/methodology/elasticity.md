@@ -40,63 +40,63 @@ We suspect this has to do with the fact that unit cells often exhibit
 higher symmetries and simpler Brillouin zones than primitive cells (an
 example is face centered cubic cells).
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 + \delta _{1} & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 & 0 & 0 \\
 0 & 1 + \delta _{1} & 0 \\
 0 & 0 & 1 \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 + \delta _{1} \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 & \delta _{2} & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 & 0 & \delta _{2} \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \boldsymbol{F}=
 \left[{\begin{matrix}
 1 & 0 & 0 \\
 0 & 1 & \delta _{2} \\
 0 & 0 & 1 \\
 \end{matrix}}\right]\,
-\]
+$$
 
-\[
+$$
 \mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})\,
-\]
+$$
 
 We employ the Green-Lagrange strain tensor, $\mathbf{E}$, in this
 work, defined above. The 6x6 elastic tensor is calculated from the
@@ -107,7 +107,8 @@ We make use of the following Voigt-notation in this work:
 $11 \mapsto 1$, $22 \mapsto 2$, $33 \mapsto 3$,
 $23 \mapsto 4$, $13 \mapsto 5$, $12 \mapsto 6$.
 
-\(\left[
+$$
+\left[
 \begin{array}{c}
 S_{11} \\
 S_{22} \\
@@ -137,7 +138,8 @@ E_{33} \\
 2 E_{13} \\
 2 E_{12}
 \end{array}
-\right]\)
+\right]
+$$
 
 Different choices of lattice vectors with respect to a Cartesian
 coordinate system may lead to elastic tensors that look different from
