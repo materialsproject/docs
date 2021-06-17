@@ -17,62 +17,62 @@ Ensemble statistical learning techniques construct a predictor from a collection
 The successful application of SL requires a set of descriptor candidates that sufficiently explain the diversity of the phenomenon being learned. We distinguish between composition and structural descriptors. Composition descriptors are calculated from elemental properties and only require knowledge of a compound’s composition. Structural descriptors require knowledge of a compound’s specific structure and are calculated using DFT. The descriptors used for the final learned model and their relative influence (RI) are presented in Table 1.
 
 <table style="width:100%">
-	<tr>
-		<th>Model</th>
-		<th>Rank</th>
-		<th>Descriptor</th>
-		<th>Underlying property</th>
-		<th>RI (%)</th>
-	</tr>
-	<tr>
-		<td rowspan=4>K</td>
-		<td>1</td>
-		<td>log(<i>V</i>)</td>
-		<td>volume per atom</td>
-		<td>46.6</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td><MATH><i>&mu;<sub>1</sub>(R<sub>n</sub>)</i></MATH></td>
-		<td>row number</td>
-		<td>24.5</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td><i>E<sub>c</sub></i></td>
-		<td>cohesive energy</td>
-		<td>19.4</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td><MATH><i>&mu;<sub>-4</sub>(X)</i></MATH></td>
-		<td>electronegativity</td>
-		<td>9.5</td>
-	</tr>
-	<tr>
-		<td rowspan=4>G</td>
-		<td>1</td>
-		<td><i>E<sub>c</sub></i></td>
-		<td>cohesive energy</td>
-		<td>37.0</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>log(<i>V</i>)</td>
-		<td>volume per atom</td>
-		<td>35.9</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td><MATH><i>&mu;<sub>-3</sub>(R<sub>n</sub>)</i></MATH></td>
-		<td>row number</td>
-		<td>13.8</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td><MATH><i>&mu;<sub>4</sub>(X)</i></MATH></td>
-		<td>electronegativity</td>
-		<td>13.3</td>
+  <tr>
+    <th>Model</th>
+    <th>Rank</th>
+    <th>Descriptor</th>
+    <th>Underlying property</th>
+    <th>RI (%)</th>
+  </tr>
+  <tr>
+    <td rowspan=4>K</td>
+    <td>1</td>
+    <td>log(<i>V</i>)</td>
+    <td>volume per atom</td>
+    <td>46.6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><MATH><i>&mu;<sub>1</sub>(R<sub>n</sub>)</i></MATH></td>
+    <td>row number</td>
+    <td>24.5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><i>E<sub>c</sub></i></td>
+    <td>cohesive energy</td>
+    <td>19.4</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><MATH><i>&mu;<sub>-4</sub>(X)</i></MATH></td>
+    <td>electronegativity</td>
+    <td>9.5</td>
+  </tr>
+  <tr>
+    <td rowspan=4>G</td>
+    <td>1</td>
+    <td><i>E<sub>c</sub></i></td>
+    <td>cohesive energy</td>
+    <td>37.0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>log(<i>V</i>)</td>
+    <td>volume per atom</td>
+    <td>35.9</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><MATH><i>&mu;<sub>-3</sub>(R<sub>n</sub>)</i></MATH></td>
+    <td>row number</td>
+    <td>13.8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><MATH><i>&mu;<sub>4</sub>(X)</i></MATH></td>
+    <td>electronegativity</td>
+    <td>13.3</td>
 </table>
 
 Table 1: Descriptor rank and relative influence (RI) for the models for $K$ and $G$. Composition descriptors are constructed as Hölder means $\mu_p(x)$ (power $p$, property $x$). This table and caption are from de Jong et al.'s SL paper [^3], which also provides details on Hölder means.
@@ -82,39 +82,39 @@ Table 1: Descriptor rank and relative influence (RI) for the models for $K$ and 
 The accuracy of the model is summarized below.
 
 <table style="width:100%">
-	<tr>
-		<th>Model</th>
-		<th>Iteration Threshold</th>
-		<th>Prediction RMSE (log(GPa))</th>
-		<th colspan="4">Percent of Predictions within Relative Error of</th>
-	</tr>
-	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
-		<th>5%</th>
-		<th>10%</th>
-		<th>20%</th>
-		<th>30%</th>
-	</tr>
-	<tr>
-		<td>K</td>
-		<td>99</td>
-		<td>0.0750</td>
-		<td>33.1</td>
-		<td>58.4</td>
-		<td>87.3</td>
-		<td>94.5</td>
-	</tr>
-	<tr>
-		<td>G</td>
-		<td>90</td>
-		<td>0.1378</td>
-		<td>13.6</td>
-		<td>28.8</td>
-		<td>53.0</td>
-		<td>73.0</td>
-	</tr>
+  <tr>
+    <th>Model</th>
+    <th>Iteration Threshold</th>
+    <th>Prediction RMSE (log(GPa))</th>
+    <th colspan="4">Percent of Predictions within Relative Error of</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>5%</th>
+    <th>10%</th>
+    <th>20%</th>
+    <th>30%</th>
+  </tr>
+  <tr>
+    <td>K</td>
+    <td>99</td>
+    <td>0.0750</td>
+    <td>33.1</td>
+    <td>58.4</td>
+    <td>87.3</td>
+    <td>94.5</td>
+  </tr>
+  <tr>
+    <td>G</td>
+    <td>90</td>
+    <td>0.1378</td>
+    <td>13.6</td>
+    <td>28.8</td>
+    <td>53.0</td>
+    <td>73.0</td>
+  </tr>
 </table>
 
 Table 2: Iteration threshold as determined by cross validation, prediction root mean squared error (RMSE), and percentage of predictions within 5, 10, 20, and 30 percent relative error for _K_ and _G_ models. This table and caption are from de Jong et al.'s SL paper [^3].
