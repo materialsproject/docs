@@ -6,7 +6,7 @@ Thermodynamic equations of state (EOS) for crystalline solids describe
 material behaviors under changes in pressure, volume, entropy and
 temperature. Despite over a century of theoretical development and
 experimental testing of energy-volume (E-V) EOS for solids, there is
-still a lack of consensus with regard to which equation is optimal, as 
+still a lack of consensus with regard to which equation is optimal, as
 well as to what metrics are most appropriate for making this
 judgment.
 
@@ -33,20 +33,20 @@ available MP data.
 
 ## Fitted Equation Forms
 
-| **Equation**      | **\\(\boldsymbol{E(\nu^\*)}\\)**                                                                                                               | **\\(\boldsymbol{K(\nu = 1)}\\)** | **\\(\boldsymbol{K'(\nu = 1)}\\)** | **Ref** |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------------------------------- | ------- |
-| Birch (Euler)     | \\(E = E_o^{\*\*} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 + \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)\\)                        | \\(\frac{8B}{9}\\)                | \\(C + 4\\)                        | [^1]    |
-| Birch (Lagrange)  | \\(E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)\\) | \\(\frac{16B}{9}\\)               | \\(C - 2\\)                        | [^1]    |
-| Mie-Gruneisen     | \\(E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} - \frac{1}{C}\nu^{-\frac{C}{3}}\Big)\\)                                | \\(\frac{B}{9}\\)                 | \\(\frac{7 + C}{3}\\)              | [^2]    |
-| Murnaghan         | \\(E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)\\)                                                                 | \\(B\\)                           | \\(C + 1\\)                        | [^3]    |
-| Pack-Evans-James  | \\(E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1 -\nu^{\frac{1}{3}}\big)\Big)\\)               | \\(B\\)                           | \\(C + 1\\)                        | [^4]    |
-| Poirier-Tarantola | \\(E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)\\)                                                                        | \\(6B\\)                          | \\(C + 2\\)                        | [^5]    |
-| Tait              | \\(E = E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)\\)                                                       | \\(B\\)                           | \\(C - 1\\)                        | [^6]    |
-| Vinet             | \\(E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} - 1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)\\)                              | \\(\frac{B}{9}\\)                 | \\(\frac{2}{3}C + 1\\)             | [^7]    |
+| **Equation**      | **$\boldsymbol{E(\nu^\*)}$**                                                                                                               | **$\boldsymbol{K(\nu = 1)}$** | **$\boldsymbol{K'(\nu = 1)}$** | **Ref** |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | ------------------------------ | ------- |
+| Birch (Euler)     | $E = E_o^{\*\*} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 + \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)$                        | $\frac{8B}{9}$                | $C + 4$                        | [^1]    |
+| Birch (Lagrange)  | $E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)$ | $\frac{16B}{9}$               | $C - 2$                        | [^1]    |
+| Mie-Gruneisen     | $E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} - \frac{1}{C}\nu^{-\frac{C}{3}}\Big)$                                | $\frac{B}{9}$                 | $\frac{7 + C}{3}$              | [^2]    |
+| Murnaghan         | $E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)$                                                                 | $B$                           | $C + 1$                        | [^3]    |
+| Pack-Evans-James  | $E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1 -\nu^{\frac{1}{3}}\big)\Big)$               | $B$                           | $C + 1$                        | [^4]    |
+| Poirier-Tarantola | $E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)$                                                                        | $6B$                          | $C + 2$                        | [^5]    |
+| Tait              | $E = E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)$                                                       | $B$                           | $C - 1$                        | [^6]    |
+| Vinet             | $E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} - 1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)$                              | $\frac{B}{9}$                 | $\frac{2}{3}C + 1$             | [^7]    |
 
-\\(^\*\\) \\(\nu = \frac{V}{V_o}\\), where \\(V_o\\) is the volume at zero pressure.
+$^\*$ $\nu = \frac{V}{V_o}$, where $V_o$ is the volume at zero pressure.
 
-\\(^{\*\*}\\) \\(E_o = E(\nu = 1)\\)
+$^{\*\*}$ $E_o = E(\nu = 1)$
 
 ## Citation
 
@@ -59,9 +59,9 @@ _NPJ Computational Materials._ **4,** 1, 2057-3960 (2018).
 
 ## Authors
 
-1.  Katherine Latimer
-2.  Shyam Dwaraknath
-3.  Donny Winston
+1. Katherine Latimer
+2. Shyam Dwaraknath
+3. Donny Winston
 
 ## References
 

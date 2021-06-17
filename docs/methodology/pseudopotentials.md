@@ -217,7 +217,7 @@ Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
 
 ## Authors
 
-1.  Geoffroy Hautier
+1. Geoffroy Hautier
 
 ## References
 

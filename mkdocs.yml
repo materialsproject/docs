@@ -8,7 +8,7 @@ repo_url: "https://github.com/materialsproject/docs"
 
 nav:
   - Home: "index.md"
-  - Foundation: "foundation.md"
+  #- Foundation: "foundation.md"
   - Methodology:
       - "Total energies": "methodology/total-energies.md"
       - "Electronic structure": "methodology/electronic-structure.md"
@@ -20,6 +20,7 @@ nav:
       - "Dielectricity": "methodology/dielectricity.md"
       - "Equations of State": "methodology/equations-of-state.md"
       - "Phonons": "methodology/phonons.md"
+      - "Volume Change Error": methodology/volume-change-error.md
   - User Reference:
       - "Crystal Toolkit": "user-guide/crystal-toolkit.md"
       - "Materials Explorer": "user-guide/materials-explorer.md"
@@ -28,28 +29,54 @@ nav:
       - "Structure Predictor": "user-guide/structure-predictor.md"
       - "Pourbaix Diagram": "user-guide/pourbaix-tool.md"
       - "Phase Diagram": "user-guide/phase-diagram.md"
+      - "XAS Spectra": user-guide/xray-absorption-spectra.md
       - "XAS Matcher": "user-guide/xas-matcher.md"
       - "Reaction Calculator": "user-guide/reaction-calculator.md"
       - "Glossary": "user-guide/glossary-of-terms.md"
       - "Materials API (MAPI)": "open-apis/the-materials-api.md"
       - "Nanoporous Explorer": "user-guide/nanoporous-explorer.md"
+      - "Deprecations": "user-guide/deprecations.md"
+      - "Developer Area": "user-guide/developers-area.md"
+      - "Interface Reactions": user-guide/interface-reactions.md
+      - "Molecular Terms": user-guide/molecular_terms.md
+      - "MPComplete": user-guide/mpcomplete.md
+      - "RFB Dashboard": user-guide/rfb_dashboard.md
+      - "Share your story": user-guide/share-your-story.md
+      - "Structure Similarity": user-guide/structure-similarity.md
   - Database Updates: "database-updates.md"
   - Contribution:
       - "Newsfeed": "contrib/spec/newsfeed.md"
 
 theme:
   name: "material"
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+      - search.share
 markdown_extensions:
   - admonition
   - footnotes
   - pymdownx.arithmatex:
       generic: true
-  - codehilite:
-      guess_lang: false
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.betterem:
+      smart_enable: all
   - toc:
       permalink: true
 
 plugins:
+  - search
   - bibtex:
       bib_dir: "refs"
       cite_style: "pandoc"

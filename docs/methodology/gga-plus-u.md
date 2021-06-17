@@ -33,16 +33,16 @@ enthalpies as described in Wang et al.'s work. This method is simple yet
 accurately reproduces phase stabilities. A least squares method of
 obtaining the correct U value was used, as follows:
 
-1.  For each non-overlapping formation energy reaction considered, we
-    find the region where the formation energy error passes zero. For
-    the V-O system, this includes the following:
-    - $\ce{2 V2O3 + O2 -> 4 VO2}$
-    - $\ce{4 VO2 + O2 -> 2 V2O5}$
-2.  For each formation energy region identified, we fit the linear
-    equation $\\begin{align} \\mbox{Error/redox} & = m U + c \\end{align}$ to
-    the final U range. In the case of V, we will have two sets of (m,c).
-3.  We find the U value that minimizes the sum of square Error / Redox.
-4.  In the case of V, we get a U value of 3.25.
+1. For each non-overlapping formation energy reaction considered, we
+   find the region where the formation energy error passes zero. For
+   the V-O system, this includes the following:
+   - $\ce{2 V2O3 + O2 -> 4 VO2}$
+   - $\ce{4 VO2 + O2 -> 2 V2O5}$
+2. For each formation energy region identified, we fit the linear
+   equation $\begin{align} \mbox{Error/redox} & = m U + c \end{align}$ to
+   the final U range. In the case of V, we will have two sets of (m,c).
+3. We find the U value that minimizes the sum of square Error / Redox.
+4. In the case of V, we get a U value of 3.25.
 
 ## U values
 
@@ -75,7 +75,7 @@ found [here](/methodology/pseudopotentials).
 
 ## Authors
 
-1.  Shyue Ping Ong
+1. Shyue Ping Ong
 
 ## References
 
