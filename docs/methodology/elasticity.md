@@ -46,7 +46,7 @@ $$
 1 + \delta _{1} & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
@@ -55,7 +55,7 @@ $$
 1 & 0 & 0 \\
 0 & 1 + \delta _{1} & 0 \\
 0 & 0 & 1 \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
@@ -64,7 +64,7 @@ $$
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 + \delta _{1} \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
@@ -73,7 +73,7 @@ $$
 1 & \delta _{2} & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
@@ -82,7 +82,7 @@ $$
 1 & 0 & \delta _{2} \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
@@ -91,11 +91,11 @@ $$
 1 & 0 & 0 \\
 0 & 1 & \delta _{2} \\
 0 & 0 & 1 \\
-\end{matrix}}\right]\,
+\end{matrix}}\right]
 $$
 
 $$
-\mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})\,
+\mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})
 $$
 
 We employ the Green-Lagrange strain tensor, $\mathbf{E}$, in this
@@ -107,44 +107,48 @@ We make use of the following Voigt-notation in this work:
 $11 \mapsto 1$, $22 \mapsto 2$, $33 \mapsto 3$,
 $23 \mapsto 4$, $13 \mapsto 5$, $12 \mapsto 6$.
 
+<!-- markdownlint-disable -->
+
 $$
 \left[
-\begin{array}{c}
+\begin{matrix}
 S_{11} \\
 S_{22} \\
 S_{33} \\
 S_{23} \\
 S_{13} \\
 S_{12}
-\end{array}
+\end{matrix}
 \right]
 =
 \left[
-\begin{array}{cccccc}
+\begin{matrix}
 C_{11} & C_{12} & C_{13} & C_{14} & C_{15} & C_{16} \\
 C_{12} & C_{22} & C_{23} & C_{24} & C_{25} & C_{26} \\
 C_{13} & C_{23} & C_{33} & C_{34} & C_{35} & C_{36} \\
 C_{14} & C_{24} & C_{34} & C_{44} & C_{45} & C_{46} \\
 C_{15} & C_{25} & C_{35} & C_{45} & C_{55} & C_{56} \\
 C_{16} & C_{26} & C_{36} & C_{46} & C_{56} & C_{66} \\
-\end{array}
+\end{matrix}
 \right]
 \left[
-\begin{array}{c}
+\begin{matrix}
 E_{11} \\
 E_{22} \\
 E_{33} \\
 2 E_{23} \\
 2 E_{13} \\
 2 E_{12}
-\end{array}
+\end{matrix}
 \right]
 $$
+
+<!-- markdownlint-restore -->
 
 Different choices of lattice vectors with respect to a Cartesian
 coordinate system may lead to elastic tensors that look different from
 what might be expected. For example, for the hexagonal crystal system it
-is commonly stated that $C*{11} = C*{22}$. However, this is true
+is commonly stated that $C_{11} = C_{22}$. However, this is true
 under the conditions that lattice vectors $\mathbf{a}_{1}$ and
 $\mathbf{a}_{2}$ are both in the basal plane, whereas
 $\mathbf{a}_{3}$ is orthogonal to the basal plane. Hence, the
@@ -182,15 +186,15 @@ are reported.
 | ------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Elastic tensor, $C_{ij}$              | GPa        | Tensor, describing elastic behavior, corresponding to IEEE orientation, symmetrized to crystal structure             | see main text                                                                                                             |
 | Elastic tensor (original), $C_{ij}$   | GPa        | Tensor, describing elastic behavior, unsymmetrized, corresponding to POSCAR (conventional standard cell) orientation | see main text                                                                                                             |
-| Compliance tensor, $s_{ij}$           | GPa$^{-1}$ | Tensor, describing elastic behavior                                                                                  | $s*{ij} = C*{ij}^{-1}$                                                                                                    |
-| Bulk modulus Voigt average, $K_{V}$   | GPa        | Upper bound on $K$ for polycrystalline material                                                                      | $9K*{V}=\left(C*{11}+C*{22}+C*{33}\right) + 2\left(C*{12}+C*{23}+C_{31}\right)$                                           |
-| Bulk modulus Reuss average, $K_{R}$   | GPa        | Lower bound on $K$ for polycrystalline material                                                                      | $1 / K*{R} = \left(s*{11}+s*{22}+s*{33}\right) + 2\left(s*{12}+s*{23}+s_{31}\right)$                                      |
-| Shear modulus Voigt average, $G_{V}$  | GPa        | Upper bound on $G$ for polycrystalline material                                                                      | $15 G*{V} = \left(C*{11}+C*{22}+C*{33}\right)-\left(C*{12}+C*{23}+C*{31}\right) + 3\left(C*{44}+C*{55}+C*{66}\right)$     |
-| Shear modulus Reuss average, $G_{R}$  | GPa        | Lower bound on $G$ for polycrystalline material                                                                      | $15 / G*{R} = 4\left(s*{11}+s*{22}+s*{33}\right)-4\left(s*{12}+s*{23}+s*{31}\right) + 3\left(s*{44}+s*{55}+s*{66}\right)$ |
-| Bulk modulus VRH average, $K_{VRH}$   | GPa        | Average of $K*{R}$ and $K*{V}$                                                                                       | $2 K*{VRH} = \left(K*{V} + K_{R} \right)$                                                                                 |
-| Shear modulus VRH average, $G_{VRH}$  | GPa        | Average of $G*{R}$ and $G*{V}$                                                                                       | $2 G*{VRH} = \left(G*{V} + G_{R} \right)$                                                                                 |
-| Universal elastic anisotropy, $A^{U}$ | -          | Description of elastic anisotropy                                                                                    | $A^{U} = 5 \left(G*{V}/G*{R}\right) + \left(K*{V}/K*{R}\right) -6 \geq 0$                                                 |
-| Isotropic Poisson ratio, $\mu$        | -          | Number, describing lateral response to loading                                                                       | $\mu = \left(3K*{VRH} - 2G*{VRH}\right)$ / $\left(6K*{VRH} + 2G*{VRH}\right)$                                             |
+| Compliance tensor, $s_{ij}$           | GPa$^{-1}$ | Tensor, describing elastic behavior                                                                                  | $s_{ij} = C_{ij}^{-1}$                                                                                                    |
+| Bulk modulus Voigt average, $K_{V}$   | GPa        | Upper bound on $K$ for polycrystalline material                                                                      | $9K_{V}=\left(C_{11}+C_{22}+C_{33}\right) + 2\left(C_{12}+C_{23}+C_{31}\right)$                                           |
+| Bulk modulus Reuss average, $K_{R}$   | GPa        | Lower bound on $K$ for polycrystalline material                                                                      | $1 / K_{R} = \left(s_{11}+s_{22}+s_{33}\right) + 2\left(s_{12}+s_{23}+s_{31}\right)$                                      |
+| Shear modulus Voigt average, $G_{V}$  | GPa        | Upper bound on $G$ for polycrystalline material                                                                      | $15 G_{V} = \left(C_{11}+C_{22}+C_{33}\right)-\left(C_{12}+C_{23}+C_{31}\right) + 3\left(C_{44}+C_{55}+C_{66}\right)$     |
+| Shear modulus Reuss average, $G_{R}$  | GPa        | Lower bound on $G$ for polycrystalline material                                                                      | $15 / G_{R} = 4\left(s_{11}+s_{22}+s_{33}\right)-4\left(s_{12}+s_{23}+s_{31}\right) + 3\left(s_{44}+s_{55}+s_{66}\right)$ |
+| Bulk modulus VRH average, $K_{VRH}$   | GPa        | Average of $K_{R}$ and $K_{V}$                                                                                       | $2 K_{VRH} = \left(K_{V} + K_{R} \right)$                                                                                 |
+| Shear modulus VRH average, $G_{VRH}$  | GPa        | Average of $G_{R}$ and $G_{V}$                                                                                       | $2 G_{VRH} = \left(G_{V} + G_{R} \right)$                                                                                 |
+| Universal elastic anisotropy, $A^{U}$ | -          | Description of elastic anisotropy                                                                                    | $A^{U} = 5 \left(G_{V}/G_{R}\right) + \left(K_{V}/K_{R}\right) -6 \geq 0$                                                 |
+| Isotropic Poisson ratio, $\mu$        | -          | Number, describing lateral response to loading                                                                       | $\mu = \left(3K_{VRH} - 2G_{VRH}\right)$ / $\left(6K_{VRH} + 2G_{VRH}\right)$                                             |
 
 ## DFT parameters
 
@@ -243,7 +247,7 @@ correspond to a particular crystal symmetry, and taking the average over
 all transformed tensors with respect to these operations. If there are
 $y$ symmetry operations are denoted $Q_{ij}^{(x)}$ then:
 
-$C*{mnop}^{(sym)} = \sum*{x=1}^y Q*{im}^{(x)} Q*{jn}^{(x)} Q*{ko}^{(x)} Q*{lp}^{(x)} C_{ijkl}$
+$C_{mnop}^{(sym)} = \sum_{x=1}^y Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}$
 
 ## Citation
 

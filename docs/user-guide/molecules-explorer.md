@@ -10,7 +10,8 @@
 
 ## Introduction
 
-The primary goal of the molecular explorer is to report the atomic structure of molecules, found using quantum chemistry computational methods. Further quantities of interest, including the electron affinity (EA) and ionization energies (IE), are also reported.
+The primary goal of the molecular explorer is to report the atomic structure of molecules, found using quantum chemistry computational methods.
+Further quantities of interest, including the electron affinity (EA) and ionization energies (IE), are also reported.
 
 ## Manual
 
@@ -18,11 +19,14 @@ The primary goal of the molecular explorer is to report the atomic structure of 
 
 ## Calculations
 
-Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend. For small molecules, Q-Chem calculations were performed using the 6-31+G\* Pople bases[^1] and the hybrid-functional B3LYP[^2]. For molecules with more than 50 atoms, a hybrid procedure[^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G\* level as a single point calculation.
+Atomic structures and quantities of interest were calculated using the Materials Project infrastructure with the quantum chemistry software Q-Chem at the backend.
+For small molecules, Q-Chem calculations were performed using the 6-31+G\* Pople bases[^1] and the hybrid-functional B3LYP[^2].
+For molecules with more than 50 atoms, a hybrid procedure[^3] was used in which the geometry is optimized at a low level of theory and quantities of interest are still calculated at the B3LYP/6-31+G\* level as a single point calculation.
 
 ### Geometry Optimization
 
-An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies. Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained[^3].
+An atomic structure is stable if its vibrational frequency spectrum contains no imaginary frequencies.
+Thus, the atomic structures were calculated using a dynamic workflow that performs successive calculations until a geometry with zero imaginary frequencies is obtained[^3].
 
 ### Properties
 
@@ -71,5 +75,5 @@ In order to search the database for the molecule in question, four methods can b
 
 [^1]: Ditchfield, R., Hehre, W.J. & Pople, J.A. J. Chem. Phys. 54, 724 (1971)
 [^2]: Becke, A.D. Phys. Rev. A. 38, 3098 (1988)
-[^3]: https://doi.org/10.1016/j.commatsci.2015.02.050
+[^3]: <https://doi.org/10.1016/j.commatsci.2015.02.050>
 [^4]: S. P. Ong , G. Ceder , Electrochim. Acta , 55 , 3804 (2010)

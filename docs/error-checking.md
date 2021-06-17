@@ -8,11 +8,6 @@ technically retrieved this data. To detect high-pressure phase, we had instead t
 in the journal title of the entry. Any entry with a journal title containing G[Pp]a, [kM]bar or [Pp]ressure will be
 considered as likely high-pressure phase and will be tagged with a warning accordingly.
 
-### Authors
-
-1. Geoffroy Hautier
-2. Jordan Burns
-
 ## Unusual oxidation state detection manual
 
 Unusual oxidation states (e.g., +2 for Al) can be the indication of a problem with the experiment or lead to large errors
@@ -25,11 +20,6 @@ state and A is an element. For instance, we p(+2|Al) will be very low, as it is 
 
 We decided to tag any entry with oxidation states according to the ICSD with a probability lower than 10%. Please note that
 this affect only compounds with assigned oxidation states in the ICSD.
-
-### Authors
-
-1. Geoffroy Hautier
-2. Jordan Burns
 
 ## Volume Change Error manual
 

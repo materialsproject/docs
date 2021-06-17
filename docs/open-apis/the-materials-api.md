@@ -1,8 +1,10 @@
 # The Materials API
 
-The Materials API (MAPI) is an open API for accessing Materials Project data based on REpresentational State Transfer (REST) principles. In a RESTful system, information is organized into **resources**, each of which is uniquely identified via a uniform resource identifier (URI).
+The Materials API (MAPI) is an open API for accessing Materials Project data based on REpresentational State Transfer (REST) principles.
+In a RESTful system, information is organized into **resources**, each of which is uniquely identified via a uniform resource identifier (URI).
 
-While the MAPI is designed to be code base agnostic and can conceivably be used with any programming language supporting basic http requests, a convenient wrapper to MAPI has been implemented in the [Python Materials Genomics (pymatgen)](http://pypi.python.org/pypi/pymatgen) library to facilitate researchers in using the MAPI. Please see the [#pymatgen wrapper](#pymatgen-wrapper) section.
+While the MAPI is designed to be code base agnostic and can conceivably be used with any programming language supporting basic http requests, a convenient wrapper to MAPI has been implemented in the [Python Materials Genomics (pymatgen)](http://pypi.python.org/pypi/pymatgen) library to facilitate researchers in using the MAPI.
+Please see the [#pymatgen wrapper](#pymatgen-wrapper) section.
 
 For a quick overview, please refer to the following [slides](http://www.slideshare.net/shyuep/the-materials-api-v1).
 
@@ -10,7 +12,8 @@ For a comprehensive listing of all criteria available for advanced queries via t
 
 ## Resources
 
-In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction). Currently supported information types (v2 of the REST API) include the following:
+In the Materials Project, resources are generally packages of information about a material or an analysis (e.g., a reaction).
+Currently supported information types (v2 of the REST API) include the following:
 
 **Materials** - Standard calculated or experimental information about a material.
 
@@ -22,13 +25,19 @@ In the Materials Project, resources are generally packages of information about 
 
 ### SSL Encryption
 
-All requests to the Materials API must be done over HTTPS. Non-secure http requests are not allowed and will result in a HTTP 403 (Forbidden) response.
+All requests to the Materials API must be done over HTTPS.
+Non-secure http requests are not allowed and will result in a HTTP 403 (Forbidden) response.
 
 ### API keys
 
-To access the Materials API, you will need your API key, except for certain free queries that do not require a key. You can obtain your API key by logging into the Materials Project website, and going to [your dashboard](https://materialsproject.org/dashboard). Your API key and a button to regenerate the key is provided at the top of the page.
+To access the Materials API, you will need your API key, except for certain free queries that do not require a key.
+You can obtain your API key by logging into the Materials Project website, and going to [your dashboard](https://materialsproject.org/dashboard).
+Your API key and a button to regenerate the key is provided at the top of the page.
 
-Note that the API key effectively allows access to Materials Project data via your account. You should therefore make all efforts to keep it secret and under no circumstances should you share your API key with anyone. You will be held responsible for any violations conducted using your API key. Should anyone else require access to the MAPI, they should register for an account on the Materials Project and generate their own API keys.
+Note that the API key effectively allows access to Materials Project data via your account.
+You should therefore make all efforts to keep it secret and under no circumstances should you share your API key with anyone.
+You will be held responsible for any violations conducted using your API key.
+Should anyone else require access to the MAPI, they should register for an account on the Materials Project and generate their own API keys.
 
 All MP https requests must supply API key as:
 
@@ -41,7 +50,11 @@ The following is an example of a full url requesting for information of the mate
 
 ## Security
 
-You agree not to use automated scripts to collect large fractions of the database and disseminate them. You may collect large fractions of the database for analysis and to present processed results with proper attribution. If you plan to download large datasets, please email heavy.api.use@materialsproject.org with the email address associated with your account and with your use case so that we can avoid flagging your account as abusing the service. We may also suggest an efficient way for you to obtain the data you need. We reserve the right to disable API keys as a security precaution against bots.
+You agree not to use automated scripts to collect large fractions of the database and disseminate them.
+You may collect large fractions of the database for analysis and to present processed results with proper attribution.
+If you plan to download large datasets, please email heavy.api.use@materialsproject.org with the email address associated with your account and with your use case so that we can avoid flagging your account as abusing the service.
+We may also suggest an efficient way for you to obtain the data you need.
+We reserve the right to disable API keys as a security precaution against bots.
 
 ## API documentation
 
@@ -58,9 +71,11 @@ All URIs in the MAPI are of the general form
 
 ### General Response Format
 
-All responses from the Materials API are in the JavaScript Object Notation (JSON). XML is not supported currently. The responses generally are of the following form:
+All responses from the Materials API are in the JavaScript Object Notation (JSON).
+XML is not supported currently.
+The responses generally are of the following form:
 
-```
+```json
  {
     valid_response: true,
     version: {
@@ -74,15 +89,22 @@ All responses from the Materials API are in the JavaScript Object Notation (JSON
 }
 ```
 
-### Resources
+### Resource Details
 
 #### materials (calculated materials data)
 
 `GET https://www.materialsproject.org/rest/v2/materials/{material id, formula, or chemical system}/vasp/{property}`
 
-Obtain material information based on an identifier. The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...]. The identifier can be a Materials Project material id (e.g., mp-1234), a formula, e.g. (Fe2O3), or a chemical system ("-" separated list of elemments, e.g., Li-Fe-O). Specifying a formula or chemical system will return information for all materials with that formula or in that chemical system respectively. Note that a chemical system includes all sub-systems, i.e., the Li-Fe-O chemical system will include all Li, Fe, O, FexOy, LixOy, LixFey, LixFeyOz compounds.
+Obtain material information based on an identifier.
+The response is always a list of associative arrays, i.e., [ {key:value, ... }, {... }, ...].
+The identifier can be a Materials Project material id (e.g., mp-1234), a formula, e.g. (Fe2O3), or a chemical system ("-" separated list of elemments, e.g., Li-Fe-O).
+Specifying a formula or chemical system will return information for all materials with that formula or in that chemical system respectively.
+Note that a chemical system includes all sub-systems, i.e., the Li-Fe-O chemical system will include all Li, Fe, O, FexOy, LixOy, LixFey, LixFeyOz compounds.
 
-A property may be specified to request a specific subset of information. If no property is specified, a set of typically useful properties is returned. The materials id is always returned as part of the response. Currently supported properties and their definitions are as follows:
+A property may be specified to request a specific subset of information.
+If no property is specified, a set of typically useful properties is returned.
+The materials id is always returned as part of the response.
+Currently supported properties and their definitions are as follows:
 
 ##### Basic properties
 
@@ -198,7 +220,7 @@ Obtain information about a particular calculation based on a task id. The respon
 
 A property may be specified to request a specific subset of information. If no property is specified, a set of typically useful properties is returned. The materials id is always returned as part of the response. Currently supported properties and their definitions are as follows:
 
-##### Basic properties
+##### Basic properties list
 
 <dl>
  <dt>pretty_formula</dt>
@@ -229,7 +251,7 @@ A property may be specified to request a specific subset of information. If no p
  <dd>An alias for final_structure.</dd>
 </dl>
 
-#### Thermodynamic properties
+#### Thermodynamic properties list
 
 <dl>
  <dt>formation_energy_per_atom</dt>
@@ -238,7 +260,7 @@ A property may be specified to request a specific subset of information. If no p
  <dd>Calculated energy above convex hull for structure. Please see Phase Diagram Manual for the interpretation of this quantity.</dd>
 </dl>
 
-#### Calculation parameters
+#### Calculation parameters list
 
 <dl>
  <dt>is_hubbard</dt>
@@ -249,7 +271,7 @@ A property may be specified to request a specific subset of information. If no p
  <dd>Whether this calculation is considered compatible under the GGA/GGA+U mixing scheme.</dd>
 </dl>
 
-#### Electronic structure
+#### Electronic structure list
 
 <dl>
  <dt>band_gap</dt>
