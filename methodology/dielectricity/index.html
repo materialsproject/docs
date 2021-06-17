@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -162,31 +192,19 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -393,6 +411,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -405,14 +435,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -509,6 +539,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../user-guide/xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -563,6 +605,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -587,14 +725,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -731,20 +869,24 @@ dielectric data to ensure its reliability and accuracy.</p>
 <h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
 <p>Formally, the dielectric tensor ε relates the externally applied
 electric field to the field within the material and can be defined as:</p>
-<p>\[E_i=\sum_j \epsilon^{-1}_{ij}E_{0j}\] where \(E\) is the electric
-field inside the material and \(E_0\) is the externally applied
-electric field. the indices <em>i, j</em> refer to the direction in space and
-take the values: \({1, 2, 3}\). The dielectric tensor can be split in
-the ionic (\(\epsilon_0\)) and electronic (\(\epsilon_\infty\))
+<div class="arithmatex">\[
+E_i=\sum_j \epsilon^{-1}_{ij}E_{0j}
+\]</div>
+<p>where <span class="arithmatex">\(E\)</span> is the electric
+field inside the material and <span class="arithmatex">\(E_0\)</span> is the externally applied
+electric field. the indices <em>i</em>,<em>j</em> refer to the direction in space and
+take the values: <span class="arithmatex">\({1, 2, 3}\)</span>. The dielectric tensor can be split in
+the ionic (<span class="arithmatex">\(\epsilon_0\)</span>) and electronic (<span class="arithmatex">\(\epsilon*\infty\)</span>)
 contributions:</p>
-<p>\[\epsilon_{ij}=\epsilon_{ij}^0+\epsilon_{ij}^\infty\]
-Here, we
-consider only the response of non-zero band gap materials to
+<div class="arithmatex">\[
+\epsilon_{ij}=\epsilon_{ij}^0+\epsilon_{ij}^\infty
+\]</div>
+<p>Here, we consider only the response of non-zero band gap materials to
 time-invariant fields. In the hypothetical case that a material does not
-respond at all to the external field, \(\epsilon_{ij}^\infty\) would
-be equal to the identity tensor and  \(\epsilon_{ij}^0\) would be
+respond at all to the external field, <span class="arithmatex">\(\epsilon_{ij}^\infty\)</span> would
+be equal to the identity tensor and  <span class="arithmatex">\(\epsilon_{ij}^0\)</span> would be
 zero. In fact, materials with zero ionic contribution do exist. In
-general, for \(\epsilon_{ij}^0\) to be non-zero, compounds need to
+general, for <span class="arithmatex">\(\epsilon_{ij}^0\)</span> to be non-zero, compounds need to
 have at least 2 atoms per primitive cell, each having a different atomic
 charge. The dielectric tensor is symmetric and respects all the symmetry
 operations of the corresponding point group. This limits the number of
@@ -759,8 +901,10 @@ at constant electric fields or the long wavelength limit). Since the
 ionic contribution vanishes at high frequencies, our results can be used
 to obtain an estimate of the refractive index, n, at optical frequencies
 and far from resonance effects using the well known formula<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
-<p>\[n=\sqrt{\epsilon^\infty_{poly}}\]</p>
-<p>where \(\epsilon^\infty_{poly}\) is the average of the eigenvalues of
+<div class="arithmatex">\[
+n=\sqrt{\epsilon^\infty_{poly}}
+\]</div>
+<p>where <span class="arithmatex">\(\epsilon^\infty_{poly}\)</span> is the average of the eigenvalues of
 the electronic contribution to the dielectric tensor. It should be noted
 this equation for the refractive index assumes the material is
 non-magnetic.</p>
@@ -802,7 +946,7 @@ dependence formula is, unfortunately, not known <sup id="fnref:27"><a class="foo
 Additionally, the validity of GGA depends on the charge density varying
 slowly—an assumption that may be broken when an external electric field
 is applied <sup id="fnref:30"><a class="footnote-ref" href="#fn:30">30</a></sup>.
-<img alt="" src="/methodology/img/dielectricity/Dielectric_benchmarking.png" /></p>
+<img alt="Benchmarking DFPT dielectric constants" src="/methodology/img/dielectricity/Dielectric_benchmarking.png" /></p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To cite the dielectric properties within the Materials Project, please
 reference the following work:</p>
@@ -1042,7 +1186,7 @@ from density-functional perturbation theory. Phys. Rev. B 55, 10355
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

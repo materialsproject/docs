@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -325,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -587,15 +617,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#compositional-phase-diagrams_1" class="md-nav__link">
-    Compositional Phase Diagrams
+  <a href="#compositional-phase-diagram-construction" class="md-nav__link">
+    Compositional Phase Diagram Construction
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#grand-potential-phase-diagrams_1" class="md-nav__link">
-    Grand Potential Phase Diagrams
+  <a href="#grand-potential-phase-diagram-construction" class="md-nav__link">
+    Grand Potential Phase Diagram Construction
   </a>
   
 </li>
@@ -649,6 +679,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
   </li>
 
         
@@ -712,6 +754,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -736,14 +874,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -930,15 +1068,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#compositional-phase-diagrams_1" class="md-nav__link">
-    Compositional Phase Diagrams
+  <a href="#compositional-phase-diagram-construction" class="md-nav__link">
+    Compositional Phase Diagram Construction
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#grand-potential-phase-diagrams_1" class="md-nav__link">
-    Grand Potential Phase Diagrams
+  <a href="#grand-potential-phase-diagram-construction" class="md-nav__link">
+    Grand Potential Phase Diagram Construction
   </a>
   
 </li>
@@ -1034,22 +1172,33 @@
 </ul>
 <h2 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
 <h3 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
-<p>Phase diagrams represent the thermodynamic phase equilibria of multicomponent systems and reveal useful insights into fundamental material aspects regarding the processing and reactions of materials. However, the experimental determination of a phase diagram is an extremely time-consuming process, requiring careful synthesis and characterization of all phases in a chemical system.</p>
-<p>Computational tools can accelerate phase diagram construction significantly. By calculating the energies of all known compounds in a given chemical system (e.g. <span class="arithmatex">\(\ce{Li-Fe-O}\)</span>), we can determine the phase diagram for that system at 0 K and 0 atm. Furthermore, for systems comprised of predominantly solid phases open with respect to a gaseous element, approximations can be made as to the finite temperature and pressure phase diagrams.</p>
-<p>In this manual, we will outline the general usage and thermodynamics methodology of our computational phase diagrams app. The details of the calculations, including computational methodology and accuracy, used in constructing these phase diagrams are available in the <a href="/methodology/total-energies">Calculations Manual</a> and will not be further covered in this manual.</p>
+<p>Phase diagrams represent the thermodynamic phase equilibria of multicomponent systems and reveal useful insights into fundamental material aspects regarding the processing and reactions of materials.
+However, the experimental determination of a phase diagram is an extremely time-consuming process, requiring careful synthesis and characterization of all phases in a chemical system.</p>
+<p>Computational tools can accelerate phase diagram construction significantly.
+By calculating the energies of all known compounds in a given chemical system (e.g. <span class="arithmatex">\(\ce{Li-Fe-O}\)</span>), we can determine the phase diagram for that system at 0 K and 0 atm.
+Furthermore, for systems comprised of predominantly solid phases open with respect to a gaseous element, approximations can be made as to the finite temperature and pressure phase diagrams.</p>
+<p>In this manual, we will outline the general usage and thermodynamics methodology of our computational phase diagrams app.
+The details of the calculations, including computational methodology and accuracy, used in constructing these phase diagrams are available in the <a href="/methodology/total-energies">Calculations Manual</a> and will not be further covered in this manual.</p>
 <h3 id="using-the-computational-phase-diagram-app"><strong>Using the Computational Phase Diagram App</strong><a class="headerlink" href="#using-the-computational-phase-diagram-app" title="Permanent link">&para;</a></h3>
 <p>To construct the phase diagram of a 2-4 component chemical system (e.g. <span class="arithmatex">\(\ce{Li-Fe-O}\)</span>), you only need to select the desired elements from the periodic table and click the "Generate" button.</p>
-<p>To generate a grand potential phase diagram, for which one of the components of the phase diagram is considered 'open' to the system, select a projected element from the drop-down list, and input a desired chemical potential either manually or using the temperature slider (for supported elements <span class="arithmatex">\(\ce{O2}\)</span>, <span class="arithmatex">\(\ce{N2}\)</span>, <span class="arithmatex">\(\ce{H2}\)</span>, <span class="arithmatex">\(\ce{F2}\)</span>, and <span class="arithmatex">\(\ce{Cl2}\)</span> only). When available, the temperature slider has been calibrated using entropy data from NIST. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>To generate a grand potential phase diagram, for which one of the components of the phase diagram is considered 'open' to the system, select a projected element from the drop-down list, and input a desired chemical potential either manually or using the temperature slider (for supported elements <span class="arithmatex">\(\ce{O2}\)</span>, <span class="arithmatex">\(\ce{N2}\)</span>, <span class="arithmatex">\(\ce{H2}\)</span>, <span class="arithmatex">\(\ce{F2}\)</span>, and <span class="arithmatex">\(\ce{Cl2}\)</span> only).
+When available, the temperature slider has been calibrated using entropy data from NIST.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <p>Once the phase diagram has been generated, there are multiple ways to interact with the data:</p>
 <ul>
-<li>When mousing over nodes in the phase diagram, a pop-up appears that identifies the phase. The pop-up lists both stable and unstable crystal structures computed at that composition. You may click the id link to bring up more details of that compound, such as detailed crystal structure information.</li>
+<li>When mousing over nodes in the phase diagram, a pop-up appears that identifies the phase.
+  The pop-up lists both stable and unstable crystal structures computed at that composition.
+  You may click the id link to bring up more details of that compound, such as detailed crystal structure information.</li>
 <li>Checking the 'Show Unstable' box will display the compositions at which unstable compounds have been computed as blue circles.</li>
-<li>You can zoom into a portion of the phase diagram by defining a zoom area: click and hold at the upper-left corner of the desired area, and drag down and right, releasing the mouse at the lower-right corner of the desired area. A pop-up with the zoomed-in portion should appear. To return to the original phase diagram, click anywhere outside the pop-up.</li>
+<li>You can zoom into a portion of the phase diagram by defining a zoom area: click and hold at the upper-left corner of the desired area, and drag down and right, releasing the mouse at the lower-right corner of the desired area.
+  A pop-up with the zoomed-in portion should appear.
+  To return to the original phase diagram, click anywhere outside the pop-up.</li>
 </ul>
 <h3 id="interpreting-phase-diagrams"><strong>Interpreting Phase Diagrams</strong><a class="headerlink" href="#interpreting-phase-diagrams" title="Permanent link">&para;</a></h3>
-<p>This section provides a short guide on interpreting phase diagrams generated by the PDApp. A more comprehensive discussion and example of phase diagram interpretation can be found in References 2 and 3.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p>This section provides a short guide on interpreting phase diagrams generated by the PDApp.
+A more comprehensive discussion and example of phase diagram interpretation can be found in References 2 and 3.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
 <h4 id="basic-phase-diagram-information">Basic Phase Diagram Information<a class="headerlink" href="#basic-phase-diagram-information" title="Permanent link">&para;</a></h4>
-<p>While the PDApp generates several types of phase diagrams, some information is common to all phase diagrams. As an illustrative example, we refer to <em>Figure 1</em>, a ternary <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> phase diagram at 0 K and 0 atm calculated using the PDApp.</p>
+<p>While the PDApp generates several types of phase diagrams, some information is common to all phase diagrams.
+As an illustrative example, we refer to <em>Figure 1</em>, a ternary <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> phase diagram at 0 K and 0 atm calculated using the PDApp.</p>
 <p><img alt="Calculated Li-Fe-O Phase Diagram" src="/img/phase-diagram/Li-Fe-O_calculated.png" title="Calculated Li-Fe-O Phase Diagram" /></p>
 <p><em>Figure 1: Calculated Li-Fe-O Phase Diagram</em></p>
 <p>Several pieces of information can be obtained from <em>Figure 1</em>:</p>
@@ -1058,46 +1207,80 @@
 <li>Blue circles (not shown) represent phases that are calculated to be unstable under the given conditions.</li>
 <li>An arbitrary composition will thermodynamically decompose to stable phases (red nodes), with the relative proportion of each stable phase determined by the lever rule.</li>
 </ul>
-<p>Regarding polymorphic compounds (compounds that change crystal structure with respect to temperature or pressure), only limited information can be obtained because phase diagrams generated by the PDApp do not include an explicit temperature axis. For most solid materials, our experience indicates that temperature and pressure contribute fairly small changes to differences in total energy. Thus, we expect that crystal structures for which the PDApp reports similar formation energies (i.e., within about 50 meV/atom) might be candidates for polymorphism.</p>
-<p>The PDApp models only the thermodynamics of a system. Thus, compounds that are metastable (kinetically stabilized) may not show up as stable on the generated phase diagram. We expect that compounds for which the decomposition energy into stable phases is low are potential candidates for metastability; however, compounds with extremely high decomposition energies into stable phases (i.e., over about 200 meV/atom) are less likely to be metastable. The thermodynamic scale of inorganic crystalline metastability is discussed in Reference 4. <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p>Regarding polymorphic compounds (compounds that change crystal structure with respect to temperature or pressure), only limited information can be obtained because phase diagrams generated by the PDApp do not include an explicit temperature axis.
+For most solid materials, our experience indicates that temperature and pressure contribute fairly small changes to differences in total energy.
+Thus, we expect that crystal structures for which the PDApp reports similar formation energies (i.e., within about 50 meV/atom) might be candidates for polymorphism.</p>
+<p>The PDApp models only the thermodynamics of a system.
+Thus, compounds that are metastable (kinetically stabilized) may not show up as stable on the generated phase diagram.
+We expect that compounds for which the decomposition energy into stable phases is low are potential candidates for metastability; however, compounds with extremely high decomposition energies into stable phases (i.e., over about 200 meV/atom) are less likely to be metastable.
+The thermodynamic scale of inorganic crystalline metastability is discussed in Reference 4.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
 <h4 id="compositional-phase-diagrams">Compositional Phase Diagrams<a class="headerlink" href="#compositional-phase-diagrams" title="Permanent link">&para;</a></h4>
-<p>In a compositional phase diagram, the system is closed with respect to the environment. We display compositional phase diagrams involving different numbers of components in slightly different ways.</p>
+<p>In a compositional phase diagram, the system is closed with respect to the environment.
+We display compositional phase diagrams involving different numbers of components in slightly different ways.</p>
 <h5 id="binary-compositional-phase-diagrams">Binary Compositional Phase Diagrams<a class="headerlink" href="#binary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
-<p><em>Figure 2</em> is an example of a calculated binary <span class="arithmatex">\(\ce{Fe-P}\)</span> phase diagram at 0 K and 0 atm using the PDApp. Binary phase diagrams show the complete convex hull for the system, where the y-axis is the formation energy per atom and the x-axis is the composition (e.g. in the <span class="arithmatex">\(\ce{Fe-P}\)</span> phase diagram, the x-axis is the fraction of <span class="arithmatex">\(\ce{P}\)</span>).</p>
+<p><em>Figure 2</em> is an example of a calculated binary <span class="arithmatex">\(\ce{Fe-P}\)</span> phase diagram at 0 K and 0 atm using the PDApp.
+Binary phase diagrams show the complete convex hull for the system, where the y-axis is the formation energy per atom and the x-axis is the composition (e.g. in the <span class="arithmatex">\(\ce{Fe-P}\)</span> phase diagram, the x-axis is the fraction of <span class="arithmatex">\(\ce{P}\)</span>).</p>
 <p><img alt="Calculated Fe-P Phase Diagram" src="/img/phase-diagram/Fe-P_calculated.png" title="Calculated Fe-P Phase Diagram" /></p>
 <p><em>Figure 2: Calculated Fe-P Phase Diagram</em></p>
-<p>The black lines show the convex hull construction, which connects stable phases. Unstable phases will always appear above the convex hull line; one measure of the thermodynamic stability of an arbitrary compound is its distance from the convex hull line, which predicts the decomposition energy of that phase into the most stable phases.</p>
+<p>The black lines show the convex hull construction, which connects stable phases.
+Unstable phases will always appear above the convex hull line; one measure of the thermodynamic stability of an arbitrary compound is its distance from the convex hull line, which predicts the decomposition energy of that phase into the most stable phases.</p>
 <h5 id="ternary-compositional-phase-diagrams">Ternary Compositional Phase Diagrams<a class="headerlink" href="#ternary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
-<p><em>Figure 1</em> is an example of a calculated ternary <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> phase diagram at 0 K and 0 atm using the PDApp. The presentation of ternary phase diagrams differs from that of binary phase diagrams; the energy axis is removed so that the entire compositional space can be represented. (The energy axis, not shown, can be thought of as coming 'out of the page').</p>
-<p>The black lines in the ternary phase diagrams are projections of the convex hull construction into compositional space. The lines form Gibbs triangles, which can be used to find stable phases at an arbitrary composition. At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by vertices of the triangle bounding that composition. For example, the equilibrium phases for a composition with <span class="arithmatex">\(\ce{Li:Fe:O}\)</span> ratio of 1:1:1 (i.e., in the center of the phase diagram), is predicted to be <span class="arithmatex">\(\ce{Li5FeO4}\)</span>, <span class="arithmatex">\(\ce{LiFeO2}\)</span> and <span class="arithmatex">\(\ce{Fe}\)</span>.</p>
+<p><em>Figure 1</em> is an example of a calculated ternary <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> phase diagram at 0 K and 0 atm using the PDApp.
+The presentation of ternary phase diagrams differs from that of binary phase diagrams; the energy axis is removed so that the entire compositional space can be represented.
+(The energy axis, not shown, can be thought of as coming 'out of the page').</p>
+<p>The black lines in the ternary phase diagrams are projections of the convex hull construction into compositional space.
+The lines form Gibbs triangles, which can be used to find stable phases at an arbitrary composition.
+At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by vertices of the triangle bounding that composition.
+For example, the equilibrium phases for a composition with <span class="arithmatex">\(\ce{Li:Fe:O}\)</span> ratio of 1:1:1 (i.e., in the center of the phase diagram), is predicted to be <span class="arithmatex">\(\ce{Li5FeO4}\)</span>, <span class="arithmatex">\(\ce{LiFeO2}\)</span> and <span class="arithmatex">\(\ce{Fe}\)</span>.</p>
 <h5 id="quaternary-compositional-phase-diagrams">Quaternary Compositional Phase Diagrams<a class="headerlink" href="#quaternary-compositional-phase-diagrams" title="Permanent link">&para;</a></h5>
-<p>Quaternary phase diagrams are presented in the same general way as ternary phase diagrams, but an additional axis is needed to represent the fourth composition. Therefore, quaternary phase diagrams are shown in three dimensions rather than as a 2D plot.</p>
-<p>The lines in quaternary phase diagrams define polyhedra with 4 vertices each rather than triangles. At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by the vertices of the polyhedron bounding that composition.</p>
+<p>Quaternary phase diagrams are presented in the same general way as ternary phase diagrams, but an additional axis is needed to represent the fourth composition.
+Therefore, quaternary phase diagrams are shown in three dimensions rather than as a 2D plot.</p>
+<p>The lines in quaternary phase diagrams define polyhedra with 4 vertices each rather than triangles.
+At any point in the phase diagram other than the stable nodes, the equilibrium phases are given by the vertices of the polyhedron bounding that composition.</p>
 <h4 id="grand-potential-phase-diagrams">Grand Potential Phase Diagrams<a class="headerlink" href="#grand-potential-phase-diagrams" title="Permanent link">&para;</a></h4>
-<p>Grand potential phase diagrams are phase diagrams representing phase equilibria that are open to a particular element. In these phase diagrams, the chemical potential of an element is an external input variable that the user must specify. In some cases (e.g. a gaseous element such as oxygen), the chemical potential can be related to temperature and partial pressure via thermodynamic relations and known experimental data.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<p>Grand potential phase diagrams are phase diagrams representing phase equilibria that are open to a particular element.
+In these phase diagrams, the chemical potential of an element is an external input variable that the user must specify.
+In some cases (e.g. a gaseous element such as oxygen), the chemical potential can be related to temperature and partial pressure via thermodynamic relations and known experimental data.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
 <p>A grand potential phase diagram involving n components is presented in the same way as a compositional phase diagram involving <span class="arithmatex">\(n-1\)</span> components.</p>
 <p><img alt="Calculated Li-Fe-O Grand Potential Phase Diagram" src="/img/phase-diagram/Li-Fe-O_700K.png" title="Calculated Li-Fe-O Grand Potential Phase Diagram" /></p>
 <p><em>Figure 3: Calculated Li-Fe-O grand potential phase diagram at oxygen chemical potential consistent with approximately 700 K and 0 atm.</em></p>
-<p><em>Figure 3</em> shows the calculated grand potential phase diagram for the <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system at an oxygen chemical potential consistent with 700 K and 0 atm. The phase diagram provides information on the equilibrium phases under these conditions for any <span class="arithmatex">\(\ce{Li:Fe}\)</span> composition (note that the O fraction is controlled by interactions with the environment). For example, we may observe that a compositon with a relatively high Fe ratio (near composition = 1) will comprise <span class="arithmatex">\(\ce{Fe2O3}\)</span> and <span class="arithmatex">\(\ce{LiFeO2}\)</span>. In addition, by examining the changes in the equilibrium phases as the chemical potential changes, we can obtain insights into how the phase equilibria are modified with changes in the chemical potential. A detailed discussion of this application can be found in References 2 and 3. <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p><em>Figure 3</em> shows the calculated grand potential phase diagram for the <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system at an oxygen chemical potential consistent with 700 K and 0 atm.
+The phase diagram provides information on the equilibrium phases under these conditions for any <span class="arithmatex">\(\ce{Li:Fe}\)</span> composition (note that the O fraction is controlled by interactions with the environment).
+For example, we may observe that a compositon with a relatively high Fe ratio (near composition = 1) will comprise <span class="arithmatex">\(\ce{Fe2O3}\)</span> and <span class="arithmatex">\(\ce{LiFeO2}\)</span>.
+In addition, by examining the changes in the equilibrium phases as the chemical potential changes, we can obtain insights into how the phase equilibria are modified with changes in the chemical potential.
+A detailed discussion of this application can be found in References 2 and 3.<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
 <h3 id="accuracy-of-calculated-phase-diagrams"><strong>Accuracy of Calculated Phase Diagrams</strong><a class="headerlink" href="#accuracy-of-calculated-phase-diagrams" title="Permanent link">&para;</a></h3>
 <p><img alt="Experimental Li-Fe-O Phase Diagram" src="/img/phase-diagram/Li-Fe-O_exp.png" title="Experimental Li-Fe-O Phase Diagram" /></p>
 <p><em>Figure 4: Experimental Li-Fe-O Phase Diagram</em></p>
-<p><em>Figure 4</em> shows the experimentally determined phase diagram for the <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system at 673K.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> Even though the experimental phase diagram is at a much higher temperature, we can see that our calculated phase diagram reproduces the features very well. The phases <span class="arithmatex">\(\ce{Li2O}\)</span>, <span class="arithmatex">\(\ce{Fe3O4}\)</span>, <span class="arithmatex">\(\ce{Fe2O3}\)</span>, <span class="arithmatex">\(\ce{LiFeO2}\)</span>, <span class="arithmatex">\(\ce{Li5FeO4}\)</span> are stable in both the experimental diagram and our calculated phase diagram. The only additional phase in our calculated diagram is <span class="arithmatex">\(\ce{FeO}\)</span>, which is well known to be difficult to obtain in stoichiometric proportion under normal conditions. Our calculations correctly reproduce the <span class="arithmatex">\(\ce{FeO}\)</span> formation enthalpy to within experimental accuracy, and our calculated phase diagram is fullly consistent with known experimental thermochemical data along the <span class="arithmatex">\(\ce{Fe-O}\)</span> line at 1 atm and 298K.</p>
-<p>In general, we can expect that compositional phase diagrams comprising of predominantly solid phases to be reproduced fairly well by our calculations. However, it should be noted that there are <a href="/methodology/total-energies">inherent limitations in accuracy in the DFT calculated energies</a>. Furthermore, our calculated phase diagrams are at 0 K and 0 atm, and differences with non-zero temperature phase diagrams are to be expected.</p>
+<p><em>Figure 4</em> shows the experimentally determined phase diagram for the <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system at 673K.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> Even though the experimental phase diagram is at a much higher temperature, we can see that our calculated phase diagram reproduces the features very well.
+The phases <span class="arithmatex">\(\ce{Li2O}\)</span>, <span class="arithmatex">\(\ce{Fe3O4}\)</span>, <span class="arithmatex">\(\ce{Fe2O3}\)</span>, <span class="arithmatex">\(\ce{LiFeO2}\)</span>, <span class="arithmatex">\(\ce{Li5FeO4}\)</span> are stable in both the experimental diagram and our calculated phase diagram.
+The only additional phase in our calculated diagram is <span class="arithmatex">\(\ce{FeO}\)</span>, which is well known to be difficult to obtain in stoichiometric proportion under normal conditions.
+Our calculations correctly reproduce the <span class="arithmatex">\(\ce{FeO}\)</span> formation enthalpy to within experimental accuracy, and our calculated phase diagram is fullly consistent with known experimental thermochemical data along the <span class="arithmatex">\(\ce{Fe-O}\)</span> line at 1 atm and 298K.</p>
+<p>In general, we can expect that compositional phase diagrams comprising of predominantly solid phases to be reproduced fairly well by our calculations.
+However, it should be noted that there are <a href="/methodology/total-energies">inherent limitations in accuracy in the DFT calculated energies</a>.
+Furthermore, our calculated phase diagrams are at 0 K and 0 atm, and differences with non-zero temperature phase diagrams are to be expected.</p>
 <p>For grand potential phase diagrams, further approximations are made as to the entropic contributions.<sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref3:3"><a class="footnote-ref" href="#fn:3">3</a></sup> They are therefore expected to be less accurate, but nonetheless provide useful insights on general trends.</p>
 <h3 id="thermodynamics-methodology"><strong>Thermodynamics Methodology</strong><a class="headerlink" href="#thermodynamics-methodology" title="Permanent link">&para;</a></h3>
 <p>In the remainder of this section, we will use an <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system to illustrate the methodology without loss of generality.</p>
-<h4 id="compositional-phase-diagrams_1">Compositional Phase Diagrams<a class="headerlink" href="#compositional-phase-diagrams_1" title="Permanent link">&para;</a></h4>
-<p>To construct a phase diagram, one would need to compare the relative thermodynamic stability of phases belonging to the system using an appropriate free energy model. For an isothermal, isobaric, closed system, the relevant thermodynamic potential is the Gibbs free energy, <span class="arithmatex">\(G\)</span>, which can be expressed as a Legendre transform of the enthalpy, <span class="arithmatex">\(H\)</span>, and internal energy, <span class="arithmatex">\(E\)</span>, as follows:</p>
+<h4 id="compositional-phase-diagram-construction">Compositional Phase Diagram Construction<a class="headerlink" href="#compositional-phase-diagram-construction" title="Permanent link">&para;</a></h4>
+<p>To construct a phase diagram, one would need to compare the relative thermodynamic stability of phases belonging to the system using an appropriate free energy model.
+For an isothermal, isobaric, closed system, the relevant thermodynamic potential is the Gibbs free energy, <span class="arithmatex">\(G\)</span>, which can be expressed as a Legendre transform of the enthalpy, <span class="arithmatex">\(H\)</span>, and internal energy, <span class="arithmatex">\(E\)</span>, as follows:</p>
 <div class="arithmatex">\[
 \eqalign{G(T,P,N_{Li},N_{Fe},N_{O}) &amp;= H(T,P,N_{Li},N_{Fe},N_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr
 &amp;= \eqalign{E(T,P,N_{Li},N_{Fe},N_{O}) + PV(T,P,N_{Li},N_{Fe},N_{O})\cr - TS(T,P,N_{Li},N_{Fe},N_{O}}}
 \]</div>
 <p>where <span class="arithmatex">\(T\)</span> is the temperature of the system, <span class="arithmatex">\(S\)</span> is the entropy of the system, <span class="arithmatex">\(P\)</span> is the pressure of the system, <span class="arithmatex">\(V\)</span> is the volume of the system, and <span class="arithmatex">\(N_i\)</span> is the number of atoms of species <span class="arithmatex">\(i\)</span> in the system.</p>
-<p>For systems comprising primarily of condensed phases, the <span class="arithmatex">\(PV\)</span> term can be neglected and at 0K, the expression for <span class="arithmatex">\(G\)</span> simplifies to just <span class="arithmatex">\(E\)</span>. Normalizing <span class="arithmatex">\(E\)</span> with respect to the total number of particles in the system, we obtain <span class="arithmatex">\(\bar{E}(0,P,x_{Li},x_{Fe},x_O)\)</span>, where <span class="arithmatex">\(x_i = \frac{N_i}{N_{Li} + N_{Fe} + N_{O}}\)</span>. By taking the convex hull<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup> of <span class="arithmatex">\(E\)</span> for all phases belonging to the M-component system and projecting the stable nodes into the <span class="arithmatex">\((M - 1)\)</span> - dimension composition space, one can obtain the 0 K phase diagram for the closed system at constant pressure. The convex hull of a set of points is the smallest convex set containing the points. For instance, to construct a 0 K, closed <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system phase diagram, the convex hull is taken on the set of points in <span class="arithmatex">\((\bar{E},x_{Li},x_{Fe})\)</span> space with <span class="arithmatex">\(x_O\)</span> being related to the other composition variables by <span class="arithmatex">\(x_O = 1 - x_{Li} - x_{Fe}\)</span>.</p>
-<h4 id="grand-potential-phase-diagrams_1">Grand Potential Phase Diagrams<a class="headerlink" href="#grand-potential-phase-diagrams_1" title="Permanent link">&para;</a></h4>
-<p>In many scientific applications, the phase equilibria of interest is not that of a closed system, but rather one which is open to a particular element. For instance, synthesis might be carried out in flowing Argon gas at a particular temperature, which would mean the system is open to gaseous elements such as oxygen. Other experiments may be carried out in air, which essentially serves as an infinite reservoir of atmospheric elements such as oxygen, nitrogen and others.</p>
-<p>In environments that are open to a particular element (say oxygen), the relevant control variable is the chemical potential of that element, <span class="arithmatex">\(\mu_{O}\)</span>. The relevant thermodynamic potential to study phase equilibria in an open system is the grand potential, which is defined as the following for an <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system that is open with respect to oxygen:</p>
+<p>For systems comprising primarily of condensed phases, the <span class="arithmatex">\(PV\)</span> term can be neglected and at 0K, the expression for <span class="arithmatex">\(G\)</span> simplifies to just <span class="arithmatex">\(E\)</span>.
+Normalizing <span class="arithmatex">\(E\)</span> with respect to the total number of particles in the system, we obtain <span class="arithmatex">\(\bar{E}(0,P,x_{Li},x_{Fe},x_O)\)</span>, where <span class="arithmatex">\(x_i = \frac{N_i}{N_{Li} + N_{Fe} + N_{O}}\)</span>.
+By taking the convex hull<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup> of <span class="arithmatex">\(E\)</span> for all phases belonging to the M-component system and projecting the stable nodes into the <span class="arithmatex">\((M - 1)\)</span> - dimension composition space, one can obtain the 0 K phase diagram for the closed system at constant pressure.
+The convex hull of a set of points is the smallest convex set containing the points.
+For instance, to construct a 0 K, closed <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system phase diagram, the convex hull is taken on the set of points in <span class="arithmatex">\((\bar{E},x_{Li},x_{Fe})\)</span> space with <span class="arithmatex">\(x_O\)</span> being related to the other composition variables by <span class="arithmatex">\(x_O = 1 - x_{Li} - x_{Fe}\)</span>.</p>
+<h4 id="grand-potential-phase-diagram-construction">Grand Potential Phase Diagram Construction<a class="headerlink" href="#grand-potential-phase-diagram-construction" title="Permanent link">&para;</a></h4>
+<p>In many scientific applications, the phase equilibria of interest is not that of a closed system, but rather one which is open to a particular element.
+For instance, synthesis might be carried out in flowing Argon gas at a particular temperature, which would mean the system is open to gaseous elements such as oxygen.
+Other experiments may be carried out in air, which essentially serves as an infinite reservoir of atmospheric elements such as oxygen, nitrogen and others.</p>
+<p>In environments that are open to a particular element (say oxygen), the relevant control variable is the chemical potential of that element, <span class="arithmatex">\(\mu_{O}\)</span>.
+The relevant thermodynamic potential to study phase equilibria in an open system is the grand potential, which is defined as the following for an <span class="arithmatex">\(\ce{Li-Fe-O}\)</span> system that is open with respect to oxygen:</p>
 <div class="arithmatex">\[
 \eqalign{\phi(T,P,N_{Li},N_{Fe},\mu_{O}) &amp;= G(T,P,N_{Li},N_{Fe},\mu_{O}) - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})\cr
 &amp;= \eqalign{E(T,P,N_{Li},N_{Fe},\mu_{O}) - TS(T,P,N_{Li},N_{Fe},N_{O})\cr - \mu_ON_O(T,P,N_{Li},N_{Fe},\mu_{O})}}
@@ -1106,9 +1289,13 @@
 <p>Normalizing with respect to <span class="arithmatex">\(\ce{Li-Fe}\)</span> composition and dropping the explicit expression of the functional dependence of <span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(S\)</span>, and <span class="arithmatex">\(N_{O}\)</span> on the right-hand side henceforth for brevity, we can obtain</p>
 <div class="arithmatex">\[\bar{\phi}(T,P,x_{Li},x_{Fe},\mu_{O}) = \frac{E-TS-\mu_ON_O}{N_{Li} + N_{Fe}}\]</div>
 <p>where <span class="arithmatex">\(x_i = \frac{N_i}{N_{Li}+N_{Fe}}\)</span> is the fraction of component <span class="arithmatex">\(i\)</span> in <span class="arithmatex">\(\ce{Li-Fe}\)</span> composition space.</p>
-<p>To formally introduce temperature into ab initio phase stability calculations, one would usually need to take into account all the relevant excitations (e.g. vibrational, configurational, and electronic) that contribute to entropy. However, for systems where phase equilibria changes takes place primarily between solid phases with absorption or loss of as gas, a few simplifying assumptions can be made that allow us to obtain a useful approximate phase diagram with less effort. In such reactions, the reaction entropy is dominated by the entropy of the gas, and the effect of temperature is mostly captured by changes in the chemical potential of the gas. Since the <span class="arithmatex">\(TS\)</span> term is the entropy contribution of the condensed system, it can be neglected compared to the entropy effect of the gas, and the expression for <span class="arithmatex">\(\bar{\phi}\)</span> simplifies to:</p>
+<p>To formally introduce temperature into ab initio phase stability calculations, one would usually need to take into account all the relevant excitations (e.g. vibrational, configurational, and electronic) that contribute to entropy.
+However, for systems where phase equilibria changes takes place primarily between solid phases with absorption or loss of as gas, a few simplifying assumptions can be made that allow us to obtain a useful approximate phase diagram with less effort.
+In such reactions, the reaction entropy is dominated by the entropy of the gas, and the effect of temperature is mostly captured by changes in the chemical potential of the gas.
+Since the <span class="arithmatex">\(TS\)</span> term is the entropy contribution of the condensed system, it can be neglected compared to the entropy effect of the gas, and the expression for <span class="arithmatex">\(\bar{\phi}\)</span> simplifies to:</p>
 <div class="arithmatex">\[\bar{\phi} = \frac{E-\mu_ON_O}{N_{Li} + N_{Fe}}\]</div>
-<p>Using the above assumption, the effect of temperature and partial pressure can be fully captured in a single chemical potential variable, with a more negative value corresponding to higher temperatures or lower partial pressures. The chemical potential is then treated as an external variable to obtain a grand potential phase diagram under a particular condition by taking the convex hull of <span class="arithmatex">\(\bar{\phi}\)</span> for all phases and projecting the stable nodes into the <span class="arithmatex">\(\ce{Li-Fe}\)</span> composition space.</p>
+<p>Using the above assumption, the effect of temperature and partial pressure can be fully captured in a single chemical potential variable, with a more negative value corresponding to higher temperatures or lower partial pressures.
+The chemical potential is then treated as an external variable to obtain a grand potential phase diagram under a particular condition by taking the convex hull of <span class="arithmatex">\(\bar{\phi}\)</span> for all phases and projecting the stable nodes into the <span class="arithmatex">\(\ce{Li-Fe}\)</span> composition space.</p>
 <h3 id="citation"><strong>Citation</strong><a class="headerlink" href="#citation" title="Permanent link">&para;</a></h3>
 <p>To cite the Computational Phase Diagram App, please reference the following works:</p>
 <ul>
@@ -1140,10 +1327,10 @@
 <p>https://doi.org/10.1126/sciadv.1600225&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>V. Raghavan, Fe-Li-O Phase Diagram, ASM Alloy Phase Diagrams Center, P. Villars, editor-in-chief; H. Okamoto and K. Cenzual, section editors; http://www1.asminternational.org/AsmEnterprise/APD, ASM International, Materials Park, OH, 2006.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>V. Raghavan, Fe-Li-O Phase Diagram, ASM Alloy Phase Diagrams Center, P. Villars, editor-in-chief; H. Okamoto and K. Cenzual, section editors; <a href="http://www1.asminternational.org/AsmEnterprise/APD">http://www1.asminternational.org/AsmEnterprise/APD</a>, ASM International, Materials Park, OH, 2006.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>https://dx.doi.org/10.1145/235815.235821&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p><a href="https://dx.doi.org/10.1145/235815.235821">https://dx.doi.org/10.1145/235815.235821</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1180,13 +1367,13 @@
           </a>
         
         
-          <a href="../xas-matcher/" title="XAS Matcher" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                XAS Matcher
+                XAS Spectra
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1223,7 +1410,7 @@
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

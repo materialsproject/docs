@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -325,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -556,6 +586,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -610,6 +652,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -634,14 +772,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -808,62 +946,119 @@
 <h2 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
 <h3 id="background-on-data-mined-crystal-structure-and-compound-prediction">Background on Data Mined Crystal Structure and Compound Prediction<a class="headerlink" href="#background-on-data-mined-crystal-structure-and-compound-prediction" title="Permanent link">&para;</a></h3>
 <p>Crystal structure and compound prediction is an essential step of computational materials
-design. Indeed, while many materials properties can be computed nowadays with <em>ab-initio</em>
-computations. Those computed properties are only relevant if they are evaluated on a compound (i.e., a
-stoichiometry and crystal structure) stable enough to be formed. Crystal structure prediction can be quite useful
-for experimentalists too. For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.</p>
+design.
+Indeed, while many materials properties can be computed nowadays with <em>ab-initio</em>
+computations.
+Those computed properties are only relevant if they are evaluated on a compound (i.e., a
+stoichiometry and crystal structure) stable enough to be formed.
+Crystal structure prediction can be quite useful
+for experimentalists too.
+For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.</p>
 <p>The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
-Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions). This optimization is extremely challenging as the energy landscape is very rugged and full of local minima. Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.</p>
-<p>In a departure to this traditional approach, the methods we have developed use a combination of data mining and <em>ab-initio</em> computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget. The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds. Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system. Finally, the last step consists of testing those candidates for stability using <em>ab-initio</em> computations (<a href="../phase-diagram/">see Phase Diagram</a>).</p>
+Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions).
+This optimization is extremely challenging as the energy landscape is very rugged and full of local minima.
+Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.</p>
+<p>In a departure to this traditional approach, the methods we have developed use a combination of data mining and <em>ab-initio</em> computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget.
+The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds.
+Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
+Finally, the last step consists of testing those candidates for stability using <em>ab-initio</em> computations (<a href="../phase-diagram/">see Phase Diagram</a>).</p>
 <h3 id="the-ionic-substitution-based-structure-prediction-method">The Ionic Substitution based Structure Prediction Method<a class="headerlink" href="#the-ionic-substitution-based-structure-prediction-method" title="Permanent link">&para;</a></h3>
-<p>The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions. In this section we will briefly explain the idea of the approach and how to use the explorer. More details can be found in Hautier et al.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p>The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
+In this section we will briefly explain the idea of the approach and how to use the explorer.
+More details can be found in Hautier et al.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h3 id="the-basic-idea">The basic idea<a class="headerlink" href="#the-basic-idea" title="Permanent link">&para;</a></h3>
 <p><img alt="substitution example" src="../img/structure-predictor/substitution-example.png" />
 <em>Figure 1: An example of ionic substitution.</em></p>
 <p>It is common for chemists to propose new compounds from the substitution of
-another, chemically similar, ion. For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
-one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure. We have
+another, chemically similar, ion.
+For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
+one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure.
+We have
 implemented a mathematical model that learns these substitution rules from a database of experimentally
-observed crystal structure (e.g., the ICSD). Basically, what the model provides is a probability
-distribution for any ionic substitution. In Figure 2 we show the matrix indicating the data mined
-substitution tendency for two ionic species obtained from this work. The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together. Red colors indicate that two ions
+observed crystal structure (e.g., the ICSD).
+Basically, what the model provides is a probability
+distribution for any ionic substitution.
+In Figure 2 we show the matrix indicating the data mined
+substitution tendency for two ionic species obtained from this work.
+The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together.
+Red colors indicate that two ions
 tend to substitute while blue is associated with pair of species not substituting to each other.</p>
 <p><img alt="ionic substitution correlations" src="../img/structure-predictor/ions-correlation.png" />
-<em>Figure 2: Data mined tendency for ionic substitutions. Red indicates high substitution tendency. Blue indicates that the tow ions tend to not substitute.</em></p>
+<em>Figure 2: Data mined tendency for ionic substitutions.
+Red indicates high substitution tendency.
+Blue indicates that the tow ions tend to not substitute.</em></p>
 <h3 id="the-compound-prediction-procedure">The compound prediction procedure<a class="headerlink" href="#the-compound-prediction-procedure" title="Permanent link">&para;</a></h3>
-<p>The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions. The model we used was inspired by previous work in the field of machine translation. In this field, it is the probability for a word in one language to be able to be substituted by a word in another language. In our case, we substitute ions rather than words.
-After we built this probability function, from a database of experimental data (here the ICSD), we can perform compound predictions. Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species). Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound. If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound. There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.</p>
+<p>The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
+The model we used was inspired by previous work in the field of machine translation.
+In this field, it is the probability for a word in one language to be able to be substituted by a word in another language.
+In our case, we substitute ions rather than words.
+After we built this probability function, from a database of experimental data (here the ICSD), we can perform compound predictions.
+Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species).
+Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound.
+If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound.
+There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.</p>
 <p><img alt="substitution flowchart" src="../img/structure-predictor/substitution-flowchart.png" />
 <em>Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability.</em></p>
-<p>From this procedure, we can see that the threshold set is quite important. A higher threshold will give you less false positives (suggested compounds that are not stable), but also less true positives. On the other hand, too low a threshold will give more true positives, but consequently, more false positives. There is a compromise to find between how exhaustive you want to be and how many candidates you can have, in terms of computational budget (that you will have to test down the road for stability using DFT).</p>
+<p>From this procedure, we can see that the threshold set is quite important.
+A higher threshold will give you less false positives (suggested compounds that are not stable), but also less true positives.
+On the other hand, too low a threshold will give more true positives, but consequently, more false positives.
+There is a compromise to find between how exhaustive you want to be and how many candidates you can have, in terms of computational budget (that you will have to test down the road for stability using DFT).</p>
 <h3 id="performance-and-limitations">Performance and Limitations<a class="headerlink" href="#performance-and-limitations" title="Permanent link">&para;</a></h3>
 <h3 id="using-the-structure-predictor">Using the Structure Predictor<a class="headerlink" href="#using-the-structure-predictor" title="Permanent link">&para;</a></h3>
 <h4 id="entering-inputs">Entering Inputs<a class="headerlink" href="#entering-inputs" title="Permanent link">&para;</a></h4>
 <p>Practically, the procedure for getting predictions consists in 3 steps</p>
 <ol>
 <li>
-<p>Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in. For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.</p>
+<p>Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
+   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.</p>
 </li>
 <li>
-<p>Pick oxidation states: The model uses the oxidation states to make predictions. V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O. Sometimes you do not know what oxidation states you are interest in. Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn. Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>. This should cover all the chemical space you are looking at.</p>
+<p>Pick oxidation states: The model uses the oxidation states to make predictions.
+   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
+   Sometimes you do not know what oxidation states you are interest in.
+   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
+   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
+   This should cover all the chemical space you are looking at.</p>
 </li>
 <li>
-<p>Start the prediction: click 'Predict Structure' to begin the prediction. Predictions are not immediately available and will require some time to complete. You can monitor the status of your request in the <a href="https://materialsproject.org/dashboard">dashboard</a>.</p>
+<p>Start the prediction: click 'Predict Structure' to begin the prediction.
+   Predictions are not immediately available and will require some time to complete.
+   You can monitor the status of your request in the <a href="https://materialsproject.org/dashboard">dashboard</a>.</p>
 </li>
 <li>
-<p>Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures. We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters. We do not provide any DFT results due our limited computational budget for the moment. It is the responsibility of the user to run the predictions. Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.</p>
+<p>Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
+   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
+   We do not provide any DFT results due our limited computational budget for the moment.
+   It is the responsibility of the user to run the predictions.
+   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.</p>
 </li>
 </ol>
 <h4 id="interpreting-the-results">Interpreting the Results<a class="headerlink" href="#interpreting-the-results" title="Permanent link">&para;</a></h4>
-<p>The results pages provides a set of structure id's corresponding to the candidate structures. A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra. Cif and POSCAR files for each candidate can be downloaded. Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature. For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>. This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull. Figure 4 shows a convex hull (in green) for an A-B system. Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases. For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.</p>
+<p>The results pages provides a set of structure id's corresponding to the candidate structures.
+A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
+Cif and POSCAR files for each candidate can be downloaded.
+Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
+For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>.
+This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull.
+Figure 4 shows a convex hull (in green) for an A-B system.
+Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases.
+For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.</p>
 <p><img alt="convex hull example" src="../img/structure-predictor/convex-hull.png" />
 <em>Figure 4: An example of the convex hull construction.</em></p>
 <p>More information about phase stability and convex hull can be obtained in the <a href="../phase-diagram/">phase diagram app manual</a>.</p>
-<p>Please note that we only presented an approach for building zero K, zero pressure phase diagrams. It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature. This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.</p>
+<p>Please note that we only presented an approach for building zero K, zero pressure phase diagrams.
+It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature.
+This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.</p>
 <p>Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.</p>
 <h3 id="future-features">Future features<a class="headerlink" href="#future-features" title="Permanent link">&para;</a></h3>
-<p>In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure. For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides). A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>. For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>. The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.</p>
-<p>The only data mined model accessible now is the substitution predictor. We have developed another model based on correlations between crystal structures at different compositions.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> We plan to give access to this model in the future. The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).</p>
+<p>In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
+For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
+A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
+For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
+The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.</p>
+<p>The only data mined model accessible now is the substitution predictor.
+We have developed another model based on correlations between crystal structures at different compositions.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> We plan to give access to this model in the future.
+The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).</p>
 <h3 id="citations">Citations<a class="headerlink" href="#citations" title="Permanent link">&para;</a></h3>
 <p>To cite the Structure Predictor App, please reference the following works:</p>
 <ul>
@@ -968,7 +1163,7 @@ After we built this probability function, from a database of experimental data (
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

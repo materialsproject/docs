@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -325,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -419,6 +449,18 @@
   <li class="md-nav__item">
     <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
       Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
     </a>
   </li>
 
@@ -570,6 +612,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -594,14 +732,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -728,14 +866,20 @@
 <h2 id="materials-explorer">Materials Explorer<a class="headerlink" href="#materials-explorer" title="Permanent link">&para;</a></h2>
 <h2 id="formula">Formula<a class="headerlink" href="#formula" title="Permanent link">&para;</a></h2>
 <p><strong>Anonymous chemical formula:</strong>
-The chemical formula with the element names anonymized to the letters A, B, C, etc. The order of the anonymized elements is from least atomic fraction to greatest atomic fraction, thus the coefficients are non-decreasing. For example, both <span class="arithmatex">\(\ce{TiO2}\)</span> and <span class="arithmatex">\(\ce{Na2O}\)</span> have an anonymous formula of <span class="arithmatex">\(\ce{A1B2}\)</span>.</p>
+The chemical formula with the element names anonymized to the letters A, B, C, etc.
+The order of the anonymized elements is from least atomic fraction to greatest atomic fraction, thus the coefficients are non-decreasing.
+For example, both <span class="arithmatex">\(\ce{TiO2}\)</span> and <span class="arithmatex">\(\ce{Na2O}\)</span> have an anonymous formula of <span class="arithmatex">\(\ce{A1B2}\)</span>.</p>
 <h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
 <p><strong>Crystal system:</strong>
-The crystal system is commonly referred to as 'lattice' for periodic crystals and describes the shape of the repeating cell. Examples include cubic, tetragonal, and monoclinic. Calculations that simulate non-periodic systems, for example molecules, will be assigned as 'noncrystalline'.</p>
+The crystal system is commonly referred to as 'lattice' for periodic crystals and describes the shape of the repeating cell.
+Examples include cubic, tetragonal, and monoclinic.
+Calculations that simulate non-periodic systems, for example molecules, will be assigned as 'noncrystalline'.</p>
 <p><strong>Number of sites in unit cell:</strong>
-The number of atoms in the unit cell of the calculation. For supercell calculations, this quantity refers to the number of atoms in the full supercell.</p>
+The number of atoms in the unit cell of the calculation.
+For supercell calculations, this quantity refers to the number of atoms in the full supercell.</p>
 <p><strong>Cell volume:</strong>
-The volume, in cubic Angstroms, of the unit cell of the calculation. For supercell calculations, this quantity refers to the volume of the full supercell.</p>
+The volume, in cubic Angstroms, of the unit cell of the calculation.
+For supercell calculations, this quantity refers to the volume of the full supercell.</p>
 <p><strong>Density:</strong>
 The calculated bulk crystalline density, in grams/cc.</p>
 <p><strong>Material id:</strong>
@@ -749,27 +893,41 @@ The number of atoms to which the element in the material is bound.</p>
 Refers to whether the initial crystal data was obtained explicitly from experimental data (true) or required converting fractional occupancies into integer occupancies though an ordering algorithm (false).</p>
 <h2 id="energetics">Energetics<a class="headerlink" href="#energetics" title="Permanent link">&para;</a></h2>
 <p><strong>Formation energy:</strong>
-Computed formation energy at 0K, 0atm using a reference state of zero for the pure elements. This quantity is often a good approximation for formation <em>enthalpy</em> at ambient conditions.</p>
+Computed formation energy at 0K, 0atm using a reference state of zero for the pure elements.
+This quantity is often a good approximation for formation <em>enthalpy</em> at ambient conditions.</p>
 <p><strong>Energy above hull:</strong>
-The energy of decomposition of this material into the set of most stable materials at this chemical composition, in eV/atom. Stability is tested against all potential chemical combinations that result in the material's composition. For example, a <span class="arithmatex">\(\ce{Co2O3}\)</span> structure would be tested for decomposition against other <span class="arithmatex">\(\ce{Co2O3}\)</span> structures, against <span class="arithmatex">\(\ce{Co}\)</span> and <span class="arithmatex">\(\ce{O2}\)</span> mixtures, and against <span class="arithmatex">\(\ce{CoO}\)</span> and <span class="arithmatex">\(\ce{O2}\)</span> mixtures.</p>
-<p>A positive E above hull indicates that this material is unstable with respect to decomposition. A zero E above hull indicates that this is the most stable material at its composition.</p>
+The energy of decomposition of this material into the set of most stable materials at this chemical composition, in eV/atom.
+Stability is tested against all potential chemical combinations that result in the material's composition.
+For example, a <span class="arithmatex">\(\ce{Co2O3}\)</span> structure would be tested for decomposition against other <span class="arithmatex">\(\ce{Co2O3}\)</span> structures, against <span class="arithmatex">\(\ce{Co}\)</span> and <span class="arithmatex">\(\ce{O2}\)</span> mixtures, and against <span class="arithmatex">\(\ce{CoO}\)</span> and <span class="arithmatex">\(\ce{O2}\)</span> mixtures.</p>
+<p>A positive E above hull indicates that this material is unstable with respect to decomposition.
+A zero E above hull indicates that this is the most stable material at its composition.</p>
 <h2 id="mechanics">Mechanics<a class="headerlink" href="#mechanics" title="Permanent link">&para;</a></h2>
 <p><strong>Elastic Tensor:</strong>
-The elastic tensor <span class="arithmatex">\(C\)</span> describes the response of a crystalline material to mechanical stress. Specifically, it relates the stress tensor <span class="arithmatex">\(S\)</span> to the strain tensor <span class="arithmatex">\(E\)</span>.</p>
+The elastic tensor <span class="arithmatex">\(C\)</span> describes the response of a crystalline material to mechanical stress.
+Specifically, it relates the stress tensor <span class="arithmatex">\(S\)</span> to the strain tensor <span class="arithmatex">\(E\)</span>.</p>
 <p><strong>Bulk, Shear, and Young's Moduli:</strong>
-The bulk modulus <span class="arithmatex">\(K\)</span> describes the response of a material to compression. The shear modulus <span class="arithmatex">\(G\)</span> describes the response of a material to shear stress. Young's modulus <span class="arithmatex">\(E\)</span> relates uniaxial strain to stress in the same direction. All three are scalars with units of pressure.</p>
-<p>For isotropic materials, these three moduli fully describe the linear elastic reponse, and are related to each other by the Poisson ratio <span class="arithmatex">\(\nu\)</span>: <span class="arithmatex">\(2G(1+\nu)=E=3K(1-2\nu)\)</span>. For anisotropic materials (most crystals), the full elastic tensor <span class="arithmatex">\(C\)</span> is required because the stress-strain ratio is dependent on the direction of the stress and strain.</p>
+The bulk modulus <span class="arithmatex">\(K\)</span> describes the response of a material to compression.
+The shear modulus <span class="arithmatex">\(G\)</span> describes the response of a material to shear stress.
+Young's modulus <span class="arithmatex">\(E\)</span> relates uniaxial strain to stress in the same direction.
+All three are scalars with units of pressure.</p>
+<p>For isotropic materials, these three moduli fully describe the linear elastic reponse, and are related to each other by the Poisson ratio <span class="arithmatex">\(\nu\)</span>: <span class="arithmatex">\(2G(1+\nu)=E=3K(1-2\nu)\)</span>.
+For anisotropic materials (most crystals), the full elastic tensor <span class="arithmatex">\(C\)</span> is required because the stress-strain ratio is dependent on the direction of the stress and strain.</p>
 <p><strong>Poisson Ratio:</strong>
 The Poisson ratio <span class="arithmatex">\(\nu\)</span> is the negative of the ratio of tranvserse strain to axial strain under uniaxial stress.</p>
 <p><strong>Voigt-Reuss-Hill Average Bulk and Shear Moduli:</strong>
-The Voigt-Reuss-Hill (VRH) moduli describe a polycrystalline material's approximate average responses to stress. See the <a href="/methodology/elasticity">Elasticity calculations</a> page for details on how these moduli are constructed.</p>
+The Voigt-Reuss-Hill (VRH) moduli describe a polycrystalline material's approximate average responses to stress.
+See the <a href="/methodology/elasticity">Elasticity calculations</a> page for details on how these moduli are constructed.</p>
 <h2 id="data-science-and-machinestatistical-learning">Data Science and Machine/Statistical Learning<a class="headerlink" href="#data-science-and-machinestatistical-learning" title="Permanent link">&para;</a></h2>
 <p><strong>Cross validation</strong>:
-Cross validation is a method for testing the accuracy of a machine learning model by setting aside part of the available data as a validation set, training the model on the remaining data, and comparing the predicted values for the validation set to the known values. <a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross Validation Wikipedia article</a></p>
+Cross validation is a method for testing the accuracy of a machine learning model by setting aside part of the available data as a validation set, training the model on the remaining data, and comparing the predicted values for the validation set to the known values.
+<a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">Cross Validation Wikipedia article</a></p>
 <p><strong>Gradient Boosting</strong>:
-Gradient boosting is a machine learning method in which weak learner models are repeatedly fit to the residual (errors) of the existing model in order to improve it. <a href="https://en.wikipedia.org/wiki/Gradient_boosting">Gradient Boosting Wikipedia article</a></p>
+Gradient boosting is a machine learning method in which weak learner models are repeatedly fit to the residual (errors) of the existing model in order to improve it.
+<a href="https://en.wikipedia.org/wiki/Gradient_boosting">Gradient Boosting Wikipedia article</a></p>
 <p><strong>Local Polynomial Regression</strong>:
-In local polynomial regression, polynomial curves are fit to subsets of the data in proximity to specific points. Predictions are made by combining these curves weighted by how close the test sample is to each local regression's center. <a href="https://en.wikipedia.org/wiki/Local_regression">Local Regression Wikipedia article</a></p>
+In local polynomial regression, polynomial curves are fit to subsets of the data in proximity to specific points.
+Predictions are made by combining these curves weighted by how close the test sample is to each local regression's center.
+<a href="https://en.wikipedia.org/wiki/Local_regression">Local Regression Wikipedia article</a></p>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Handong Ling</li>
@@ -851,7 +1009,7 @@ In local polynomial regression, polynomial curves are fit to subsets of the data
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

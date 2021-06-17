@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -162,31 +192,19 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -400,6 +418,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -412,14 +442,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -516,6 +546,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../user-guide/xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -570,6 +612,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -594,14 +732,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -740,18 +878,18 @@ consistency checks are performed on all the calculated data to ensure
 its reliability and accuracy.</p>
 <h2 id="formalism">Formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
 <p>The relaxed lattice vectors
-\( \{\mathbf{a}_{1} , \mathbf{a}_{2} , \mathbf{a}_{3} \}\)
+<span class="arithmatex">\(\{\mathbf{a}_{1} , \mathbf{a}_{2} , \mathbf{a}_{3} \}\)</span>
 are taken and these are deformed according to each of the 6 deformation
-gradients \(\mathbf{F}\) as shown in the equations below. These 6
+gradients <span class="arithmatex">\(\mathbf{F}\)</span> as shown in the equations below. These 6
 deformation gradients are applied one-by-one to the relaxed structure so
 that only one independent deformation is considered each time. For each
 of the 6 deformation modes, 4 different default magnitudes of
 deformation are applied:
-\(\delta_{1} \in \left\{-0.01, -0.005, +0.005, +0.01\right\}\)
+<span class="arithmatex">\(\delta_{1} \in \left\{-0.01, -0.005, +0.005, +0.01\right\}\)</span>
 (pertaining to non shear-modes) and
-\(\delta_2 \in \left\{ -0.06, -0.03, +0.03, +0.06 \right\}\)
+<span class="arithmatex">\(\delta_2 \in \left\{ -0.06, -0.03, +0.03, +0.06 \right\}\)</span>
 (pertaining to shear-modes). This leads to a total of 24 deformed
-structures, for which the stress tensor, \(\mathbf{S}\), is
+structures, for which the stress tensor, <span class="arithmatex">\(\mathbf{S}\)</span>, is
 calculated, allowing for relaxation of the ionic degrees of freedom.
 Note that in this work, conventional unit cells, obtained using
 <code>pymatgen.symmetry.SpacegroupAnalyzer.get_conventional_standard_structure</code>
@@ -761,89 +899,109 @@ constants than primitive cells, at the cost of more computational time.
 We suspect this has to do with the fact that unit cells often exhibit
 higher symmetries and simpler Brillouin zones than primitive cells (an
 example is face centered cubic cells).</p>
-<p>\[\boldsymbol{F}=
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 + \delta _{1} &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\boldsymbol{F}=
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; 1 + \delta _{1} &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\boldsymbol{F}=
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 1 + \delta _{1} \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\boldsymbol{F}=
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 &amp; \delta _{2} &amp; 0 \\
 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\boldsymbol{F}=
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 &amp; 0 &amp; \delta _{2} \\
 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 1 \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\boldsymbol{F}=
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{F}=
 \left[{\begin{matrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; \delta _{2} \\
 0 &amp; 0 &amp; 1 \\
-\end{matrix}}\right]\,\]</p>
-<p>\[\mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})\,\]</p>
-<p>We employ the Green-Lagrange strain tensor, \(\mathbf{E}\), in this
+\end{matrix}}\right]
+\]</div>
+<div class="arithmatex">\[
+\mathbf{E}=\frac{1}{2}(\mathbf{F^T} \mathbf{F} - \mathbf{I})
+\]</div>
+<p>We employ the Green-Lagrange strain tensor, <span class="arithmatex">\(\mathbf{E}\)</span>, in this
 work, defined above. The 6x6 elastic tensor is calculated from the
-equation below, with \(\mathbf{E}\) again the Green-Lagrange strain
-tensor and \(\mathbf{S}\) the calculated stress tensor. The components
+equation below, with <span class="arithmatex">\(\mathbf{E}\)</span> again the Green-Lagrange strain
+tensor and <span class="arithmatex">\(\mathbf{S}\)</span> the calculated stress tensor. The components
 are calculated from a linear least-squares-fit if stress versus strain.
 We make use of the following Voigt-notation in this work:
-\(11 \mapsto 1\), \(22 \mapsto 2\), \(33 \mapsto 3\),
-\(23 \mapsto 4\), \(13 \mapsto 5\), \(12 \mapsto 6\).</p>
-<p>\(\left[
-\begin{array}{c}
+<span class="arithmatex">\(11 \mapsto 1\)</span>, <span class="arithmatex">\(22 \mapsto 2\)</span>, <span class="arithmatex">\(33 \mapsto 3\)</span>,
+<span class="arithmatex">\(23 \mapsto 4\)</span>, <span class="arithmatex">\(13 \mapsto 5\)</span>, <span class="arithmatex">\(12 \mapsto 6\)</span>.</p>
+<!-- markdownlint-disable -->
+
+<div class="arithmatex">\[
+\left[
+\begin{matrix}
 S_{11} \\
 S_{22} \\
 S_{33} \\
 S_{23} \\
 S_{13} \\
 S_{12}
-\end{array}
+\end{matrix}
 \right]
 =
 \left[
-\begin{array}{cccccc}
+\begin{matrix}
 C_{11} &amp; C_{12} &amp; C_{13} &amp; C_{14} &amp; C_{15} &amp; C_{16} \\
 C_{12} &amp; C_{22} &amp; C_{23} &amp; C_{24} &amp; C_{25} &amp; C_{26} \\
 C_{13} &amp; C_{23} &amp; C_{33} &amp; C_{34} &amp; C_{35} &amp; C_{36} \\
 C_{14} &amp; C_{24} &amp; C_{34} &amp; C_{44} &amp; C_{45} &amp; C_{46} \\
 C_{15} &amp; C_{25} &amp; C_{35} &amp; C_{45} &amp; C_{55} &amp; C_{56} \\
 C_{16} &amp; C_{26} &amp; C_{36} &amp; C_{46} &amp; C_{56} &amp; C_{66} \\
-\end{array}
+\end{matrix}
 \right]
 \left[
-\begin{array}{c}
+\begin{matrix}
 E_{11} \\
 E_{22} \\
 E_{33} \\
 2 E_{23} \\
 2 E_{13} \\
 2 E_{12}
-\end{array}
-\right]\)</p>
+\end{matrix}
+\right]
+\]</div>
+<!-- markdownlint-restore -->
+
 <p>Different choices of lattice vectors with respect to a Cartesian
 coordinate system may lead to elastic tensors that look different from
 what might be expected. For example, for the hexagonal crystal system it
-is commonly stated that \(C_{11} = C_{22}\). However, this is true
-under the conditions that lattice vectors \(\mathbf{a}_{1}\) and
-\(\mathbf{a}_{2}\) are both in the basal plane, whereas
-\(\mathbf{a}_{3}\) is orthogonal to the basal plane. Hence, the
+is commonly stated that <span class="arithmatex">\(C_{11} = C_{22}\)</span>. However, this is true
+under the conditions that lattice vectors <span class="arithmatex">\(\mathbf{a}_{1}\)</span> and
+<span class="arithmatex">\(\mathbf{a}_{2}\)</span> are both in the basal plane, whereas
+<span class="arithmatex">\(\mathbf{a}_{3}\)</span> is orthogonal to the basal plane. Hence, the
 elastic tensor can only be completely specified when the lattice vectors
 are expressed in a given coordinate system. To avoid confusion, we
 present the elastic tensor in 2 ways. First, the elastic tensor is
@@ -882,70 +1040,70 @@ are reported.</p>
 </thead>
 <tbody>
 <tr>
-<td>Elastic tensor, \(C_{ij}\)</td>
+<td>Elastic tensor, <span class="arithmatex">\(C_{ij}\)</span></td>
 <td>GPa</td>
 <td>Tensor, describing elastic behavior, corresponding to IEEE orientation, symmetrized to crystal structure</td>
 <td>see main text</td>
 </tr>
 <tr>
-<td>Elastic tensor (original), \(C_{ij}\)</td>
+<td>Elastic tensor (original), <span class="arithmatex">\(C_{ij}\)</span></td>
 <td>GPa</td>
 <td>Tensor, describing elastic behavior, unsymmetrized, corresponding to POSCAR (conventional standard cell) orientation</td>
 <td>see main text</td>
 </tr>
 <tr>
-<td>Compliance tensor, \(s_{ij}\)</td>
-<td>GPa\(^{-1}\)</td>
+<td>Compliance tensor, <span class="arithmatex">\(s_{ij}\)</span></td>
+<td>GPa<span class="arithmatex">\(^{-1}\)</span></td>
 <td>Tensor, describing elastic behavior</td>
-<td>\(s_{ij} = C_{ij}^{-1}\)</td>
+<td><span class="arithmatex">\(s_{ij} = C_{ij}^{-1}\)</span></td>
 </tr>
 <tr>
-<td>Bulk modulus Voigt average, \(K_{V}\)</td>
+<td>Bulk modulus Voigt average, <span class="arithmatex">\(K_{V}\)</span></td>
 <td>GPa</td>
-<td>Upper bound on \(K\) for polycrystalline material</td>
-<td>\(9K_{V}=\left(C_{11}+C_{22}+C_{33}\right) + 2\left(C_{12}+C_{23}+C_{31}\right)\)</td>
+<td>Upper bound on <span class="arithmatex">\(K\)</span> for polycrystalline material</td>
+<td><span class="arithmatex">\(9K_{V}=\left(C_{11}+C_{22}+C_{33}\right) + 2\left(C_{12}+C_{23}+C_{31}\right)\)</span></td>
 </tr>
 <tr>
-<td>Bulk modulus Reuss average, \(K_{R}\)</td>
+<td>Bulk modulus Reuss average, <span class="arithmatex">\(K_{R}\)</span></td>
 <td>GPa</td>
-<td>Lower bound on \(K\) for polycrystalline material</td>
-<td>\(1 / K_{R} = \left(s_{11}+s_{22}+s_{33}\right) + 2\left(s_{12}+s_{23}+s_{31}\right)\)</td>
+<td>Lower bound on <span class="arithmatex">\(K\)</span> for polycrystalline material</td>
+<td><span class="arithmatex">\(1 / K_{R} = \left(s_{11}+s_{22}+s_{33}\right) + 2\left(s_{12}+s_{23}+s_{31}\right)\)</span></td>
 </tr>
 <tr>
-<td>Shear modulus Voigt average, \(G_{V}\)</td>
+<td>Shear modulus Voigt average, <span class="arithmatex">\(G_{V}\)</span></td>
 <td>GPa</td>
-<td>Upper bound on \(G\) for polycrystalline material</td>
-<td>\(15 G_{V} = \left(C_{11}+C_{22}+C_{33}\right)-\left(C_{12}+C_{23}+C_{31}\right) + 3\left(C_{44}+C_{55}+C_{66}\right)\)</td>
+<td>Upper bound on <span class="arithmatex">\(G\)</span> for polycrystalline material</td>
+<td><span class="arithmatex">\(15 G_{V} = \left(C_{11}+C_{22}+C_{33}\right)-\left(C_{12}+C_{23}+C_{31}\right) + 3\left(C_{44}+C_{55}+C_{66}\right)\)</span></td>
 </tr>
 <tr>
-<td>Shear modulus Reuss average, \(G_{R}\)</td>
+<td>Shear modulus Reuss average, <span class="arithmatex">\(G_{R}\)</span></td>
 <td>GPa</td>
-<td>Lower bound on \(G\) for polycrystalline material</td>
-<td>\(15 / G_{R} = 4\left(s_{11}+s_{22}+s_{33}\right)-4\left(s_{12}+s_{23}+s_{31}\right) + 3\left(s_{44}+s_{55}+s_{66}\right)\)</td>
+<td>Lower bound on <span class="arithmatex">\(G\)</span> for polycrystalline material</td>
+<td><span class="arithmatex">\(15 / G_{R} = 4\left(s_{11}+s_{22}+s_{33}\right)-4\left(s_{12}+s_{23}+s_{31}\right) + 3\left(s_{44}+s_{55}+s_{66}\right)\)</span></td>
 </tr>
 <tr>
-<td>Bulk modulus VRH average, \(K_{VRH}\)</td>
+<td>Bulk modulus VRH average, <span class="arithmatex">\(K_{VRH}\)</span></td>
 <td>GPa</td>
-<td>Average of \(K_{R}\) and \(K_{V}\)</td>
-<td>\(2 K_{VRH} = \left(K_{V} + K_{R} \right)\)</td>
+<td>Average of <span class="arithmatex">\(K_{R}\)</span> and <span class="arithmatex">\(K_{V}\)</span></td>
+<td><span class="arithmatex">\(2 K_{VRH} = \left(K_{V} + K_{R} \right)\)</span></td>
 </tr>
 <tr>
-<td>Shear modulus VRH average, \(G_{VRH}\)</td>
+<td>Shear modulus VRH average, <span class="arithmatex">\(G_{VRH}\)</span></td>
 <td>GPa</td>
-<td>Average of \(G_{R}\) and \(G_{V}\)</td>
-<td>\(2 G_{VRH} = \left(G_{V} + G_{R} \right)\)</td>
+<td>Average of <span class="arithmatex">\(G_{R}\)</span> and <span class="arithmatex">\(G_{V}\)</span></td>
+<td><span class="arithmatex">\(2 G_{VRH} = \left(G_{V} + G_{R} \right)\)</span></td>
 </tr>
 <tr>
-<td>Universal elastic anisotropy, \(A^{U}\)</td>
+<td>Universal elastic anisotropy, <span class="arithmatex">\(A^{U}\)</span></td>
 <td>-</td>
 <td>Description of elastic anisotropy</td>
-<td>\(A^{U} = 5 \left(G_{V}/G_{R}\right) + \left(K_{V}/K_{R}\right) -6 \geq 0\)</td>
+<td><span class="arithmatex">\(A^{U} = 5 \left(G_{V}/G_{R}\right) + \left(K_{V}/K_{R}\right) -6 \geq 0\)</span></td>
 </tr>
 <tr>
-<td>Isotropic Poisson ratio, \(\mu\)</td>
+<td>Isotropic Poisson ratio, <span class="arithmatex">\(\mu\)</span></td>
 <td>-</td>
 <td>Number, describing lateral response to loading</td>
-<td>\(\mu = \left(3K_{VRH} - 2G_{VRH}\right)\) / \(\left(6K_{VRH} + 2G_{VRH}\right)\)</td>
+<td><span class="arithmatex">\(\mu = \left(3K_{VRH} - 2G_{VRH}\right)\)</span> / <span class="arithmatex">\(\left(6K_{VRH} + 2G_{VRH}\right)\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1014,16 +1172,13 @@ details.</em></p>
 Symmetrization occurs by finding all of the symmetry operations that
 correspond to a particular crystal symmetry, and taking the average over
 all transformed tensors with respect to these operations. If there are
-\(y\) symmetry operations are denoted \(Q_{ij}^{(x)}\) then:</p>
-<p>\(C_{mnop}^{(sym)} = \sum_{x=1}^y Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}\)</p>
+<span class="arithmatex">\(y\)</span> symmetry operations are denoted <span class="arithmatex">\(Q_{ij}^{(x)}\)</span> then:</p>
+<p><span class="arithmatex">\(C_{mnop}^{(sym)} = \sum_{x=1}^y Q_{im}^{(x)} Q_{jn}^{(x)} Q_{ko}^{(x)} Q_{lp}^{(x)} C_{ijkl}\)</span></p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To cite the elastic constants within the Materials Project, please
 reference the following work:</p>
 <ul>
-<li>de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M,
-  Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G,
-  Persson KA, Asta M (2015) Charting the complete elastic properties of
-  inorganic crystalline compounds. <a href="http://www.nature.com/articles/sdata20159">Scientific Data 2: 150009</a></li>
+<li>de Jong M, Chen W, Angsten T, Jain A, Notestine R, Gamst A, Sluiter M, Ande CK, van der Zwaag S, Plata JJ, Toher C, Curtarolo S, Ceder G, Persson KA, Asta M (2015) Charting the complete elastic properties of inorganic crystalline compounds. <a href="http://www.nature.com/articles/sdata20159">Scientific Data 2: 150009</a></li>
 </ul>
 <p>The paper presents the results of our elastic constant-calculations for
 the first batch of 1,181 metals and compounds. Our DFT-parameters, the
@@ -1039,37 +1194,28 @@ calculations are described in the paper.</p>
 <hr />
 <ol>
 <li id="fn:1">
-<p>IEEE standard on piezoelectricity. ANSI/IEEE Std 176-1987 0-1
-(1988).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>IEEE standard on piezoelectricity. ANSI/IEEE Std 176-1987 0-1 (1988).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Hill, R. The elastic behaviour of a crystalline aggregate.
-Proceedings of the Physical Society. Section A 65, 349 (1952).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Hill, R. The elastic behaviour of a crystalline aggregate. Proceedings of the Physical Society. Section A 65, 349 (1952).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Ranganathan, S. I. &amp; Ostoja-Starzewski, M. Universal elastic
-anisotropy index. Physical Review Letters 101, 055504 (2008).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Ranganathan, S. I. &amp; Ostoja-Starzewski, M. Universal elastic anisotropy index. Physical Review Letters 101, 055504 (2008).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Blochl, P. E. Projector augmented-wave method. Phys. Rev. B 50,
-17953{17979 (1994).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Blochl, P. E. Projector augmented-wave method. Phys. Rev. B 50, 17953{17979 (1994).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Kresse, G. &amp; Joubert, D. From ultrasoft pseudopotentials to the
-projector augmented-wave method. Phys. Rev. B59, 1758{1775 (1999).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Kresse, G. &amp; Joubert, D. From ultrasoft pseudopotentials to the projector augmented-wave method. Phys. Rev. B59, 1758{1775 (1999).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Kresse, G. &amp; Hafner, J. Ab initio molecular dynamics for liquid
-metals. Phys. Rev. B 47, 558{561 (1993).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Kresse, G. &amp; Hafner, J. Ab initio molecular dynamics for liquid metals. Phys. Rev. B 47, 558{561 (1993).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
-<p>Kresse, G. &amp; Furthmuller, J. Efficffient iterative schemes for ab
-initio total-energy calculations using a plane-wave basis set. Phys.
-Rev. B 54, 11169{11186 (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>Kresse, G. &amp; Furthmuller, J. Efficffient iterative schemes for ab initio total-energy calculations using a plane-wave basis set. Phys. Rev. B 54, 11169{11186 (1996).&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
-<p>Perdew, J. P., Burke, K. &amp; Ernzerhof, M. Generalized gradient
-approximation made simple. Physical Review Letters 77, 3865 (1996).&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>Perdew, J. P., Burke, K. &amp; Ernzerhof, M. Generalized gradient approximation made simple. Physical Review Letters 77, 3865 (1996).&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1149,7 +1295,7 @@ approximation made simple. Physical Review Letters 77, 3865 (1996).&#160;<a clas
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

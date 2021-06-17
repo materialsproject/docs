@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -162,31 +192,19 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -386,6 +404,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -398,14 +428,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -502,6 +532,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../user-guide/xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -556,6 +598,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -580,14 +718,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -717,33 +855,33 @@ in the calculations on the Materials project page.</p>
 <p>In the density functional perturbation theory formalism the derivatives
 of the total energy with respect to a perturbation are directly obtained
 from the self-consistency loop <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> For a generic point <strong>q</strong> in the
-Brillouin zone the phonon frequencies \(\omega_{\mathbf{q},m}\) and
-eigenvectors \(U_m(\mathbf{q}\kappa'\beta)\) are obtained by solving
+Brillouin zone the phonon frequencies <span class="arithmatex">\(\omega\_{\mathbf{q},m}\)</span> and
+eigenvectors <span class="arithmatex">\(U_m(\mathbf{q}\kappa'\beta)\)</span> are obtained by solving
 of the generalized eigenvalue problem</p>
-<p>\[\sum_{\kappa'\beta}\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U_m(\mathbf{q}\kappa'\beta) = M_{\kappa}\omega^2_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]</p>
-<p>where \(\kappa\) labels the atoms in the cell, \(\alpha\) and
-\(\beta\) are cartesian coordinates and
-\(\widetilde{C}_{\kappa\alpha,\kappa'\beta}(\mathbf{q})\) are the
+<div class="arithmatex">\[\sum*{\kappa'\beta}\widetilde{C}*{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M*{\kappa}\omega^2\_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]</div>
+<p>where <span class="arithmatex">\(\kappa\)</span> labels the atoms in the cell, <span class="arithmatex">\(\alpha\)</span> and
+<span class="arithmatex">\(\beta\)</span> are cartesian coordinates and
+<span class="arithmatex">\(\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})\)</span> are the
 interatomic force constants in reciprocal space, which are related to
 the second derivatives of the energy with respect to atomic
 displacements. These values have been obtained by performing a Fourier
 interpolation of those calculated on a regular grid of <strong>q</strong>-points
 obtained with DFPT.</p>
 <h2 id="thermodynamic-properties">Thermodynamic properties<a class="headerlink" href="#thermodynamic-properties" title="Permanent link">&para;</a></h2>
-<p>The vibrational density of states \(g(\omega)\) is obtained from an
+<p>The vibrational density of states <span class="arithmatex">\(g(\omega)\)</span> is obtained from an
 integration over the full Brillouin zone</p>
-<p>\[g(\omega) = \frac{1}{3nN}\sum_{\mathbf{q},m}\delta(\omega-\omega_{\mathbf{q},m}),\]</p>
-<p>where \(n\) is the number of atoms per unit cell and \(N\) is the
+<div class="arithmatex">\[g(\omega) = \frac{1}{3nN}\sum*{\mathbf{q},m}\delta(\omega-\omega*{\mathbf{q},m}),\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the number of atoms per unit cell and <span class="arithmatex">\(N\)</span> is the
 number of unit cells. The expressions for the Helmholtz free energy
-\(\Delta F\), the phonon contribution to the internal energy
-\(\Delta E_{\text{ph}}\), the constant-volume specific heat \(C_v\)
-and the entropy \(S\) can be obtained in the harmonic approximation
+<span class="arithmatex">\(\Delta F\)</span>, the phonon contribution to the internal energy
+<span class="arithmatex">\(\Delta E\_{\text{ph}}\)</span>, the constant-volume specific heat <span class="arithmatex">\(C_v\)</span>
+and the entropy <span class="arithmatex">\(S\)</span> can be obtained in the harmonic approximation
 <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
-<p>\[\Delta F = 3nNk_BT\int_{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
-<p>\[\Delta E_{\text{ph}} = 3nN\frac{\hbar}{2}\int_{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
-<p>\[C_v = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</p>
-<p>\[S = 3nNk_B\int_{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]
-where \(k_B\) is the Boltzmann constant and \(\omega_L\) is the
+<div class="arithmatex">\[\Delta F = 3nNk*BT\int*{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
+<div class="arithmatex">\[\Delta E*{\text{ph}} = 3nN\frac{\hbar}{2}\int*{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
+<div class="arithmatex">\[C*v = 3nNk_B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]</div>
+<div class="arithmatex">\[S = 3nNk*B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]</div>
+<p>where <span class="arithmatex">\(k_B\)</span> is the Boltzmann constant and <span class="arithmatex">\(\omega_L\)</span> is the
 largest phonon frequency.</p>
 <h2 id="calculation-details">Calculation details<a class="headerlink" href="#calculation-details" title="Permanent link">&para;</a></h2>
 <p>All the DFT and DFPT calculations are performed with the ABINIT software
@@ -904,7 +1042,7 @@ Materials Science 49, 299 – 312 (2010)&#160;<a class="footnote-backref" href="
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -325,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -365,9 +395,79 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Materials Explorer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" title="Materials Explorer" class="md-nav__link md-nav__link--active">
       Materials Explorer
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    Key features
+  </a>
+  
+    <nav class="md-nav" aria-label="Key features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-elements" class="md-nav__link">
+    By Elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-formula" class="md-nav__link">
+    By formula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-ids" class="md-nav__link">
+    By IDs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-mpquery" class="md-nav__link">
+    By mpquery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-structure" class="md-nav__link">
+    By Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -438,6 +538,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -492,6 +604,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -516,14 +724,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -564,6 +772,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    Key features
+  </a>
+  
+    <nav class="md-nav" aria-label="Key features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#by-elements" class="md-nav__link">
+    By Elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-formula" class="md-nav__link">
+    By formula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-ids" class="md-nav__link">
+    By IDs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-mpquery" class="md-nav__link">
+    By mpquery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-structure" class="md-nav__link">
+    By Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -582,36 +846,43 @@
                   
                 
                 
-                <h1 id="initial-release-of-materials-explorer">Initial release of Materials Explorer.<a class="headerlink" href="#initial-release-of-materials-explorer" title="Permanent link">&para;</a></h1>
+                <h1 id="initial-release-of-materials-explorer">Initial release of Materials Explorer<a class="headerlink" href="#initial-release-of-materials-explorer" title="Permanent link">&para;</a></h1>
 <p>In Materials Project we offer 5 options to explore materials: by elements, by formula, by IDs, by mpquery and by Structure.</p>
-<h1 id="key-features">Key features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h1>
-<h2 id="by-elements">By Elements<a class="headerlink" href="#by-elements" title="Permanent link">&para;</a></h2>
-<p>The following example is to show you how to query the materials by assigning the elements in the materials. Let's say
-you want to find all the materials that contain Li, Al and O. In the search box, simply type <code>Li-Al-O</code> and search.
+<h2 id="key-features">Key features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<h3 id="by-elements">By Elements<a class="headerlink" href="#by-elements" title="Permanent link">&para;</a></h3>
+<p>The following example is to show you how to query the materials by assigning the elements in the materials.
+Let's say
+you want to find all the materials that contain Li, Al and O.
+In the search box, simply type <code>Li-Al-O</code> and search.
 You would see the following searching results.
 <img alt="by_elements example" src="../img/materials-explorer/by_elements.png" /></p>
 <p><img alt="by_elements example_results" src="../img/materials-explorer/by_elements_results.png" /></p>
 <p><em>Figure 1: Exploring materials that contain Li, Al and O.</em></p>
-<h2 id="by-formula">By formula<a class="headerlink" href="#by-formula" title="Permanent link">&para;</a></h2>
-<p>If you have a specific material in mind, you can also explore the materials by its formula. For example,
+<h3 id="by-formula">By formula<a class="headerlink" href="#by-formula" title="Permanent link">&para;</a></h3>
+<p>If you have a specific material in mind, you can also explore the materials by its formula.
+For example,
 to search all the LaAlO<sub>3</sub>, change the search option to <code>by Formula</code> and type <code>LaAlO3</code>.
 <img alt="by_formula example" src="../img/materials-explorer/by_formula.png" /></p>
 <p><em>Figure 2: Exploring all the LaAlO<sub>3</sub> materials.</em></p>
-<h2 id="by-ids">By IDs<a class="headerlink" href="#by-ids" title="Permanent link">&para;</a></h2>
-<p>If you know the mp id of the material, you can search it by ID. You can also search multiple IDs
-at the same time. Change the search option to <code>by IDs</code> and type the mp IDs that you are looking
+<h3 id="by-ids">By IDs<a class="headerlink" href="#by-ids" title="Permanent link">&para;</a></h3>
+<p>If you know the mp id of the material, you can search it by ID.
+You can also search multiple IDs
+at the same time.
+Change the search option to <code>by IDs</code> and type the mp IDs that you are looking
 for.
 <img alt="by_ids example" src="../img/materials-explorer/by_ids.png" /></p>
 <p><em>Figure 3: Exploring specific materials by their mp IDs.</em></p>
-<h2 id="by-mpquery">By mpquery<a class="headerlink" href="#by-mpquery" title="Permanent link">&para;</a></h2>
+<h3 id="by-mpquery">By mpquery<a class="headerlink" href="#by-mpquery" title="Permanent link">&para;</a></h3>
 <p>In addition to the previous three basic explore options, Materials Project also provides an advanced
 query option by mpquery, using Mongo-like language for flexible queries on the Materials Project
-database. This provides the possibility of queries which would otherwise not be possible using
-the other simpler REST forms. For example, to search all the iron oxides and manganese oxides,
+database.
+This provides the possibility of queries which would otherwise not be possible using
+the other simpler REST forms.
+For example, to search all the iron oxides and manganese oxides,
 change the search option to <code>by mpquery</code> and type <code>{'elements':{'$in':['Fe', 'Mn'], '$all': ['O']}, 'nelements':2}</code>.
 <img alt="by_mpquery example" src="../img/materials-explorer/by_mpquery.png" /></p>
 <p><em>Figure 4: Exploring materials by using Mongo-like language for flexible queries.</em></p>
-<h2 id="by-structure">By Structure<a class="headerlink" href="#by-structure" title="Permanent link">&para;</a></h2>
+<h3 id="by-structure">By Structure<a class="headerlink" href="#by-structure" title="Permanent link">&para;</a></h3>
 <p>Additionally, if you already have structure but need to know the materials properties, such as
 band gap and formation energy, from the Materials Project database, you can change the search option
 to <code>by Structure</code> and drag and drop your structure file in the grey box.
@@ -693,7 +964,7 @@ to <code>by Structure</code> and drag and drop your structure file in the grey b
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

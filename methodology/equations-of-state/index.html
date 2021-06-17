@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -162,31 +192,19 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -379,6 +397,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -391,14 +421,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -495,6 +525,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../user-guide/xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../user-guide/xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -549,6 +591,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -573,14 +711,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -688,7 +826,7 @@
 material behaviors under changes in pressure, volume, entropy and
 temperature. Despite over a century of theoretical development and
 experimental testing of energy-volume (E-V) EOS for solids, there is
-still a lack of consensus with regard to which equation is optimal, as 
+still a lack of consensus with regard to which equation is optimal, as
 well as to what metrics are most appropriate for making this
 judgment.</p>
 <p>alculation of EOS is automated using self-documenting workflows
@@ -716,73 +854,73 @@ available MP data.</p>
 <thead>
 <tr>
 <th><strong>Equation</strong></th>
-<th><strong>\(\boldsymbol{E(\nu^*)}\)</strong></th>
-<th><strong>\(\boldsymbol{K(\nu = 1)}\)</strong></th>
-<th><strong>\(\boldsymbol{K'(\nu = 1)}\)</strong></th>
+<th><strong><span class="arithmatex">\(\boldsymbol{E(\nu^\*)}\)</span></strong></th>
+<th><strong><span class="arithmatex">\(\boldsymbol{K(\nu = 1)}\)</span></strong></th>
+<th><strong><span class="arithmatex">\(\boldsymbol{K'(\nu = 1)}\)</span></strong></th>
 <th><strong>Ref</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Birch (Euler)</td>
-<td>\(E = E_o^{**} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 + \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)\)</td>
-<td>\(\frac{8B}{9}\)</td>
-<td>\(C + 4\)</td>
+<td><span class="arithmatex">\(E = E_o^{\*\*} + BV_o\Big(\big(\nu^{-\frac{2}{3}} - 1\big)^2 + \frac{C}{2}\big(\nu^{-\frac{2}{3}} - 1\big)^3\Big)\)</span></td>
+<td><span class="arithmatex">\(\frac{8B}{9}\)</span></td>
+<td><span class="arithmatex">\(C + 4\)</span></td>
 <td><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
 </tr>
 <tr>
 <td>Birch (Lagrange)</td>
-<td>\(E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)\)</td>
-<td>\(\frac{16B}{9}\)</td>
-<td>\(C - 2\)</td>
+<td><span class="arithmatex">\(E = E_o + BV_oC - BV_o\nu^{\frac{2}{3}}\Big(\big(C - 2\big)\big(1 - \nu^{\frac{2}{3}}\big)^2 + C\big(1 - \nu^{\frac{2}{3}}\big) + C\Big)\)</span></td>
+<td><span class="arithmatex">\(\frac{16B}{9}\)</span></td>
+<td><span class="arithmatex">\(C - 2\)</span></td>
 <td><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
 </tr>
 <tr>
 <td>Mie-Gruneisen</td>
-<td>\(E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} - \frac{1}{C}\nu^{-\frac{C}{3}}\Big)\)</td>
-<td>\(\frac{B}{9}\)</td>
-<td>\(\frac{7 + C}{3}\)</td>
+<td><span class="arithmatex">\(E = E_o + \frac{BV_o}{C} - \frac{BV_o}{C - 1}\Big(\nu^{-\frac{1}{3}} - \frac{1}{C}\nu^{-\frac{C}{3}}\Big)\)</span></td>
+<td><span class="arithmatex">\(\frac{B}{9}\)</span></td>
+<td><span class="arithmatex">\(\frac{7 + C}{3}\)</span></td>
 <td><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
 </tr>
 <tr>
 <td>Murnaghan</td>
-<td>\(E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)\)</td>
-<td>\(B\)</td>
-<td>\(C + 1\)</td>
+<td><span class="arithmatex">\(E = E_o + \frac{BV_o}{(C + 1)}\Big(\frac{\nu^{-C} - 1}{C} + \nu - 1\Big)\)</span></td>
+<td><span class="arithmatex">\(B\)</span></td>
+<td><span class="arithmatex">\(C + 1\)</span></td>
 <td><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
 </tr>
 <tr>
 <td>Pack-Evans-James</td>
-<td>\(E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1 -\nu^{\frac{1}{3}}\big)\Big)\)</td>
-<td>\(B\)</td>
-<td>\(C + 1\)</td>
+<td><span class="arithmatex">\(E = E_o + \frac{BV_o}{C}\Big(\frac{1}{C}\big(e^{3C(1 - \nu^{\frac{1}{3}})} - 1\big) - 3\big(1 -\nu^{\frac{1}{3}}\big)\Big)\)</span></td>
+<td><span class="arithmatex">\(B\)</span></td>
+<td><span class="arithmatex">\(C + 1\)</span></td>
 <td><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></td>
 </tr>
 <tr>
 <td>Poirier-Tarantola</td>
-<td>\(E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)\)</td>
-<td>\(6B\)</td>
-<td>\(C + 2\)</td>
+<td><span class="arithmatex">\(E = E_o + BV_o\Big(ln(\nu)\Big)^2\Big(3 - C\big(ln(\nu)\big)\Big)\)</span></td>
+<td><span class="arithmatex">\(6B\)</span></td>
+<td><span class="arithmatex">\(C + 2\)</span></td>
 <td><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></td>
 </tr>
 <tr>
 <td>Tait</td>
-<td>\(E = E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)\)</td>
-<td>\(B\)</td>
-<td>\(C - 1\)</td>
+<td><span class="arithmatex">\(E = E_o + \frac{BV_o}{C}\Big(\nu - 1 + \frac{1}{C}\big(e^{C(1 -\nu)} - 1\big)\Big)\)</span></td>
+<td><span class="arithmatex">\(B\)</span></td>
+<td><span class="arithmatex">\(C - 1\)</span></td>
 <td><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></td>
 </tr>
 <tr>
 <td>Vinet</td>
-<td>\(E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} - 1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)\)</td>
-<td>\(\frac{B}{9}\)</td>
-<td>\(\frac{2}{3}C + 1\)</td>
+<td><span class="arithmatex">\(E = E_o + \frac{BV_o}{C^2}\Big(1 - \big(1 + C(\nu^{\frac{1}{3}} - 1)\big)e^{-C(\nu^{\frac{1}{3}} - 1)}\Big)\)</span></td>
+<td><span class="arithmatex">\(\frac{B}{9}\)</span></td>
+<td><span class="arithmatex">\(\frac{2}{3}C + 1\)</span></td>
 <td><sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></td>
 </tr>
 </tbody>
 </table>
-<p>\(^*\) \(\nu = \frac{V}{V_o}\), where \(V_o\) is the volume at zero pressure.</p>
-<p>\(^{**}\) \(E_o = E(\nu = 1)\)</p>
+<p><span class="arithmatex">\(^\*\)</span> <span class="arithmatex">\(\nu = \frac{V}{V_o}\)</span>, where <span class="arithmatex">\(V_o\)</span> is the volume at zero pressure.</p>
+<p><span class="arithmatex">\(^{\*\*}\)</span> <span class="arithmatex">\(E_o = E(\nu = 1)\)</span></p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>To cite the EOS data in the Materials Project, please reference the following work:</p>
 <p>Latimer, K., Dwaraknath, S., Mathew, K., Winston, D., Persson, K. A.
@@ -911,7 +1049,7 @@ solids. <em>Journal of Geophysical Research.</em> <strong>92,</strong>
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

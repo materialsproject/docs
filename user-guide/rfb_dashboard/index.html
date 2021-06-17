@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -320,17 +350,19 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -427,6 +459,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../xas-matcher/" title="XAS Matcher" class="md-nav__link">
       XAS Matcher
     </a>
@@ -481,6 +525,242 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        RFB Dashboard
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="RFB Dashboard" class="md-nav__link md-nav__link--active">
+      RFB Dashboard
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redox-active-material-design-space" class="md-nav__link">
+    Redox Active Material Design Space
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-rfb-dashboard" class="md-nav__link">
+    Using the RFB Dashboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the RFB Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-data-for-analysis" class="md-nav__link">
+    Importing Data for Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Importing Data for Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-molecule-explorer" class="md-nav__link">
+    Via Molecule Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-csv" class="md-nav__link">
+    Via CSV
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description-of-input-parameters" class="md-nav__link">
+    Description of Input Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Description of Input Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#target-battery-price" class="md-nav__link">
+    Target Battery Price
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-molality" class="md-nav__link">
+    Target Molality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-parameters" class="md-nav__link">
+    Cost Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-conditions" class="md-nav__link">
+    Operating Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrochemical-parameters" class="md-nav__link">
+    Electrochemical Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -505,14 +785,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -690,21 +970,40 @@
                 
                 <h1 id="rfb-dashboard">RFB Dashboard<a class="headerlink" href="#rfb-dashboard" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Redox flow batteries (RFBs) provide a promising pathway towards low-cost grid-scale energy storage devices. The economic viability of non-aqueous and aqueous redox flow batteries (NAqRFBs and AqRFBs respectively) is highly dependent on electroactive materials, salt, and solvent choices.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>(#references) The interactive RFB Dashboard can be used to select redox active materials for use in nonaqueous and aqueous RFBs by displaying individual materials along with regions of economic viability defined by the target battery price and minimum redox active species concentration.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>(#references) In addition, the tool provides concentration targets for redox active materials achieving the target battery price. This tool can be used to analyze both experimentally demonstrated materials and simulated families of materials. Reference 2 describes the techno-economic model implemented in the present tool. The default values of all input parameters are assumed to be the median values presented in Ref. 1.</p>
+<p>Redox flow batteries (RFBs) provide a promising pathway towards low-cost grid-scale energy storage devices.
+The economic viability of non-aqueous and aqueous redox flow batteries (NAqRFBs and AqRFBs respectively) is highly dependent on electroactive materials, salt, and solvent choices.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+The interactive RFB Dashboard can be used to select redox active materials for use in nonaqueous and aqueous RFBs by displaying individual materials along with regions of economic viability defined by the target battery price and minimum redox active species concentration.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>
+In addition, the tool provides concentration targets for redox active materials achieving the target battery price.
+This tool can be used to analyze both experimentally demonstrated materials and simulated families of materials.
+Reference 2 describes the techno-economic model implemented in the present tool.
+The default values of all input parameters are assumed to be the median values presented in Ref. 1.</p>
 <h2 id="redox-active-material-design-space">Redox Active Material Design Space<a class="headerlink" href="#redox-active-material-design-space" title="Permanent link">&para;</a></h2>
-<p>Redox active materials are defined using three electrochemical properties: molecular weight (g/mol e-), redox potential (V vs. Li/Li+), and active material concentration (mol actives/kg solvent). The molecular weight is defined as the molecular weight of redox active material normalized by the number of electrons transferred. The redox potential is defined as the average potential of electron transfer events that the material undergoes.</p>
-<p>The molecular weight and redox potential of a redox active molecule can be measured or simulated in less time and with more accuracy than active material solubility. Thus, the RFB Dashboard shows redox active materials on a two-dimensional materials-selection map, with axes of molecular weight and redox potential, while drawing concentration contours that achieves the target battery price. In the model each material is assumed to pair with a hypothetical counter-electrode material having a different potential than the material of interest, but common concentration and molecular weight.</p>
+<p>Redox active materials are defined using three electrochemical properties: molecular weight (g/mol e-), redox potential (V vs. Li/Li+), and active material concentration (mol actives/kg solvent).
+The molecular weight is defined as the molecular weight of redox active material normalized by the number of electrons transferred.
+The redox potential is defined as the average potential of electron transfer events that the material undergoes.</p>
+<p>The molecular weight and redox potential of a redox active molecule can be measured or simulated in less time and with more accuracy than active material solubility.
+Thus, the RFB Dashboard shows redox active materials on a two-dimensional materials-selection map, with axes of molecular weight and redox potential, while drawing concentration contours that achieves the target battery price.
+In the model each material is assumed to pair with a hypothetical counter-electrode material having a different potential than the material of interest, but common concentration and molecular weight.</p>
 <h2 id="using-the-rfb-dashboard">Using the RFB Dashboard<a class="headerlink" href="#using-the-rfb-dashboard" title="Permanent link">&para;</a></h2>
 <h3 id="importing-data-for-analysis">Importing Data for Analysis<a class="headerlink" href="#importing-data-for-analysis" title="Permanent link">&para;</a></h3>
 <h4 id="via-molecule-explorer">Via Molecule Explorer<a class="headerlink" href="#via-molecule-explorer" title="Permanent link">&para;</a></h4>
-<p>Data can be imported into the tool via Molecule Explorer. By clicking on the "via Molecule Explorer" button on top of the RFB Dashboard, the Molecule Explorer would appear and materials with desired structures can be selected. Once a set of molecules is selected, click on the "Explore Solubility" button to import them into the RFB Dashboard for further analysis. For a visual tutorial on how to import data via Molecule Explorer, a <a href="https://www.youtube.com/watch?v=w5NHcwujX30">short video</a> is available to demonstrate how the Molecule Explorer is used.</p>
+<p>Data can be imported into the tool via Molecule Explorer.
+By clicking on the "via Molecule Explorer" button on top of the RFB Dashboard, the Molecule Explorer would appear and materials with desired structures can be selected.
+Once a set of molecules is selected, click on the "Explore Solubility" button to import them into the RFB Dashboard for further analysis.
+For a visual tutorial on how to import data via Molecule Explorer, a <a href="https://www.youtube.com/watch?v=w5NHcwujX30">short video</a> is available to demonstrate how the Molecule Explorer is used.</p>
 <h4 id="via-csv">Via CSV<a class="headerlink" href="#via-csv" title="Permanent link">&para;</a></h4>
-<p>Data can be imported into the tool via a Comma Separated Values (CSV) file. The CSV file should be formatted in such a way that there is a header for the first row of the data sheet and the order of the data columns does not matter. However, the header names for each column has to have 'formula' for molecular formula, 'mw' for molecular weight, 'redpot' for reduction potential and 'oxpot' for oxidation potential. Once your CSV file is ready, it can be uploaded into the tool by clicking on the "via CSV" button on top of the tool to upload the file, and the data will then be displayed on the tool.</p>
+<p>Data can be imported into the tool via a Comma Separated Values (CSV) file.
+The CSV file should be formatted in such a way that there is a header for the first row of the data sheet and the order of the data columns does not matter.
+However, the header names for each column has to have 'formula' for molecular formula, 'mw' for molecular weight, 'redpot' for reduction potential and 'oxpot' for oxidation potential.
+Once your CSV file is ready, it can be uploaded into the tool by clicking on the "via CSV" button on top of the tool to upload the file, and the data will then be displayed on the tool.</p>
 <h2 id="description-of-input-parameters">Description of Input Parameters<a class="headerlink" href="#description-of-input-parameters" title="Permanent link">&para;</a></h2>
 <h3 id="target-battery-price">Target Battery Price<a class="headerlink" href="#target-battery-price" title="Permanent link">&para;</a></h3>
-<p>The Target Battery Price is the maximum battery price for RFBs built using the redox active materials enclosed by the concentration contours. The battery price is a combination of reactor cost, electrolyte cost, balance-of-plant and addition-to-price costs. Battery price neglects the cost of power-conditioning equipment that is included in system price defined in Ref. 1. As a result, when calculating battery price balance-of-plant costs are reduced by <span class="arithmatex">\(100/kW compared to that in Ref. 1 used to calculate system price. (\)</span>/kWh)</p>
+<p>The Target Battery Price is the maximum battery price for RFBs built using the redox active materials enclosed by the concentration contours.
+The battery price is a combination of reactor cost, electrolyte cost, balance-of-plant and addition-to-price costs.
+Battery price neglects the cost of power-conditioning equipment that is included in system price defined in Ref. 1. As a result, when calculating battery price balance-of-plant costs are reduced by <span class="arithmatex">\(100/kW compared to that in Ref. 1 used to calculate system price(\)</span>/kWh).</p>
 <h3 id="target-molality">Target Molality<a class="headerlink" href="#target-molality" title="Permanent link">&para;</a></h3>
-<p>The Target Molality is the minimum concentration achieving the target battery price for redox active materials enclosed by the concentration contours. The molality is defined as a ratio of moles of redox active species to kilograms of solvent in mol/kg.</p>
+<p>The Target Molality is the minimum concentration achieving the target battery price for redox active materials enclosed by the concentration contours.
+The molality is defined as a ratio of moles of redox active species to kilograms of solvent in mol/kg.</p>
 <h3 id="cost-parameters">Cost Parameters<a class="headerlink" href="#cost-parameters" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Reactor Cost Per Unit Area ($/m2)</li>
@@ -727,8 +1026,11 @@
 <li>Area-Specific Resistance: accounts for ohmic, kinetic, and mass-transfer resistance in the separator, electrodes, and electrolyte (Ω-cm2)</li>
 <li>Stability Limits (Nonaqueous only): solvent window of stability beyond which breakdown occurs (V vs. Li/Li+)</li>
 <li>Hypothetical Counter-Electrode Potential (Nonaqueous only): assumed hypothetical counter-electrode for full-cell analysis of single electrode materials. (V vs. Li/Li+)</li>
-<li>pH (Aqueous only): sets the pH of the aqueous solution. Aqueous stability limits are determined by the oxygen and hydrogen evolution potentials, which depend on the pH of the solution. The hypothetical counter-electrode potentials are selected in order to be within the stability limits within a margin of the "Voltage Offset" parameter. (-)</li>
-<li>Voltage Offset (Aqueous only): Hypothetical counter-electrodes, with which each molecule of interest is paired, are specified by an increment in voltage, called the Voltage Offset. For positive-electrode molecules of interest the potential of the counter-electrode exceeds the hydrogen evolution potential by the magnitude of the Voltage Offset, and for negative-electrode molecules of interest the potential of the counter-electrode is set below the oxygen evolution potential by the magnitude of the Voltage Offset. (V)</li>
+<li>pH (Aqueous only): sets the pH of the aqueous solution.
+  Aqueous stability limits are determined by the oxygen and hydrogen evolution potentials, which depend on the pH of the solution.
+  The hypothetical counter-electrode potentials are selected in order to be within the stability limits within a margin of the "Voltage Offset" parameter. (-)</li>
+<li>Voltage Offset (Aqueous only): Hypothetical counter-electrodes, with which each molecule of interest is paired, are specified by an increment in voltage, called the Voltage Offset.
+  For positive-electrode molecules of interest the potential of the counter-electrode exceeds the hydrogen evolution potential by the magnitude of the Voltage Offset, and for negative-electrode molecules of interest the potential of the counter-electrode is set below the oxygen evolution potential by the magnitude of the Voltage Offset. (V)</li>
 </ul>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <div class="footnote">
@@ -757,6 +1059,41 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../mpcomplete/" title="MPComplete" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                MPComplete
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../share-your-story/" title="Share your story" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Share your story
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -783,7 +1120,7 @@
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

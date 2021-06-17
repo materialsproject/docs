@@ -89,6 +89,36 @@
       
     </div>
     
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header-nav__source">
         
@@ -163,28 +193,16 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../foundation.md" title="Foundation" class="md-nav__link">
-      Foundation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Methodology
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Methodology" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Methodology
       </label>
@@ -311,6 +329,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../methodology/volume-change-error.md" title="Volume Change Error" class="md-nav__link">
+      Volume Change Error
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -325,14 +355,14 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       User Reference
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         User Reference
       </label>
@@ -419,6 +449,18 @@
   <li class="md-nav__item">
     <a href="../phase-diagram/" title="Phase Diagram" class="md-nav__link">
       Phase Diagram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-nav__link">
+      XAS Spectra
     </a>
   </li>
 
@@ -569,6 +611,102 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations/" title="Deprecations" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers-area/" title="Developer Area" class="md-nav__link">
+      Developer Area
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interface-reactions/" title="Interface Reactions" class="md-nav__link">
+      Interface Reactions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../molecular_terms/" title="Molecular Terms" class="md-nav__link">
+      Molecular Terms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mpcomplete/" title="MPComplete" class="md-nav__link">
+      MPComplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rfb_dashboard/" title="RFB Dashboard" class="md-nav__link">
+      RFB Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../share-your-story/" title="Share your story" class="md-nav__link">
+      Share your story
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structure-similarity/" title="Structure Similarity" class="md-nav__link">
+      Structure Similarity
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -593,14 +731,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Contribution
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Contribution" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Contribution
       </label>
@@ -724,15 +862,25 @@
                 
                 <h1 id="xas-matcher">XAS Matcher<a class="headerlink" href="#xas-matcher" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>We have computed X-Ray Absorption (XAS) spectra for over half of the materials in our database, and this number is growing. In particular, we have computed XANES K-edge spectra using the FEFF code. Read more about our methodology for computing spectra <a href="/user-guide/xray-absorption-spectra">here</a> and at the first reference below. We are also in the process of computing other kinds of spectra. This page focuses on use of our app for comparing computed x-ray absorption spectra and automatically matching our spectra against user-uploaded experimental spectra.</p>
+<p>We have computed X-Ray Absorption (XAS) spectra for over half of the materials in our database, and this number is growing,"
+In particular, we have computed XANES K-edge spectra using the FEFF code,"
+Read more about our methodology for computing spectra <a href="/user-guide/xray-absorption-spectra">here</a> and at the first reference below,"
+We are also in the process of computing other kinds of spectra,"
+This page focuses on use of our app for comparing computed x-ray absorption spectra and automatically matching our spectra against user-uploaded experimental spectra.</p>
 <p>Reference for database and validation: <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <p>Reference for app: <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h2 id="using-the-app">Using the App<a class="headerlink" href="#using-the-app" title="Permanent link">&para;</a></h2>
 <h3 id="comparing-spectra">Comparing Spectra<a class="headerlink" href="#comparing-spectra" title="Permanent link">&para;</a></h3>
-<p>You first enter a chemical system to ensure we have spectra calculated. Then, the first few spectra by increasing energy above hull (a proxy for thermodynamic stability) are plotted, and you can toggle plotting of spectra via the results table. You can filter the table by e.g. chemical formula via the search box above the table, and you can change the sorting by clicking on column headers (shift-click to sort secondary to the primary sort).</p>
-<p>With an uploaded spectrum and after matching, the <em>P</em><sub>softmax</sub> column is the softmax probability that the given material's spectrum matches the one uploaded according to the match ranking of a suite of metrics. More info in <a href="#how-matching-works">How Matching Works</a>.</p>
+<p>You first enter a chemical system to ensure we have spectra calculated,"
+Then, the first few spectra by increasing energy above hull (a proxy for thermodynamic stability) are plotted, and you can toggle plotting of spectra via the results table,"
+You can filter the table by e.g. chemical formula via the search box above the table, and you can change the sorting by clicking on column headers (shift-click to sort secondary to the primary sort).</p>
+<p>With an uploaded spectrum and after matching, the <span class="arithmatex">\(P_{softmax}\)</span> column is the softmax probability that the given material's spectrum matches the one uploaded according to the match ranking of a suite of metrics,"
+More info in <a href="#how-matching-works">How Matching Works</a>.</p>
 <h3 id="uploading-spectra">Uploading Spectra<a class="headerlink" href="#uploading-spectra" title="Permanent link">&para;</a></h3>
-<p>Spectra files should have two values per line, separated by a standard delimiter like a comma or tab character. Comment lines (beginning with a '#') are allowed and will be ignored by the parser. The first value on each line should be the energy in units of eV. The second value, the absorption coefficient of arbitrary units, will be max-value normalized for plotting and matching.</p>
+<p>Spectra files should have two values per line, separated by a standard delimiter like a comma or tab character,"
+Comment lines (beginning with a '#') are allowed and will be ignored by the parser,"
+The first value on each line should be the energy in units of eV,"
+The second value, the absorption coefficient of arbitrary units, will be max-value normalized for plotting and matching.</p>
 <h2 id="how-matching-works">How Matching Works<a class="headerlink" href="#how-matching-works" title="Permanent link">&para;</a></h2>
 <p>Coming soon...</p>
 <h2 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h2>
@@ -770,7 +918,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../phase-diagram/" title="Phase Diagram" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../xray-absorption-spectra/" title="XAS Spectra" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -779,7 +927,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Phase Diagram
+                XAS Spectra
               </div>
             </div>
           </a>
@@ -828,7 +976,7 @@
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ['navigation.instant', 'navigation.tracking', 'navigation.tabs', 'navigation.tabs.sticky', 'navigation.top', 'toc.integrate', 'search.suggest', 'search.highlight - search.share'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
