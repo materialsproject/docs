@@ -22,7 +22,7 @@ For an aqueous ion i at standard state conditions (e.g., room temperature, atmos
 _Figure 1: Schematic to reference experimental aqueous ion energies to DFT data_
 
 $$
-\begin{align} \mu_{i(aq)}^0 &= \mu_{i(aq)}^{0,{\rm exp}} + \left[\Delta g_s^{0,{\rm DFT}} - \Delta g_s^{0,{\rm exp}}\right] \\
+\begin{align} \mu_{i(aq)}^0 &= \mu_{i(aq)}^{0,{\rm exp}} + \left[\Delta g_s^{0,{\rm DFT}} - \Delta g_s^{0,{\rm exp}}\right]  \
 & = \mu_{i(aq)}^{0,{\rm exp}} + \Delta\mu_s^{0, {\rm DFT - exp}}
 \end{align}
 $$
@@ -35,7 +35,7 @@ In an aqueous environment, many chemical and electrochemical reactions are enabl
 
 $$
 \begin{align}
-\mu^0_{{\rm H_2O}} &= \Delta g^{0, {\rm exp}}_{\rm H_2O} \\
+\mu^0_{{\rm H_2O}} &= \Delta g^{0, {\rm exp}}_{\rm H_2O}  \
  & = -2.46 eV
 \end{align}
 $$
@@ -58,7 +58,7 @@ Hence, the hydrogen energy is corrected such that the experimental free energy o
 
 $$
 \begin{align}
-\mu_{\rm H}^{\rm ref} & = \frac{1}{2}\left[g_{\rm H_2O}^0 - \mu_O^0 - \Delta g_{\rm H_2O}^{0, {\rm exp}} \right] \\
+\mu_{\rm H}^{\rm ref} & = \frac{1}{2}\left[g_{\rm H_2O}^0 - \mu_O^0 - \Delta g_{\rm H_2O}^{0, {\rm exp}} \right] \
 & \approx \frac{1}{2}\left[ E_{\rm H_2O}^{0, {\rm DFT}} -Ts_{\rm H_2O}^0 - \mu_O^0 - \mu_{\rm H_2O}^{0, {\rm exp}} \right]
 \end{align}
 $$

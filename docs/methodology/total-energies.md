@@ -17,7 +17,7 @@ polarization on and with magnetic ions in a high-spin ferromagnetic
 initialization (the system can of course relax to a low spin state
 during the DFT relaxation). We used a k-point mesh of 1000/(number of
 atoms in the cell) for all computations, the Monkhorst-Pack method for
-the k-point choices (but \\(\Gamma\\)-centered for hexagonal cells) and
+the k-point choices (but $\Gamma$-centered for hexagonal cells) and
 the tetrahedron method to perform the k-point integration. Pymatgen
 could change those default parameters if they are not adequate for the
 computation (e.g., switch to another k-point integration scheme). Some

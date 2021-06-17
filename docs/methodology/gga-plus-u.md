@@ -39,7 +39,7 @@ obtaining the correct U value was used, as follows:
     - $\ce{2 V2O3 + O2 -> 4 VO2}$
     - $\ce{4 VO2 + O2 -> 2 V2O5}$
 2.  For each formation energy region identified, we fit the linear
-    equation $\\begin{align} \\mbox{Error/redox} & = m U + c \\end{align}$ to
+    equation $\begin{align} \mbox{Error/redox} & = m U + c \end{align}$ to
     the final U range. In the case of V, we will have two sets of (m,c).
 3.  We find the U value that minimizes the sum of square Error / Redox.
 4.  In the case of V, we get a U value of 3.25.

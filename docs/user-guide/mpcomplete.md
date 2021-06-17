@@ -12,7 +12,7 @@ Two-dimensional materials can be submitted but we do not currently converge the 
 
 ## Submitting Crystal Structures via the Website
 
-You can submit individual structures online using [Crystal Toolkit](crystal-toolkit.html) and using the 'Submit to MPComplete' button. Crystal structures can be imported by uploading a CIF file or similar and can be optionally transformed by substituting atomic species or similar before submission. Please make sure to enter any comments or references as appropriate so that we can properly attribute the source of the crystal structure.
+You can submit individual structures online using [Crystal Toolkit](crystal-toolkit.md) and using the 'Submit to MPComplete' button. Crystal structures can be imported by uploading a CIF file or similar and can be optionally transformed by substituting atomic species or similar before submission. Please make sure to enter any comments or references as appropriate so that we can properly attribute the source of the crystal structure.
 
 A one-minute video walkthrough of the process is available [here](https://www.youtube.com/watch?v=4c8MZdD0L3c).
 

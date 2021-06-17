@@ -25,21 +25,23 @@ dielectric data to ensure its reliability and accuracy.
 Formally, the dielectric tensor ε relates the externally applied
 electric field to the field within the material and can be defined as:
 
-\\[E\_i=\sum\_j \epsilon^{-1}\_{ij}E\_{0j}\\] where \\(E\\) is the electric
-field inside the material and \\(E_0\\) is the externally applied
+\[E*i=\sum_j \epsilon^{-1}*{ij}E\_{0j}\]
+
+where $E$ is the electric
+field inside the material and $E*0$ is the externally applied
 electric field. the indices *i, j* refer to the direction in space and
-take the values: \\({1, 2, 3}\\). The dielectric tensor can be split in
-the ionic (\\(\epsilon_0\\)) and electronic (\\(\epsilon\_\infty\\))
+take the values: ${1, 2, 3}$. The dielectric tensor can be split in
+the ionic ($\epsilon_0$) and electronic ($\epsilon*\infty$)
 contributions:
 
-\\[\epsilon\_{ij}=\epsilon\_{ij}^0+\epsilon\_{ij}^\infty\\]
-Here, we
-consider only the response of non-zero band gap materials to
+\[\epsilon*{ij}=\epsilon*{ij}^0+\epsilon\_{ij}^\infty\]
+
+Here, we consider only the response of non-zero band gap materials to
 time-invariant fields. In the hypothetical case that a material does not
-respond at all to the external field, \\(\epsilon\_{ij}^\infty\\) would
-be equal to the identity tensor and  \\(\epsilon\_{ij}^0\\) would be
+respond at all to the external field, $\epsilon*{ij}^\infty$ would
+be equal to the identity tensor and  $\epsilon*{ij}^0$ would be
 zero. In fact, materials with zero ionic contribution do exist. In
-general, for \\(\epsilon\_{ij}^0\\) to be non-zero, compounds need to
+general, for $\epsilon\_{ij}^0$ to be non-zero, compounds need to
 have at least 2 atoms per primitive cell, each having a different atomic
 charge. The dielectric tensor is symmetric and respects all the symmetry
 operations of the corresponding point group. This limits the number of
@@ -56,9 +58,9 @@ ionic contribution vanishes at high frequencies, our results can be used
 to obtain an estimate of the refractive index, n, at optical frequencies
 and far from resonance effects using the well known formula[^2]:
 
-\\[n=\sqrt{\epsilon^\infty\_{poly}}\\]
+\[n=\sqrt{\epsilon^\infty\_{poly}}\]
 
-where \\(\epsilon^\infty\_{poly}\\) is the average of the eigenvalues of
+where $\epsilon^\infty\_{poly}$ is the average of the eigenvalues of
 the electronic contribution to the dielectric tensor. It should be noted
 this equation for the refractive index assumes the material is
 non-magnetic.

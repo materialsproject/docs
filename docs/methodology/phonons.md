@@ -24,15 +24,15 @@ in the calculations on the Materials project page.
 In the density functional perturbation theory formalism the derivatives
 of the total energy with respect to a perturbation are directly obtained
 from the self-consistency loop [^1] For a generic point **q** in the
-Brillouin zone the phonon frequencies \\(\omega\_{\mathbf{q},m}\\) and
-eigenvectors \\(U_m(\mathbf{q}\kappa'\beta)\\) are obtained by solving
+Brillouin zone the phonon frequencies $\omega\_{\mathbf{q},m}$ and
+eigenvectors $U_m(\mathbf{q}\kappa'\beta)$ are obtained by solving
 of the generalized eigenvalue problem
 
-\\[\sum\_{\kappa'\beta}\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})U\_m(\mathbf{q}\kappa'\beta) = M\_{\kappa}\omega^2\_{\mathbf{q},m}U\_m(\mathbf{q}\kappa\alpha),\\]
+\[\sum*{\kappa'\beta}\widetilde{C}*{\kappa\alpha,\kappa'\beta}(\mathbf{q})U*m(\mathbf{q}\kappa'\beta) = M*{\kappa}\omega^2\_{\mathbf{q},m}U_m(\mathbf{q}\kappa\alpha),\]
 
-where \\(\kappa\\) labels the atoms in the cell, \\(\alpha\\) and
-\\(\beta\\) are cartesian coordinates and
-\\(\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})\\) are the
+where $\kappa$ labels the atoms in the cell, $\alpha$ and
+$\beta$ are cartesian coordinates and
+$\widetilde{C}\_{\kappa\alpha,\kappa'\beta}(\mathbf{q})$ are the
 interatomic force constants in reciprocal space, which are related to
 the second derivatives of the energy with respect to atomic
 displacements. These values have been obtained by performing a Fourier
@@ -41,26 +41,27 @@ obtained with DFPT.
 
 ## Thermodynamic properties
 
-The vibrational density of states \\(g(\omega)\\) is obtained from an
+The vibrational density of states $g(\omega)$ is obtained from an
 integration over the full Brillouin zone
 
-\\[g(\omega) = \frac{1}{3nN}\sum\_{\mathbf{q},m}\delta(\omega-\omega\_{\mathbf{q},m}),\\]
+\[g(\omega) = \frac{1}{3nN}\sum*{\mathbf{q},m}\delta(\omega-\omega*{\mathbf{q},m}),\]
 
-where \\(n\\) is the number of atoms per unit cell and \\(N\\) is the
+where $n$ is the number of atoms per unit cell and $N$ is the
 number of unit cells. The expressions for the Helmholtz free energy
-\\(\Delta F\\), the phonon contribution to the internal energy
-\\(\Delta E\_{\text{ph}}\\), the constant-volume specific heat \\(C_v\\)
-and the entropy \\(S\\) can be obtained in the harmonic approximation
+$\Delta F$, the phonon contribution to the internal energy
+$\Delta E\_{\text{ph}}$, the constant-volume specific heat $C_v$
+and the entropy $S$ can be obtained in the harmonic approximation
 [^2]
 
-\\[\Delta F = 3nNk\_BT\int\_{0}^{\omega\_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k\_BT}\right)g(\omega)d\omega\\]
+\[\Delta F = 3nNk*BT\int*{0}^{\omega_L}\text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
 
-\\[\Delta E\_{\text{ph}} = 3nN\frac{\hbar}{2}\int\_{0}^{\omega\_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k\_BT}\right)g(\omega)d\omega\\]
+\[\Delta E*{\text{ph}} = 3nN\frac{\hbar}{2}\int*{0}^{\omega_L}\omega\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
 
-\\[C\_v = 3nNk\_B\int\_{0}^{\omega\_L}\left(\frac{\hbar\omega}{2k\_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k\_BT}\right)g(\omega)d\omega\\]
+\[C*v = 3nNk_B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\right)^2\text{csch}^2\left(\frac{\hbar\omega}{2k_BT}\right)g(\omega)d\omega\]
 
-\\[S = 3nNk\_B\int\_{0}^{\omega\_L}\left(\frac{\hbar\omega}{2k\_BT}\text{coth}\left(\frac{\hbar\omega}{2k\_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k\_BT}\right)\right)g(\omega)d\omega,\\]
-where \\(k_B\\) is the Boltzmann constant and \\(\omega_L\\) is the
+\[S = 3nNk*B\int*{0}^{\omega_L}\left(\frac{\hbar\omega}{2k_BT}\text{coth}\left(\frac{\hbar\omega}{2k_BT}\right) - \text{ln}\left(2\text{sinh}\frac{\hbar\omega}{2k_BT}\right)\right)g(\omega)d\omega,\]
+
+where $k_B$ is the Boltzmann constant and $\omega_L$ is the
 largest phonon frequency.
 
 ## Calculation details

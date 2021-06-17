@@ -30,32 +30,39 @@ family of directions._
 ## Formalism
 
 In this work, we calculate the piezoelectric stress coefficients,
-\\(\textstyle e\_{ijk}^{T}\\) from DFPT, with units of
-\\(\textstyle C/m^{2}\\). These can be defined in terms of thermodynamic
+$\textstyle e_{ijk}^{T}$ from DFPT, with units of
+$\textstyle C/m^{2}$. These can be defined in terms of thermodynamic
 derivatives as shown below [^2].
 
-\\[e\_{ijk}^{T}= \left(\frac{\partial D\_{i}}{\partial \varepsilon\_{jk}}\right)\_{E, T} = -\left(\frac{\partial \sigma\_{jk}}{\partial E\_{i}}\right)\_{\varepsilon, T} \\!\\],
-where \\(\textstyle D\\), \\(\textstyle E\\),
-\\(\textstyle \varepsilon\\), \\(\textstyle \sigma\\) and
-\\(\textstyle T\\) represent the electric displacement field, the
+$$
+e_{ijk}^{T}= \left(\frac{\partial D_{i}}{\partial \varepsilon_{jk}}\right)_{E, T} = -\left(\frac{\partial \sigma_{jk}}{\partial E_{i}}\right)_{\varepsilon, T} \!
+$$
+
+where $\textstyle D$, $\textstyle E$,
+$\textstyle \varepsilon$, $\textstyle \sigma$ and
+$\textstyle T$ represent the electric displacement field, the
 electric field, the strain tensor, the stress tensor and the
 temperature, respectively.
 
 The above relations can be written in Voigt-notation as shown below.
 
-\\[e\_{ij}^{T}= \left(\frac{\partial D\_{i}}{\partial \varepsilon\_{j}}\right)\_{E, T} = -\left(\frac{\partial \sigma\_{j}}{\partial E\_{i}}\right)\_{\varepsilon, T} \\!\\]
+$$
+e_{ij}^{T}= \left(\frac{\partial D_{i}}{\partial \varepsilon_{j}}\right)_{E, T} = -\left(\frac{\partial \sigma_{j}}{\partial E_{i}}\right)_{\varepsilon, T} \!
+$$
 
 We note that the most commonly used piezoelectric constants appearing in
 the (experimental) literature are the piezoelectric strain constants,
-usually denoted by \\(\textstyle d\_{ijk}\\). These can be readily
-related to the constants \\(\textstyle e\_{ijk}\\) if the elastic
-compliances \\(\textstyle s\_{lmjk}^{T}\\) (at constant electric field
+usually denoted by $\textstyle d_{ijk}$. These can be readily
+related to the constants $\textstyle e_{ijk}$ if the elastic
+compliances $\textstyle s_{lmjk}^{T}$ (at constant electric field
 and temperature) of the materials are known:
-\\(\textstyle d\_{ijk}^{T} = e\_{ilm} s\_{lmjk}^{ET}\\). In particular, the
+$\textstyle d_{ijk}^{T} = e_{ilm} s_{lmjk}^{ET}$. In particular, the
 piezoelectric strain constants can be expressed thermodynamically as
 shown below
 
-\\[d\_{kij}^{T} = \left(\frac{\partial \varepsilon\_{ij}}{\partial E\_{k}}\right)\_{\sigma, T} = \left(\frac{\partial D\_{k}}{\partial \sigma\_{ij}}\right)\_{E, T} \\!\\]
+$$
+d_{kij}^{T} = \left(\frac{\partial \varepsilon_{ij}}{\partial E_{k}}\right)_{\sigma, T} = \left(\frac{\partial D_{k}}{\partial \sigma_{ij}}\right)_{E, T} \!
+$$
 
 It is well-known that the piezoelectric behavior can only occur in
 crystals that lack inversion symmetry. This is the direct consequence of
