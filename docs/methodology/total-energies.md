@@ -242,9 +242,9 @@ works:
     Crystallography. 39 (2006) 6-16.
 
 [^5]:
-    A. Wang, R. Kingsbury, M. McDermott, M. Horton, A. Jain, S.P. Ong S. Dwaraknath,
-    K. Persson, A framework for quantifying uncertainty in DFT energy corrections,
-    ChemRxiv. Preprint. [DOI:10.26434/chemrxiv.14593476.v1](https://doi.org/10.26434/chemrxiv.14593476.v1).
+    Wang, A., Kingsbury, R.S., Horton, M., Jain, A., Ong, S.P., Dwaraknath, S., Persson, K.
+    A framework for quantifying uncertainty in DFT energy corrections. *Scientific Reports* 11
+    (2021), 15496. [DOI: 10.1038/s41598-021-94550-5](https://doi.org/10.1038/s41598-021-94550-5)
 
 [^6]:
     L. Wang, T. Maxisch, G. Ceder, Oxidation energies of transition
