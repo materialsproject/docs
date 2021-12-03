@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A Pourbaix diagram, also frequently called a potenial-pH diagram, or E-pH diagram, is a representation of aqueous phase electrochemical equilibria.
+A Pourbaix diagram, also frequently called a potential-pH diagram, or E-pH diagram, is a representation of aqueous phase electrochemical equilibria.
 It is a two-dimensional representation of a three-dimensional free energy-pH-potential diagram.
 In other words, it shows water-stable phases as a function of pH and potential, where, potential is defined with respect to the standard hydrogen electrode.
 
@@ -27,7 +27,7 @@ We therefore prefer to choose simple chemical systems (primarily binaries with a
 
 For an aqueous ion i at standard state conditions (e.g., room temperature, atmospheric pressure, and $10^{-6}$ M concentration) using a representative solid s, we define the chemical potential as:
 
-![pourbaix_reference_energeis](img/pourbaix-app/Ion_ref_energy.png)
+![Pourbaix Reference Energies](img/pourbaix-app/Ion_ref_energy.png)
 _Figure 1: Schematic to reference experimental aqueous ion energies to DFT data_
 
 $$
@@ -163,7 +163,7 @@ For a material with more than one non H and O elements, the ratio of these eleme
 ![fe_cr_pourbaix_diagram](img/pourbaix-app/Fe2O3_stability_map.png)
 _Figure 5: Electrochemical stability map of Fe2O3 (mp-24972)._
 
-A colorbar is shown above the electrochemical stability maps.
+A color bar is shown above the electrochemical stability maps.
 Note that Gibbs free energies larger than 1 eV/atom are not marked in the map.
 Stable and unstable phase energies can be found in the table to the right of the electrochemical stability map.
 

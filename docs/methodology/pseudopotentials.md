@@ -118,7 +118,7 @@ recent result showing that lead oxide formation energies need the use of
 spin-orbit coupling to be accurate.[^2] Our computations do not include any
 relativistic corrections for valence electrons. However, spin-orbit
 coupling is taken into account during the psp construction. This would
-explain why a psp with more core electrons (treated undirectly with SO
+explain why a psp with more core electrons (treated indirectly with SO
 coupling) would give more accurate results than a psp with fewer
 electrons.
 
