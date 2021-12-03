@@ -843,13 +843,13 @@ responsive two-column layouts near the top of their respective pages. For a
 signed-in user, there is up to three months of unseen news. For the static home
 page, the news fills the two columns -- this depends on the summary-lengths of
 the news items, but does not exceed ten items (five per column). Finally, the
-signed-in user view is dismissable with a click.</p>
+signed-in user view is dismissible with a click.</p>
 <p>Each feed item on display shows a date, a title, and a summary. The date is
-gathered from the item's filename or from its <code>updated</code> metdata field if
+gathered from the item's filename or from its <code>updated</code> metadata field if
 given. The summary is the rendered HTML of the item file's Markdown body. Feed
 items are presented in reverse chronological order.</p>
 <h2 id="data-management">Data management<a class="headerlink" href="#data-management" title="Permanent link">&para;</a></h2>
-<p>The last time a user has seen the newsfeed is stored in the <code>app_db</code>'s
+<p>The last time a user has seen the news feed is stored in the <code>app_db</code>'s
 <code>newsfeed_views</code> collection, one document per user. The query</p>
 <div class="highlight"><pre><span></span><code><span class="n">return_document</span> <span class="o">=</span> <span class="n">app_db</span><span class="o">.</span><span class="n">newsfeed_views</span><span class="o">.</span><span class="n">find_one_and_update</span><span class="p">(</span>
     <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span><span class="p">},</span>
