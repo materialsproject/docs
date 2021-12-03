@@ -86,7 +86,7 @@ from nearest-neighbor bond lengths (e.g., <1.35 Å for superoxide, <1.49 Å
 for 'peroxide', and 'oxide' otherwise). Thus, $\ce{Na_2O}$ receives an 'oxide'
 correction while $\ce{NaO_2}$ receives a `superoxide' correction.
 
-Anion corrections are applied tto a material only when it contains a corrected
+Anion corrections are applied to a material only when it contains a corrected
 element _as an anion._ For example, the `H''correction is applied to LiH but not
 to H$_2$O. A specie is classified as an anion if its estimated oxidation state
 (when available) is negative, or if it is the most electronegative element in
@@ -187,9 +187,9 @@ The main conclusions are:
   phase is stable or not), the relevant reaction energies are most of
   the time not the formation energies from the elements but reaction
   energies from chemically similar compounds (e.g., two oxides forming
-  a third oxide). Large cancelation of errors explain
+  a third oxide). Large cancellation of errors explain
   this observation.
-- The +U is necessary for accurate description of the energetics evene
+- The +U is necessary for accurate description of the energetics even
   when reactions do not involve change in formal oxidation states
 
 ## Accuracy of Calculated Volumes

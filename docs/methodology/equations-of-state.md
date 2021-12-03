@@ -10,13 +10,13 @@ still a lack of consensus with regard to which equation is optimal, as
 well as to what metrics are most appropriate for making this
 judgment.
 
-alculation of EOS is automated using self-documenting workflows
+Calculation of EOS is automated using self-documenting workflows
 compiled in the atomate code base. Atomate couples pymatgen for materials
 analysis, custodian for just-in-time debugging of DFT codes, and
 Fireworks for workflow management. The EOS workflow begins with a
 structure optimization and subsequently calculates the energy of
 isotropic deformations including ionic relaxation with volumetric strain
-ranging from from -15.7% to 15.7% (-5% to 5% linear strain) of the
+ranging from -15.7% to 15.7% (-5% to 5% linear strain) of the
 optimized structure. Density-functional-theory (DFT) calculations were
 performed as necessary using the projector augmented wave (PAW) method
 as implemented in the Vienna Ab Initio Simulation Package (VASP) within

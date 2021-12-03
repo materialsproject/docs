@@ -67,11 +67,11 @@ The shear modulus $G$ describes the response of a material to shear stress.
 Young's modulus $E$ relates uniaxial strain to stress in the same direction.
 All three are scalars with units of pressure.
 
-For isotropic materials, these three moduli fully describe the linear elastic reponse, and are related to each other by the Poisson ratio $\nu$: $2G(1+\nu)=E=3K(1-2\nu)$.
+For isotropic materials, these three moduli fully describe the linear elastic response, and are related to each other by the Poisson ratio $\nu$: $2G(1+\nu)=E=3K(1-2\nu)$.
 For anisotropic materials (most crystals), the full elastic tensor $C$ is required because the stress-strain ratio is dependent on the direction of the stress and strain.
 
 **Poisson Ratio:**
-The Poisson ratio $\nu$ is the negative of the ratio of tranvserse strain to axial strain under uniaxial stress.
+The Poisson ratio $\nu$ is the negative of the ratio of transverse strain to axial strain under uniaxial stress.
 
 **Voigt-Reuss-Hill Average Bulk and Shear Moduli:**
 The Voigt-Reuss-Hill (VRH) moduli describe a polycrystalline material's approximate average responses to stress.

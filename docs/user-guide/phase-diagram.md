@@ -137,7 +137,7 @@ _Figure 3: Calculated Li-Fe-O grand potential phase diagram at oxygen chemical p
 
 _Figure 3_ shows the calculated grand potential phase diagram for the $\ce{Li-Fe-O}$ system at an oxygen chemical potential consistent with 700 K and 0 atm.
 The phase diagram provides information on the equilibrium phases under these conditions for any $\ce{Li:Fe}$ composition (note that the O fraction is controlled by interactions with the environment).
-For example, we may observe that a compositon with a relatively high Fe ratio (near composition = 1) will comprise $\ce{Fe2O3}$ and $\ce{LiFeO2}$.
+For example, we may observe that a composition with a relatively high Fe ratio (near composition = 1) will comprise $\ce{Fe2O3}$ and $\ce{LiFeO2}$.
 In addition, by examining the changes in the equilibrium phases as the chemical potential changes, we can obtain insights into how the phase equilibria are modified with changes in the chemical potential.
 A detailed discussion of this application can be found in References 2 and 3.[^2][^3]
 
@@ -150,7 +150,7 @@ _Figure 4: Experimental Li-Fe-O Phase Diagram_
 _Figure 4_ shows the experimentally determined phase diagram for the $\ce{Li-Fe-O}$ system at 673K.[^5] Even though the experimental phase diagram is at a much higher temperature, we can see that our calculated phase diagram reproduces the features very well.
 The phases $\ce{Li2O}$, $\ce{Fe3O4}$, $\ce{Fe2O3}$, $\ce{LiFeO2}$, $\ce{Li5FeO4}$ are stable in both the experimental diagram and our calculated phase diagram.
 The only additional phase in our calculated diagram is $\ce{FeO}$, which is well known to be difficult to obtain in stoichiometric proportion under normal conditions.
-Our calculations correctly reproduce the $\ce{FeO}$ formation enthalpy to within experimental accuracy, and our calculated phase diagram is fullly consistent with known experimental thermochemical data along the $\ce{Fe-O}$ line at 1 atm and 298K.
+Our calculations correctly reproduce the $\ce{FeO}$ formation enthalpy to within experimental accuracy, and our calculated phase diagram is fully consistent with known experimental thermochemical data along the $\ce{Fe-O}$ line at 1 atm and 298K.
 
 In general, we can expect that compositional phase diagrams comprising of predominantly solid phases to be reproduced fairly well by our calculations.
 However, it should be noted that there are [inherent limitations in accuracy in the DFT calculated energies](/methodology/total-energies).

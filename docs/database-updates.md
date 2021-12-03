@@ -44,7 +44,7 @@ V2018.11
   material-id, and report the lowest energy ordering
 - Fixed incorrect calculation and display of polycrystalline dielectric constants
 - Fixed labeling of all materials as high-pressure. Note we're parsing ICSD tags for this labeling so while some materials
-  may not conventionally be considerd high-pressure, a single matching ICSD entry can tag a material as such. We would love
+  may not conventionally be considered high-pressure, a single matching ICSD entry can tag a material as such. We would love
   to hear comments on how we could better tag high-pressure materials
 - 5,849 new material ids.
 - 3,556 retiring/re-aggregated material ids

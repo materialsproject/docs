@@ -73,7 +73,7 @@ non-magnetic.
 
 ## DFT Parameters
 
-The inital set of 1,056 dielectric tensors were calculated using the
+The initial set of 1,056 dielectric tensors were calculated using the
 Vienna Ab-Initio Simulation Package[^3][^4][^5][^6] (VASP version 5.3.4)
 combined with the Generalized Gradient Approximation
 GGA/PBE[^7][^8]+U[^9][^10] exchange-correlation functional and Projector

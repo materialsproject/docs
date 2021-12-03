@@ -58,16 +58,16 @@ responsive two-column layouts near the top of their respective pages. For a
 signed-in user, there is up to three months of unseen news. For the static home
 page, the news fills the two columns -- this depends on the summary-lengths of
 the news items, but does not exceed ten items (five per column). Finally, the
-signed-in user view is dismissable with a click.
+signed-in user view is dismissible with a click.
 
 Each feed item on display shows a date, a title, and a summary. The date is
-gathered from the item's filename or from its `updated` metdata field if
+gathered from the item's filename or from its `updated` metadata field if
 given. The summary is the rendered HTML of the item file's Markdown body. Feed
 items are presented in reverse chronological order.
 
 ## Data management
 
-The last time a user has seen the newsfeed is stored in the `app_db`'s
+The last time a user has seen the news feed is stored in the `app_db`'s
 `newsfeed_views` collection, one document per user. The query
 
 ```python
